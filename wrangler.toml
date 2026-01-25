@@ -1,0 +1,13 @@
+# Cloudflare Pages Configuration
+# This file is optional but helps with local development
+# For Cloudflare Pages, configure build settings in the dashboard:
+# - Build command: npm run build
+# - Build output directory: public
+# - Root directory: /
+# - Node version: 18 or 20
+
+name = "serene-landscaping"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "serene-landscaping"

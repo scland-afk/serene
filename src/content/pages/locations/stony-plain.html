@@ -1,0 +1,115 @@
+---
+title: "Stony Plain Landscaping Services | Landscape Design & Lawn Care | Serene Landscaping"
+description: "Professional landscaping services in Stony Plain, Alberta. Landscape design, lawn maintenance, snow removal, and hardscaping for residential and commercial properties. Serving Stony Plain and surrounding areas."
+permalink: "/locations/stony-plain/"
+keywords: "Stony Plain landscaping, landscaping Stony Plain, landscape design Stony Plain, lawn maintenance Stony Plain, snow removal Stony Plain, Stony Plain landscaper"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Service Area</span>
+            <span class="cs-int-title">Stony Plain Landscaping Services</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="Stony Plain landscaping services" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Landscaping Services in Stony Plain, Alberta
+                </h1>
+                <h2>
+                    Serving Stony Plain with Quality Landscaping Solutions
+                </h2>
+                <p>
+                    Proudly serving Stony Plain with professional landscaping services. We provide comprehensive landscape design, maintenance, and hardscaping solutions for residential and commercial properties. Our team brings years of experience and expertise to every project in Stony Plain.
+                </p>
+                <p>
+                    We work with homeowners and businesses in Stony Plain who want clean, functional outdoor spaces built with care and attention to detail. From landscape design to ongoing maintenance, we provide comprehensive landscaping services tailored to Stony Plain properties.
+                </p>
+                <h3>
+                    Landscaping Services in Stony Plain:
+                </h3>
+                <ul>
+                    <li>
+                        Landscape Design & Construction
+                    </li>
+                    <li>
+                        Patios & Hardscaping
+                    </li>
+                    <li>
+                        Residential & Commercial Lawn Care
+                    </li>
+                    <li>
+                        Snow Removal Services
+                    </li>
+                    <li>
+                        Final Grading & Topsoil
+                    </li>
+                    <li>
+                        Fences & Gates
+                    </li>
+                    <li>
+                        Spring & Fall Cleanups
+                    </li>
+                    <li>
+                        Property Maintenance
+                    </li>
+                    <li>
+                        Commercial Services
+                    </li>
+                    <li>
+                        Seasonal Property Upkeep
+                    </li>
+                </ul>
+                <h2>
+                    Local Expertise in Stony Plain
+                </h2>
+                <p>
+                    Our team is familiar with Stony Plain's unique climate and soil conditions, ensuring your landscaping projects are designed and built to thrive in our local environment. We understand the specific needs of Stony Plain properties and provide solutions that work.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping in Stony Plain?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for landscaping services in Stony Plain. We offer comprehensive landscaping solutions for both residential and commercial properties. Our commitment to quality and customer satisfaction makes us the ideal choice for all your landscaping needs in Stony Plain.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="landscaping services Stony Plain" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

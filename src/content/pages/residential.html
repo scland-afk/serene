@@ -1,0 +1,115 @@
+---
+title: "Residential Landscaping Edmonton | Home Landscaping Services | Serene Landscaping"
+description: "Professional residential landscaping services in Edmonton. Landscape design, lawn maintenance, snow removal, hardscaping, and seasonal property upkeep for homeowners. Serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/residential/"
+keywords: "residential landscaping Edmonton, home landscaping Edmonton, residential lawn care Edmonton, residential snow removal Edmonton, residential landscape design Edmonton, homeowner landscaping Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Residential Services</span>
+            <span class="cs-int-title">Home Landscaping Services</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="residential landscaping Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Residential Landscaping Services in Edmonton
+                </h1>
+                <h2>
+                    Transform Your Home's Outdoor Space
+                </h2>
+                <p>
+                    Homeowners hire us for lawn care, cleanups, landscaping upgrades, and patios. We provide comprehensive residential landscaping services designed to enhance your home's curb appeal and create beautiful, functional outdoor spaces. From landscape design to ongoing maintenance, we work with homeowners across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                </p>
+                <p>
+                    Our residential services are tailored to meet the unique needs of homeowners who want clean, functional outdoor spaces built with care and attention to detail. We understand that your home is your sanctuary, and we're here to help you create the outdoor space you've always dreamed of.
+                </p>
+                <h3>
+                    Residential Landscaping Services:
+                </h3>
+                <ul>
+                    <li>
+                        Landscape Design & Construction
+                    </li>
+                    <li>
+                        Patios & Hardscaping
+                    </li>
+                    <li>
+                        Residential Lawn Care & Maintenance
+                    </li>
+                    <li>
+                        Snow Removal Services
+                    </li>
+                    <li>
+                        Spring & Fall Cleanups
+                    </li>
+                    <li>
+                        Final Grading & Topsoil Preparation
+                    </li>
+                    <li>
+                        Fences & Gates Installation
+                    </li>
+                    <li>
+                        Garden Bed Design & Installation
+                    </li>
+                    <li>
+                        Irrigation System Installation
+                    </li>
+                    <li>
+                        Seasonal Property Upkeep
+                    </li>
+                </ul>
+                <h2>
+                    Complete Home Landscaping Solutions
+                </h2>
+                <p>
+                    We provide complete residential landscaping solutions from initial design to ongoing maintenance. Our team handles all aspects of your landscaping project, ensuring quality workmanship and attention to detail from start to finish. Whether you're looking to create a new outdoor living space or maintain your existing landscape, we're here to help.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Your Home?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for residential landscaping services in Edmonton and surrounding areas. We offer comprehensive landscaping solutions tailored to your home's specific needs. Our commitment to quality, reliability, and customer satisfaction makes us the ideal choice for homeowners who want beautiful, functional outdoor spaces that enhance their property value and provide years of enjoyment.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}" alt="residential landscaping services Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

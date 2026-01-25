@@ -1,0 +1,115 @@
+---
+title: "Commercial Landscaping Edmonton | Business Landscape Services | Serene Landscaping"
+description: "Professional commercial landscaping services in Edmonton for businesses, property managers, and condo boards. Landscape design, installation, and maintenance for commercial properties. Serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/commercial/commercial-landscaping/"
+keywords: "commercial landscaping Edmonton, business landscaping Edmonton, property management landscaping Edmonton, commercial landscape design Edmonton, office landscaping Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Commercial Services</span>
+            <span class="cs-int-title">Commercial Landscaping Services</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial landscaping Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Commercial Landscaping Services in Edmonton
+                </h1>
+                <h2>
+                    Enhance Your Business Property with Professional Landscaping
+                </h2>
+                <p>
+                    Professional commercial landscaping services in Edmonton for businesses, property managers, and condo boards. Landscape design, installation, and maintenance for commercial properties. We work with businesses, property managers, and condo boards to create and maintain professional outdoor spaces that enhance your property's value and curb appeal.
+                </p>
+                <p>
+                    Our commercial landscaping services are designed to keep your business property looking professional and well-maintained year-round. We provide comprehensive landscape design, installation, and maintenance services tailored to commercial properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                </p>
+                <h3>
+                    Commercial Landscaping Services:
+                </h3>
+                <ul>
+                    <li>
+                        Commercial Landscape Design
+                    </li>
+                    <li>
+                        Property Installation & Construction
+                    </li>
+                    <li>
+                        Regular Maintenance Programs
+                    </li>
+                    <li>
+                        Seasonal Cleanups
+                    </li>
+                    <li>
+                        Irrigation System Installation
+                    </li>
+                    <li>
+                        Parking Lot Landscaping
+                    </li>
+                    <li>
+                        Office Building Landscaping
+                    </li>
+                    <li>
+                        Retail Property Landscaping
+                    </li>
+                    <li>
+                        Condo Board Landscaping
+                    </li>
+                    <li>
+                        Property Management Services
+                    </li>
+                </ul>
+                <h2>
+                    Professional Property Maintenance
+                </h2>
+                <p>
+                    We provide consistent, professional maintenance to keep your commercial property looking its best. Our maintenance programs are designed to minimize disruption to your business while ensuring your property always presents a professional appearance to customers, clients, and tenants.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Commercial Landscaping?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for commercial landscaping services in Edmonton and surrounding areas. We offer comprehensive commercial landscaping solutions tailored to your business needs. Our commitment to quality, reliability, and professional service makes us the ideal choice for businesses, property managers, and condo boards.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="commercial landscaping services Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

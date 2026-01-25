@@ -1,0 +1,115 @@
+---
+title: "Lawn Maintenance Edmonton | Residential & Commercial Lawn Care | Serene Landscaping"
+description: "Professional lawn maintenance and fertilization services in Edmonton. Healthy lawns through soil health, proper timing, and consistent maintenance. Residential and commercial lawn care serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/services/lawn-maintenance/"
+keywords: "lawn maintenance Edmonton, lawn care Edmonton, lawn mowing Edmonton, lawn fertilization Edmonton, commercial lawn care Edmonton, residential lawn maintenance Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Lawn Care Services</span>
+            <span class="cs-int-title">Residential & Commercial Lawn Maintenance</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="lawn maintenance Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Lawn Maintenance & Fertilization Services in Edmonton
+                </h1>
+                <h2>
+                    Keep Your Lawn Healthy and Beautiful Year-Round
+                </h2>
+                <p>
+                    A healthy lawn takes more than occasional mowing. Our lawn care and fertilization services in Edmonton are built around soil health, proper timing, and consistent maintenance. With the right approach, your lawn stays green and resilient through the growing season. We keep lawns clean, green and well-maintained.
+                </p>
+                <p>
+                    We provide regular lawn maintenance for both residential and commercial properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our comprehensive lawn care services include mowing, fertilization, weed control, and seasonal treatments to keep your property looking its best year-round.
+                </p>
+                <h3>
+                    Comprehensive Lawn Care Services:
+                </h3>
+                <ul>
+                    <li>
+                        Regular Lawn Mowing & Trimming
+                    </li>
+                    <li>
+                        Fertilization & Soil Health Programs
+                    </li>
+                    <li>
+                        Weed Control & Treatment
+                    </li>
+                    <li>
+                        Spring & Fall Cleanups
+                    </li>
+                    <li>
+                        Aeration & Overseeding
+                    </li>
+                    <li>
+                        Edging & Trimming
+                    </li>
+                    <li>
+                        Seasonal Lawn Treatments
+                    </li>
+                    <li>
+                        Pest & Disease Management
+                    </li>
+                    <li>
+                        Irrigation System Maintenance
+                    </li>
+                    <li>
+                        Commercial Property Maintenance
+                    </li>
+                </ul>
+                <h2>
+                    Soil Health & Proper Timing
+                </h2>
+                <p>
+                    Our lawn care approach focuses on building healthy soil, which is the foundation of a beautiful lawn. We use proper timing for fertilization, aeration, and other treatments to maximize effectiveness. Consistent maintenance ensures your lawn stays healthy and green throughout the growing season.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Lawn Maintenance?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for lawn maintenance services in Edmonton and surrounding areas. We offer comprehensive lawn care programs tailored to your property's specific needs. Our unwavering commitment to quality and customer satisfaction makes us the ideal choice for keeping your lawn healthy, green, and beautiful year-round.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="lawn maintenance and mowing Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

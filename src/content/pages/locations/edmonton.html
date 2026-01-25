@@ -1,0 +1,115 @@
+---
+title: "Edmonton Landscaping Services | Landscape Design, Lawn Care & Snow Removal | Serene Landscaping"
+description: "Professional landscaping services in Edmonton, Alberta. Landscape design, lawn maintenance, snow removal, hardscaping, and commercial services. Trusted by homeowners and businesses across Edmonton. Call 587-566-9879."
+permalink: "/locations/edmonton/"
+keywords: "Edmonton landscaping, landscaping Edmonton, landscape design Edmonton, lawn maintenance Edmonton, snow removal Edmonton, Edmonton landscaper, commercial landscaping Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Service Area</span>
+            <span class="cs-int-title">Edmonton Landscaping Services</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="Edmonton landscaping services" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Landscaping Services in Edmonton, Alberta
+                </h1>
+                <h2>
+                    Trusted by Homeowners and Businesses Across Edmonton
+                </h2>
+                <p>
+                    Proudly serving Edmonton with professional landscaping services. We provide comprehensive landscape design, maintenance, and hardscaping solutions for residential and commercial properties. Serene Construction Landscaping is a trusted landscaping company serving Edmonton and nearby communities.
+                </p>
+                <p>
+                    We work with homeowners and property managers who want clean, functional outdoor spaces built with care and attention to detail. There's hidden beauty on your property that you may not see. But, when you meet with our experts, the opportunity to visualize that hidden beauty is made clear.
+                </p>
+                <h3>
+                    Landscaping Services in Edmonton:
+                </h3>
+                <ul>
+                    <li>
+                        Landscape Design & Construction
+                    </li>
+                    <li>
+                        Patios, Walkways & Retaining Walls
+                    </li>
+                    <li>
+                        Residential & Commercial Lawn Care
+                    </li>
+                    <li>
+                        Snow Removal Services
+                    </li>
+                    <li>
+                        Final Grading & Topsoil Preparation
+                    </li>
+                    <li>
+                        Fences & Gates Installation
+                    </li>
+                    <li>
+                        Spring & Fall Cleanups
+                    </li>
+                    <li>
+                        Irrigation System Installation
+                    </li>
+                    <li>
+                        Property Maintenance Programs
+                    </li>
+                    <li>
+                        Commercial Property Services
+                    </li>
+                </ul>
+                <h2>
+                    Serving All Areas of Edmonton
+                </h2>
+                <p>
+                    We serve all areas of Edmonton, from residential neighborhoods to commercial districts. Our team is familiar with Edmonton's climate and soil conditions, ensuring your landscaping projects are designed and built to thrive in our local environment.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping in Edmonton?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as Edmonton's trusted choice for professional landscaping services. We offer comprehensive landscaping solutions for both residential and commercial properties. Our commitment to quality, reliability, and customer satisfaction makes us the ideal choice for all your landscaping needs in Edmonton.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="landscaping services Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

@@ -1,0 +1,118 @@
+---
+title: "Landscape Design Edmonton | Professional Landscape Design & Construction | Serene Landscaping"
+description: "Complete landscape design and construction services in Edmonton. Patios, walkways, turf, grading, and outdoor living areas built with proper base preparation and long-term durability. Serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/services/landscape-design/"
+keywords: "landscape design Edmonton, landscape construction Edmonton, patio installation Edmonton, outdoor living spaces Edmonton, landscape planning Edmonton, residential landscaping Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Landscaping Services</span>
+            <span class="cs-int-title">Landscape Design & Construction</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="landscape design Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Complete Landscape Design & Construction Services in Edmonton
+                </h1>
+                <h2>
+                    Transform Your Outdoor Space with Professional Landscape Design
+                </h2>
+                <p>
+                    We provide complete landscape design and construction services across Edmonton, St. Albert, Sherwood Park, and Spruce Grove. From the initial site visit and planning to installation and finishing details, everything is handled in house. Patios, walkways, turf, grading, and outdoor living areas are built with proper base preparation and long term durability in mind, not shortcuts.
+                </p>
+                <p>
+                    Our experienced team handles all aspects of your landscaping project, ensuring quality workmanship and attention to detail from start to finish. We work with homeowners and businesses to create beautiful, functional outdoor spaces that enhance property value and provide years of enjoyment.
+                </p>
+                <h3>
+                    Popular Landscape Design Services:
+                </h3>
+                <ul>
+                    <li>
+                        Complete Landscape Design & Planning
+                    </li>
+                    <li>
+                        Patio Installation & Design
+                    </li>
+                    <li>
+                        Walkway & Pathway Construction
+                    </li>
+                    <li>
+                        Turf Installation & Sodding
+                    </li>
+                    <li>
+                        Final Grading & Topsoil Preparation
+                    </li>
+                    <li>
+                        Outdoor Living Area Design
+                    </li>
+                    <li>
+                        Garden Bed Design & Installation
+                    </li>
+                    <li>
+                        Retaining Wall Construction
+                    </li>
+                    <li>
+                        Drainage Solutions
+                    </li>
+                    <li>
+                        Irrigation System Installation
+                    </li>
+                </ul>
+                <h2>
+                    Our Landscape Design Process
+                </h2>
+                <p>
+                    We meet on-site to confirm your goals, timeline, and the vision for your outdoor space. We review layout, drainage, access, and existing conditions so the plan fits the real site. You receive a detailed plan outlining the work, materials, and scope before we build.
+                </p>
+                <p>
+                    We provide clear pricing and a defined scope so expectations are set before moving forward. Our crew completes the work according to plan while keeping the site organized and communication clear. We review the finished project with you and confirm everything meets expectations before closeout.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Your Landscape Design?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for landscape design and construction in Edmonton and surrounding areas. We offer tailor-made solutions, ensuring that each landscape design resonates with your individual style and needs. Our unwavering commitment to quality and customer satisfaction makes us the ideal choice for transforming your outdoor space into the oasis you've always dreamt of.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="landscape design and construction Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

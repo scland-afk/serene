@@ -1,0 +1,115 @@
+---
+title: "Final Grading Edmonton | Topsoil Preparation & Site Grading | Serene Landscaping"
+description: "Professional final grading and topsoil preparation services in Edmonton. Proper site preparation for new construction, landscaping projects, and property improvements. Serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/services/final-grading/"
+keywords: "final grading Edmonton, topsoil preparation Edmonton, site grading Edmonton, land grading Edmonton, construction grading Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Site Preparation</span>
+            <span class="cs-int-title">Final Grading & Topsoil Preparation</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="final grading Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Professional Final Grading & Topsoil Preparation in Edmonton
+                </h1>
+                <h2>
+                    Proper Site Preparation for Successful Landscaping Projects
+                </h2>
+                <p>
+                    Professional final grading and topsoil preparation services to prepare your property for landscaping or construction. We ensure proper slope and drainage for optimal results. Our grading services are essential for new construction, landscaping projects, and property improvements.
+                </p>
+                <p>
+                    Proper site preparation is crucial for successful landscaping projects. We provide final grading and topsoil preparation services across Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our team ensures proper drainage and soil conditions for healthy plant growth and long-term landscape success.
+                </p>
+                <h3>
+                    Final Grading & Site Preparation Services:
+                </h3>
+                <ul>
+                    <li>
+                        Final Grading & Leveling
+                    </li>
+                    <li>
+                        Topsoil Preparation & Installation
+                    </li>
+                    <li>
+                        Drainage System Installation
+                    </li>
+                    <li>
+                        Slope Correction
+                    </li>
+                    <li>
+                        Site Clearing & Preparation
+                    </li>
+                    <li>
+                        Soil Testing & Analysis
+                    </li>
+                    <li>
+                        Erosion Control
+                    </li>
+                    <li>
+                        Compaction Services
+                    </li>
+                    <li>
+                        New Construction Grading
+                    </li>
+                    <li>
+                        Property Improvement Grading
+                    </li>
+                </ul>
+                <h2>
+                    Proper Drainage & Soil Conditions
+                </h2>
+                <p>
+                    Proper drainage is essential for preventing water issues and ensuring healthy plant growth. Our grading services ensure water flows away from structures and toward appropriate drainage areas. We also prepare soil conditions that promote healthy root development and long-term landscape success.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Final Grading?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for final grading and topsoil preparation services in Edmonton and surrounding areas. We offer professional site preparation services that ensure your landscaping projects have a solid foundation. Our commitment to quality and proper techniques makes us the ideal choice for preparing your property for successful landscaping.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="final grading and site preparation Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

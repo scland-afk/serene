@@ -1,0 +1,37 @@
+name: Build Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Check Build
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build site
+        run: npm run build
+        env:
+          ELEVENTY_ENV: PROD
+      
+      - name: Check build output
+        run: |
+          if [ ! -d "public" ]; then
+            echo "Build failed: public directory not found"
+            exit 1
+          fi
+          echo "Build successful! Files in public/:"
+          ls -la public/ | head -20

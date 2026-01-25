@@ -1,0 +1,328 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// CRITICAL PAGE STYLES
+// Above-the-fold and high-priority styles for the home page's landing section.
+// Put the first section of the home page in here, so it loads immediately.
+// The rest of the home page styles in local.css will be deferred and
+// ─────────────────────────────────────────────────────────────────────────────
+
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-288 {
+    /* centers button */
+    text-align: center;
+    /* 116px - 164px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    position: relative;
+    background-color: #f7f7f7;
+  }
+  #hero-288 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-288 .cs-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-288 .cs-title {
+    /* 44px - 61px */
+    font-size: clamp(2.75rem, 5vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1em;
+    text-align: center;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #hero-288 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 33.75rem;
+    margin: 0;
+    /* 28px - 40px */
+    margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #hero-288 .cs-stats-group {
+    max-width: 32.625rem;
+    margin: 0;
+    /* 40px - 98px */
+    margin-top: clamp(2.5rem, calc(7.3vw), 6.125rem);
+    /* 40px - 48px */
+    margin-bottom: clamp(2.5rem, 10vw, 3rem);
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 20px - 40px */
+    column-gap: clamp(1.25rem, 5.9vw, 2.5rem);
+  }
+  #hero-288 .cs-item {
+    list-style: none;
+    width: auto;
+  }
+  #hero-288 .cs-number {
+    font-family: 'font2', Arial, monospace;
+    letter-spacing: .1em;
+    /* 25px - 49px */
+    font-size: clamp(1.5625rem, 3.8vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: block;
+  }
+  #hero-288 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2.1vw, 1rem);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+  #hero-288 .cs-picture {
+    width: 100%;
+    max-width: 36.5625rem;
+    /* 380px - 453px */
+    height: clamp(23.75rem, 59vw, 28.3215rem);
+    /* clips the img tag corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  #hero-288 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+  #hero-288 .cs-waves {
+    width: 100%;
+    height: 30%;
+    background-color: var(--secondaryDark);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  #hero-288 .cs-waves img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-288 {
+    text-align: left;
+  }
+  #hero-288 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 3.125rem;
+  }
+  #hero-288 .cs-content {
+    width: 45%;
+    /* prevents flex-box from squishing it */
+    flex: none;
+    align-items: flex-start;
+  }
+  #hero-288 .cs-title,
+  #hero-288 .cs-text {
+    text-align: left;
+  }
+  #hero-288 .cs-picture {
+    max-width: 39.375rem;
+    /* 623px - 814px */
+    height: clamp(38.9375rem, 60vw, 50.875rem);
+  }
+  #hero-288 .cs-waves {
+    height: 100%;
+    width: calc(49vw);
+    left: 50%;
+    margin-left: 12.5rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-288 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #hero-288 .cs-title,
+  body.dark-mode #hero-288 .cs-text,
+  body.dark-mode #hero-288 .cs-number,
+  body.dark-mode #hero-288 .cs-desc {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #hero-288 .cs-waves {
+    opacity: .5;
+  }
+}
+
+/*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #h-services-143 {
+        /* 40px - 100px */
+        padding: 0 calc(16 / 16 * 1em) clamp(2.5rem, 7.9vw, 6.25rem) calc(16 / 16 * 1rem);
+        position: relative;
+        /* give a higher z index than the hero so it can sit on top */
+        z-index: 10;
+
+        .cs-card-group {
+            width: 100%;
+            max-width: calc(465 / 16 * 1rem);
+            margin: 0 auto 0;
+            /* negative margin pulls it up on top of the hero section */
+            /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
+            to make the value negative since clamp doesn't work with negative values */
+            margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+            /* 40px - 60px top and bottom, 16px - 44px left & right */
+            padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+            border-radius: calc(5 / 16 * 1rem);
+            border-top: 8px solid var(--primary);
+            background-color: #fff;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+        }
+
+        .cs-item {
+            list-style: none;
+            margin: 0 auto calc(32 / 16 * 1rem);
+            width: 100%;
+            max-width: calc(360 / 16 * 1rem);
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .cs-icon {
+            /* 68px - 88px */
+            width: clamp(4.25rem, 8.8vw, 5.5rem);
+            /* 68px - 88px */
+            height: clamp(4.25rem, 8.8vw, 5.5rem);
+            margin: auto;
+            /* 20px - 24px */
+            margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                /* 44px - 52px */
+                width: clamp(2.75rem, 5.8vw, 3.25rem);
+                height: auto;
+            }
+        }
+
+        .cs-title {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 auto calc(8 / 16 * 1rem);
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            font-size: calc(16 / 16 * 1rem);
+            text-align: center;
+            line-height: 1.5em;
+            max-width: calc(360 / 16 * 1rem);
+            margin: 0 auto;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #h-services-143 {
+        .cs-card-group {
+            max-width: calc(784 / 16 * 1rem);
+            /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
+               to make the value negative since clamp doesn't work with negative values */
+            margin-top: calc(clamp(4.75rem, 20vw, 20rem) * -1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: calc(40 / 16 * 1rem);
+        }
+
+        .cs-item {
+            width: 45%;
+            max-width: calc(314 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+    }
+}
+
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #h-services-143 {
+        .cs-card-group {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-wrap: nowrap;
+        }
+
+        .cs-item {
+            margin: 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #h-services-143 {
+            .cs-card-group {
+                background: var(--medium);
+            }
+
+            .cs-icon {
+                background: var(--darkTint);
+            }
+
+            .cs-title {
+                color: #fff;
+            }
+
+            .cs-text {
+                color: #fff;
+            }
+        }
+    }
+}

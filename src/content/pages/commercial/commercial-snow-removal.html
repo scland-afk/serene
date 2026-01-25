@@ -1,0 +1,115 @@
+---
+title: "Commercial Snow Removal Edmonton | Business Snow Plowing & Ice Control | Serene Landscaping"
+description: "Reliable commercial snow removal services in Edmonton. Snow plowing, blowing, sanding, and ice control for businesses, parking lots, and commercial properties. Seasonal contracts available. Serving Edmonton, St. Albert, Sherwood Park & Spruce Grove."
+permalink: "/commercial/commercial-snow-removal/"
+keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, parking lot snow removal Edmonton, commercial ice control Edmonton, property management snow removal Edmonton"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Commercial Services</span>
+            <span class="cs-int-title">Commercial Snow Removal</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 640, height: 600 }) | jpeg %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial snow removal Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">
+                    Reliable Commercial Snow Removal Services in Edmonton
+                </h1>
+                <h2>
+                    Keep Your Business Property Safe and Accessible During Winter
+                </h2>
+                <p>
+                    Reliable commercial snow removal services in Edmonton. Snow plowing, blowing, sanding, and ice control for businesses, parking lots, and commercial properties. Seasonal contracts available. We provide reliable, efficient snow removal designed for safe site access throughout the winter months.
+                </p>
+                <p>
+                    Our commercial snow removal services are designed to keep your business property safe and accessible for customers, employees, and tenants. We work with businesses, property managers, and condo boards across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                </p>
+                <h3>
+                    Commercial Snow Removal Services:
+                </h3>
+                <ul>
+                    <li>
+                        Parking Lot Snow Removal
+                    </li>
+                    <li>
+                        Sidewalk & Walkway Clearing
+                    </li>
+                    <li>
+                        Commercial Snow Plowing
+                    </li>
+                    <li>
+                        Ice Control & Sanding
+                    </li>
+                    <li>
+                        Snow Blowing Services
+                    </li>
+                    <li>
+                        Snow Hauling & Removal
+                    </li>
+                    <li>
+                        Seasonal Contracts
+                    </li>
+                    <li>
+                        On-Demand Service
+                    </li>
+                    <li>
+                        24/7 Emergency Response
+                    </li>
+                    <li>
+                        Property Management Services
+                    </li>
+                </ul>
+                <h2>
+                    Seasonal Contracts & Reliable Service
+                </h2>
+                <p>
+                    We offer seasonal contracts that provide consistent, reliable snow removal service throughout the winter months. Our contracts ensure your property is cleared promptly after each snowfall, keeping your business accessible and safe for customers and employees.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping for Commercial Snow Removal?
+                </h2>
+                <p>
+                    Serene Construction Landscaping stands as the trusted choice for commercial snow removal services in Edmonton and surrounding areas. We offer reliable, efficient snow clearing designed for safe site access. Our commitment to prompt service and quality workmanship makes us the ideal choice for businesses, property managers, and condo boards.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}" alt="commercial snow removal and plowing Edmonton" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <!--Waves Graphic-->
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
