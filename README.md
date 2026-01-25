@@ -4,9 +4,9 @@ Professional landscaping services website for Serene Construction Landscaping, s
 
 ## 🚀 Quick Deployment
 
-**Ready to deploy to Cloudflare Pages!**
+**Ready to deploy to Netlify!**
 
-See [README-DEPLOY.md](./README-DEPLOY.md) for quick deployment instructions, or [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed guide.
+See [README-NETLIFY.md](./README-NETLIFY.md) for quick deployment instructions, or [NETLIFY-DEPLOY.md](./NETLIFY-DEPLOY.md) for detailed guide.
 
 ## 🛠️ Local Development
 

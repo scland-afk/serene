@@ -13,12 +13,12 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		/* Serene Landscaping Brand Colors - Natural Landscaping Palette */
-		--primary: #2D5016; /* Forest Green - natural, trustworthy */
-		--primaryLight: #4A7C59; /* Sage Green - lighter, fresh */
-		--secondary: #8B6F47; /* Earth Brown - warm, natural */
-		--secondaryLight: #B89B6F; /* Tan - lighter earth tone */
-		--secondaryDark: #1a3a0a; /* Dark Forest */
+		/* Serene Landscaping Brand Colors - Fresh Natural Palette */
+		--primary: #1B5E3E; /* Deep Emerald Green - professional, natural */
+		--primaryLight: #2E7D5A; /* Fresh Green - vibrant, growth */
+		--secondary: #6B8E23; /* Olive Green - earthy, organic */
+		--secondaryLight: #9ABF5A; /* Light Green - fresh, lively */
+		--secondaryDark: #0F3D26; /* Dark Emerald */
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4E4B66;
 		--bodyTextColorWhite: #FAFBFC;
@@ -138,12 +138,15 @@
 		letter-spacing: .1em;
 		padding: 0 2rem;
 		background-color: var(--primary);
+		border-radius: calc(8 / 16 * 1rem);
 		display: inline-block;
 		position: relative;
 		z-index: 1;
 		/* prevents padding from adding to the width */
 		box-sizing: border-box;
-		transition: color .3s;
+		transition: color .3s, background-color .3s;
+		text-transform: uppercase;
+		font-weight: 700;
 
 		&:before {
 			content: '';
@@ -440,6 +443,14 @@
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 
+/* Account for fixed navigation on mobile */
+@media only screen and (max-width: 63.9375rem) {
+	main#main {
+		/* Add padding-top to account for fixed nav height (~70-80px) */
+		padding-top: clamp(5rem, 10vw, 6rem);
+	}
+}
+
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     body {
@@ -459,14 +470,14 @@
         z-index: 10000;
 
         &:after {
-            /* on hover green bar */
+            /* on hover green bar - hidden to remove green background */
             content: '';
             width: 40%;
             max-width: calc(146/16 * 1rem);
             height: 100%;
             background: var(--primary);
-            opacity: 1;
-            display: block;
+            opacity: 0;
+            display: none;
             position: absolute;
             top: 0;
             left: 0%;
@@ -493,6 +504,8 @@
 
         &.cs-active {
             &:after {
+                /* Keep hidden even when menu is active */
+                display: none;
                 width: 100%;
                 max-width: 100%;
                 background-color: #484848;

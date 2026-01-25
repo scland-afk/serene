@@ -13,9 +13,10 @@
   #hero-288 {
     /* centers button */
     text-align: center;
-    /* 116px - 164px top */
+    /* Increased top padding to ensure headline is visible below fixed nav */
+    /* 80px - 120px top on mobile to account for nav + spacing */
     /* 60px - 100px  bottom */
-    padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    padding: clamp(5rem, 12vw, 7.5rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
     position: relative;
     background-color: #f7f7f7;
   }
@@ -33,36 +34,56 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
   }
   #hero-288 .cs-title {
-    /* 44px - 61px */
-    font-size: clamp(2.75rem, 5vw, 3.8125rem);
+    /* Using var(--headerFontSize) from root: 31px - 49px */
+    font-size: var(--headerFontSize);
     font-weight: 900;
-    line-height: 1em;
+    line-height: 1.2em;
     text-align: center;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
+    /* 16px - 24px */
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
     color: var(--headerColor);
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: "font2", Impact, sans-serif;
+    max-width: 100%;
+    width: 100%;
   }
   #hero-288 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+    /* Using var(--bodyFontSize) from root: 1rem */
+    font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: center;
     width: 100%;
-    max-width: 33.75rem;
-    margin: 0;
-    /* 28px - 40px */
-    margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
+    max-width: 40.625rem;
+    margin: 0 auto;
+    /* 24px - 32px */
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
     color: var(--bodyTextColor);
+    font-weight: 400;
+    font-family: "font1", Arial, sans-serif;
+    display: block;
+  }
+  #hero-288 .cs-button-solid {
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0;
+    /* 24px - 32px */
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
   }
   #hero-288 .cs-stats-group {
     max-width: 32.625rem;
-    margin: 0;
-    /* 40px - 98px */
-    margin-top: clamp(2.5rem, calc(7.3vw), 6.125rem);
-    /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 10vw, 3rem);
+    margin: 0 auto;
+    /* 32px - 48px */
+    margin-top: clamp(2rem, 5vw, 3rem);
+    /* 48px - 80px spacing before picture */
+    margin-bottom: clamp(3rem, 8vw, 5rem);
     padding: 0;
     display: flex;
     justify-content: space-evenly;
@@ -73,22 +94,28 @@
   #hero-288 .cs-item {
     list-style: none;
     width: auto;
+    text-align: center;
   }
   #hero-288 .cs-number {
-    font-family: 'font2', Arial, monospace;
-    letter-spacing: .1em;
-    /* 25px - 49px */
+    font-family: "font1", Arial, sans-serif;
+    letter-spacing: 0.05em;
+    /* 25px - 49px - matches provided CSS */
     font-size: clamp(1.5625rem, 3.8vw, 3.0625rem);
     line-height: 1.2em;
     font-weight: 700;
     color: var(--headerColor);
     display: block;
+    /* 4px - 8px */
+    margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
   }
   #hero-288 .cs-desc {
-    /* 14px - 16px */
+    font-family: "font1", Arial, sans-serif;
+    /* 14px - 16px - matches provided CSS */
     font-size: clamp(0.875rem, 2.1vw, 1rem);
     line-height: 1.5em;
     color: var(--bodyTextColor);
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
   #hero-288 .cs-picture {
     width: 100%;
@@ -111,34 +138,21 @@
     object-fit: cover;
   }
   #hero-288 .cs-waves {
-    width: 100%;
-    height: 30%;
-    background-color: var(--secondaryDark);
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-  }
-  #hero-288 .cs-waves img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
+    display: none; /* Hide waves on mobile to prevent green bar issue */
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #hero-288 {
     text-align: left;
+    /* Increased top padding on desktop for better spacing from top */
+    padding-top: clamp(13rem, 25vw, 19rem);
+    padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
   }
   #hero-288 .cs-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     column-gap: 3.125rem;
   }
   #hero-288 .cs-content {
@@ -147,20 +161,31 @@
     flex: none;
     align-items: flex-start;
   }
-  #hero-288 .cs-title,
+  #hero-288 .cs-title {
+    text-align: left;
+    max-width: 100%;
+  }
   #hero-288 .cs-text {
     text-align: left;
+    max-width: 100%;
+  }
+  #hero-288 .cs-stats-group {
+    /* 48px - 80px spacing before picture on desktop */
+    margin-bottom: clamp(3rem, 8vw, 5rem);
   }
   #hero-288 .cs-picture {
     max-width: 39.375rem;
     /* 623px - 814px */
     height: clamp(38.9375rem, 60vw, 50.875rem);
+    /* Add top margin for spacing from stats */
+    margin-top: clamp(2rem, 4vw, 3rem);
   }
   #hero-288 .cs-waves {
     height: 100%;
     width: calc(49vw);
     left: 50%;
     margin-left: 12.5rem;
+    display: block;
   }
 }
 /* Dark Mode */

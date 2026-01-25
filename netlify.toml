@@ -1,16 +1,19 @@
 [build]
   publish = "public/"
   command = "npm run build"
+  environment = { ELEVENTY_ENV = "PROD" }
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
   package = "@netlify/plugin-lighthouse"
 
 [[plugins]]
-package = "netlify-plugin-cache"
-
+  package = "netlify-plugin-cache"
   [plugins.inputs]
-  paths = [
-    "public/assets/images", # Processed images - adjust to match your outputDir
-    ".cache" # Remote Assets
-  ]
+    paths = [
+      "public/assets/images", # Processed images - adjust to match your outputDir
+      ".cache" # Remote Assets
+    ]
+
+# Redirect rules (handled by _redirects file in src/)
+# Netlify will automatically use src/_redirects if it exists
