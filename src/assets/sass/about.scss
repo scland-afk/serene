@@ -34,12 +34,49 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
+
+            /* Topper */
+            .cs-topper {
+                font-size: 1rem; /* 16px */
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.0625rem; /* 1px */
+                color: var(--primary);
+                margin-bottom: 0.5rem; /* 8px */
+            }
+
+            /* H1 */
+            h1.cs-title,
+            .cs-title {
+                font-size: clamp(2.25rem, 4vw, 3rem); /* 36px mobile / 48px desktop */
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0 0 1.5rem 0; /* 24px */
+                text-transform: none;
+            }
         }
 
         .cs-text {
-            margin-bottom: calc(16 / 16 * 1rem);
+            font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
+            font-weight: 400;
+            line-height: 1.6;
+            margin: 0 0 1rem 0; /* 16px */
+            color: var(--bodyTextColor);
+
             &:last-of-type {
-                margin-bottom: calc(32 / 16 * 1rem);
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: none;
+                color: var(--primary);
+                transition: color 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -195,6 +232,1136 @@
 
             .cs-quote-icon {
                 opacity: 0.2;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      What We Value          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-values {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(738 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        .cs-values-grid {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-value-item {
+            padding: 0;
+            margin: 0 0 1rem 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 1.2em;
+                margin: 0 0 1rem 0;
+                color: var(--primary);
+            }
+
+            p {
+                font-size: var(--bodyFontSize);
+                line-height: 1.5em;
+                text-align: inherit;
+                width: 100%;
+                margin: 0 0 1rem 0;
+                color: var(--bodyTextColor);
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-values {
+        .cs-values-grid {
+            gap: 0;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-values {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-values {
+            background-color: var(--dark);
+
+            .cs-title,
+            h2,
+            h3,
+            .cs-value-item h3,
+            .cs-value-item p,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            h3,
+            .cs-value-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-value-item p,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-color,
+            .cs-text a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---    Services Overview       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-overview {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(738 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: inherit;
+            margin: 2rem 0 1rem 0;
+            color: var(--headerColor);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 1rem 0;
+            color: var(--primary);
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--bodyTextColor);
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--primaryLight);
+                }
+            }
+        }
+
+        .cs-services-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-service-item {
+            padding: 0;
+            margin: 0 0 1rem 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: inherit;
+                margin: 0 0 1rem 0;
+                color: var(--primary);
+
+                a {
+                    color: var(--primary);
+                    text-decoration: none;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: var(--primaryLight);
+                    }
+                }
+            }
+
+            p {
+                font-size: var(--bodyFontSize);
+                line-height: 1.5em;
+                text-align: inherit;
+                width: 100%;
+                margin: 0 0 1rem 0;
+                color: var(--bodyTextColor);
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-overview {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-overview {
+            background-color: var(--dark);
+
+            .cs-title,
+            h2,
+            h3,
+            .cs-text,
+            .cs-service-item h3,
+            .cs-service-item p,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            h3,
+            .cs-service-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-text,
+            .cs-service-item p,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-color,
+            .cs-text a,
+            .cs-service-item h3 a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---         FAQ About          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-about {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(738 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: inherit;
+            margin: 2rem 0 1rem 0;
+            color: var(--headerColor);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 1rem 0;
+            color: var(--primary);
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-faq-item {
+            padding: 0;
+            margin: 0 0 1rem 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: inherit;
+                margin: 0 0 1rem 0;
+                color: var(--primary);
+            }
+
+            p {
+                font-size: var(--bodyFontSize);
+                line-height: 1.5em;
+                text-align: inherit;
+                width: 100%;
+                margin: 0 0 1rem 0;
+                color: var(--bodyTextColor);
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--bodyTextColor);
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--primaryLight);
+                }
+            }
+        }
+
+        .cs-faq-cta {
+            margin-top: 2rem;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-about {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-about {
+            background-color: var(--dark);
+
+            .cs-title,
+            h2,
+            h3,
+            .cs-text,
+            .cs-faq-item h3,
+            .cs-faq-item p,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            h3,
+            .cs-faq-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-text,
+            .cs-faq-item p,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-color,
+            .cs-text a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      FAQ Residential        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-residential {
+        padding: clamp(3rem, 5vw, 5rem) 1.5rem; /* 48px mobile / 80px desktop */
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: 56.25rem; /* 900px - narrower for readability */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-topper {
+            font-size: 1rem; /* 16px */
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.0625rem; /* 1px */
+            color: var(--primary);
+            margin-bottom: 0.5rem; /* 8px */
+            display: block;
+        }
+
+        .cs-title {
+            font-size: clamp(1.75rem, 3vw, 2.25rem); /* 28px mobile / 36px desktop */
+            font-weight: 700;
+            line-height: 1.3;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 2rem 0; /* 16px after topper, then 32px to content */
+            color: var(--headerColor);
+            text-transform: none;
+            position: relative;
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-faq-item {
+            background: #fff;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem; /* 8px */
+            padding: 1.5rem; /* 24px */
+            margin: 0 0 1rem 0; /* 16px */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: left;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px mobile / 20px desktop */
+                font-weight: 600;
+                line-height: 1.4;
+                text-align: inherit;
+                margin: 0 0 0.75rem 0; /* 12px */
+                color: var(--headerColor);
+                text-transform: none;
+            }
+
+            p {
+                font-size: 1rem; /* 16px */
+                font-weight: 400;
+                line-height: 1.6;
+                text-align: inherit;
+                width: 100%;
+                margin: 0;
+                color: var(--bodyTextColor);
+
+                a {
+                    font-size: inherit;
+                    line-height: inherit;
+                    text-decoration: none;
+                    color: var(--primary);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-residential {
+        .cs-container {
+            max-width: 56.25rem; /* 900px */
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-residential {
+            background-color: var(--dark);
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-faq-item h3,
+            .cs-faq-item p,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-faq-item p,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-faq-item p a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      FAQ Commercial        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-commercial {
+        padding: clamp(3rem, 5vw, 5rem) 1.5rem; /* 48px mobile / 80px desktop */
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: 56.25rem; /* 900px - narrower for readability */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-topper {
+            font-size: 1rem; /* 16px */
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.0625rem; /* 1px */
+            color: var(--primary);
+            margin-bottom: 0.5rem; /* 8px */
+            display: block;
+        }
+
+        .cs-title {
+            font-size: clamp(1.75rem, 3vw, 2.25rem); /* 28px mobile / 36px desktop */
+            font-weight: 700;
+            line-height: 1.3;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 2rem 0; /* 16px after topper, then 32px to content */
+            color: var(--headerColor);
+            text-transform: none;
+            position: relative;
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-faq-item {
+            background: #fff;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem; /* 8px */
+            padding: 1.5rem; /* 24px */
+            margin: 0 0 1rem 0; /* 16px */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: left;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px mobile / 20px desktop */
+                font-weight: 600;
+                line-height: 1.4;
+                text-align: inherit;
+                margin: 0 0 0.75rem 0; /* 12px */
+                color: var(--headerColor);
+                text-transform: none;
+            }
+
+            p {
+                font-size: 1rem; /* 16px */
+                font-weight: 400;
+                line-height: 1.6;
+                text-align: inherit;
+                width: 100%;
+                margin: 0;
+                color: var(--bodyTextColor);
+
+                a {
+                    font-size: inherit;
+                    line-height: inherit;
+                    text-decoration: none;
+                    color: var(--primary);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-commercial {
+        .cs-container {
+            max-width: 56.25rem; /* 900px */
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-commercial {
+            background-color: var(--dark);
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-faq-item h3,
+            .cs-faq-item p,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-faq-item p,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-faq-item p a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      FAQ Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-contact {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: 80rem;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-topper {
+            font-size: var(--topperFontSize);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: calc(16 / 16 * 1rem);
+            display: block;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            max-width: calc(738 / 16 * 1rem);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-faq-item {
+            background: #fff;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem; /* 8px */
+            padding: 1.5rem; /* 24px */
+            margin: 0 0 1rem 0; /* 16px */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: left;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px mobile / 20px desktop */
+                font-weight: 600;
+                line-height: 1.4;
+                text-align: inherit;
+                margin: 0 0 0.75rem 0; /* 12px */
+                color: var(--headerColor);
+                text-transform: none;
+            }
+
+            p {
+                font-size: 1rem; /* 16px */
+                font-weight: 400;
+                line-height: 1.6;
+                text-align: inherit;
+                width: 100%;
+                margin: 0;
+                color: var(--bodyTextColor);
+
+                a {
+                    font-size: inherit;
+                    line-height: inherit;
+                    text-decoration: none;
+                    color: var(--primary);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .cs-text {
+            font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
+            font-weight: 400;
+            line-height: 1.6;
+            text-align: center;
+            width: 100%;
+            margin: 2rem 0 0 0;
+            color: var(--bodyTextColor);
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: none;
+                color: var(--primary);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-contact {
+        .cs-container {
+            max-width: 80rem;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-contact {
+            background-color: var(--dark);
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-faq-item h3,
+            .cs-faq-item p,
+            .cs-text,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-faq-item p,
+            .cs-text,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-faq-item p a,
+            .cs-text a {
+                color: var(--secondaryLight);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      FAQ Portfolio          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-portfolio {
+        padding: clamp(3rem, 5vw, 5rem) 1.5rem; /* 48px mobile / 80px desktop */
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: 56.25rem; /* 900px - narrower for readability */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-topper {
+            font-size: 1rem; /* 16px */
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.0625rem; /* 1px */
+            color: var(--primary);
+            margin-bottom: 0.5rem; /* 8px */
+            display: block;
+        }
+
+        .cs-title {
+            font-size: clamp(1.75rem, 3vw, 2.25rem); /* 28px mobile / 36px desktop */
+            font-weight: 700;
+            line-height: 1.3;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 2rem 0; /* 16px after topper, then 32px to content */
+            color: var(--headerColor);
+            text-transform: none;
+            position: relative;
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cs-faq-item {
+            background: #fff;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem; /* 8px */
+            padding: 1.5rem; /* 24px */
+            margin: 0 0 1rem 0; /* 16px */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: left;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px mobile / 20px desktop */
+                font-weight: 600;
+                line-height: 1.4;
+                text-align: inherit;
+                margin: 0 0 0.75rem 0; /* 12px */
+                color: var(--headerColor);
+                text-transform: none;
+            }
+
+            p {
+                font-size: 1rem; /* 16px */
+                font-weight: 400;
+                line-height: 1.6;
+                text-align: inherit;
+                width: 100%;
+                margin: 0;
+                color: var(--bodyTextColor);
+
+                a {
+                    font-size: inherit;
+                    line-height: inherit;
+                    text-decoration: none;
+                    color: var(--primary);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .cs-text {
+            font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
+            font-weight: 400;
+            line-height: 1.6;
+            text-align: center;
+            width: 100%;
+            margin: 2rem 0 0 0;
+            color: var(--bodyTextColor);
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: none;
+                color: var(--primary);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-portfolio {
+        .cs-container {
+            max-width: 56.25rem; /* 900px */
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-portfolio {
+            background-color: var(--dark);
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-faq-item h3,
+            .cs-faq-item p,
+            .cs-text,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item h3 {
+                color: var(--secondaryLight);
+            }
+
+            .cs-faq-item p,
+            .cs-text,
+            p {
+                opacity: 0.8;
+            }
+
+            .cs-faq-item p a,
+            .cs-text a {
+                color: var(--secondaryLight);
             }
         }
     }

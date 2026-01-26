@@ -430,8 +430,17 @@
             margin: 0;
             position: relative;
             display: block;
+            /* Improve touch responsiveness */
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            /* Ensure link is clickable */
+            z-index: 1;
+            cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus,
+            &.touched {
                 .cs-hover-box {
                     opacity: 1;
                 }
@@ -461,6 +470,8 @@
             height: 100%;
             display: block;
             position: relative;
+            pointer-events: none;
+            z-index: 0;
 
             img {
                 position: absolute;
@@ -469,6 +480,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                pointer-events: none;
             }
         }
 
@@ -490,7 +502,7 @@
             perspective: 700px;
             top: 0;
             left: 0;
-            z-index: 10;
+            z-index: 2;
             /* prevents mouse from being able to interact with these elements */
             pointer-events: none;
             transition: opacity 0.3s;
@@ -577,6 +589,46 @@
     #gallery-43 {
         .cs-item {
             grid-column: span 4;
+        }
+    }
+}
+
+/* Touch devices - show hover box on tap */
+@media (hover: none) and (pointer: coarse) {
+    #gallery-43 {
+        .cs-item {
+            /* Make entire item clickable on touch devices */
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            
+            &:active,
+            &.touched {
+                .cs-hover-box {
+                    opacity: 1;
+                    pointer-events: none;
+                }
+
+                .cs-icon {
+                    transform: rotateY(0);
+                }
+
+                .cs-h3 {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                .cs-hover-box-text {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    
+    #services-1749 {
+        .cs-item {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
     }
 }

@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
         {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
+        <link rel="canonical" href="{{ page.url }}">
         <meta name="generator" content="{{ eleventy.generator }}">
 
         <!--Social Media Display-->
@@ -39,6 +39,7 @@
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
         <script defer src="/assets/js/faq.js"></script>
+        <script defer src="/assets/js/touch-interactions.js"></script>
 
         {% block head %}{% endblock %}
 

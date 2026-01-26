@@ -1,6 +1,6 @@
 ---
-title: "Contact Serene Landscaping | Get a Free Quote | Edmonton Landscaping"
-description: "Contact Serene Landscaping for a free consultation and quote. Professional landscaping services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Call 587-566-9879 or request a quote online."
+title: "Contact Us | Serene Landscaping Edmonton"
+description: "Get a free landscaping quote. Contact Serene Landscaping at (587) 566-9879. Professional services across Edmonton and surrounding areas. Fast response."
 permalink: "/contact/"
 keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consultation Edmonton, landscaping estimate Edmonton, contact landscaper Edmonton"
 ---
@@ -41,7 +41,7 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <img src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="contact-landscaping-services-edmonton" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
@@ -54,9 +54,21 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
             <div class="cs-left-section">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <h1 class="cs-title">Get Your Free Landscaping Quote</h1>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Ready to transform your property? Contact Serene Landscaping for a free consultation and detailed quote. We serve residential and commercial properties throughout Edmonton and surrounding Alberta communities.
+                    </p>
+                    <p class="cs-text">
+                        <strong>What to Expect:</strong>
+                    </p>
+                    <ul class="cs-text">
+                        <li>Free on-site consultation at your property</li>
+                        <li>Detailed written quote within 5-7 business days</li>
+                        <li>No pressure, no obligation</li>
+                        <li>Professional recommendations based on your goals and budget</li>
+                    </ul>
+                    <p class="cs-text">
+                        <strong>Response Time:</strong> We typically respond to quote requests within 24 hours. For urgent needs, call us directly at <a href="tel:587-566-9879">(587) 566-9879</a>.
                     </p>
                 </div>
                 <form id="cs-form-265" name="Contact Form" method="post">
@@ -66,38 +78,45 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                     </label>
                     <label>
                         Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
+                        <input required type="email" id="email-265" name="email" placeholder="Email" autocomplete="email">
                     </label>
                     <label>
                         Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
+                        <input required type="tel" id="phone-265" name="phone" placeholder="Phone" autocomplete="tel">
                     </label>
                     <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                        Property Address (City)
+                        <input type="text" id="find-265" name="find-us" placeholder="e.g., Edmonton, St. Albert, Spruce Grove">
                     </label>
                     <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                        Tell Us About Your Project
+                        <textarea required name="Message" id="message-265" placeholder="What landscaping services are you interested in? (landscape design, lawn maintenance, patio, snow removal, etc.)"></textarea>
                     </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                    <button class="cs-button-solid cs-submit" type="submit">Request Your Free Quote</button>
                 </form>
             </div>
             <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
+                <span class="cs-header">Call or Text</span>
                 <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <p class="cs-subtext">Available 7 days a week for quotes and questions</p>
+                <!--Email-->
+                <span class="cs-header cs-header-spaced">Email</span>
+                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
+                <p class="cs-subtext">We respond within 24 hours</p>
+                <!--Service Areas-->
+                <span class="cs-header cs-header-spaced">Service Areas</span>
+                <p class="cs-subtext cs-subtext-full">
+                    Edmonton • St. Albert • Spruce Grove • Sherwood Park<br>
+                    Fort Saskatchewan • Leduc • Beaumont • Stony Plain<br>
+                    Plus surrounding Alberta communities within 30km of Edmonton
+                </p>
                 <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{ client.address.mapLink }}">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
+                <span class="cs-header cs-header-spaced">Location</span>
+                <p class="cs-subtext cs-subtext-full">
+                    Serving Greater Edmonton<br>
+                    Edmonton, AB
+                </p>
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
                     <!--Mobile Image-->
@@ -117,5 +136,157 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
             </div>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--            Services Overview                 -->
+    <!-- ============================================ -->
+
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2>What Landscaping Services Can We Help You With?</h2>
+                <p>
+                    We provide comprehensive landscaping services for residential and commercial properties throughout Greater Edmonton:
+                </p>
+
+                <h3><a href="/services/landscape-design/">Landscape Design & Installation</a></h3>
+                <p>
+                    Custom landscape design, plant selection, sod installation, garden beds, drainage solutions. Complete front or backyard transformations.
+                </p>
+
+                <h3><a href="/services/hardscaping/">Hardscaping & Patios</a></h3>
+                <p>
+                    Interlocking paver patios, walkways, retaining walls, fire pits. Built to withstand Alberta winters.
+                </p>
+
+                <h3><a href="/services/lawn-maintenance/">Lawn Maintenance</a></h3>
+                <p>
+                    Weekly and bi-weekly mowing, edging, spring and fall cleanups. Residential and commercial programs available.
+                </p>
+
+                <h3><a href="/services/final-grading/">Final Grading</a></h3>
+                <p>
+                    Required for new construction properties. Proper grading, drainage correction, topsoil preparation.
+                </p>
+
+                <h3><a href="/services/snow-removal/">Commercial Snow Removal</a></h3>
+                <p>
+                    24/7 winter service for businesses. Parking lots, walkways, building access. Contract pricing available.
+                </p>
+
+                <h3><a href="/commercial/">Commercial Property Maintenance</a></h3>
+                <p>
+                    Year-round grounds maintenance for property managers, condo boards, and businesses.
+                </p>
+
+                <p>
+                    Not sure which service you need? Just tell us about your property in the contact form above and we'll provide recommendations during our consultation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-contact">
+        <div class="cs-container">
+            <span class="cs-topper">Frequently Asked Questions</span>
+            <h2 class="cs-title">Questions About Getting a Landscaping Quote?</h2>
+            
+            <div class="cs-faq-group">
+                <div class="cs-faq-item">
+                    <h3>How do I get a landscaping quote?</h3>
+                    <p>Fill out the contact form above or call us directly at <a href="tel:587-566-9879">(587) 566-9879</a>. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 5-7 business days, you'll receive a detailed written quote with no obligation to proceed.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>How quickly will you respond to my quote request?</h3>
+                    <p>We typically respond within 24 hours to quote requests submitted online. If you need faster service, calling us directly at <a href="tel:587-566-9879">(587) 566-9879</a> is the quickest way to schedule a consultation.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>Is the consultation really free?</h3>
+                    <p>Yes, completely free with no obligation. We visit your property, discuss your goals and budget, assess site conditions, and provide professional recommendations. You'll receive a detailed written quote, and there's no pressure to move forward if it's not the right fit.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>What information do you need for an accurate quote?</h3>
+                    <p>The more details you provide, the better. Let us know: (1) What type of service you're interested in, (2) Your property location/city, (3) Approximate property size or scope, (4) Any specific goals or budget range. We'll gather additional details during our on-site consultation.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>Do I need to be home for the consultation?</h3>
+                    <p>For landscape design or installation projects, yes—we'll want to walk the property with you to understand your vision and answer questions. For simple lawn maintenance quotes, we can often provide estimates based on property size without you being present.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>What areas do you serve?</h3>
+                    <p>We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, Stony Plain, and surrounding Alberta communities within approximately 30 kilometers of Edmonton.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>Can I text you instead of calling?</h3>
+                    <p>Yes, you can text <a href="tel:587-566-9879">(587) 566-9879</a> with your name, property location, and what service you're interested in. We'll respond as soon as possible to schedule a consultation.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept cash, check, e-transfer, and major credit cards. For larger projects, we typically require a deposit to schedule your project, with the balance due upon completion.</p>
+                </div>
+
+                <div class="cs-faq-item">
+                    <h3>Do you offer emergency services?</h3>
+                    <p>For snow removal clients with contracts, we provide 24/7 emergency winter service. For other landscaping emergencies (storm cleanup, urgent property issues), call us and we'll do our best to accommodate urgent requests.</p>
+                </div>
+            </div>
+
+            <p class="cs-text" style="text-align: center; margin-top: 2rem;">
+                Ready to get started? Fill out the form above or call <a href="tel:587-566-9879">(587) 566-9879</a> today.
+            </p>
+        </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I get a landscaping quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fill out the contact form above or call us directly at (587) 566-9879. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 5-7 business days, you'll receive a detailed written quote with no obligation to proceed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will you respond to my quote request?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We typically respond within 24 hours to quote requests submitted online. If you need faster service, calling us directly at (587) 566-9879 is the quickest way to schedule a consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the consultation really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, completely free with no obligation. We visit your property, discuss your goals and budget, assess site conditions, and provide professional recommendations. You'll receive a detailed written quote, and there's no pressure to move forward if it's not the right fit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, Stony Plain, and surrounding Alberta communities within approximately 30 kilometers of Edmonton."
+          }
+        }
+      ]
+    }
+    </script>
 
 {% endblock %}

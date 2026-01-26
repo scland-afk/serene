@@ -1,11 +1,12 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LandscapingCompany",
-    "name": "Serene Construction Landscaping",
-    "description": "Professional landscaping services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Landscape design, lawn maintenance, snow removal, and hardscaping.",
-    "url": "{{ client.domain }}{{ page.url }}",
-    "telephone": "587-566-9879",
+    "@type": "LandscapingBusiness",
+    "name": "Serene Landscaping",
+    "description": "Professional landscaping services in Edmonton and area. Landscape design, lawn care, hardscaping, and snow removal. Licensed and insured. Free quotes.",
+    "url": "{{ page.url }}",
+    "telephone": "(587) 566-9879",
+    "email": "info@serenelandscapes.ca",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Edmonton",
@@ -50,10 +51,11 @@
         "bestRating": "5",
         "worstRating": "1"
     },
-    {% if client.domain %}"logo": "{{ client.domain }}/assets/svgs/logo-black.svg",{% endif %}
-    {% if client.domain and page.url %}"sameAs": [
+    "logo": "/assets/svgs/logo-black.svg",
+    "sameAs": [
         "https://www.google.com/maps/place/Serene+Construction+Landscaping/data=!4m2!3m1!1s0x0:0x5f20d9850f2b6776",
         "https://g.page/r/CXZnKw-F2SBfEBM/review"
-    ]{% endif %}
+    ],
+    "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-16:00"
 }
 </script>
