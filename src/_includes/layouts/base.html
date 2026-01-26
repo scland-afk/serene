@@ -38,6 +38,7 @@
         <link rel="stylesheet" href="/assets/css/root.css">
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/faq.js"></script>
 
         {% block head %}{% endblock %}
 
@@ -52,6 +53,138 @@
             {% block body %}{% endblock %}
         </main>
         {% include "sections/footer.html" %}
+
+        <!-- Sticky View Offer Button -->
+        <button id="sticky-quote-btn" class="sticky-quote-button" aria-label="View spring 2026 offer">
+            View Offer
+        </button>
+
+        <!-- Exit Intent Popup -->
+        <div id="exit-intent-popup" class="exit-intent-popup" style="display: none;">
+            <div class="exit-intent-content">
+                <button id="close-exit-popup" class="exit-close" aria-label="Close popup">&times;</button>
+                <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 0.5rem;">Now Booking for Spring 2026</h3>
+                <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem; color: #333;">Get $500 off your landscaping project if booking before February 28, 2026</p>
+                <p style="margin-bottom: 1.5rem; color: #666;">Get a free estimate for your landscaping project. No obligation, just honest pricing.</p>
+                <form id="exit-quote-form" action="/contact/" method="get" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <input type="text" name="name" placeholder="Name" required style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="email" name="email" placeholder="Email" required style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="tel" name="phone" placeholder="Phone" required style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <select name="service" style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                        <option value="">Service Interest</option>
+                        <option value="landscape-design">Landscape Design</option>
+                        <option value="hardscaping">Hardscaping</option>
+                        <option value="lawn-maintenance">Lawn Maintenance</option>
+                        <option value="snow-removal">Snow Removal</option>
+                        <option value="commercial">Commercial Services</option>
+                    </select>
+                    <input type="hidden" name="offer" value="spring2026-500off">
+                    <button type="submit" class="cs-button-solid" style="width: 100%;">Get Free Quote</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            // Sticky Quote Button
+            window.addEventListener('scroll', function() {
+                const stickyBtn = document.getElementById('sticky-quote-btn');
+                if (window.scrollY > 300) {
+                    stickyBtn.style.display = 'flex';
+                } else {
+                    stickyBtn.style.display = 'none';
+                }
+            });
+
+            // Open popup when View Offer button is clicked
+            const stickyBtn = document.getElementById('sticky-quote-btn');
+            if (stickyBtn) {
+                stickyBtn.addEventListener('click', function() {
+                    document.getElementById('exit-intent-popup').style.display = 'flex';
+                });
+            }
+
+            // Close popup
+            const closeBtn = document.getElementById('close-exit-popup');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    document.getElementById('exit-intent-popup').style.display = 'none';
+                });
+            }
+
+            // Close popup when clicking outside
+            const popup = document.getElementById('exit-intent-popup');
+            if (popup) {
+                popup.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+        <style>
+            .sticky-quote-button {
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
+                background: var(--primary);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 50px;
+                border: none;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 999;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .sticky-quote-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            }
+            .exit-intent-popup {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.7);
+                z-index: 10000;
+                display: none;
+                align-items: center;
+                justify-content: center;
+            }
+            .exit-intent-content {
+                background: white;
+                padding: 2rem;
+                border-radius: 8px;
+                max-width: 500px;
+                width: 90%;
+                position: relative;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+            .exit-intent-content h3 {
+                text-align: center;
+            }
+            .exit-intent-content p {
+                text-align: center;
+            }
+            .exit-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                cursor: pointer;
+                color: #666;
+            }
+        </style>
 
     </body>
 </html>
