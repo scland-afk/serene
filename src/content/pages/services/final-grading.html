@@ -8,8 +8,8 @@ keywords: "final grading Edmonton, topsoil preparation Edmonton, site grading Ed
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "final grading Edmonton, topsoil preparation Edmonton, site grading Ed
             <span class="cs-int-title">Final Grading & Topsoil Preparation</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="final grading Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="final grading Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -117,97 +117,89 @@ keywords: "final grading Edmonton, topsoil preparation Edmonton, site grading Ed
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Final Grading</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our final grading services, when it's required, and what to expect.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                When is final grading required in Edmonton?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Final grading is typically required for new construction, major landscaping projects, or when addressing drainage issues. It ensures proper slope and drainage before installing landscaping features. We provide final grading services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does final grading cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Final grading costs vary based on property size, soil conditions, and scope of work. We provide free on-site consultations and detailed quotes for all grading projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide topsoil preparation in Sherwood Park?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive topsoil preparation and installation services in Sherwood Park, as well as Edmonton, St. Albert, and Spruce Grove. Proper topsoil preparation is essential for healthy plant growth and successful landscaping projects.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How long does a grading project take?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Grading project timelines depend on property size and scope. Simple grading projects may take 1-2 days, while larger projects with drainage installation can take several days to a week. We provide detailed timelines during consultation for all grading projects in Edmonton and surrounding areas.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can you fix drainage problems with grading?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we address drainage issues through proper grading and drainage system installation. This includes ensuring water flows away from structures and toward appropriate drainage areas. Proper drainage is essential for preventing water issues in properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide grading for new construction?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide final grading services for new construction projects. This includes proper site preparation, slope correction, and ensuring building code compliance. New construction grading is available for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is the difference between rough grading and final grading?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Rough grading involves initial earth moving and shaping, typically done during construction. Final grading is the precise finishing work that prepares the site for landscaping, ensuring proper slope, drainage, and soil conditions. We provide final grading services for properties across Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            When is final grading required in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Final grading is typically required for new construction, major landscaping projects, or when addressing drainage issues. It ensures proper slope and drainage before installing landscaping features. We provide final grading services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does final grading cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Final grading costs vary based on property size, soil conditions, and scope of work. We provide free on-site consultations and detailed quotes for all grading projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide topsoil preparation in Sherwood Park?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive topsoil preparation and installation services in Sherwood Park, as well as Edmonton, St. Albert, and Spruce Grove. Proper topsoil preparation is essential for healthy plant growth and successful landscaping projects.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does a grading project take?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Grading project timelines depend on property size and scope. Simple grading projects may take 1-2 days, while larger projects with drainage installation can take several days to a week. We provide detailed timelines during consultation for all grading projects in Edmonton and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you fix drainage problems with grading?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we address drainage issues through proper grading and drainage system installation. This includes ensuring water flows away from structures and toward appropriate drainage areas. Proper drainage is essential for preventing water issues in properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide grading for new construction?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide final grading services for new construction projects. This includes proper site preparation, slope correction, and ensuring building code compliance. New construction grading is available for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is the difference between rough grading and final grading?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Rough grading involves initial earth moving and shaping, typically done during construction. Final grading is the precise finishing work that prepares the site for landscaping, ensuring proper slope, drainage, and soil conditions. We provide final grading services for properties across Edmonton and surrounding communities.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->

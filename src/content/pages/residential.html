@@ -8,8 +8,8 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
             <span class="cs-int-title">Home Landscaping Services</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="front yard landscape design Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="front yard landscape design Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -187,57 +187,108 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
     <!-- ============================================ -->
     <!--                     FAQ                      -->
     <!-- ============================================ -->
-    <section id="faq-residential">
+    <section id="faq-489">
         <div class="cs-container">
-            <span class="cs-topper">Frequently Asked Questions</span>
-            <h2 class="cs-title">Common Questions About Residential Landscaping in Edmonton</h2>
-            
-            <div class="cs-faq-group">
-                <div class="cs-faq-item">
-                    <h3>What residential landscaping services do you offer in Edmonton?</h3>
-                    <p>We provide complete residential landscaping services including landscape design and installation, hardscaping (patios, walkways, retaining walls), regular lawn maintenance, spring and fall cleanups, final grading, sod installation, and seasonal property upkeep for homeowners throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How much does residential landscaping cost?</h3>
-                    <p>Residential landscaping costs vary based on project scope. Simple lawn maintenance starts around $50-80 per visit, while complete landscape design and installation projects typically range from $5,000-$50,000+ depending on property size and features included. We provide detailed estimates after a free on-site consultation.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you work on small residential projects?</h3>
-                    <p>Yes, we handle projects of all sizes from basic lawn maintenance and seasonal cleanups to complete backyard transformations. No residential project is too small or too large for our team.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How long does a typical residential landscaping project take?</h3>
-                    <p>Timeline varies by project scope. Simple sod installation or cleanup might take 1-2 days. Patio installation typically takes 3-5 days. Complete landscape renovations can take 1-3 weeks depending on complexity. We provide specific timelines in your project quote.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>When is the best time to start a landscaping project in Edmonton?</h3>
-                    <p>Spring (April-May) is ideal for most landscaping work, including sod installation, garden beds, and drainage corrections. Fall (September-October) is excellent for sod and final grading. Summer works well for patios and hardscaping. We recommend booking spring projects in February or March for best availability.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you offer residential lawn maintenance programs?</h3>
-                    <p>Yes, we offer weekly and bi-weekly lawn maintenance programs for residential properties. Services include mowing, edging, trimming, and seasonal cleanups. Many homeowners who hire us for landscape design transition to ongoing maintenance programs to keep their property looking great year-round.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>What areas do you serve for residential landscaping?</h3>
-                    <p>We serve homeowners throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, and surrounding Alberta communities within approximately 30km of Edmonton.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Are you licensed and insured for residential work?</h3>
-                    <p>Yes, we're fully licensed, insured, and WCB covered. This protects both your property and our crew while we're working on your project.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How do I get started with a residential landscaping project?</h3>
-                    <p>Contact us by phone at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a free consultation to discuss your goals and provide a detailed quote.</p>
-                </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Common Questions About <span class="cs-color">Residential Landscaping</span></h2>
+                <p class="cs-text">
+                    Here are common questions about our residential landscaping services, pricing, and what to expect for your home project.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What residential landscaping services do you offer in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We provide complete residential landscaping services including landscape design and installation, hardscaping (patios, walkways, retaining walls), regular lawn maintenance, spring and fall cleanups, final grading, sod installation, and seasonal property upkeep for homeowners throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does residential landscaping cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Residential landscaping costs vary based on project scope. Simple lawn maintenance starts around $50-80 per visit, while complete landscape design and installation projects typically range from $5,000-$50,000+ depending on property size and features included. We provide detailed estimates after a free on-site consultation.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you work on small residential projects?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we handle projects of all sizes from basic lawn maintenance and seasonal cleanups to complete backyard transformations. No residential project is too small or too large for our team.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does a typical residential landscaping project take?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Timeline varies by project scope. Simple sod installation or cleanup might take 1-2 days. Patio installation typically takes 3-5 days. Complete landscape renovations can take 1-3 weeks depending on complexity. We provide specific timelines in your project quote.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            When is the best time to start a landscaping project in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Spring (April-May) is ideal for most landscaping work, including sod installation, garden beds, and drainage corrections. Fall (September-October) is excellent for sod and final grading. Summer works well for patios and hardscaping. We recommend booking spring projects in February or March for best availability.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer residential lawn maintenance programs?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we offer weekly and bi-weekly lawn maintenance programs for residential properties. Services include mowing, edging, trimming, and seasonal cleanups. Many homeowners who hire us for landscape design transition to ongoing maintenance programs to keep their property looking great year-round.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What areas do you serve for residential landscaping?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We serve homeowners throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, and surrounding Alberta communities within approximately 30km of Edmonton.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Are you licensed and insured for residential work?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we're fully licensed, insured, and WCB covered. This protects both your property and our crew while we're working on your project.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I get started with a residential landscaping project?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Contact us by phone at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a free consultation to discuss your goals and provide a detailed quote.
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
 

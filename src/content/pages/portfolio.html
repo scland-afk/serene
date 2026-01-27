@@ -8,7 +8,7 @@ keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, l
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
@@ -256,41 +256,68 @@ keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, l
     <!--                  Portfolio FAQ                -->
     <!-- ============================================ -->
 
-    <section id="faq-portfolio">
+    <section id="faq-489">
         <div class="cs-container">
-            <span class="cs-topper">Frequently Asked Questions</span>
-            <h2 class="cs-title">Questions About Our Landscaping Projects?</h2>
-            
-            <div class="cs-faq-group">
-                <div class="cs-faq-item">
-                    <h3>Can I see examples of projects similar to what I'm planning?</h3>
-                    <p>Yes. When you contact us for a quote, let us know what type of project you're planning. We can share photos of similar projects we've completed in your area and discuss what worked well on those properties.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you have before and after photos of your projects?</h3>
-                    <p>We have before and after photos for many projects, especially complete landscape renovations. When we meet for your consultation, we can show you relevant examples to help visualize what's possible for your property.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>What's the typical timeline for projects like these?</h3>
-                    <p>Timeline varies by project scope. Simple projects like edging and mulch take 1-2 days. Sod installation typically takes 2-4 days depending on property size. Patio installations take 3-7 days. Complete landscape renovations can take 1-3 weeks. We provide specific timelines in your project quote.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you work in my area?</h3>
-                    <p>We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, and surrounding communities within approximately 30km of Edmonton. If you're unsure whether we cover your area, just call <a href="tel:587-566-9879">(587) 566-9879</a> and we'll confirm.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How much do projects like these typically cost?</h3>
-                    <p>Costs vary widely based on property size, materials selected, and project complexity. Simple mulch and edging projects start around $500-1,500. Sod installation typically runs $3,000-10,000+. Patio installations range from $5,000-25,000+. Complete landscape renovations can be $10,000-50,000+. The best way to get accurate pricing is to request a free quote.</p>
-                </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About Our <span class="cs-color">Landscaping Projects</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our completed projects, timelines, and what to expect when working with us.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-
-            <p class="cs-text" style="text-align: center; margin-top: 2rem;">
-                Ready to start your own landscaping project? <a href="/contact/">Request a free quote</a> or call <a href="tel:587-566-9879">(587) 566-9879</a> to discuss your plans.
-            </p>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can I see examples of projects similar to what I'm planning?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. When you contact us for a quote, let us know what type of project you're planning. We can share photos of similar projects we've completed in your area and discuss what worked well on those properties.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you have before and after photos of your projects?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We have before and after photos for many projects, especially complete landscape renovations. When we meet for your consultation, we can show you relevant examples to help visualize what's possible for your property.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What's the typical timeline for projects like these?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Timeline varies by project scope. Simple projects like edging and mulch take 1-2 days. Sod installation typically takes 2-4 days depending on property size. Patio installations take 3-7 days. Complete landscape renovations can take 1-3 weeks. We provide specific timelines in your project quote.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you work in my area?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, Fort Saskatchewan, Leduc, Beaumont, and surrounding communities within approximately 30km of Edmonton. If you're unsure whether we cover your area, just call <a href="tel:587-566-9879">(587) 566-9879</a> and we'll confirm.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much do projects like these typically cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Costs vary widely based on property size, materials selected, and project complexity. Simple mulch and edging projects start around $500-1,500. Sod installation typically runs $3,000-10,000+. Patio installations range from $5,000-25,000+. Complete landscape renovations can be $10,000-50,000+. The best way to get accurate pricing is to request a free quote.
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
 

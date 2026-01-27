@@ -8,7 +8,7 @@ keywords: "St. Albert landscaping, landscaping St. Albert, landscape design St. 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/local.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
@@ -23,9 +23,9 @@ keywords: "St. Albert landscaping, landscaping St. Albert, landscape design St. 
             <span class="cs-int-title">St. Albert Landscaping Services</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="St. Albert landscaping services" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="St. Albert landscaping services" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -162,107 +162,99 @@ keywords: "St. Albert landscaping, landscaping St. Albert, landscape design St. 
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">St. Albert Landscaping</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our landscaping services in St. Albert, what we offer, and how we can help with your property.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What landscaping services do you provide in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            We provide comprehensive landscaping services in St. Albert including landscape design, hardscaping, lawn maintenance, snow removal, final grading, and commercial services. Our services are available for residential and commercial properties throughout St. Albert.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide snow removal services in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive snow removal services in St. Albert including residential and commercial snow plowing, sidewalk clearing, ice control, and 24/7 emergency response. Seasonal contracts and on-demand services are available for properties throughout St. Albert.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can you install patios and hardscaping in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we design and install patios, walkways, retaining walls, and other hardscaping features in St. Albert. All hardscaping projects are built with proper base preparation and quality materials to ensure long-term durability for properties throughout St. Albert.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you serve Braeside and Erin Ridge in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we serve all of St. Albert including Braeside, Erin Ridge, Lacombe Park, and surrounding neighborhoods. Our team is familiar with St. Albert's climate and soil conditions, ensuring your landscaping projects are designed and built to thrive in our local environment.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What's the best landscaping service for St. Albert's climate?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            St. Albert's climate benefits from proper drainage solutions, hardy plant selections, and winter preparation. Our landscape design services include climate-appropriate plant choices and drainage systems. We also provide comprehensive snow removal services essential for St. Albert winters. Contact us to discuss the best landscaping approach for your St. Albert property.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How quickly can you start a project in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Project start times vary based on scope and current schedule. We typically begin projects within 2-4 weeks after contract signing, depending on project complexity. Contact us to discuss timelines for your St. Albert landscaping project.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you work with commercial properties in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive commercial landscaping services in St. Albert for businesses, property managers, and condo boards. Our services include landscape design, installation, maintenance, and snow removal for commercial properties throughout St. Albert.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much do landscaping services cost in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Landscaping costs vary based on project scope, property size, and specific services required. We provide free on-site consultations and detailed quotes for all landscaping projects in St. Albert. Contact us for a customized estimate based on your property's needs.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What landscaping services do you provide in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We provide comprehensive landscaping services in St. Albert including landscape design, hardscaping, lawn maintenance, snow removal, final grading, and commercial services. Our services are available for residential and commercial properties throughout St. Albert.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide snow removal services in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive snow removal services in St. Albert including residential and commercial snow plowing, sidewalk clearing, ice control, and 24/7 emergency response. Seasonal contracts and on-demand services are available for properties throughout St. Albert.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you install patios and hardscaping in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we design and install patios, walkways, retaining walls, and other hardscaping features in St. Albert. All hardscaping projects are built with proper base preparation and quality materials to ensure long-term durability for properties throughout St. Albert.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you serve Braeside and Erin Ridge in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we serve all of St. Albert including Braeside, Erin Ridge, Lacombe Park, and surrounding neighborhoods. Our team is familiar with St. Albert's climate and soil conditions, ensuring your landscaping projects are designed and built to thrive in our local environment.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What's the best landscaping service for St. Albert's climate?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        St. Albert's climate benefits from proper drainage solutions, hardy plant selections, and winter preparation. Our landscape design services include climate-appropriate plant choices and drainage systems. We also provide comprehensive snow removal services essential for St. Albert winters. Contact us to discuss the best landscaping approach for your St. Albert property.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly can you start a project in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Project start times vary based on scope and current schedule. We typically begin projects within 2-4 weeks after contract signing, depending on project complexity. Contact us to discuss timelines for your St. Albert landscaping project.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you work with commercial properties in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive commercial landscaping services in St. Albert for businesses, property managers, and condo boards. Our services include landscape design, installation, maintenance, and snow removal for commercial properties throughout St. Albert.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much do landscaping services cost in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Landscaping costs vary based on project scope, property size, and specific services required. We provide free on-site consultations and detailed quotes for all landscaping projects in St. Albert. Contact us for a customized estimate based on your property's needs.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     {% include 'sections/cta.html' %}

@@ -8,8 +8,8 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
             <span class="cs-int-title">Commercial Property Maintenance</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial maintenance Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial maintenance Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -117,97 +117,89 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Commercial Maintenance</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our commercial property maintenance services and programs.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is included in commercial property maintenance?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Our commercial maintenance programs include regular lawn mowing, fertilization, weed control, seasonal cleanups, mulching, trimming, pruning, and irrigation maintenance. Programs are customized to your property's needs for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How often do you provide commercial maintenance services?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Maintenance frequency depends on your property's needs and the services included. Most commercial properties require weekly or bi-weekly maintenance during the growing season. We work with businesses, property managers, and condo boards throughout Edmonton and surrounding areas to create customized schedules.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide maintenance for condo boards in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive property maintenance services for condo boards in St. Albert, as well as Edmonton, Sherwood Park, and Spruce Grove. Our maintenance programs are designed to keep condo properties looking professional with minimal disruption to residents.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can maintenance be scheduled to minimize business disruption?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we schedule maintenance services to minimize disruption to your business operations. We work around your business hours and can coordinate maintenance during off-peak times. This service is available for commercial properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide seasonal cleanups for commercial properties?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive spring and fall cleanups for commercial properties. These include debris removal, mulching, bed preparation, and property preparation for seasonal changes. Seasonal cleanups are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does commercial property maintenance cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Commercial maintenance costs vary based on property size, frequency of service, and specific services included. We provide free consultations and detailed quotes for all commercial maintenance programs in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you maintain irrigation systems for commercial properties?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, irrigation system maintenance is included in our commercial property maintenance programs. This includes system inspection, repairs, winterization, and spring startup. Irrigation maintenance is available for commercial properties throughout Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is included in commercial property maintenance?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our commercial maintenance programs include regular lawn mowing, fertilization, weed control, seasonal cleanups, mulching, trimming, pruning, and irrigation maintenance. Programs are customized to your property's needs for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How often do you provide commercial maintenance services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Maintenance frequency depends on your property's needs and the services included. Most commercial properties require weekly or bi-weekly maintenance during the growing season. We work with businesses, property managers, and condo boards throughout Edmonton and surrounding areas to create customized schedules.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide maintenance for condo boards in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive property maintenance services for condo boards in St. Albert, as well as Edmonton, Sherwood Park, and Spruce Grove. Our maintenance programs are designed to keep condo properties looking professional with minimal disruption to residents.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can maintenance be scheduled to minimize business disruption?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we schedule maintenance services to minimize disruption to your business operations. We work around your business hours and can coordinate maintenance during off-peak times. This service is available for commercial properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide seasonal cleanups for commercial properties?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive spring and fall cleanups for commercial properties. These include debris removal, mulching, bed preparation, and property preparation for seasonal changes. Seasonal cleanups are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does commercial property maintenance cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Commercial maintenance costs vary based on property size, frequency of service, and specific services included. We provide free consultations and detailed quotes for all commercial maintenance programs in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you maintain irrigation systems for commercial properties?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, irrigation system maintenance is included in our commercial property maintenance programs. This includes system inspection, repairs, winterization, and spring startup. Irrigation maintenance is available for commercial properties throughout Edmonton and surrounding communities.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->

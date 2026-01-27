@@ -8,8 +8,8 @@ keywords: "lawn maintenance Edmonton, lawn care Edmonton, lawn mowing Edmonton, 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "lawn maintenance Edmonton, lawn care Edmonton, lawn mowing Edmonton, 
             <span class="cs-int-title">Residential & Commercial Lawn Maintenance</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-lawn-mowing-large-property-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="lawn maintenance Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="lawn maintenance Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -117,97 +117,89 @@ keywords: "lawn maintenance Edmonton, lawn care Edmonton, lawn mowing Edmonton, 
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Lawn Maintenance</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our lawn maintenance services, programs, and what to expect.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How often should I have my lawn mowed in Edmonton?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            During the growing season in Edmonton, lawns typically need mowing every 7-10 days, depending on weather and grass growth. We provide regular lawn maintenance schedules tailored to your property's needs throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide lawn fertilization services in St. Albert?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive lawn fertilization and soil health programs in St. Albert, as well as Edmonton, Sherwood Park, and Spruce Grove. Our fertilization programs are timed for optimal effectiveness and focus on building healthy soil for long-term lawn success.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is included in your lawn maintenance program?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Our lawn maintenance programs include regular mowing, trimming, edging, fertilization, weed control, seasonal treatments, and spring and fall cleanups. Programs are customized to your property's specific needs for residential and commercial properties throughout Edmonton and surrounding areas.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does lawn maintenance cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lawn maintenance costs vary based on property size, frequency of service, and specific services included. We provide free quotes for all lawn care services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate based on your property's needs.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide commercial lawn maintenance services?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive commercial lawn maintenance for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our commercial programs are designed to keep properties looking professional with minimal disruption to operations.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                When is the best time for aeration and overseeding?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            In Edmonton, the best time for aeration and overseeding is typically in early spring or early fall when soil temperatures are optimal for seed germination. We provide aeration and overseeding services as part of our comprehensive lawn care programs throughout Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you offer weed control treatments?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, weed control and treatment are included in our lawn maintenance programs. We use proper timing and application techniques to effectively control weeds while promoting healthy grass growth. Weed control services are available for properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How often should I have my lawn mowed in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        During the growing season in Edmonton, lawns typically need mowing every 7-10 days, depending on weather and grass growth. We provide regular lawn maintenance schedules tailored to your property's needs throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide lawn fertilization services in St. Albert?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive lawn fertilization and soil health programs in St. Albert, as well as Edmonton, Sherwood Park, and Spruce Grove. Our fertilization programs are timed for optimal effectiveness and focus on building healthy soil for long-term lawn success.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is included in your lawn maintenance program?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our lawn maintenance programs include regular mowing, trimming, edging, fertilization, weed control, seasonal treatments, and spring and fall cleanups. Programs are customized to your property's specific needs for residential and commercial properties throughout Edmonton and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does lawn maintenance cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lawn maintenance costs vary based on property size, frequency of service, and specific services included. We provide free quotes for all lawn care services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate based on your property's needs.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide commercial lawn maintenance services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive commercial lawn maintenance for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our commercial programs are designed to keep properties looking professional with minimal disruption to operations.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            When is the best time for aeration and overseeding?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        In Edmonton, the best time for aeration and overseeding is typically in early spring or early fall when soil temperatures are optimal for seed germination. We provide aeration and overseeding services as part of our comprehensive lawn care programs throughout Edmonton and surrounding communities.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer weed control treatments?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, weed control and treatment are included in our lawn maintenance programs. We use proper timing and application techniques to effectively control weeds while promoting healthy grass growth. Weed control services are available for properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->

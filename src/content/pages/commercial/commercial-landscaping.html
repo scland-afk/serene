@@ -8,8 +8,8 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
             <span class="cs-int-title">Commercial Landscaping Services</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial landscaping Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial landscaping Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -117,97 +117,89 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Commercial Landscaping</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our commercial landscaping services for businesses and property managers.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide commercial landscaping services in Edmonton?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive commercial landscaping services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our services include landscape design, installation, and maintenance for businesses, property managers, and condo boards.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What types of commercial properties do you serve?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            We serve a wide range of commercial properties including office buildings, retail centers, parking lots, condo complexes, and property management companies. Our commercial landscaping services are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does commercial landscaping cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Commercial landscaping costs vary based on property size, scope of work, and specific services required. We provide free consultations and detailed quotes for all commercial landscaping projects in Edmonton and surrounding areas. Contact us for a customized estimate.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you work with property management companies?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we work extensively with property management companies, condo boards, and building managers throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. We provide consistent, professional landscaping services designed to meet property management needs.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can you design and install commercial landscapes?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide complete commercial landscape design and installation services. From initial design planning to final installation, we handle all aspects of commercial landscaping projects for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide ongoing maintenance for commercial properties?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide comprehensive ongoing maintenance programs for commercial properties. Our maintenance services include regular lawn care, seasonal cleanups, and property upkeep designed to keep your business property looking professional year-round throughout Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How quickly can you start a commercial landscaping project?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Project start times vary based on scope and current schedule. We typically begin commercial landscaping projects within 2-4 weeks after contract signing, depending on project complexity. Contact us to discuss timelines for your commercial landscaping project in Edmonton or surrounding areas.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide commercial landscaping services in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive commercial landscaping services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our services include landscape design, installation, and maintenance for businesses, property managers, and condo boards.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What types of commercial properties do you serve?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We serve a wide range of commercial properties including office buildings, retail centers, parking lots, condo complexes, and property management companies. Our commercial landscaping services are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does commercial landscaping cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Commercial landscaping costs vary based on property size, scope of work, and specific services required. We provide free consultations and detailed quotes for all commercial landscaping projects in Edmonton and surrounding areas. Contact us for a customized estimate.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you work with property management companies?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we work extensively with property management companies, condo boards, and building managers throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. We provide consistent, professional landscaping services designed to meet property management needs.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you design and install commercial landscapes?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide complete commercial landscape design and installation services. From initial design planning to final installation, we handle all aspects of commercial landscaping projects for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide ongoing maintenance for commercial properties?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide comprehensive ongoing maintenance programs for commercial properties. Our maintenance services include regular lawn care, seasonal cleanups, and property upkeep designed to keep your business property looking professional year-round throughout Edmonton and surrounding communities.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly can you start a commercial landscaping project?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Project start times vary based on scope and current schedule. We typically begin commercial landscaping projects within 2-4 weeks after contract signing, depending on project complexity. Contact us to discuss timelines for your commercial landscaping project in Edmonton or surrounding areas.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->

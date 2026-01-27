@@ -859,6 +859,11 @@
     #faq-489 {
         padding: var(--sectionPadding);
         background: #fafbfc;
+        
+        /* Reduce bottom padding when followed by Service Areas section */
+        &:has(+ #content-page-713) {
+            padding-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
 
         .cs-container {
             width: 100%;

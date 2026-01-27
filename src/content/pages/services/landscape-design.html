@@ -8,8 +8,8 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
             <span class="cs-int-title">Landscape Design & Construction</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="landscape design Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="landscape design Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -133,97 +133,89 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Landscape Design</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our landscape design services, process, and what to expect for your project.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does landscape design cost in Edmonton?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Landscape design costs vary based on project scope, property size, and materials selected. We provide free on-site consultations and detailed quotes for all landscape design projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us to discuss your vision and receive a customized estimate.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is included in your landscape design process?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Our landscape design process includes an on-site consultation to review your goals and property conditions, a detailed design plan with materials and scope, clear pricing and timeline, professional installation, and a final walkthrough. We handle everything from planning to completion for properties throughout Edmonton and surrounding areas.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide landscape design services in Sherwood Park?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide complete landscape design and construction services in Sherwood Park, as well as Edmonton, St. Albert, and Spruce Grove. Our team handles everything from initial design planning to final installation for residential and commercial properties.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How long does a landscape design project take?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Project timelines vary based on scope and complexity. Simple projects like garden bed installation may take a few days, while complete landscape renovations can take several weeks. We provide detailed timelines during the consultation phase for all landscape design projects in Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you install patios and walkways as part of landscape design?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, patio and walkway installation are core components of our landscape design services. We design and install interlocking paver patios, walkways, and pathways with proper base preparation for long-term durability. These hardscaping features are available for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can you help with drainage issues during landscape design?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Absolutely. We address drainage concerns as part of our landscape design process. This includes proper grading, installation of drainage systems, and ensuring water flows away from structures. Proper drainage is essential for successful landscaping projects in Edmonton and surrounding areas.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide turf installation and sodding services?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide turf installation and sodding as part of our comprehensive landscape design services. This includes proper soil preparation, grading, and professional sod installation to ensure healthy, green lawns. We serve residential and commercial properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does landscape design cost in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Landscape design costs vary based on project scope, property size, and materials selected. We provide free on-site consultations and detailed quotes for all landscape design projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us to discuss your vision and receive a customized estimate.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is included in your landscape design process?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our landscape design process includes an on-site consultation to review your goals and property conditions, a detailed design plan with materials and scope, clear pricing and timeline, professional installation, and a final walkthrough. We handle everything from planning to completion for properties throughout Edmonton and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide landscape design services in Sherwood Park?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide complete landscape design and construction services in Sherwood Park, as well as Edmonton, St. Albert, and Spruce Grove. Our team handles everything from initial design planning to final installation for residential and commercial properties.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does a landscape design project take?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Project timelines vary based on scope and complexity. Simple projects like garden bed installation may take a few days, while complete landscape renovations can take several weeks. We provide detailed timelines during the consultation phase for all landscape design projects in Edmonton and surrounding communities.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you install patios and walkways as part of landscape design?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, patio and walkway installation are core components of our landscape design services. We design and install interlocking paver patios, walkways, and pathways with proper base preparation for long-term durability. These hardscaping features are available for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you help with drainage issues during landscape design?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Absolutely. We address drainage concerns as part of our landscape design process. This includes proper grading, installation of drainage systems, and ensuring water flows away from structures. Proper drainage is essential for successful landscaping projects in Edmonton and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide turf installation and sodding services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide turf installation and sodding as part of our comprehensive landscape design services. This includes proper soil preparation, grading, and professional sod installation to ensure healthy, green lawns. We serve residential and commercial properties across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->

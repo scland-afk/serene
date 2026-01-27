@@ -8,8 +8,8 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
             <span class="cs-int-title">Commercial Property Services</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-lawn-maintenance-mulching-edmonton.jpg" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial property landscaping and maintenance Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial property landscaping and maintenance Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -204,57 +204,108 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
     <!-- ============================================ -->
     <!--                     FAQ                      -->
     <!-- ============================================ -->
-    <section id="faq-commercial">
+    <section id="faq-489">
         <div class="cs-container">
-            <span class="cs-topper">Frequently Asked Questions</span>
-            <h2 class="cs-title">Common Questions About Commercial Landscaping in Edmonton</h2>
-            
-            <div class="cs-faq-group">
-                <div class="cs-faq-item">
-                    <h3>What commercial properties do you service?</h3>
-                    <p>We service office buildings, retail centers, multi-family properties (apartments, condos, townhomes), industrial facilities, medical campuses, property management portfolios, condo boards, and business parks throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you offer commercial maintenance contracts?</h3>
-                    <p>Yes, we provide seasonal and year-round commercial maintenance contracts tailored to your property's needs. Contracts include regular lawn care, seasonal cleanups, snow removal, and ongoing property upkeep with scheduled service and transparent pricing.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How do you handle scheduling for commercial properties?</h3>
-                    <p>We schedule service to minimize disruption to your business operations—early morning, evenings, or weekends depending on your needs. We coordinate with property managers and provide advance notice for all scheduled work.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Can you provide references from other commercial clients?</h3>
-                    <p>Yes, we're happy to provide references from property managers, businesses, and condo boards we've served throughout the Edmonton area. We also encourage you to check our Google reviews for verified feedback from commercial clients.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How quickly can you respond to commercial service requests?</h3>
-                    <p>For existing contract clients, we respond to urgent requests within 24 hours. For snow removal, we provide emergency 24/7 service during winter months. New commercial clients can typically be scheduled within 1-2 weeks depending on season and current workload.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>What's included in a commercial maintenance contract?</h3>
-                    <p>Standard maintenance contracts include weekly or bi-weekly mowing, edging, trimming, spring cleanup, fall cleanup, and seasonal property inspections. Additional services like fertilization, mulch installation, and snow removal can be added. Every contract is customized to your property's specific needs.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Do you work with property management companies?</h3>
-                    <p>Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication to simplify your operations.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>Are you licensed and insured for commercial work?</h3>
-                    <p>Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties. This protects both your property and our crew while we're working on site.</p>
-                </div>
-
-                <div class="cs-faq-item">
-                    <h3>How do I get a quote for commercial landscaping services?</h3>
-                    <p>Contact us at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a site visit to assess your property, discuss your needs, and provide a detailed written proposal with clear pricing and service details.</p>
-                </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Common Questions About <span class="cs-color">Commercial Landscaping</span></h2>
+                <p class="cs-text">
+                    Here are common questions about our commercial landscaping services, contracts, and working with property managers and businesses.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What commercial properties do you service?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We service office buildings, retail centers, multi-family properties (apartments, condos, townhomes), industrial facilities, medical campuses, property management portfolios, condo boards, and business parks throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer commercial maintenance contracts?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide seasonal and year-round commercial maintenance contracts tailored to your property's needs. Contracts include regular lawn care, seasonal cleanups, snow removal, and ongoing property upkeep with scheduled service and transparent pricing.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do you handle scheduling for commercial properties?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We schedule service to minimize disruption to your business operations—early morning, evenings, or weekends depending on your needs. We coordinate with property managers and provide advance notice for all scheduled work.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you provide references from other commercial clients?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we're happy to provide references from property managers, businesses, and condo boards we've served throughout the Edmonton area. We also encourage you to check our Google reviews for verified feedback from commercial clients.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly can you respond to commercial service requests?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        For existing contract clients, we respond to urgent requests within 24 hours. For snow removal, we provide emergency 24/7 service during winter months. New commercial clients can typically be scheduled within 1-2 weeks depending on season and current workload.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What's included in a commercial maintenance contract?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Standard maintenance contracts include weekly or bi-weekly mowing, edging, trimming, spring cleanup, fall cleanup, and seasonal property inspections. Additional services like fertilization, mulch installation, and snow removal can be added. Every contract is customized to your property's specific needs.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you work with property management companies?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication to simplify your operations.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Are you licensed and insured for commercial work?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties. This protects both your property and our crew while we're working on site.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I get a quote for commercial landscaping services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Contact us at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a site visit to assess your property, discuss your needs, and provide a detailed written proposal with clear pricing and service details.
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
 

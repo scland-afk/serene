@@ -8,8 +8,8 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,9 +23,9 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
             <span class="cs-int-title">Commercial Snow Removal</span>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 640, height: 600 }) | jpeg %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 1920, height: 568 }) | jpeg %}" alt="commercial snow removal Edmonton" width="1280" height="568" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial snow removal Edmonton" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -117,97 +117,89 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
     <!--                     FAQ                      -->
     <!-- ============================================ -->
 
-    <section id="faq-1261">
+    <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Questions About <span class="cs-color">Commercial Snow Removal</span>?</h2>
+                <p class="cs-text">
+                    Here are common questions about our commercial snow removal services, contracts, and response times.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
             </div>
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide 24/7 commercial snow removal in Edmonton?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we provide 24/7 commercial snow removal services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our team responds quickly to ensure parking lots, walkways, and building entrances remain safe and accessible for businesses, employees, and customers.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How quickly do you respond to commercial snow removal requests?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            For seasonal contract clients, we typically clear commercial properties within 2-4 hours after snowfall begins, depending on accumulation. We prioritize commercial properties to ensure safe access for businesses. Emergency response is available 24/7 for urgent situations throughout Edmonton and surrounding areas.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What areas do you cover for commercial snow removal?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            We provide commercial snow removal services across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and surrounding Alberta communities. Whether you need parking lot plowing or sidewalk clearing, we're available throughout the greater Edmonton area for businesses and property managers.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you offer seasonal contracts for commercial snow removal?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we offer seasonal contracts that provide consistent, reliable snow removal service throughout the winter months. Contracts ensure your commercial property is cleared promptly after each snowfall. Seasonal contracts are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you provide snow removal for property management companies?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we work extensively with property management companies, condo boards, and building managers throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. We provide reliable snow removal services designed to meet property management needs and ensure safe site access.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="cs-faq-group">
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What services are included in commercial snow removal?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Our commercial snow removal services include parking lot plowing, sidewalk and walkway clearing, building entrance maintenance, ice control and sanding, snow hauling, and 24/7 emergency response. We ensure safe site access for businesses, property managers, and condo boards throughout Edmonton and surrounding communities.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much does commercial snow removal cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Commercial snow removal costs vary based on property size, frequency of service, and whether you choose a seasonal contract or pay-per-push option. We provide free quotes for all commercial snow removal services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide 24/7 commercial snow removal in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide 24/7 commercial snow removal services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our team responds quickly to ensure parking lots, walkways, and building entrances remain safe and accessible for businesses, employees, and customers.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly do you respond to commercial snow removal requests?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        For seasonal contract clients, we typically clear commercial properties within 2-4 hours after snowfall begins, depending on accumulation. We prioritize commercial properties to ensure safe access for businesses. Emergency response is available 24/7 for urgent situations throughout Edmonton and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What areas do you cover for commercial snow removal?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We provide commercial snow removal services across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and surrounding Alberta communities. Whether you need parking lot plowing or sidewalk clearing, we're available throughout the greater Edmonton area for businesses and property managers.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer seasonal contracts for commercial snow removal?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we offer seasonal contracts that provide consistent, reliable snow removal service throughout the winter months. Contracts ensure your commercial property is cleared promptly after each snowfall. Seasonal contracts are available for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide snow removal for property management companies?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we work extensively with property management companies, condo boards, and building managers throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. We provide reliable snow removal services designed to meet property management needs and ensure safe site access.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What services are included in commercial snow removal?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our commercial snow removal services include parking lot plowing, sidewalk and walkway clearing, building entrance maintenance, ice control and sanding, snow hauling, and 24/7 emergency response. We ensure safe site access for businesses, property managers, and condo boards throughout Edmonton and surrounding communities.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does commercial snow removal cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Commercial snow removal costs vary based on property size, frequency of service, and whether you choose a seasonal contract or pay-per-push option. We provide free quotes for all commercial snow removal services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <!--SVG Waves-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
-            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" loading="lazy" decoding="async" alt="waves" width="1920" height="647">
-        </picture>
     </section>
 
     <!-- ============================================ -->
