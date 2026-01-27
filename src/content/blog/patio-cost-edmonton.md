@@ -50,7 +50,7 @@ Interlocking pavers range from basic gray concrete pavers ($2-$4 per sq ft) to p
 
 **3. Site Preparation Requirements**
 
-Some properties need minimal prep—just excavation and base installation. Others require:
+Some properties need minimal prep - just excavation and base installation. Others require:
 - Extensive excavation (for sloped areas)
 - Additional drainage work
 - Removal of existing structures (old deck, concrete patio)
@@ -255,4 +255,4 @@ A: Interlocking concrete pavers perform well in Edmonton's freeze-thaw cycles. T
 
 ---
 
-**Planning a patio for your Edmonton home?** Serene Landscaping provides professional <a href="/services/hardscaping/">patio installation services</a> throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We handle site preparation, quality materials, and proper installation for patios built to last decades. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Planning a patio for your Edmonton home?** Serene Landscaping provides professional <a href="/services/hardscaping/">patio installation services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle site preparation, quality materials, and proper installation for patios built to last decades. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.

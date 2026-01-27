@@ -12,13 +12,13 @@ imageAlt: Lawn problems in Edmonton
 
 ### Common Lawn Problems in Edmonton and How to Fix Them
 
-Edmonton lawns face unique challenges from clay soil, freeze-thaw cycles, short growing seasons, and Zone 3a climate extremes. Understanding common lawn problems and their solutions helps homeowners maintain healthy, green grass despite Alberta's tough conditions.
+Edmonton lawns face unique challenges from clay soil, freeze-thaw cycles, short growing seasons, and harsh winters. Understanding common lawn problems and their solutions helps homeowners maintain healthy, green grass despite Alberta's tough conditions.
 
 Here's how to diagnose the most common lawn issues in Edmonton and fix them effectively.
 
 #### Brown Spots and Patches
 
-Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnosis—it's a symptom with multiple possible causes.
+Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnosis - it's a symptom with multiple possible causes.
 
 **Dog Urine Damage**
 
@@ -349,5 +349,5 @@ A: Maintain healthy grass through proper mowing (3 inches), correct watering (1 
 
 ---
 
-**Struggling with persistent lawn problems?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">lawn maintenance and treatment services</a> throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We diagnose problems accurately and provide effective solutions. <a href="/contact/">Contact us</a> for a free consultation or call **(587) 566-9879**.
+**Struggling with persistent lawn problems?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">lawn maintenance and treatment services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We diagnose problems accurately and provide effective solutions. <a href="/contact/">Contact us</a> for a free consultation or call **(587) 566-9879**.
 

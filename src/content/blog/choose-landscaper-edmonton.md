@@ -35,7 +35,7 @@ Before contacting landscapers, define what you want to accomplish:
 - Complete landscape design and installation
 - Large hardscaping (patios, retaining walls, outdoor kitchens)
 - Drainage solutions
-- Multi-phase landscape transformation
+- Multi-phase landscape projects
 
 Different landscapers specialize in different services. Lawn care companies excel at maintenance but may not handle complex <a href="/services/hardscaping/">hardscaping projects</a>. Full-service landscaping companies handle design, installation, and maintenance.
 
@@ -196,7 +196,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 - Likely cutting corners elsewhere too
 
 **2. Requires large upfront payment**
-- Standard deposit: 10-25% of total
+- Progressive payments only are standard
 - 50%+ upfront is red flag
 - Full payment before work starts is scam territory
 
@@ -270,7 +270,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 - Adequate coverage amounts
 
 **7. Knowledge of local conditions**
-- Understands Edmonton's climate (Zone 3a)
+- Understands Edmonton's climate
 - Recommends appropriate plants
 - Knows about drainage issues with clay soil
 - Familiar with City permits and requirements
@@ -286,18 +286,17 @@ Problems happen. How contractors handle them reveals their professionalism.
 **Typical payment structures:**
 
 **Small projects (under $3,000):**
-- 50% deposit, 50% on completion
+- Progressive payments only
 - OR full payment on completion
 
 **Medium projects ($3,000-$15,000):**
-- 25% deposit
-- 50% mid-project
-- 25% on completion
+- Progressive payments at milestones
+- Final payment on completion
 
 **Large projects ($15,000+):**
-- 10-25% deposit
-- Progress payments at milestones
-- Final 10-15% on completion
+- Progressive payments only
+- Payments at project milestones
+- Final payment on completion
 
 **What your contract should include:**
 - Detailed scope of work
@@ -345,7 +344,7 @@ It's better to keep looking than hire the wrong contractor.
 #### FAQ: Choosing a Landscaper in Edmonton
 
 **Q: How much should I pay upfront to a landscaper?**
-A: Typical deposits are 10-25% of total project cost. Be cautious of contractors requesting 50%+ upfront, especially for large projects.
+A: Quality contractors use progressive payments only, with payments tied to project milestones. Be cautious of contractors requesting 50%+ upfront, especially for large projects.
 
 **Q: Should I choose the cheapest landscaper?**
 A: Not necessarily. Significantly low prices often mean cut corners, inferior materials, or hidden costs later. Focus on value and quality, not just price.
@@ -354,7 +353,7 @@ A: Not necessarily. Significantly low prices often mean cut corners, inferior ma
 A: Ask for a Certificate of Insurance directly from their insurance company. Verify it's current and covers adequate liability amounts ($2 million minimum recommended).
 
 **Q: What if the landscaper I want is booked for months?**
-A: Quality contractors often book months ahead, especially in spring/summer. Book early or ask about their cancellation list. Avoid contractors with immediate availability during peak season—it may indicate quality issues.
+A: Quality contractors often book months ahead, especially in spring/summer. Book early or ask about their cancellation list. Avoid contractors with immediate availability during peak season - it may indicate quality issues.
 
 **Q: Should I hire a full-service landscaping company or specialist?**
 A: For simple lawn care, specialists are fine. For complex projects involving design, hardscaping, and plantings, full-service companies like <a href="/services/landscape-design/">Serene Landscaping</a> handle everything without coordinating multiple contractors.
@@ -370,4 +369,4 @@ A: Reasonable negotiation on price is acceptable, but demanding dramatic discoun
 
 ---
 
-**Looking for a trusted Edmonton landscaper?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design</a>, <a href="/services/hardscaping/">hardscaping</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, and <a href="/services/final-grading/">final grading</a> services throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We're licensed, insured, and backed by dozens of 5-star reviews. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Looking for a trusted Edmonton landscaper?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design</a>, <a href="/services/hardscaping/">hardscaping</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, and <a href="/services/final-grading/">final grading</a> services throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We're licensed, insured, and backed by dozens of 5-star reviews. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.

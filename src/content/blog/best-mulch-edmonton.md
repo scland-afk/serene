@@ -12,7 +12,7 @@ imageAlt: Garden mulch in Edmonton
 
 ### Best Mulch for Edmonton Gardens: Complete Guide
 
-Mulch transforms garden beds by suppressing weeds, retaining moisture, regulating soil temperature, and adding visual appeal. But with multiple mulch types available, Edmonton gardeners often wonder which works best for Alberta's Zone 3a climate.
+Mulch helps garden beds by suppressing weeds, retaining moisture, regulating soil temperature, and adding visual appeal. But with multiple mulch types available, Edmonton gardeners often wonder which works best for Alberta's climate.
 
 Here's everything you need to know about choosing, applying, and maintaining mulch in Edmonton gardens.
 
@@ -354,11 +354,11 @@ A: Add 1-2 inches annually to maintain depth. Completely replace mulch every 2-3
 
 **Q: When should I apply mulch in Edmonton?**
 
-A: Late May (spring) after soil warms or late October (fall) after plants go dormant. Don't mulch too early in spring—it prevents soil warming.
+A: Late May (spring) after soil warms or late October (fall) after plants go dormant. Don't mulch too early in spring - it prevents soil warming.
 
 **Q: How deep should mulch be?**
 
-A: 2-3 inches for garden beds, 4-6 inches for pathways. Don't exceed 4 inches in planting beds—it can suffocate roots.
+A: 2-3 inches for garden beds, 4-6 inches for pathways. Don't exceed 4 inches in planting beds - it can suffocate roots.
 
 **Q: Should I use landscape fabric under mulch?**
 
@@ -374,4 +374,4 @@ A: Properly applied mulch doesn't attract pests. Keep mulch 2-3 inches away from
 
 ---
 
-**Need help with garden bed design and mulching?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We handle bed preparation, plant selection, and professional mulch application. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Need help with garden bed design and mulching?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle bed preparation, plant selection, and professional mulch application. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.

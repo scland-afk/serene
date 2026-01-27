@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "timestamp": "2026-01-26T23:57:28.160Z",
+  "timestamp": "2026-01-27T08:52:25.959Z",
   "entries": [
     [
       "12712c6af6c5ac0df86386773fde7c93",
@@ -487,10 +487,6 @@
       "/assets/images/services-residential-overview-b39020ed.webp"
     ],
     [
-      "5a687659e381a3329fd3854fe2031263",
-      "/assets/images/commercial-landscape-background-5a687659.webp"
-    ],
-    [
       "8c5ffa61b031dc6fa5f41e566205d583",
       "/assets/images/overview-of-house-we-did-full-landscape-job-8c5ffa61.webp"
     ],
@@ -507,44 +503,12 @@
       "/assets/images/overview-of-house-we-did-full-landscape-job-933086f3.avif"
     ],
     [
-      "854652db8b508a39b2ae44bfd2fb4dc4",
-      "/assets/images/bobcat-grading-854652db.webp"
-    ],
-    [
-      "d6c43e2cc47c1d7013ed706e35f351cd",
-      "/assets/images/bobcat-grading-d6c43e2c.avif"
-    ],
-    [
-      "c1a3a82c48f6e2e1139a1cf1c5168400",
-      "/assets/images/bobcat-grading-c1a3a82c.webp"
-    ],
-    [
       "521acae027a505ec9d2aadd20a7a5d25",
       "/assets/images/overview-of-house-we-did-full-landscape-job-521acae0.avif"
     ],
     [
-      "e1f3db0b7c5f13232349de0990cb9242",
-      "/assets/images/bobcat-grading-e1f3db0b.webp"
-    ],
-    [
-      "2744a2ceb83a6031079475816d31ebac",
-      "/assets/images/bobcat-grading-2744a2ce.avif"
-    ],
-    [
       "38746620c24fd6a343972ccdf3593391",
       "/assets/images/overview-of-house-we-did-full-landscape-job-38746620.avif"
-    ],
-    [
-      "ce77e832b00925c9e0b61d01ea36248a",
-      "/assets/images/bobcat-grading-ce77e832.avif"
-    ],
-    [
-      "97d403669db5f329ded36b696fe6eeba",
-      "/assets/images/full-landscape-package-97d40366.webp"
-    ],
-    [
-      "dfce81f70acc41cb3f74b54382bf41ea",
-      "/assets/images/full-landscape-package-dfce81f7.webp"
     ],
     [
       "61282d9d179a1ea1240c2e6ea8352c3d",
@@ -737,6 +701,50 @@
     [
       "35f099386fe2a028d06bf8f69d9e4f28",
       "/assets/images/construction-35f09938.avif"
+    ],
+    [
+      "8e7d29c4b2a53abe76d0589adda612e4",
+      "/assets/images/commercial-landscape-maintenance-8e7d29c4.webp"
+    ],
+    [
+      "2e154d3d1a6b47d42023677ed34d84f9",
+      "/assets/images/front-yard-landscape-design-mulch-shrubs-edmonton-2e154d3d.webp"
+    ],
+    [
+      "313469a2ebe3bcb76f0277aafd83afe4",
+      "/assets/images/front-yard-landscape-design-mulch-shrubs-edmonton-313469a2.webp"
+    ],
+    [
+      "cf63eafdd42e0154ab51e6975a767a46",
+      "/assets/images/front-yard-landscape-design-mulch-shrubs-edmonton-cf63eafd.avif"
+    ],
+    [
+      "ceb67894ec00be481491e09be7a5f737",
+      "/assets/images/front-yard-landscape-design-mulch-shrubs-edmonton-ceb67894.avif"
+    ],
+    [
+      "c1ed50a6d8cb5f7a81bc9eb67ea363bc",
+      "/assets/images/crew-c1ed50a6.webp"
+    ],
+    [
+      "3640b21a07940cfec53e56ea27a9e91b",
+      "/assets/images/crew-3640b21a.webp"
+    ],
+    [
+      "c1d2ccad19f7fd3806f3bdacf1f11051",
+      "/assets/images/crew-c1d2ccad.webp"
+    ],
+    [
+      "bf97b034d7dfa2ba651b1a177e64155d",
+      "/assets/images/crew-bf97b034.avif"
+    ],
+    [
+      "842eb4a47d7d060aa84e99e2486ab895",
+      "/assets/images/crew-842eb4a4.avif"
+    ],
+    [
+      "a418355d5ebf420677aaadcc9eda36d8",
+      "/assets/images/crew-a418355d.avif"
     ]
   ]
 }

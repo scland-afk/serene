@@ -20,7 +20,7 @@ Here's how to prepare your property for Edmonton's snow removal season and what 
 
 **Target preparation window:** October to early November
 
-First significant snowfall in Edmonton typically happens in November, though October snowfall isn't unusual. Don't wait until the first storm—by then it's too late to book quality contractors or properly prepare your property.
+First significant snowfall in Edmonton typically happens in November, though October snowfall isn't unusual. Don't wait until the first storm - by then it's too late to book quality contractors or properly prepare your property.
 
 **Timeline:**
 - **September:** Research snow removal contractors, request quotes
@@ -141,7 +141,7 @@ Communicate these problem areas to your snow removal contractor. They may need e
 
 #### Understand Snow Removal Service Triggers
 
-Commercial snow removal contracts typically include "service triggers"—the snow accumulation threshold that activates service.
+Commercial snow removal contracts typically include "service triggers" - the snow accumulation threshold that activates service.
 
 **Common triggers:**
 - 2 inches of accumulation
@@ -276,4 +276,4 @@ A: Most contracts cover parking lots and main walkways during snow events. You m
 
 ---
 
-**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing services for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. <a href="/services/snow-removal/">Contact us</a> for contract pricing or call **(587) 566-9879**.
+**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing services for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/services/snow-removal/">Contact us</a> for contract pricing or call **(587) 566-9879**.

@@ -184,7 +184,7 @@ Professional <a href="/services/landscape-design/">sod installation</a> typicall
 **Watering schedule:**
 - Water 2x daily (early morning and late afternoon)
 - Keep sod moist but not waterlogged
-- Check daily—edges dry out first
+- Check daily - edges dry out first
 - Adjust based on weather (more in heat, less if raining)
 
 **Restrictions:**
@@ -372,7 +372,7 @@ A: DIY is possible for small areas (under 500 sq ft) if you're physically capabl
 
 **Q: What type of sod is best for Edmonton?**
 
-A: Kentucky bluegrass blends work well for sunny areas. Fine fescue mixes handle shade better. Choose sod rated for Zone 3a. Avoid cheap sod—quality matters for long-term success.
+A: Kentucky bluegrass blends work well for sunny areas. Fine fescue mixes handle shade better. Choose sod that survives Edmonton winters. Avoid cheap sod - quality matters for long-term success.
 
 **Q: How soon can I walk on new sod?**
 
@@ -380,4 +380,4 @@ A: Wait minimum 2-3 weeks until sod has rooted (gentle tug test). Light walking 
 
 ---
 
-**Planning a sod installation project?** Serene Landscaping provides professional <a href="/services/landscape-design/">sod installation</a> throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We handle soil preparation, proper grading, and quality installation for lasting results. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Planning a sod installation project?** Serene Landscaping provides professional <a href="/services/landscape-design/">sod installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle soil preparation, proper grading, and quality installation for lasting results. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.

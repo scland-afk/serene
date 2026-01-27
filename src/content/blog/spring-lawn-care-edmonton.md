@@ -12,7 +12,7 @@ imageAlt: Spring lawn care in Edmonton
 
 ### When Should You Start Spring Lawn Care in Edmonton?
 
-Spring finally arrives in Edmonton, and you're ready to get outside and tackle your lawn after months of snow and ice. But timing matters—start too early and you risk damaging dormant grass, wait too long and you miss the optimal window for key tasks like aeration and fertilization.
+Spring finally arrives in Edmonton, and you're ready to get outside and tackle your lawn after months of snow and ice. But timing matters - start too early and you risk damaging dormant grass, wait too long and you miss the optimal window for key tasks like aeration and fertilization.
 
 Here's exactly when Edmonton homeowners should start spring lawn maintenance and what tasks to prioritize for a healthy, green lawn all season.
 
@@ -77,7 +77,7 @@ Core aeration is one of the most important spring tasks for Edmonton lawns due t
 
 **How aeration works:**
 
-A core aerator pulls small plugs of soil (2-3 inches deep) from your lawn, creating thousands of holes that allow air, water, and nutrients to penetrate compacted soil. Leave the soil plugs on the lawn—they'll break down and return nutrients to the soil.
+A core aerator pulls small plugs of soil (2-3 inches deep) from your lawn, creating thousands of holes that allow air, water, and nutrients to penetrate compacted soil. Leave the soil plugs on the lawn - they'll break down and return nutrients to the soil.
 
 **DIY or professional aeration:**
 
@@ -90,7 +90,7 @@ If your lawn has thin areas or bare spots from winter damage, overseed right aft
 **Best grass seed for Edmonton:**
 - Kentucky bluegrass blends (sunny areas)
 - Fine fescue mixes (shaded areas)
-- Quality seed rated for Zone 3a
+- Quality seed that survives Edmonton winters
 
 **Overseeding steps:**
 - Choose appropriate seed for sun/shade conditions
@@ -105,7 +105,7 @@ Your first mow should happen once grass reaches 3-4 inches in height, typically 
 **First mow best practices:**
 - Set mower to 3 inches height (higher than summer mowing)
 - Remove only 1/3 of grass blade length in first few mows
-- Use sharp mower blades—dull blades tear grass and cause browning
+- Use sharp mower blades - dull blades tear grass and cause browning
 - Mow when grass is dry to prevent clumping
 
 **Don't mow too early.** If grass hasn't reached 3-4 inches yet, wait. Early mowing stresses grass before it has energy to recover from winter.
@@ -117,7 +117,7 @@ Apply spring fertilizer once grass is actively growing and you've mowed at least
 **Fertilizer application tips:**
 - Use slow-release nitrogen fertilizer
 - Apply when grass is dry, then water thoroughly
-- Follow package directions—over-fertilizing burns grass
+- Follow package directions - over-fertilizing burns grass
 - Wait to apply weed and feed products until early June
 
 **Why wait to fertilize?**
@@ -192,7 +192,7 @@ Many weeds germinate earlier than grass in spring, giving them a competitive adv
 **Solutions:**
 - Hand-pull when possible (easiest when soil is moist)
 - Spot-treat with herbicide in late May
-- Focus on lawn health—thick, healthy grass crowds out weeds
+- Focus on lawn health - thick, healthy grass crowds out weeds
 
 **Prevention:**
 - Thick, healthy grass prevents weed establishment
@@ -216,7 +216,7 @@ Many weeds germinate earlier than grass in spring, giving them a competitive adv
 - You'd rather enjoy your yard than maintain it
 - Large property (over 8,000 sq ft)
 
-Our <a href="/services/lawn-maintenance/">spring cleanup and lawn care programs</a> include raking, aeration, overseeding, fertilization, and the first mow—everything your lawn needs to start the season strong.
+Our <a href="/services/lawn-maintenance/">spring cleanup and lawn care programs</a> include raking, aeration, overseeding, fertilization, and the first mow - everything your lawn needs to start the season strong.
 
 #### Spring Lawn Care Checklist for Edmonton Homeowners
 
@@ -256,7 +256,7 @@ A: Most Edmonton lawns benefit from annual spring aeration due to clay soil and 
 
 **Q: Can I walk on my lawn right after snow melts?**
 
-A: No—walking on saturated soil causes compaction. Wait until soil has dried enough that you don't leave deep footprints when walking.
+A: No - walking on saturated soil causes compaction. Wait until soil has dried enough that you don't leave deep footprints when walking.
 
 **Q: Should I bag or mulch grass clippings in spring?**
 
@@ -280,4 +280,4 @@ A: Both work well. Spring aeration is ideal for overseeding thin areas. Fall aer
 
 ---
 
-**Ready to get your lawn in shape this spring?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">spring cleanup and lawn care services</a> throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Ready to get your lawn in shape this spring?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">spring cleanup and lawn care services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.

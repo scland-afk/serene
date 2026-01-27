@@ -12,7 +12,7 @@ imageAlt: Final grading in Edmonton
 
 ### Final Grading Requirements for New Construction in Edmonton
 
-Bought a new construction home in Edmonton? Final grading is required before you can get an occupancy permit—but many new homeowners don't understand what it involves, when it needs to happen, or what it costs.
+Bought a new construction home in Edmonton? Final grading is required before you can get an occupancy permit - but many new homeowners don't understand what it involves, when it needs to happen, or what it costs.
 
 Here's everything Edmonton homeowners need to know about final grading requirements, the process, typical costs, and how to ensure compliance with City of Edmonton regulations.
 
@@ -28,7 +28,7 @@ Final grading is the process of shaping and grading your property to specific sl
 - Installing minimum 4-6 inches of topsoil
 - Obtaining a grading certificate from the City
 
-Without final grading, you cannot get your occupancy permit—meaning you can't legally move into your new home.
+Without final grading, you cannot get your occupancy permit - meaning you can't legally move into your new home.
 
 #### Why Is Final Grading Required in Edmonton?
 
@@ -290,4 +290,4 @@ A: Minimum 2% slope away from foundation for at least 10 feet. The City prefers 
 
 ---
 
-**Need final grading for your new Edmonton home?** Serene Landscaping provides professional <a href="/services/final-grading/">final grading services</a> including site preparation, proper drainage, quality topsoil, surveying, and City of Edmonton submission. We serve Edmonton, St. Albert, Spruce Grove, and Sherwood Park. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Need final grading for your new Edmonton home?** Serene Landscaping provides professional <a href="/services/final-grading/">final grading services</a> including site preparation, proper drainage, quality topsoil, surveying, and City of Edmonton submission. We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
