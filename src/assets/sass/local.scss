@@ -1916,3 +1916,42 @@
         }
     }
 }
+
+/*-- -------------------------- -->
+<---   Project Slider           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .cs-project-slider {
+        .cs-slide {
+            transition: opacity 0.3s ease;
+            
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        
+        .cs-slider-btn {
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: var(--primary) !important;
+                color: white !important;
+                transform: scale(1.1);
+            }
+            
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+        
+        .cs-slider-nav {
+            @media only screen and (max-width: 600px) {
+                gap: 3rem !important;
+            }
+        }
+    }
+}

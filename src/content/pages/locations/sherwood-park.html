@@ -158,47 +158,52 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
                     We serve all of Sherwood Park including Brentwood, Lakeland Ridge and surrounding areas. Here are some examples of our recent work in the area.
                 </p>
 
-                <div class="cs-project-image">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Backyard patio and retaining wall in Sherwood Park" width="800" height="800">
-                    </picture>
+                <div class="cs-project-slider" style="position: relative; width: 100%; max-width: 800px; margin: 3rem 0 1.5rem 0;">
+                    <div class="cs-slider-container" style="position: relative; overflow: hidden; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                        <div class="cs-slide" data-slide="0" style="display: block;">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
+                                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
+                                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Backyard patio and retaining wall in Sherwood Park" width="800" height="800" style="width: 100%; height: auto; display: block;">
+                            </picture>
+                            <div>
+                                <h3 style="color: var(--primary);">
+                                    Backyard Patio and Retaining Wall in Lakeland Ridge
+                                </h3>
+                                <p>
+                                    This Sherwood Park homeowner wanted to create a functional backyard space with a patio and firepit area. We installed a retaining wall to level the sloped yard, built an interlocking paver patio with integrated firepit, and finished with proper drainage and sod around the perimeter. The project transformed an unusable slope into a beautiful outdoor living space perfect for entertaining.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cs-slide" data-slide="1" style="display: none;">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
+                                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
+                                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Front yard landscaping renovation in Sherwood Park" width="800" height="800" style="width: 100%; height: auto; display: block;">
+                            </picture>
+                            <div>
+                                <h3 style="color: var(--primary);">
+                                    Front Yard Landscaping Upgrade in Brentwood
+                                </h3>
+                                <p>
+                                    This established Sherwood Park property needed a front yard makeover to improve curb appeal. We redesigned the landscape beds, installed clean edging, added fresh mulch and decorative rock, and selected low-maintenance plants suited for Alberta's climate. The renovation modernized the appearance while keeping maintenance simple. The result is a polished look that enhances the home's value.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-slider-nav" style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 1.5rem;">
+                        <button class="cs-slider-btn cs-slider-btn-prev" data-direction="prev" aria-label="Previous slide" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="cs-slider-btn cs-slider-btn-next" data-direction="next" aria-label="Next slide" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <h3 style="color: var(--primary);">
-                    Backyard Patio and Retaining Wall in Lakeland Ridge
-                </h3>
-                <p>
-                    This Sherwood Park homeowner wanted to create a functional backyard space with a patio and firepit area. We installed a retaining wall to level the sloped yard, built an interlocking paver patio with integrated firepit, and finished with proper drainage and sod around the perimeter. The project transformed an unusable slope into a beautiful outdoor living space perfect for entertaining.
-                </p>
-
-                <div class="cs-project-image">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Front yard landscaping renovation in Sherwood Park" width="800" height="800">
-                    </picture>
-                </div>
-                <h3 style="color: var(--primary);">
-                    Front Yard Landscaping Upgrade in Brentwood
-                </h3>
-                <p>
-                    This established Sherwood Park property needed a front yard makeover to improve curb appeal. We redesigned the landscape beds, installed clean edging, added fresh mulch and decorative rock, and selected low-maintenance plants suited for Alberta's climate. The renovation modernized the appearance while keeping maintenance simple. The result is a polished look that enhances the home's value.
-                </p>
-
-                <div class="cs-project-image">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Fence installation and landscape upgrade in Sherwood Park" width="800" height="800">
-                    </picture>
-                </div>
-                <h3 style="color: var(--primary);">
-                    Fence Installation and Yard Upgrade
-                </h3>
-                <p>
-                    A Sherwood Park property needed privacy fencing and yard improvements. We installed a cedar privacy fence along the property line, corrected the grade for better drainage, and completed the project with fresh sod installation. The fence provides privacy and security while the grading improvements ensure proper water flow. The finished yard is now functional, private, and well-maintained.
-                </p>
 
                 <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
             </div>
@@ -301,6 +306,51 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
     </section>
 
     {% include 'sections/cta.html' %}
+
+    <script>
+        // Project slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.cs-project-slider');
+            if (!slider) return;
+            
+            const slides = slider.querySelectorAll('.cs-slide');
+            const prevBtn = slider.querySelector('.cs-slider-btn-prev');
+            const nextBtn = slider.querySelector('.cs-slider-btn-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.style.display = 'none';
+                });
+                
+                // Show selected slide
+                slides[index].style.display = 'block';
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', prevSlide);
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextSlide);
+            }
+            
+            // Initialize first slide
+            showSlide(0);
+        });
+    </script>
 
     <script type="application/ld+json">
     {
