@@ -36,8 +36,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-		--headerFont: "font2", Arial, sans-serif;
-		--bodyFont: "font1", Arial, sans-serif;
+	--headerFont: "Oswald", Arial, sans-serif;
+	--bodyFont: "font1", Arial, sans-serif;
 	}
 
 	body,
@@ -69,7 +69,7 @@
 	h4,
 	h5,
 	h6 {
-		font-family: 'font2', Impact, sans-serif;
+		font-family: 'Oswald', Arial, sans-serif;
 		letter-spacing: .05em;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -78,7 +78,7 @@
 	}
 
 	.cs-topper {
-		font-family: 'font2', Arial, monospace;
+		font-family: 'Oswald', Arial, sans-serif;
 		font-size: var(--topperFontSize);
 		line-height: 1.2em;
 		text-transform: uppercase;
@@ -356,6 +356,16 @@
 		font-style: normal;
 		font-weight: 400;
 		src: url('/assets/fonts/bebas-neue-v10-latin-regular.woff2') format('woff2');
+	}
+
+	/* oswald-700 - latin */
+	@font-face {
+		font-display: swap;
+		font-family: 'Oswald';
+		font-style: normal;
+		font-weight: 700;
+		src: url('/assets/fonts/oswald-v53-latin-700.woff2') format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 }
 
@@ -1943,7 +1953,7 @@
 		}
 
 		.cs-int-topper {
-			font-family: "font2", Arial, monospace;
+			font-family: "Oswald", Arial, sans-serif;
 			letter-spacing: 0.1em;
 			text-align: left;
 			font-size: var(--topperFontSize);
@@ -1971,7 +1981,7 @@
 		}
 
 		.cs-int-title {
-			font-family: "font2", Arial, monospace;
+			font-family: "Oswald", Arial, sans-serif;
 			letter-spacing: 0.1em;
 			/* 39px - 61px */
 			font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -2134,13 +2144,32 @@
 
 		/* Topper/Eyebrow Text */
 		.cs-topper {
-			font-size: 1rem; /* 16px */
-			font-weight: 600;
+			font-size: 0.875rem; /* 14px - smaller text */
+			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 0.0625rem; /* 1px */
+			letter-spacing: 0.2em;
 			color: var(--primary);
 			margin-bottom: 0.5rem; /* 8px */
+			margin-top: 2rem; /* 32px top spacing */
 			display: block;
+			position: relative;
+			padding-left: 1.5rem;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 8px;
+				height: 8px;
+				background-color: var(--primary);
+				border-radius: 50%;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 
 		/* H1 - Page Titles in main content area */
@@ -2167,9 +2196,19 @@
 			margin: 3rem 0 1rem 0; /* 48px top, 16px bottom */
 			color: var(--headerColor);
 			text-transform: none;
+			position: relative;
+			padding-left: 1.5rem;
+			border-left: 4px solid var(--primary);
 
 			&:first-child {
 				margin-top: 0;
+			}
+
+			/* When h2 follows cs-topper, reduce top margin */
+			.cs-topper + & {
+				margin-top: 0.5rem;
+				padding-left: 0;
+				border-left: none;
 			}
 		}
 
@@ -2179,13 +2218,19 @@
 			font-weight: 600;
 			line-height: 1.4;
 			text-align: inherit;
-			margin: 0 0 0.75rem 0; /* 12px */
-			color: var(--headerColor);
+			margin: 1.5rem 0 0.75rem 0; /* 24px top, 12px bottom */
+			color: var(--primary);
 			text-transform: none;
+			position: relative;
 
 			/* When H3 follows a project image, reduce top margin */
 			.cs-project-image + & {
 				margin-top: 0;
+			}
+
+			/* When H3 follows cs-topper, reduce top margin */
+			.cs-topper + & {
+				margin-top: 0.5rem;
 			}
 
 			a {
@@ -2279,6 +2324,34 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.5rem; /* 8px between items */
+		}
+
+		/* Enhanced list styling with green accents */
+		ul li {
+			position: relative;
+			padding-left: 1.25rem;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0.625rem;
+				width: 6px;
+				height: 6px;
+				background-color: var(--primary);
+				border-radius: 50%;
+			}
+
+			a {
+				color: var(--primary);
+				text-decoration: none;
+				transition: color 0.3s;
+
+				&:hover {
+					color: var(--primaryLight);
+					text-decoration: underline;
+				}
+			}
 		}
 
 		ul li {
@@ -2822,6 +2895,7 @@
 		}
 
 		.cs-h3 {
+			font-family: 'Oswald', Arial, sans-serif;
 			/* 20px - 25px */
 			font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
 			line-height: 1.5em;

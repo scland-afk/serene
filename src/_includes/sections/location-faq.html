@@ -1,0 +1,41 @@
+<section id="faq-489">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ</span>
+            <h2 class="cs-title">Questions About <span class="cs-color">{{ loc.city }} Landscaping</span>?</h2>
+            <p class="cs-text">
+                Here are common questions about our landscaping services in {{ loc.city }}, what we offer, and how we can help with your property.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Contact Us</a>
+        </div>
+        <ul class="cs-faq-group">
+            {% for faq in loc.faqs %}
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">{{ faq.q }}</span>
+                </button>
+                <p class="cs-item-p">{{ faq.a }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in loc.faqs %}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | dump | safe }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

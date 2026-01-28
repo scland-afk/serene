@@ -1697,10 +1697,25 @@
                         color: var(--bodyTextColorWhite);
                         opacity: 1;
                     }
+
+                    .cs-button-solid {
+                        background-color: #fff;
+                        color: var(--primary);
+                        
+                        &:hover {
+                            background-color: var(--primaryLight);
+                            color: #fff;
+                        }
+                        
+                        &:before {
+                            background-color: var(--primaryLight);
+                        }
+                    }
                 }
 
                 .cs-button-solid {
                     color: #fff;
+                    background-color: var(--primary);
                 }
 
                 .cs-ul:before {

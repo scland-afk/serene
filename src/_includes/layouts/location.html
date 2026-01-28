@@ -1,0 +1,49 @@
+{% extends "layouts/base.html" %}
+{% set loc = locations[locationKey] %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/local.css">
+<link rel="preload" as="image" href="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-topper">Service Area</span>
+            <span class="cs-int-title">{{ loc.city }} Landscaping Services</span>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}" alt="{{ loc.bannerAlt }}" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <section id="content-page-713">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Service Area</span>
+                <h1 class="cs-title">{{ loc.h1 }}</h1>
+                <p>{{ loc.intro }}</p>
+                {% include "sections/location-services-list.html" %}
+                {% include "sections/location-trusted.html" %}
+                <h2>Service Area Coverage</h2>
+                <p>{{ loc.coverage }}</p>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl loc.contentImage | resize({ width: 600, height: 800 }) | jpeg %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl loc.contentImage | resize({ width: 570, height: 680 }) | jpeg %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl loc.contentImage | resize({ width: 570, height: 680 }) | jpeg %}" alt="{{ loc.contentImageAlt }}" width="570" height="680" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+        </picture>
+    </section>
+
+    {% include "sections/location-faq.html" %}
+    {% include "sections/cta.html" %}
+{% endblock %}
