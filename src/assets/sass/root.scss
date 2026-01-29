@@ -6,6 +6,43 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
+<---         Local Fonts        -->
+<--- -------------------------- -*/
+
+/* Roboto - Regular */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Roboto'), local('Roboto-Regular'),
+		url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+		url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff');
+}
+
+/* Roboto - Bold */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
+		url('/assets/fonts/roboto-v29-latin-700.woff') format('woff');
+}
+
+/* Roboto - Black (for headings) */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: local('Roboto Black'), local('Roboto-Black'),
+		url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'),
+		url('/assets/fonts/roboto-v29-latin-900.woff') format('woff');
+}
+
+/*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
@@ -36,8 +73,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-	--headerFont: "Oswald", Arial, sans-serif;
-	--bodyFont: "Montserrat", Arial, sans-serif;
+	--headerFont: "Roboto", Arial, sans-serif;
+	--bodyFont: "Roboto", Arial, sans-serif;
 	}
 
 	body,
@@ -45,7 +82,7 @@
 		margin: 0;
 		padding: 0;
 		font-size: 100%;
-		font-family: 'Montserrat', Arial, sans-serif;
+		font-family: 'Roboto', Arial, sans-serif;
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
 	}
@@ -69,16 +106,16 @@
 	h4,
 	h5,
 	h6 {
-		font-family: 'Oswald', Arial, sans-serif;
+		font-family: 'Roboto', Arial, sans-serif;
 		letter-spacing: .05em;
-		font-weight: 700;
+		font-weight: 900;
 		text-transform: uppercase;
 		margin: 0;
 		color: var(--headerColor);
 	}
 
 	.cs-topper {
-		font-family: 'Oswald', Arial, sans-serif;
+		font-family: 'Roboto', Arial, sans-serif;
 		font-size: var(--topperFontSize);
 		line-height: 1.2em;
 		text-transform: uppercase;
@@ -125,7 +162,7 @@
 
 	// Buttons - can be replaced using CodeStitch's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
 	.cs-button-solid {
-		font-family: 'Bebas Neue', Arial, sans-serif;
+		font-family: 'Roboto', Arial, sans-serif;
 		font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
 		font-weight: 700;
 		line-height: 1.5;
@@ -319,7 +356,7 @@
 	}
 }
 
-/* Fonts loaded via Google Fonts in base.html (Montserrat, Bebas Neue, Oswald) */
+/* Fonts loaded locally via @font-face (Roboto) */
 
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
@@ -760,7 +797,7 @@
         }
 
         .cs-li-link {
-            font-family: 'Bebas Neue', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             font-weight: 700;
             letter-spacing: .1em;
             /* 20px - 24px */
@@ -1283,7 +1320,7 @@
         }
 
         .cs-header {
-            font-family: 'Bebas Neue', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             letter-spacing: .1em;
             font-size: 1rem;
             font-weight: 700;
@@ -1342,7 +1379,7 @@
         }
 
         .cs-li-link {
-            font-family: 'Bebas Neue', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             font-weight: 700;
             letter-spacing: .1em;
             /* 14px - 16px */
@@ -1905,7 +1942,7 @@
 		}
 
 		.cs-int-topper {
-			font-family: "Oswald", Arial, sans-serif;
+			font-family: "Roboto", Arial, sans-serif;
 			letter-spacing: 0.1em;
 			text-align: left;
 			font-size: var(--topperFontSize);
@@ -1933,7 +1970,7 @@
 		}
 
 		.cs-int-title {
-			font-family: "Oswald", Arial, sans-serif;
+			font-family: "Roboto", Arial, sans-serif;
 			letter-spacing: 0.1em;
 			/* 39px - 61px */
 			font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -2847,7 +2884,7 @@
 		}
 
 		.cs-h3 {
-			font-family: 'Oswald', Arial, sans-serif;
+			font-family: 'Roboto', Arial, sans-serif;
 			/* 20px - 25px */
 			font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
 			line-height: 1.5em;
