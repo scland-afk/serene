@@ -78,6 +78,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/admin"); // CMS admin files
     eleventyConfig.addPassthroughCopy("./src/_redirects"); // Redirect rules
     eleventyConfig.addPassthroughCopy({ "./src/_headers": "_headers" }); // Cloudflare headers
+    eleventyConfig.addPassthroughCopy({ "./src/llms.txt": "llms.txt" }); // AI/LLM crawler SEO
 
     // ═════════════════════════════════════════════════════════════════════════
     // FILTERS

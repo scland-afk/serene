@@ -37,7 +37,7 @@
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
 	--headerFont: "Oswald", Arial, sans-serif;
-	--bodyFont: "font1", Arial, sans-serif;
+	--bodyFont: "Montserrat", Arial, sans-serif;
 	}
 
 	body,
@@ -45,7 +45,7 @@
 		margin: 0;
 		padding: 0;
 		font-size: 100%;
-		font-family: 'font1', Arial, sans-serif;
+		font-family: 'Montserrat', Arial, sans-serif;
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
 	}
@@ -125,7 +125,7 @@
 
 	// Buttons - can be replaced using CodeStitch's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
 	.cs-button-solid {
-		font-family: 'font2', Arial, monospace;
+		font-family: 'Bebas Neue', Arial, sans-serif;
 		font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
 		font-weight: 700;
 		line-height: 1.5;
@@ -319,55 +319,7 @@
 	}
 }
 
-/* Fonts */
-@media only screen and (min-width: 0px) {
-	// Grab your fonts to locally host from https://gwfh.mranftl.com/fonts
-	/* montserrat-regular - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'font1';
-		font-style: normal;
-		font-weight: 400;
-		src: url('/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2');
-	}
-
-	/* montserrat-italic - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'font1';
-		font-style: italic;
-		font-weight: 400;
-		src: url('/assets/fonts/montserrat-v25-latin-italic.woff2') format('woff2');
-	}
-
-	/* montserrat-700 - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'font1';
-		font-style: normal;
-		font-weight: 700;
-		src: url('/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2');
-	}
-
-	/* bebas-neue-regular - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'font2';
-		font-style: normal;
-		font-weight: 400;
-		src: url('/assets/fonts/bebas-neue-v10-latin-regular.woff2') format('woff2');
-	}
-
-	/* oswald-700 - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'Oswald';
-		font-style: normal;
-		font-weight: 700;
-		src: url('/assets/fonts/oswald-v53-latin-700.woff2') format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
-}
+/* Fonts loaded via Google Fonts in base.html (Montserrat, Bebas Neue, Oswald) */
 
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
@@ -808,7 +760,7 @@
         }
 
         .cs-li-link {
-            font-family: 'font2', Arial, monospace;
+            font-family: 'Bebas Neue', Arial, sans-serif;
             font-weight: 700;
             letter-spacing: .1em;
             /* 20px - 24px */
@@ -1331,7 +1283,7 @@
         }
 
         .cs-header {
-            font-family: 'font2', Arial, monospace;
+            font-family: 'Bebas Neue', Arial, sans-serif;
             letter-spacing: .1em;
             font-size: 1rem;
             font-weight: 700;
@@ -1390,7 +1342,7 @@
         }
 
         .cs-li-link {
-            font-family: 'font2', Arial, monospace;
+            font-family: 'Bebas Neue', Arial, sans-serif;
             font-weight: 700;
             letter-spacing: .1em;
             /* 14px - 16px */

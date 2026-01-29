@@ -17,8 +17,8 @@
         <meta property="og:description" content="{{ description }}"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ client.domain }}{{ image or "/assets/images/logo-small.png" }}"/>
-        <meta property="og:image:secure_url" content="{{ client.domain }}{{ image or "/assets/images/logo-small.png" }}"/>
+        <meta property="og:image" content="{{ client.domain }}{{ image or "/assets/favicons/apple-touch-icon.png" }}"/>
+        <meta property="og:image:secure_url" content="{{ client.domain }}{{ image or "/assets/favicons/apple-touch-icon.png" }}"/>
 
         <!--Favicons-->
         <!-- https://realfavicongenerator.net/ -->
@@ -31,8 +31,10 @@
 
         <!-- Preloads -->
         <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/bebas-neue-v10-latin-regular.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-v25-latin-regular.woff2" crossorigin>
+        <!-- Fonts: Montserrat (body), Bebas Neue (accents), Oswald (headings) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet">
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
@@ -44,6 +46,69 @@
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
+        <style>
+            .sticky-quote-button {
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
+                background: var(--primary);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 50px;
+                border: none;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 999;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .sticky-quote-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            }
+            .exit-intent-popup {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.7);
+                z-index: 10000;
+                display: none;
+                align-items: center;
+                justify-content: center;
+            }
+            .exit-intent-content {
+                background: white;
+                padding: 2rem;
+                border-radius: 8px;
+                max-width: 500px;
+                width: 90%;
+                position: relative;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+            .exit-intent-content h3 {
+                text-align: center;
+            }
+            .exit-intent-content p {
+                text-align: center;
+            }
+            .exit-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                cursor: pointer;
+                color: #666;
+            }
+        </style>
     </head>
     <body>
         <!--Screen reader skip main nav-->
@@ -122,70 +187,6 @@
                 });
             }
         </script>
-
-        <style>
-            .sticky-quote-button {
-                position: fixed;
-                bottom: 2rem;
-                right: 2rem;
-                background: var(--primary);
-                color: white;
-                padding: 1rem 1.5rem;
-                border-radius: 50px;
-                border: none;
-                font-weight: 600;
-                font-size: 1rem;
-                cursor: pointer;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                z-index: 999;
-                display: none;
-                align-items: center;
-                justify-content: center;
-                transition: transform 0.3s, box-shadow 0.3s;
-            }
-            .sticky-quote-button:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-            }
-            .exit-intent-popup {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.7);
-                z-index: 10000;
-                display: none;
-                align-items: center;
-                justify-content: center;
-            }
-            .exit-intent-content {
-                background: white;
-                padding: 2rem;
-                border-radius: 8px;
-                max-width: 500px;
-                width: 90%;
-                position: relative;
-                max-height: 90vh;
-                overflow-y: auto;
-            }
-            .exit-intent-content h3 {
-                text-align: center;
-            }
-            .exit-intent-content p {
-                text-align: center;
-            }
-            .exit-close {
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                background: none;
-                border: none;
-                font-size: 2rem;
-                cursor: pointer;
-                color: #666;
-            }
-        </style>
 
     </body>
 </html>

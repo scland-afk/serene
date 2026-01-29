@@ -64,7 +64,7 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                     </p>
                     <ul class="cs-text">
                         <li>Free on-site consultation at your property</li>
-                        <li>Detailed written quote within 5-7 business days</li>
+                        <li>Detailed written quote within 24 hours</li>
                         <li>No pressure, no obligation</li>
                         <li>Professional recommendations based on your goals and budget</li>
                     </ul>
@@ -72,7 +72,11 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                         <strong>Response Time:</strong> We typically respond to quote requests within 24 hours. For urgent needs, call us directly at <a href="tel:587-566-9879">(587) 566-9879</a>.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true" action="/contact/#form-success" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="Contact Form">
+                    <p class="cs-honey" hidden aria-hidden="true">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" autocomplete="off"></label>
+                    </p>
                     <label>
                         Name
                         <input required type="text" id="name-265" name="name" placeholder="Name">
@@ -98,6 +102,9 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                         <textarea required name="Message" id="message-265" placeholder="What landscaping services are you interested in? (landscape design, lawn maintenance, patio, snow removal, etc.)"></textarea>
                     </label>
                     <button class="cs-button-solid cs-submit" type="submit">Request Your Free Quote</button>
+                    <p id="form-success" class="cs-form-success" role="status" style="display: none; margin-top: 1rem; color: var(--primary); font-weight: 600;">
+                        Thanks! Your message was sent. We’ll be in touch within 24 hours.
+                    </p>
                 </form>
             </div>
             <div class="cs-right-section">
@@ -250,7 +257,7 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Fill out the contact form above or call us directly at <a href="tel:587-566-9879">(587) 566-9879</a>. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 5-7 business days, you'll receive a detailed written quote with no obligation to proceed.
+                        Fill out the contact form above or call us directly at <a href="tel:587-566-9879">(587) 566-9879</a>. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 24 hours, you'll receive a detailed written quote with no obligation to proceed.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -347,7 +354,7 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
           "name": "How do I get a landscaping quote?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Fill out the contact form above or call us directly at (587) 566-9879. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 5-7 business days, you'll receive a detailed written quote with no obligation to proceed."
+            "text": "Fill out the contact form above or call us directly at (587) 566-9879. We'll schedule a free on-site consultation to assess your property, discuss your goals, and answer your questions. Within 24 hours, you'll receive a detailed written quote with no obligation to proceed."
           }
         },
         {

@@ -190,6 +190,19 @@
             }
         }
 
+        /* Netlify Forms: show success message when redirected with #form-success */
+        #form-success:target {
+            display: block !important;
+        }
+        .cs-honey {
+            margin: 0;
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
         .cs-right-section {
             width: 100%;
             min-height: calc(320 / 16 * 1rem);
