@@ -1,17 +1,50 @@
+<!-- Organization Schema (Identity) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ client.domain }}/#organization",
+    "name": "Serene Landscaping",
+    "url": "{{ client.domain }}",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "{{ client.domain }}/assets/svgs/logo-black.svg"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-587-566-9879",
+        "contactType": "customer service",
+        "areaServed": "CA",
+        "availableLanguage": "English"
+    },
+    "sameAs": [
+        "https://www.google.com/maps/place/Serene+Construction+Landscaping/data=!4m2!3m1!1s0x0:0x5f20d9850f2b6776",
+        "https://g.page/r/CXZnKw-F2SBfEBM/review"
+    ]
+}
+</script>
+
+<!-- LocalBusiness Schema -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "LandscapingBusiness",
+    "@id": "{{ client.domain }}/#business",
     "name": "Serene Landscaping",
     "description": "Professional landscaping services in Edmonton and area. Landscape design, lawn care, hardscaping, and snow removal. Licensed and insured. Free quotes.",
-    "url": "{{ page.url }}",
-    "telephone": "(587) 566-9879",
+    "url": "{{ client.domain }}",
+    "telephone": "+1-587-566-9879",
     "email": "{{ client.email }}",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Edmonton",
         "addressRegion": "AB",
         "addressCountry": "CA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.5461",
+        "longitude": "-113.4938"
     },
     "areaServed": [
         {
@@ -51,7 +84,8 @@
         "bestRating": "5",
         "worstRating": "1"
     },
-    "logo": "/assets/svgs/logo-black.svg",
+    "logo": "{{ client.domain }}/assets/svgs/logo-black.svg",
+    "image": "{{ client.domain }}/assets/favicons/apple-touch-icon.png",
     "sameAs": [
         "https://www.google.com/maps/place/Serene+Construction+Landscaping/data=!4m2!3m1!1s0x0:0x5f20d9850f2b6776",
         "https://g.page/r/CXZnKw-F2SBfEBM/review"
