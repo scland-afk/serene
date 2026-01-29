@@ -231,7 +231,7 @@ Professional <a href="/services/landscape-design/">sod installation</a> typicall
 - Light recreation acceptable
 - Full use after 6-8 weeks
 
-#### Sod Installation Cost in Edmonton
+#### Sod Installation Cost in Edmonton for 
 
 **Professional installation costs** (including sod, soil prep, installation):
 

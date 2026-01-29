@@ -197,8 +197,8 @@ Poor drainage is the #1 cause of retaining wall failure in Edmonton.
 
 **City of Edmonton requirements:**
 
-**Walls 4 feet or under:** Usually no permit required (verify with City)
-**Walls over 4 feet:** Require engineering and permits
+**Walls 3 feet or under:** Usually no permit required (verify with City)
+**Walls over 3 feet:** Require engineering and permits
 
 **Engineering costs:**
 - Structural engineer consultation: $500-$1,500

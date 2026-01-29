@@ -24,7 +24,7 @@ Here's what Edmonton homeowners should expect to pay for patio installation in 2
 - Large patio (300-500 sq ft): $12,000-$20,000
 - Extra large patio (500+ sq ft): $20,000-$35,000+
 
-**Cost per square foot:** $15-$35 depending on materials and complexity
+**Cost per square foot:** $25-45 depending on materials and complexity
 
 **Concrete Patios:**
 - Basic concrete slab: $8-$15 per square foot
@@ -46,7 +46,7 @@ Size is the biggest cost factor. A 200-square-foot patio costs significantly les
 
 **2. Materials Selected**
 
-Interlocking pavers range from basic gray concrete pavers ($2-$4 per sq ft) to premium imported pavers with unique colors and textures ($8-$15+ per sq ft). Your material choice directly impacts the total project cost.
+Interlocking pavers range from basic gray concrete pavers ($4-$8 per sq ft) to premium imported pavers with unique colors and textures ($8-$18+ per sq ft). Your material choice directly impacts the total project cost.
 
 **3. Site Preparation Requirements**
 
@@ -93,7 +93,7 @@ Spring and summer are peak patio season in Edmonton. Some contractors offer 10-2
 Understanding where your money goes helps you appreciate the value:
 
 **Materials (40-50% of total cost):**
-- Interlocking pavers: $2-$15+ per sq ft
+- Interlocking pavers: $4-$15+ per sq ft
 - Class II gravel (base): $1-$2 per sq ft
 - Bedding sand: $0.50-$1 per sq ft
 - Edge restraints: $1-$3 per linear foot

@@ -1729,6 +1729,14 @@
 			grid-area: logo;
 		}
 
+		.cs-tagline {
+			margin: calc(12 / 16 * 1rem) 0 0 0;
+			font-size: calc(14 / 16 * 1rem);
+			color: var(--bodyTextColorWhite);
+			opacity: 0.8;
+			line-height: 1.5;
+		}
+
 		.cs-areas-area {
 			grid-area: areas;
 		}
