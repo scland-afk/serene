@@ -7,7 +7,7 @@ date: 2025-11-30T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/blog/landing.jpg
+image: /assets/images/drone-picture-of-patio-we-did-in-riverbend.webp
 imageAlt: Patio installation in Edmonton
 ---
 

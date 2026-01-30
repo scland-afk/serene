@@ -6,7 +6,7 @@ author: Serene Landscaping
 date: 2026-01-25T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
+image: /assets/images/fresh-grass-cut-edmonton-residential.webp
 imageAlt: Spring lawn care in Edmonton
 ---
 

@@ -6,8 +6,8 @@ author: Serene Landscaping
 date: 2025-12-28T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Sod installation in Edmonton
+image: /assets/images/fresh-sod-installation.webp
+imageAlt: Fresh sod installation in Edmonton in Edmonton
 ---
 
 ### When Is the Best Time to Install Sod in Edmonton?

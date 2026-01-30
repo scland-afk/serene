@@ -6,7 +6,7 @@ author: Serene Landscaping
 date: 2025-11-02T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
+image: /assets/images/services-snow-removal-home.webp
 imageAlt: Snow removal preparation in Edmonton
 ---
 

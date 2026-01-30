@@ -6,8 +6,8 @@ author: Serene Landscaping
 date: 2025-06-15T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Garden mulch in Edmonton
+image: /assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp
+imageAlt: Mulch and shrub bed installation in Edmonton
 ---
 
 ### Best Mulch for Edmonton Gardens: Complete Guide

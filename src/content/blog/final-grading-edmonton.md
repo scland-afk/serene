@@ -7,7 +7,7 @@ date: 2025-10-05T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/blog/landing.jpg
+image: /assets/images/final-grading-in-edmonton.webp
 imageAlt: Final grading in Edmonton
 ---
 

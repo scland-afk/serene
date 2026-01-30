@@ -6,7 +6,7 @@ author: Serene Landscaping
 date: 2025-08-10T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
+image: /assets/images/lush-grass-looking-in-edmonton.webp
 imageAlt: Lawn problems in Edmonton
 ---
 

@@ -6,8 +6,8 @@ author: Serene Landscaping
 date: 2025-09-07T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Choosing a landscaper in Edmonton
+image: /assets/images/crew.webp
+imageAlt: Professional landscaping crew in Edmonton
 ---
 
 ### How to Choose a Landscaper in Edmonton: Complete Hiring Guide

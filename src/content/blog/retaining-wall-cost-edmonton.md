@@ -6,8 +6,8 @@ author: Serene Landscaping
 date: 2025-07-13T00:00:00.000Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Retaining wall installation in Edmonton
+image: /assets/images/boulder-and-rock-bed.webp
+imageAlt: Retaining wall and rock installation in Edmonton
 ---
 
 ### How Much Does a Retaining Wall Cost in Edmonton?
