@@ -1,11 +1,12 @@
 ---
-title: Patio Cost Edmonton | Average Prices 2025
+title: Patio Cost Edmonton | Average Prices 2026
 url: patio-cost-edmonton
 description: How much does a patio cost in Edmonton? Complete guide to patio installation prices, materials, and factors affecting cost.
 author: Serene Landscaping
 date: 2025-11-30T00:00:00.000Z
 tags:
     - post
+    - featured
 image: /assets/images/blog/landing.jpg
 imageAlt: Patio installation in Edmonton
 ---
@@ -14,7 +15,7 @@ imageAlt: Patio installation in Edmonton
 
 Planning a patio for your Edmonton backyard? The first question most homeowners ask is "how much will this cost?" Patio costs vary widely based on size, materials, site conditions, and installation complexity, but understanding the typical price ranges helps you budget accurately and avoid surprises.
 
-Here's what Edmonton homeowners should expect to pay for patio installation in 2025, what affects pricing, and how to get the best value for your investment.
+Here's what Edmonton homeowners should expect to pay for patio installation in 2026, what affects pricing, and how to get the best value for your investment.
 
 #### Average Patio Installation Costs in Edmonton
 

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "timestamp": "2026-01-29T08:36:36.417Z",
+  "timestamp": "2026-01-30T03:14:42.491Z",
   "entries": [
     [
       "313469a2ebe3bcb76f0277aafd83afe4",
@@ -837,6 +837,10 @@
     [
       "219169157e45a9fb3e5139e97985c48b",
       "/assets/images/commercial-landscape-maintenance-21916915.webp"
+    ],
+    [
+      "f66fa7be7b7f90d580a7e82a0811da2e",
+      "/assets/images/landing-f66fa7be.jpeg"
     ]
   ]
 }
