@@ -258,7 +258,14 @@
 	}
 
 	// Utilities - small classes useful in various common situations
-	.cs-color {
+	.cs-color,
+	.cs-accent {
+		color: var(--primary);
+	}
+
+	.cs-button-outline {
+		background: transparent;
+		border: 2px solid var(--primary);
 		color: var(--primary);
 	}
 

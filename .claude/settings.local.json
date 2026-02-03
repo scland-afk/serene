@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\\\\src\\\\content\\\\pages\")",
+      "Bash(findstr:*)"
+    ]
+  }
+}

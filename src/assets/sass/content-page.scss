@@ -7,3 +7,184 @@
 // Note: The main styles for #banner-559 and #content-page-713 are already
 // defined in root.css. This file is kept for any page-specific overrides
 // or additional styling that may be needed.
+
+/* Service Areas details block - no inline styles */
+#content-page-713 .cs-service-areas {
+	margin-top: 1.5rem;
+	padding: 1rem;
+	border: 1px solid var(--primary);
+	border-radius: 8px;
+	cursor: pointer;
+
+	summary {
+		font-weight: 600;
+		color: var(--primary);
+		cursor: pointer;
+		list-style: none;
+		padding: 0.5rem 0;
+
+		span {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		span:last-child {
+			font-size: 0.875rem;
+		}
+	}
+
+	> div {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	h3 {
+		margin-top: 0;
+		color: var(--primary);
+		font-size: 1rem;
+	}
+
+	h3 + h3 {
+		margin-top: 1rem;
+	}
+
+	p {
+		margin: 0.5rem 0;
+		line-height: 1.8;
+	}
+
+	p:last-of-type {
+		margin-top: 1rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+}
+
+/* Service pages: wave graphic color (class cs-waves) – adjust filter to change tint */
+#content-page-713 .cs-waves img {
+	/* Teal/slate (default): uncomment one below or leave as-is to try others */
+	filter: hue-rotate(160deg) saturate(0.85);
+	/* Softer green: filter: hue-rotate(20deg) saturate(0.75); */
+	/* Blue-gray: filter: hue-rotate(200deg) saturate(0.5); */
+	/* Original green: filter: none; */
+}
+
+/* Residential: Related Services catalogue (card grid with image + label) */
+#residential-services-catalogue.cs-services-catalogue {
+	padding: clamp(3rem, 6vw, 4rem) 1.5rem;
+	background-color: #f0f0f0;
+
+	.cs-container {
+		max-width: calc(1280 / 16 * 1rem);
+		margin: 0 auto;
+	}
+
+	.cs-catalogue-title {
+		text-align: center;
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: rgba(26, 26, 26, 0.72);
+		margin: 0 0 clamp(2rem, 4vw, 3rem);
+		letter-spacing: 0.02em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	/* Intro paragraph: centered, smooth transparent look */
+	.cs-text {
+		text-align: center;
+		max-width: 50ch;
+		margin: 0 auto clamp(2rem, 4vw, 3rem);
+		color: rgba(45, 45, 45, 0.7);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.cs-text a.cs-accent {
+		color: rgba(26, 26, 26, 0.85);
+		transition: color 0.2s ease, opacity 0.2s ease;
+	}
+
+	.cs-text a.cs-accent:hover {
+		color: rgba(26, 26, 26, 1);
+	}
+
+	.cs-catalogue-grid {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: clamp(1.25rem, 2.5vw, 1.5rem);
+	}
+
+	.cs-catalogue-card {
+		margin: 0;
+	}
+
+	.cs-catalogue-link {
+		display: block;
+		position: relative;
+		text-decoration: none;
+		overflow: hidden;
+		transition: transform 0.25s ease;
+
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+
+	.cs-catalogue-image {
+		display: block;
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		background: #ddd;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+
+	/* Label on top of image, no grey – text visible via shadow */
+	.cs-catalogue-label {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: block;
+		background: transparent;
+		color: #fff;
+		padding: clamp(0.75rem, 1.5vw, 1rem) 1rem;
+		font-size: clamp(0.875rem, 1.2vw, 1rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 0.03em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6);
+		transition: color 0.25s ease, text-shadow 0.25s ease;
+	}
+
+	.cs-catalogue-link:hover .cs-catalogue-label {
+		text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(0, 0, 0, 0.7);
+	}
+
+	@media (min-width: 37.5rem) {
+		.cs-catalogue-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 62rem) {
+		.cs-catalogue-grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
