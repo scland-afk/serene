@@ -10,6 +10,7 @@
             if (button) {
                 // Remove any existing event listeners by cloning the button
                 const newButton = button.cloneNode(true);
+                newButton.setAttribute('type', 'button');
                 button.parentNode.replaceChild(newButton, button);
                 
                 newButton.addEventListener('click', function(e) {
