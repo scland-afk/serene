@@ -26,7 +26,7 @@ class GalleryFilter {
     }
 
     filter(filter) {
-        const showAll = filter === 'all';
+        const showAll = filter === 'all' || filter === 'one';
         for (const image of this.$images) {
             const show = showAll || image.dataset.category === filter;
             image.classList.toggle(this.hiddenClass, !show);

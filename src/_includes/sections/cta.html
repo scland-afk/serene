@@ -1,42 +1,55 @@
 <!-- ============================================ -->
-<!--                     CTA                      -->
+<!--                    Form                      -->
 <!-- ============================================ -->
 
-<section id="cta-51">
+<section id="cs-contact-485">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get It Done With Us Today</h2>
+            <h2 class="cs-title">Talk to us about your <span class="cs-color">landscaping plan!</span></h2>
             <p class="cs-text">
-                Ready to transform your outdoor space? Get a free quote for your landscaping project. We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain.
+                We would love to hear about your property and discuss the right scope and timeline. Fill out the form to schedule a consult at a time that works for you.
             </p>
-            <div class="cs-trust-badges" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; font-size: 0.875rem; color: var(--bodyTextColorWhite); opacity: 0.9;">
-                <span>✓ Licensed & Insured</span>
-                <span>✓ 8+ Years Experience</span>
-                <span>✓ Free Quotes</span>
-                <span>✓ Satisfaction Guaranteed</span>
-            </div>
-            <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid" style="background: transparent; border: 2px solid var(--primary);">Call {{ client.phoneFormatted }}</a>
-                <a href="/portfolio/" class="cs-button-solid" style="background: transparent; border: 2px solid var(--primary);">View Portfolio</a>
-            </div>
+            <span class="cs-heading">Questions about your landscaping project?</span>
+            <span class="cs-heading">You can contact us at:</span>
+            <a href="tel:{{ client.phoneForTel }}" class="cs-link">{{ client.phoneFormatted }}</a>
+            <a href="mailto:{{ client.email }}" class="cs-link">{{ client.email }}</a>
         </div>
+        <!--Form-->
+        <form id="cs-form-485" name="Contact Form" method="post">
+            <h3 class="cs-h3">Schedule a Consult</h3>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-485" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-485" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="email" id="email-485" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                How did you hear about us?
+                <input class="cs-input" type="text" id="find-485" name="referral-source" placeholder="Google, company truck, or referral">
+            </label>
+            <label class="cs-label cs-label-message">
+                What service are you looking for?
+                <select name="service" id="cs-select-485">
+                    <option value="landscape design">Landscape Design</option>
+                    <option value="hardscaping">Hardscaping</option>
+                    <option value="lawn maintenance">Lawn Maintenance</option>
+                    <option value="spring fall cleanup">Spring/Fall Cleanup</option>
+                    <option value="snow removal">Snow Removal</option>
+                </select>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Book a Consult</button>
+        </form>
     </div>
-    <!-- Background Image-->
-    <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 812 }) | webp %}">
-        <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 750 }) | webp %}">
-        <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 555 }) | webp %}">
-        <img src="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 555 }) | webp %}" alt="landscaping services Edmonton" width="1920" height="426" loading="lazy" decoding="async">
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg" alt="house" width="1920" height="1200">
     </picture>
 </section>
