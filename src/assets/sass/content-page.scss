@@ -71,6 +71,26 @@
 	/* Original green: filter: none; */
 }
 
+/* Inline image for content blocks (mobile/tablet only) */
+#content-page-713 .cs-inline-picture {
+	display: block;
+	margin: 1.5rem 0 0;
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+@media (min-width: 64rem) {
+	#content-page-713 .cs-inline-picture {
+		display: none;
+	}
+}
+
 /* Residential: Related Services catalogue (card grid with image + label) */
 #residential-services-catalogue.cs-services-catalogue {
 	padding: clamp(3rem, 6vw, 4rem) 1.5rem;
