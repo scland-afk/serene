@@ -9,7 +9,7 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cedar-fence.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/cedar-fence.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,156 +17,181 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Fencing Services</span>
-            <span class="cs-int-title">Fence Installation & Repair</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Fence Installation & Repair
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/cedar-fence.webp" }}" alt="Fence installation in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cedar-fence.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cedar-fence.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/cedar-fence.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="fence installation Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/fence.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/fence.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/fence.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/fence.webp" }}" alt="Fence installation" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Fence Installation & Repair in Edmonton
+                    Fence Installation
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    We build fences that improve privacy, security, and curb appeal. Our installs are built to handle Alberta weather and long‑term use.
+                    Improve privacy, security, and curb appeal with professional fence installation in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We build fences that stay straight, secure, and durable through Alberta’s freeze‑thaw conditions.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    Our crew handles layout, post setting, and clean finishing. Posts go 3 feet deep in concrete—any shallower and they'll lean within a couple years. We string a line for the top rail and use a laser level so panels sit straight and gates swing clean.
+                </p>
+                <p>
+                    We install new fences, gates, and repairs for both residential and commercial properties. Whether you need a privacy fence, a side yard boundary, or a clean upgrade to existing panels, we keep the build tidy and the results consistent.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Fence Options and Services
                 </h2>
-                <p>
-                    We’ll review property lines, access, and style preferences, then outline a simple plan.
-                </p>
-                <h3 class="cs-accent">
-                    Built for Privacy and Durability
-                </h3>
-                <p>
-                    Proper post depth and alignment keep fences straight through seasonal movement.
-                </p>
+                <ul>
+                    <li>Cedar Privacy Fences</li>
+                    <li>Vinyl Fence Installation</li>
+                    <li>Pressure‑Treated Fence Builds</li>
+                    <li>Gate Installation and Repairs</li>
+                    <li>Fence Repairs and Panel Replacement</li>
+                </ul>
                 <h2>
-                    Fences That Look Clean and Hold Up
+                    Built for Alberta Weather
                 </h2>
                 <p>
-                    Proper post depth and alignment keep fences straight and solid through freeze‑thaw cycles.
+                    Posts set at 3 feet in concrete stay put. We use pressure-treated 4x4s or 6x6s depending on fence height, and galvanized hardware throughout. Gates get heavy-duty hinges and self-closing latches that don't stick.
                 </p>
-                <span class="cs-topper">What We Build</span>
-                <h2>
-                    Fencing for Homes and Businesses
-                </h2>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Cedar and vinyl fences, gates, and repairs are common. We can coordinate with <a href="/services/hardscaping/">hardscaping</a> or a full <a href="/services/landscape-design/">landscape design</a> plan.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fence.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fence.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/fence.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Fence installation" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-4" data-lightbox-gallery>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Fence Installation Highlights</h2>
-            </div>
-            <div class="cs-gallery-grid">
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/fence-cedar-corner.jpg" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Cedar fence installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fence-cedar-corner.jpg" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fence-cedar-corner.jpg" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/fence-cedar-corner.jpg" | resize({ width: 800, height: 600 }) | webp %}" alt="Cedar fence installation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/pressure-treated-fence-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Pressure-treated fence installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pressure-treated-fence-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pressure-treated-fence-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/pressure-treated-fence-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Pressure-treated fence installation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Vinyl fence installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Vinyl fence installation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Cedar privacy fence">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Cedar privacy fence" width="800" height="600">
-                    </picture>
-                </button>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Fence Installation?
                 </h2>
                 <p>
-                    We build straight, durable fences with clean lines and solid posts.
+                    We keep projects organized, clear, and clean from start to finish.
                 </p>
-                <h3 class="cs-accent">Solid Post Setting</h3>
+                <ul>
+                    <li><strong>Solid Post Setting:</strong> 3 feet deep in concrete with 4x4 or 6x6 pressure-treated posts.</li>
+                    <li><strong>Clean Finishes:</strong> Straight lines, tight gates, and clean transitions.</li>
+                    <li><strong>Clear Scope:</strong> You get a defined plan and pricing up front.</li>
+                    <li><strong>Local Experience:</strong> Fences built for Edmonton’s conditions.</li>
+                </ul>
+                <h2>
+                    Where We Work
+                </h2>
                 <p>
-                    Proper depth and alignment keep fences stable long‑term.
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, and nearby communities.
                 </p>
-                <h3 class="cs-accent">Clean Finishes</h3>
-                <p>
-                    Gates, caps, and lines are finished clean and square.
-                </p>
-                <h3 class="cs-accent">Clear Scope</h3>
-                <p>
-                    You get a clear plan and pricing before installation starts.
-                </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                A new fence often means new landscaping too. These services complete the transformation and maximize your investment.
+            </p>
+                        <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Landscape design in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/sod-installation-after-final-grading.webp" }}" alt="Sod installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
+                    </a>
+                </li>            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Fence Installation Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Site Review</h3>
+                    <p class="cs-item-text">
+                        We review property lines, access, and layout before installation.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Post Setting</h3>
+                    <p class="cs-item-text">
+                        Posts go 3 feet deep in concrete. We plumb each one and let concrete set before attaching rails.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Fence Build</h3>
+                    <p class="cs-item-text">
+                        We install panels, rails, and gates with clean spacing and straight lines.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Final Check</h3>
+                    <p class="cs-item-text">
+                        We verify alignment, gate function, and finish details before cleanup.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
@@ -179,7 +204,7 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Fence Installation</span>?</h2>
                 <p class="cs-text">
-                    Quick answers about materials, timing, and pricing.
+                    Quick answers about materials, timing, and repairs.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -187,21 +212,11 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How much does fence installation cost in Edmonton?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Pricing depends on material, length, and site conditions. We provide clear quotes after a site visit.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
                             Do you install cedar and vinyl fences?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. Cedar and vinyl are both popular options depending on the look and maintenance you want.
+                        Yes. We install western red cedar (most popular), pressure-treated pine, and vinyl. Cedar weathers to grey naturally or can be stained. Vinyl costs more but needs no maintenance.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -211,7 +226,7 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Most residential fences take 1–3 days depending on length and site conditions.
+                        Most residential fences take 1 to 3 days depending on length and site conditions.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -222,6 +237,26 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
                     </button>
                     <p class="cs-item-p">
                         Yes. We can repair posts, panels, and gates when the structure is still worth saving.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How much does fence installation cost in Edmonton?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Pricing depends on material choice, fence length, and site conditions. We provide free on‑site quotes with clear scope and timeline.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you install gates?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We install and align gates for smooth operation and clean finishes.
                     </p>
                 </li>
             </ul>
@@ -257,18 +292,10 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does fence installation cost in Edmonton?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pricing depends on material, length, and site conditions. We provide clear quotes after a site visit."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Do you install cedar and vinyl fences?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Cedar and vinyl are both popular options depending on the look and maintenance you want."
+            "text": "Yes. We install western red cedar (most popular), pressure-treated pine, and vinyl. Cedar weathers to grey naturally or can be stained. Vinyl costs more but needs no maintenance."
           }
         },
         {
@@ -276,7 +303,7 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
           "name": "How long does fence installation take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential fences take 1–3 days depending on length and site conditions."
+            "text": "Most residential fences take 1 to 3 days depending on length and site conditions."
           }
         },
         {
@@ -286,9 +313,27 @@ keywords: "fence installation Edmonton, cedar fence Edmonton, vinyl fence Edmont
             "@type": "Answer",
             "text": "Yes. We can repair posts, panels, and gates when the structure is still worth saving."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does fence installation cost in Edmonton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing depends on material choice, fence length, and site conditions. We provide free on-site quotes with clear scope and timeline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you install gates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install and align gates for smooth operation and clean finishes."
+          }
         }
       ]
     }
     </script>
 
 {% endblock %}
+
+

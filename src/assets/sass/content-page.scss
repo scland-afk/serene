@@ -91,6 +91,305 @@
 	}
 }
 
+/* -------------------------------------------------------------------------- */
+/*  Service page layout (banner + content-page-1398)                          */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 0rem) {
+	#banner {
+		padding: var(--sectionPadding);
+		padding-bottom: 3.75rem;
+		padding-top: clamp(8rem, 12vw, 9.3125rem);
+
+		.cs-container {
+			margin: auto;
+			max-width: 112.5rem;
+			padding-top: clamp(8rem, 45vw, 12rem);
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.cs-container::before {
+			background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.92));
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 1;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		.cs-content {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem);
+			row-gap: 1rem;
+		}
+
+		.cs-title {
+			color: var(--bodyTextColorWhite);
+			font-size: clamp(2.4375rem, 6vw, 4.625rem);
+			margin-bottom: 0;
+		}
+
+		.cs-background {
+			z-index: -2;
+		}
+
+		.cs-background,
+		.cs-background img {
+			display: block;
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: 48rem) {
+	#banner .cs-container::before {
+		background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.92));
+	}
+}
+
+@media only screen and (min-width: 0rem) {
+	#content-page-1398 {
+		background-color: #fff;
+		overflow: hidden;
+		padding: var(--sectionPadding);
+		padding-top: 0;
+		position: relative;
+		z-index: 1;
+
+		.cs-container {
+			align-items: center;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			gap: clamp(2.5rem, 4vw, 4rem);
+			margin: auto;
+			max-width: 112.5rem;
+			padding: clamp(1rem, 5vw, 5rem);
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.cs-container::before {
+			background: var(--gradient);
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.1;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		.cs-content {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			max-width: 46.125rem;
+			text-align: left;
+			width: 100%;
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: var(--headerColor);
+			margin: 0 0 1rem;
+			text-align: inherit;
+		}
+
+		h2 {
+			font-size: 2rem;
+			margin-top: 2rem;
+		}
+
+		h3 {
+			background: linear-gradient(90deg, var(--primary), var(--secondary));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			display: block;
+			font-size: 1.5rem;
+			-webkit-text-fill-color: transparent;
+		}
+
+		h4,
+		h5,
+		h6 {
+			font-size: 1.25rem;
+		}
+
+		.cs-button-solid {
+			margin-bottom: 2rem;
+		}
+
+		.cs-color {
+			background: linear-gradient(90deg, var(--primary), var(--secondary));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			-webkit-text-fill-color: transparent;
+		}
+
+		p {
+			color: var(--bodyTextColor);
+			font-size: var(--bodyFontSize);
+			line-height: 1.5em;
+			margin: 0 0 1rem;
+			text-align: inherit;
+			width: 100%;
+		}
+
+		p:last-of-type {
+			margin-bottom: 2rem;
+		}
+
+		p a {
+			color: var(--primary);
+			filter: brightness(120%);
+			font-size: inherit;
+			line-height: inherit;
+			text-decoration: underline;
+		}
+
+		ol,
+		ul {
+			color: var(--bodyTextColor);
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 0 0 2rem;
+			padding-left: 1.5rem;
+		}
+
+		ul li {
+			color: inherit;
+			list-style: none;
+			position: relative;
+		}
+
+		ul li::before {
+			background: currentColor;
+			border-radius: 50%;
+			content: "";
+			display: block;
+			height: 3px;
+			left: -0.75rem;
+			opacity: 1;
+			position: absolute;
+			top: 0.625rem;
+			width: 3px;
+		}
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+		.cs-background {
+			display: block;
+			height: clamp(200px, 50vw, 600px);
+			max-width: 46.125rem;
+			object-fit: cover;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.cs-background img {
+			display: block;
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: 64rem) {
+	#content-page-1398 {
+		.cs-container {
+			align-items: flex-start;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.cs-content {
+			flex: none;
+			width: 60%;
+		}
+
+		h1 {
+			max-width: 80%;
+			width: 100%;
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			max-width: 75%;
+			text-align: inherit;
+		}
+
+		.cs-background {
+			display: flex;
+		}
+	}
+}
+
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #content-page-1398 {
+		background-color: var(--dark);
+
+		.cs-text,
+		.cs-title,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		li,
+		p {
+			color: var(--bodyTextColorWhite);
+		}
+
+		.cs-color {
+			background: linear-gradient(90deg, var(--primary), var(--tertiary));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.cs-container {
+			background-color: var(--dark);
+		}
+
+		li,
+		p {
+			color: #ebebeb;
+		}
+	}
+}
+
 /* Residential: Related Services catalogue (card grid with image + label) */
 #residential-services-catalogue.cs-services-catalogue {
 	padding: clamp(3rem, 6vw, 4rem) 1.5rem;
@@ -205,6 +504,43 @@
 	@media (min-width: 62rem) {
 		.cs-catalogue-grid {
 			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
+
+/* Dark Mode - Related Services Catalogue */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode {
+		#residential-services-catalogue.cs-services-catalogue {
+			background-color: var(--medium);
+
+			.cs-catalogue-title {
+				color: rgba(255, 255, 255, 0.85);
+			}
+
+			.cs-text {
+				color: rgba(255, 255, 255, 0.7);
+			}
+
+			.cs-text a.cs-accent {
+				color: rgba(255, 255, 255, 0.9);
+
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			.cs-catalogue-image {
+				background: var(--accent);
+			}
+
+			.cs-catalogue-label {
+				text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 10px rgba(0, 0, 0, 0.7);
+			}
+
+			.cs-catalogue-link:hover .cs-catalogue-label {
+				text-shadow: 0 2px 8px rgba(0, 0, 0, 1), 0 4px 16px rgba(0, 0, 0, 0.85);
+			}
 		}
 	}
 }

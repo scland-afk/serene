@@ -9,7 +9,7 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/final-grading-in-edmonton.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,152 +17,180 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Site Preparation</span>
-            <span class="cs-int-title">Professional Final Grade Preparation and City-Approved Topsoil Installation</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Final Grading Services
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="final grading Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/before-final-grading.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/before-final-grading.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/before-final-grading.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/before-final-grading.webp" }}" alt="Site before final grading" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Final Grading in Edmonton
+                    Final Grading
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    Final grading shapes your yard so water drains away from the foundation. It’s required for most new builds and fixes drainage problems on existing lots.
+                    Final grading shapes your yard so water drains away from the foundation and the lot is ready for landscaping. We provide final grading services for new construction and drainage correction across Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    Proper grading is the foundation for everything that follows. We shoot grades with a laser level and build 2% slope away from the foundation—that's about a 2" drop over 8 feet. Topsoil goes down 4-6" deep for sod. On clay-heavy lots, we may add drain tile to move water faster.
                 </p>
                 <p>
-                    Final grading is typically completed before <a href="/services/sod-installation/">sod installation</a> or full <a href="/services/landscape-design/">landscape design</a> work begins.
+                    Final grading is commonly completed before <a href="/services/sod-installation/">sod installation</a> or a full <a href="/services/landscape-design/">landscape design</a> build. With over 8 years of local experience, we plan grades that perform well in Edmonton’s conditions.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Final Grading Services We Offer
                 </h2>
-                <p>
-                    We review grades, drainage flow, and your Real Property Report if needed, then outline a clean, simple plan.
-                </p>
-                <h3 class="cs-accent">
-                    Drainage Comes First
-                </h3>
-                <p>
-                    Proper slope and soil depth prevent pooling and protect foundations.
-                </p>
-                <span class="cs-topper">What We Build</span>
+                <ul>
+                    <li>Final Grade Preparation for New Builds</li>
+                    <li>Topsoil Placement and Leveling</li>
+                    <li>Slope Correction and Drainage Improvement</li>
+                    <li>Lot Re‑Shaping and Low Area Correction</li>
+                    <li>Site Prep for Sod, Beds, and Hardscape</li>
+                </ul>
                 <h2>
-                    Grade + Topsoil, Ready for Landscaping
+                    What a Proper Final Grade Includes
                 </h2>
                 <p>
-                    We prepare the site so sod, beds, and hardscape go in cleanly and last.
+                    We check elevations at the house, fence line, and lot corners. Soil gets raked smooth and rolled to avoid settling. Transitions to sidewalks sit 1/2" above concrete so sod doesn't get scalped by mowers.
                 </p>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Elevation checks, topsoil placement, slope correction, and compaction are standard. We can follow with <a href="/services/sod-installation/">sod installation</a> or full <a href="/services/landscape-design/">landscape design</a>.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-final-grading.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/before-final-grading.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/before-final-grading.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Site before final grading" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-4" data-lightbox-gallery>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Final Grading Highlights</h2>
-            </div>
-            <div class="cs-gallery-grid">
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Final grading in Edmonton">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Final grading in Edmonton" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/final-grading-st-albert.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Final grading in St. Albert">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Final grading in St. Albert" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/grading-progress.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Grading work in progress">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/grading-progress.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/grading-progress.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/grading-progress.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Grading work in progress" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Bobcat grading work">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Bobcat grading work" width="800" height="600">
-                    </picture>
-                </button>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Final Grading?
                 </h2>
                 <p>
-                    We focus on clean elevations, proper drainage, and a final grade that’s ready for the next phase.
+                    We focus on accuracy and drainage so your yard performs properly long‑term.
                 </p>
-                <h3 class="cs-accent">Accurate Grades</h3>
+                <ul>
+                    <li><strong>Accurate Grades:</strong> Laser-level checked, 2% minimum slope away from structures.</li>
+                    <li><strong>Drainage Focused:</strong> Water moves away from the foundation.</li>
+                    <li><strong>Clean Topsoil Prep:</strong> Ready for sod, beds, or hardscape.</li>
+                    <li><strong>Local Experience:</strong> Grading that holds up to Edmonton’s seasons.</li>
+                </ul>
+                <h2>
+                    Where We Work
+                </h2>
                 <p>
-                    We check elevations and slope to meet municipal requirements.
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, and nearby communities.
                 </p>
-                <h3 class="cs-accent">Drainage Focused</h3>
-                <p>
-                    Water flows away from the foundation and toward proper drainage paths.
-                </p>
-                <h3 class="cs-accent">Ready for Landscaping</h3>
-                <p>
-                    The site is prepared for sod, beds, or hardscape without rework.
-                </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                With proper grading in place, you're ready to build. These services take advantage of a solid foundation.
+            </p>
+                        <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/sod-installation-after-final-grading.webp" }}" alt="Sod installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Landscape design in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/artificial-grass/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}" alt="Artificial grass in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Artificial Grass</span>
+                    </a>
+                </li>            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Final Grading Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Site Review</h3>
+                    <p class="cs-item-text">
+                        We review your lot, drainage flow, and elevations before grading begins.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Grade Planning</h3>
+                    <p class="cs-item-text">
+                        We map slopes to direct water away from the foundation and toward proper drainage paths.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Topsoil Placement</h3>
+                    <p class="cs-item-text">
+                        We spread 4-6" of screened topsoil, rake it smooth, and roll it to prevent settling after sod goes in.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Final Cleanup</h3>
+                    <p class="cs-item-text">
+                        The site is left clean and ready for landscaping, sod, or hardscape.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -174,9 +202,9 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
-                <h2 class="cs-title">Questions About <span class="cs-color">Final Grading Services</span>?</h2>
+                <h2 class="cs-title">Questions About <span class="cs-color">Final Grading</span>?</h2>
                 <p class="cs-text">
-                    Quick answers about timing, pricing, and drainage.
+                    Quick answers about grading, drainage, and timelines.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -188,7 +216,27 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        It’s usually required for new builds and for lots with drainage problems before landscaping goes in.
+                        Final grading is typically required for new builds and for lots with drainage issues before landscaping goes in.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does final grading take?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Many residential lots take 1 to 2 days. Larger sites or significant corrections can take longer.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you correct drainage problems?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We add fill to low spots, cut high areas, and re-grade to 2% slope. For persistent wet spots, we install drain tile or French drains.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -198,27 +246,17 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Pricing depends on lot size, access, and how much correction is needed. We provide clear quotes after a site visit.
+                        A typical residential lot ranges from $900 to $2,500 depending on lot size, access, and site conditions. Slopes or drainage corrections can affect pricing.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How long does a grading project take?
+                            Can you install sod after grading?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Many residential lots take 1–2 days. Larger sites or drainage work can take longer.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Can you fix drainage problems with grading?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes. We reshape grades and direct water away from the foundation and toward proper drainage paths.
+                        Yes. We often follow grading with <a href="/services/sod-installation/">sod installation</a> as a complete package.
                     </p>
                 </li>
             </ul>
@@ -257,7 +295,23 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
           "name": "When is final grading required?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It’s usually required for new builds and for lots with drainage problems before landscaping goes in."
+            "text": "Final grading is typically required for new builds and for lots with drainage issues before landscaping goes in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does final grading take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many residential lots take 1 to 2 days. Larger sites or significant corrections can take longer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you correct drainage problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We add fill to low spots, cut high areas, and re-grade to 2% slope. For persistent wet spots, we install drain tile or French drains."
           }
         },
         {
@@ -265,23 +319,15 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
           "name": "How much does final grading cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pricing depends on lot size, access, and how much correction is needed. We provide clear quotes after a site visit."
+            "text": "A typical residential lot ranges from $900 to $2,500 depending on lot size, access, and site conditions. Slopes or drainage corrections can affect pricing."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a grading project take?",
+          "name": "Can you install sod after grading?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Many residential lots take 1–2 days. Larger sites or drainage work can take longer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you fix drainage problems with grading?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We reshape grades and direct water away from the foundation and toward proper drainage paths."
+            "text": "Yes. We often follow grading with sod installation as a complete package."
           }
         }
       ]
@@ -289,4 +335,5 @@ keywords: "final grading services, topsoil preparation, site grading, land gradi
     </script>
 
 {% endblock %}
+
 

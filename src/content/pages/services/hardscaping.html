@@ -9,7 +9,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/services-hardscaping-home.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,166 +17,187 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Hardscaping Services</span>
-            <span class="cs-int-title">Patios, Walkways & Retaining Walls</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Patios, Walkways & Retaining Walls
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="hardscaping Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/three-piece-pavers.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/three-piece-pavers.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/three-piece-pavers.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/three-piece-pavers.webp" }}" alt="Interlocking paver patio with outdoor living space" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Hardscaping in Edmonton
+                    Hardscaping & Patios
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    We design and build patios, walkways, and retaining walls that stay level and drain properly. Our crew handles excavation, base prep, and finishing so the result holds up year after year.
+                    Transform your outdoor space with professional hardscaping services in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We design and install interlocking paver patios, walkways, retaining walls, and other hardscape features that add functionality and beauty to your property. Every project is built with proper excavation, base preparation, and compaction for long-term durability.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    Our hardscaping services include interlocking paver patios, circular patio designs, retaining walls, fire pits, and outdoor structures. In new developments like Secord, McConachie, and Windermere, patios often follow grading and sod to complete outdoor living spaces. In established areas like Brentwood, Lakeland Ridge, and Braeside, patio upgrades refresh existing yards without a full rebuild.
+                </p>
+                <p>
+                    We serve residential and commercial properties throughout Greater Edmonton. Our crew understands what it takes to build hardscaping that performs properly over time. We do not cut corners on base work because that is what keeps patios and walkways from settling and shifting.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Types of Hardscaping We Offer
                 </h2>
-                <p>
-                    We’ll walk the site, review access and grades, and map the layout so the finished space fits how you use your yard.
-                </p>
-                <h3 class="cs-accent">
-                    Built for Alberta Winters
-                </h3>
-                <p>
-                    Proper base depth and compaction are what keep patios from shifting after freeze‑thaw cycles.
-                </p>
+                <ul>
+                    <li>Interlocking Paver Patios</li>
+                    <li>Circular Patio Designs</li>
+                    <li>Retaining Wall Construction</li>
+                    <li>Walkway and Pathway Installation</li>
+                    <li>Outdoor Structure Design</li>
+                    <li>Fire Pit Installation</li>
+                    <li>Driveway Paving</li>
+                    <li>Garden Edging</li>
+                    <li>Stone Work and Masonry</li>
+                    <li>Outdoor Kitchen Areas</li>
+                </ul>
                 <h2>
-                    Patios, Walls, and Walkways That Hold Up
+                    Quality Materials & Expert Installation
                 </h2>
                 <p>
-                    We combine clean layouts with solid base prep so surfaces stay tight, even, and easy to maintain.
+                    We spec Unilock, Belgard, and Techno-Bloc pavers depending on the look and budget. For bases, we excavate 8-10" and lay 6-8" of limestone screening, compacted in 2" lifts with a plate compactor. Retaining walls get Allan Block or Expocrete with geogrid on anything over 3 feet. We finish with polymeric sand in the joints and edge restraints staked every 12". That's what keeps patios flat and walkways from spreading.
                 </p>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Patio and walkway builds, retaining walls, steps, and edging are common. We can coordinate with <a href="/services/final-grading/">final grading</a> or a full <a href="/services/landscape-design/">landscape design</a> plan when needed.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/three-piece-pavers.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/three-piece-pavers.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/three-piece-pavers.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Interlocking paver patio with outdoor living space" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Hardscaping Highlights</h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Circular paver patio design">
-                        <picture class="cs-picture cs-picture-1">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg" | resize({ width: 840, height: 1134 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg" | resize({ width: 840, height: 1134 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg" | resize({ width: 840, height: 1134 }) | webp %}" alt="Circular paver patio design" width="420" height="567">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Interlocking paver patio installation">
-                        <picture class="cs-picture cs-picture-2">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg" | resize({ width: 840, height: 1260 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg" | resize({ width: 840, height: 1260 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg" | resize({ width: 840, height: 1260 }) | webp %}" alt="Interlocking paver patio installation" width="420" height="630">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Backyard patio with firepit">
-                        <picture class="cs-picture cs-picture-3">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}" alt="Backyard patio with firepit" width="420" height="512">
-                        </picture>
-                    </button>
-                </div>
-                <div class="cs-row cs-row-2">
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Retaining wall installation">
-                        <picture class="cs-picture cs-picture-1">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 840, height: 984 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 840, height: 984 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 840, height: 984 }) | webp %}" alt="Retaining wall installation" width="420" height="492">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/edmonton-paving-stones-patio-finished.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Finished paving stone patio">
-                        <picture class="cs-picture cs-picture-2">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-paving-stones-patio-finished.webp" | resize({ width: 840, height: 1034 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-paving-stones-patio-finished.webp" | resize({ width: 840, height: 1034 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-paving-stones-patio-finished.webp" | resize({ width: 840, height: 1034 }) | webp %}" alt="Finished paving stone patio" width="420" height="517">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/paving-stone-entry-walkway.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Paving stone entry walkway">
-                        <picture class="cs-picture cs-picture-3">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-entry-walkway.webp" | resize({ width: 840, height: 1258 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-entry-walkway.webp" | resize({ width: 840, height: 1258 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-entry-walkway.webp" | resize({ width: 840, height: 1258 }) | webp %}" alt="Paving stone entry walkway" width="420" height="629">
-                        </picture>
-                    </button>
-                </div>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Hardscaping?
                 </h2>
                 <p>
-                    We build hardscapes that stay level, drain properly, and look clean long‑term.
+                    Serene Landscaping provides hardscaping services throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. Here is what sets us apart:
                 </p>
-                <h3 class="cs-accent">Solid Base Work</h3>
+                <ul>
+                    <li><strong>Licensed and Insured:</strong> Full liability insurance and WCB coverage so your property is protected.</li>
+                    <li><strong>Local Experience:</strong> 200+ patios and walkways across Edmonton, St. Albert, and Sherwood Park.</li>
+                    <li><strong>Proper Base Work:</strong> Correct depth, adequate base material, and thorough compaction.</li>
+                    <li><strong>Thoughtful Layout:</strong> We plan layouts around traffic patterns and furniture use.</li>
+                    <li><strong>Clean Finishing:</strong> Edge restraints, clean transitions, and correct drainage.</li>
+                </ul>
                 <p>
-                    Proper excavation and compaction prevent shifting and settling.
+                    Licensed and Insured. 8+ Years Experience. Free Quotes. Satisfaction Guaranteed.
                 </p>
-                <h3 class="cs-accent">Clean Layouts</h3>
-                <p>
-                    We plan how you move through the space so the layout feels natural.
-                </p>
-                <h3 class="cs-accent">Durable Finishes</h3>
-                <p>
-                    Edge restraints and drainage are handled before we leave the site.
-                </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                Great hardscaping works best with proper prep and complementary features. These services create a cohesive outdoor space.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Landscape design in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/sod-installation-after-final-grading.webp" }}" alt="Sod installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/fences/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/cedar-fence.webp" }}" alt="Fence installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Fences</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Hardscaping Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Site Preparation & Base Work</h3>
+                    <p class="cs-item-text">
+                        We excavate 8-10", remove soft spots, and compact limestone screening in 2" lifts. This base is what keeps your patio from settling.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Material Selection & Layout</h3>
+                    <p class="cs-item-text">
+                        We help you choose materials that match your style and budget, then lay out the design on-site before installation.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Professional Installation</h3>
+                    <p class="cs-item-text">
+                        We set pavers on 1" of bedding sand, cut clean edges with a wet saw, and sweep polymeric sand into joints.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Quality Check & Finishing</h3>
+                    <p class="cs-item-text">
+                        We complete a final inspection to ensure proper drainage and clean finish work before we leave.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -190,7 +211,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Hardscaping</span>?</h2>
                 <p class="cs-text">
-                    Quick answers about patios, walls, and timelines.
+                    Here are common questions about our hardscaping services including patios, walkways, and retaining walls.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -202,7 +223,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Pricing depends on size, access, and material selection. We provide clear quotes after a site visit.
+                        Paving stone patios typically cost $35 to $45 per square foot, depending on materials and design complexity. We provide free on-site quotes for hardscaping projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our quotes include clear scope, materials, timeline, and pricing so you know exactly what to expect.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -212,7 +233,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Smaller patios can take a few days. Larger builds with walls or steps can take a couple of weeks.
+                        Hardscaping timelines depend on scope and complexity. A simple walkway may take 2 to 3 days, while a large patio with retaining walls can take 1 to 2 weeks. We provide detailed timelines during the consultation.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -222,17 +243,27 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We build retaining walls with proper base and drainage for long‑term stability.
+                        Yes, retaining wall construction is a core part of our hardscaping services. Retaining walls average around $60 per square foot, though pricing varies based on the type of materials used. We design and build retaining walls using quality materials and proper engineering techniques for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What materials do you use for hardscaping projects?
+                            What affects patio pricing?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We use interlocking pavers, natural stone, concrete, and other durable materials suited to freeze‑thaw conditions.
+                        Paving stone patios typically cost $35 to $45 per square foot. Design complexity, access, and base prep can move pricing up or down.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide free estimates?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We provide free on‑site estimates with clear scope, materials, and pricing before work begins.
                     </p>
                 </li>
             </ul>
@@ -271,7 +302,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
           "name": "How much does a patio installation cost in Edmonton?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pricing depends on size, access, and material selection. We provide clear quotes after a site visit."
+            "text": "Paving stone patios typically cost $35 to $45 per square foot, depending on materials and design complexity. We provide free on-site quotes for hardscaping projects in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our quotes include clear scope, materials, timeline, and pricing so you know exactly what to expect."
           }
         },
         {
@@ -279,7 +310,7 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
           "name": "How long does a hardscaping project take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Smaller patios can take a few days. Larger builds with walls or steps can take a couple of weeks."
+            "text": "Hardscaping timelines depend on scope and complexity. A simple walkway may take 2 to 3 days, while a large patio with retaining walls can take 1 to 2 weeks. We provide detailed timelines during the consultation."
           }
         },
         {
@@ -287,15 +318,23 @@ keywords: "hardscaping Edmonton, patio installation Edmonton, retaining walls Ed
           "name": "Do you build retaining walls as part of hardscaping?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We build retaining walls with proper base and drainage for long-term stability."
+            "text": "Yes, retaining wall construction is a core part of our hardscaping services. Retaining walls average around $60 per square foot, though pricing varies based on the type of materials used. We design and build retaining walls using quality materials and proper engineering techniques for properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove."
           }
         },
         {
           "@type": "Question",
-          "name": "What materials do you use for hardscaping projects?",
+          "name": "What affects patio pricing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We use interlocking pavers, natural stone, concrete, and other durable materials suited to freeze-thaw conditions."
+            "text": "Paving stone patios typically cost $35 to $45 per square foot. Design complexity, access, and base prep can move pricing up or down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide free estimates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide free on-site estimates with clear scope, materials, and pricing before work begins."
           }
         }
       ]

@@ -9,7 +9,7 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/services-landscape-design.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,167 +17,181 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Landscaping Services</span>
-            <span class="cs-int-title">Landscape Design & Construction</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Landscape Design & Construction
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/services-landscape-design.webp" }}" alt="Landscape design in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="landscape design Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" }}" alt="Front yard landscape installation" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Landscape Design in Edmonton
+                    Landscape Design
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    We design and build outdoor spaces that feel clean, functional, and easy to maintain. From <a href="/services/hardscaping/">patios and walkways</a> to planting and grading, our team handles the full scope with clear plans and steady communication.
+                    Serene Landscaping provides professional landscape design and construction in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We've done full backyard builds in Windermere, front yard refreshes in St. Albert, and everything in between. Each project starts with a site walk and ends with a clear materials list and scope.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    From patios and walkways to planting, grading, and sod, our team handles the full design‑build process. We spec Unilock and Belgard pavers, source local sod from Alberta farms, and grade every yard to drain away from the house.
+                </p>
+                <p>
+                    We've completed 200+ landscape projects across Greater Edmonton. We know which plants survive here, how deep to set a patio base, and where water pools if grades aren't right.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Landscape Design Services We Offer
                 </h2>
-                <p>
-                    We make it simple. We walk the property with you, listen to how you want to use the space, and build a plan that fits your budget and timeline.
-                </p>
-                <h3 class="cs-accent">
+                <ul>
+                    <li>Patios, Walkways, and Outdoor Living Areas</li>
+                    <li>Planting Plans and Garden Beds</li>
+                    <li>Retaining Walls and Hardscape Features</li>
+                    <li>Final Grading and Drainage Planning</li>
+                    <li>Sod Installation and Turf Prep</li>
+                    <li>Lighting, Borders, and Finishing Details</li>
+                </ul>
+                <h2>
                     Design That Fits How You Live
-                </h3>
-                <p>
-                    Every property is different. We look at how you use your yard, how water moves, and what will hold up long‑term. Then we build a plan that looks good now and still works years later.
-                </p>
-                <span class="cs-topper">What We Build</span>
-                <h2>
-                    Hardscape + Softscape, Planned Together
                 </h2>
                 <p>
-                    The best landscapes balance structure with planting. We plan patios, walkways, and outdoor features alongside sod, beds, and planting so everything feels cohesive and drains correctly.
+                    Every property is different. We measure the lot, check existing grades with a laser level, and note where water sits after rain. Then we design around how you actually use the space—where the kids play, where you want to sit, where the grill goes.
                 </p>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Patios and walkways, <a href="/services/sod-installation/">sod installation</a>, garden beds, and <a href="/services/final-grading/">final grading</a> are common parts of our design‑build scope. We size everything to your lot and how you actually use the space.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/tree-rock-and-shrubs-instalaltion-front.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Front yard with trees, shrubs, and decorative rock" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Landscape Design Highlights</h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Front yard artificial grass installation">
-                        <picture class="cs-picture cs-picture-1">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 840, height: 1134 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 840, height: 1134 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 840, height: 1134 }) | webp %}" alt="Front yard artificial grass installation" width="420" height="567">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Residential front yard landscaping">
-                        <picture class="cs-picture cs-picture-2">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 840, height: 1260 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 840, height: 1260 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 840, height: 1260 }) | webp %}" alt="Residential front yard landscaping" width="420" height="630">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Front yard beds and mulch">
-                        <picture class="cs-picture cs-picture-3">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 840, height: 1024 }) | webp %}" alt="Front yard beds and mulch" width="420" height="512">
-                        </picture>
-                    </button>
-                </div>
-                <div class="cs-row cs-row-2">
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/surge_media_1759345871700_1XqLeDTbD.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Landscape design in progress">
-                        <picture class="cs-picture cs-picture-1">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/surge_media_1759345871700_1XqLeDTbD.webp" | resize({ width: 840, height: 984 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/surge_media_1759345871700_1XqLeDTbD.webp" | resize({ width: 840, height: 984 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/surge_media_1759345871700_1XqLeDTbD.webp" | resize({ width: 840, height: 984 }) | webp %}" alt="Landscape design in progress" width="420" height="492">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/garden-wall-sherwood-park.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Garden wall detail">
-                        <picture class="cs-picture cs-picture-2">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/garden-wall-sherwood-park.webp" | resize({ width: 840, height: 1034 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/garden-wall-sherwood-park.webp" | resize({ width: 840, height: 1034 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/garden-wall-sherwood-park.webp" | resize({ width: 840, height: 1034 }) | webp %}" alt="Garden wall detail" width="420" height="517">
-                        </picture>
-                    </button>
-                    <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Commercial landscape installation">
-                        <picture class="cs-picture cs-picture-3">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 840, height: 1258 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 840, height: 1258 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 840, height: 1258 }) | webp %}" alt="Commercial landscape installation" width="420" height="629">
-                        </picture>
-                    </button>
-                </div>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Landscape Design?
                 </h2>
                 <p>
-                    We build landscapes that last and communicate clearly from day one. Here’s what you can expect.
+                    We keep the design‑build process organized so you know exactly what’s included.
                 </p>
-                <h3 class="cs-accent">Clear Scope</h3>
+                <ul>
+                    <li><strong>Clear Scope:</strong> Defined plan, materials list, and timeline up front.</li>
+                    <li><strong>Local Conditions:</strong> We design for drainage, frost, and soil.</li>
+                    <li><strong>In‑House Crew:</strong> One team from design to installation.</li>
+                    <li><strong>Functional Layouts:</strong> Space planned for real use, not just looks.</li>
+                </ul>
+                <h2>
+                    Where We Work
+                </h2>
                 <p>
-                    You get a defined plan, materials list, and pricing before work begins.
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, and nearby communities.
                 </p>
-                <h3 class="cs-accent">Local Conditions</h3>
-                <p>
-                    We plan for drainage, frost, and soil so the build holds up year after year.
-                </p>
-                <h3 class="cs-accent">In‑House Crew</h3>
-                <p>
-                    One team from design to install keeps timelines tighter and quality consistent.
-                </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                Ready to bring your design to life? These services turn plans into reality—from groundwork to the finishing touches.
+            </p>
+                        <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/sod-installation-after-final-grading.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/sod-installation-after-final-grading.webp" }}" alt="Sod installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/fences/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/cedar-fence.webp" }}" alt="Fence installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Fences</span>
+                    </a>
+                </li>            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Landscape Design Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Consultation</h3>
+                    <p class="cs-item-text">
+                        We walk the property, discuss goals, and review access and drainage.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Design + Scope</h3>
+                    <p class="cs-item-text">
+                        We build a clear plan with materials and layout so you can approve the direction.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Installation</h3>
+                    <p class="cs-item-text">
+                        Our crew completes prep, hardscape, and planting with clean workmanship.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Final Walkthrough</h3>
+                    <p class="cs-item-text">
+                        We confirm details, explain care, and make sure the space is ready to enjoy.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -191,7 +205,7 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Landscape Design</span>?</h2>
                 <p class="cs-text">
-                    Here are common questions about our landscape design services, process, and what to expect for your project.
+                    Common questions about design, timelines, and what to expect.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -203,37 +217,47 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Pricing depends on scope, size, and materials. Smaller projects start in the low thousands, while full landscape builds can range higher based on design and features. We provide a clear on‑site quote with scope, materials, and timeline.
+                        Complete landscape design and installation projects typically range from $5,000 to $50,000+ depending on property size and features. We provide detailed estimates after a free on‑site consultation.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you install patios and walkways as part of landscape design?
+                            Do you install patios and walkways as part of the design?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We design and install patios, walkways, and pathways with proper base prep for long‑term durability.
+                        Yes. We install patios on 6-8" of compacted limestone screening with polymeric sand joints. Walkways get the same base treatment so they don't shift or sink.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Can you help with drainage issues during landscape design?
+                            Can you help with drainage issues?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We assess grading and drainage so water moves away from structures and the landscape performs long‑term.
+                        Yes. Most Edmonton yards are clay, so we grade to 2% slope minimum. On bigger jobs with persistent pooling, we add drain tile or catch basins.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you provide turf installation and sodding services?
+                            Do you provide sod installation?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We install sod and turf as part of a full landscape build or as a standalone upgrade, with proper prep and aftercare guidance.
+                        Yes. We install sod as part of a full landscape build or as a standalone service.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does a landscape design project take?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Timelines depend on scope. Smaller builds take a few days, while full yard projects can take several weeks.
                     </p>
                 </li>
             </ul>
@@ -272,31 +296,39 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
           "name": "How much does landscape design cost in Edmonton?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pricing depends on scope, size, and materials. Smaller projects start in the low thousands, while full builds can range higher based on design and features. We provide a clear on-site quote with scope, materials, and timeline."
+            "text": "Complete landscape design and installation projects typically range from $5,000 to $50,000+ depending on property size and features. We provide detailed estimates after a free on-site consultation."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you install patios and walkways as part of landscape design?",
+          "name": "Do you install patios and walkways as part of the design?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We design and install patios, walkways, and pathways with proper base prep for long-term durability."
+            "text": "Yes. We install patios on 6-8 inches of compacted limestone screening with polymeric sand joints. Walkways get the same base treatment so they don't shift or sink."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you help with drainage issues during landscape design?",
+          "name": "Can you help with drainage issues?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We assess grading and drainage so water moves away from structures and the landscape performs long-term."
+            "text": "Yes. Most Edmonton yards are clay, so we grade to 2% slope minimum. On bigger jobs with persistent pooling, we add drain tile or catch basins."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide turf installation and sodding services?",
+          "name": "Do you provide sod installation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We install sod and turf as part of a full landscape build or as a standalone upgrade, with proper prep and aftercare guidance."
+            "text": "Yes. We install sod as part of a full landscape build or as a standalone service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a landscape design project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timelines depend on scope. Smaller builds take a few days, while full yard projects can take several weeks."
           }
         }
       ]
@@ -304,4 +336,5 @@ keywords: "landscape design Edmonton, landscape construction Edmonton, patio ins
     </script>
 
 {% endblock %}
+
 

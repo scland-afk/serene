@@ -9,7 +9,7 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-snow-removal-bobcat.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,132 +17,170 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Commercial Services</span>
-            <span class="cs-int-title">Commercial Snow Removal</span>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Commercial Snow Removal
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}" alt="Commercial snow removal in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-snow-removal-bobcat.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-snow-removal-bobcat.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-snow-removal-bobcat.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="Skid steer clearing snow from commercial parking lot" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" }}" alt="Commercial snow removal Edmonton" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Commercial Snow Removal in Edmonton
+                    Commercial Snow Removal
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
                     Reliable commercial snow removal services in Edmonton. Snow plowing, blowing, sanding, and ice control for businesses, parking lots, and commercial properties. Seasonal contracts available. We provide reliable, efficient snow removal designed for safe site access throughout the winter months.
                 </p>
                 <p>
-                    Our commercial snow removal services are designed to keep your business property safe and accessible for customers, employees, and tenants. We work with businesses, property managers, and condo boards across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                    Our commercial snow removal services keep your business property safe and accessible for customers, employees, and tenants. We work with businesses, property managers, and condo boards across Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
                 </p>
                 <h2>
-                    Types of Commercial Snow Removal Services We Offer
+                    Commercial Snow Removal Services
                 </h2>
-                <h3>
-                    Commercial Snow Removal Services:
-                </h3>
                 <ul>
-                    <li>
-                        Parking Lot Snow Removal
-                    </li>
-                    <li>
-                        Sidewalk & Walkway Clearing
-                    </li>
-                    <li>
-                        Commercial Snow Plowing
-                    </li>
-                    <li>
-                        Ice Control & Sanding
-                    </li>
-                    <li>
-                        Snow Blowing Services
-                    </li>
-                    <li>
-                        Snow Hauling & Removal
-                    </li>
-                    <li>
-                        Seasonal Contracts
-                    </li>
-                    <li>
-                        On-Demand Service
-                    </li>
-                    <li>
-                        24/7 Emergency Response
-                    </li>
-                    <li>
-                        Property Management Services
-                    </li>
+                    <li>Parking Lot Snow Removal</li>
+                    <li>Sidewalk & Walkway Clearing</li>
+                    <li>Commercial Snow Plowing</li>
+                    <li>Ice Control & Sanding</li>
+                    <li>Snow Blowing Services</li>
+                    <li>Snow Hauling & Removal</li>
+                    <li>Seasonal Contracts</li>
+                    <li>24/7 Emergency Response</li>
                 </ul>
                 <h2>
-                    Service Options
+                    Why Choose Serene Landscaping?
                 </h2>
-                <h3>
-                    Seasonal Contracts & Reliable Service
-                </h3>
-                <p>
-                    We offer seasonal contracts that provide consistent, reliable snow removal service throughout the winter months. Our contracts ensure your property is cleared promptly after each snowfall, keeping your business accessible and safe for customers and employees. <a href="/contact/">Contact us</a> to discuss seasonal contracts or learn more about our <a href="/commercial/commercial-maintenance/">commercial maintenance services</a>.
-                </p>
-                <h2>
-                    Why Choose Serene Landscaping for Commercial Snow Removal?
-                </h2>
-                <h3 style="color: var(--primary);">Licensed and Insured</h3>
-                <p>
-                    Serene Landscaping carries full liability insurance and WCB coverage. Your commercial property is protected during all snow removal operations.
-                </p>
-                <h3 style="color: var(--primary);">Reliable Response</h3>
-                <p>
-                    Our crews are dispatched promptly after snowfall to keep your site accessible. We understand that commercial properties need priority clearing for business operations.
-                </p>
-                <h3 style="color: var(--primary);">Proper Equipment</h3>
-                <p>
-                    Serene Landscaping uses commercial-grade equipment suited for parking lots, loading zones, and large properties. The right equipment means efficient, thorough clearing.
-                </p>
-                <h3 style="color: var(--primary);">Clear Contracts</h3>
-                <p>
-                    We provide straightforward service agreements with clear terms, pricing, and response expectations. You know exactly what you are getting.
-                </p>
-                <h3 style="color: var(--primary);">Safe Site Access</h3>
-                <p>
-                    Our focus is keeping entrances, walkways, and parking areas safe for employees, customers, and visitors throughout winter.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 600, height: 800 }) | jpeg %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}" alt="commercial snow removal and plowing Edmonton" width="570" height="680" aria-hidden="true">
-                </picture>
+                <ul>
+                    <li><strong>Licensed and Insured:</strong> Full liability insurance and WCB coverage protects your property during all operations.</li>
+                    <li><strong>Reliable Response:</strong> Crews dispatched promptly after snowfall for priority clearing.</li>
+                    <li><strong>Proper Equipment:</strong> Commercial-grade equipment for parking lots, loading zones, and large properties.</li>
+                    <li><strong>Clear Contracts:</strong> Straightforward service agreements with clear terms and pricing.</li>
+                    <li><strong>Safe Site Access:</strong> Focus on keeping entrances, walkways, and parking areas safe all winter.</li>
+                </ul>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <!--Waves Graphic-->
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--              Helpful Resources               -->
+    <!--                Related Services              -->
     <!-- ============================================ -->
 
-    <section id="content-page-713">
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Commercial Services</h2>
+            <p class="cs-text">
+                Year-round property care for your business. Combine snow removal with maintenance for complete coverage.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-maintenance.webp" }}" alt="Commercial Maintenance" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Property Maintenance</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-landscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscaping-design.webp" }}" alt="Commercial Landscaping" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Commercial Landscaping</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/snow-removal/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-snow-removal-home.webp" }}" alt="Residential Snow Removal" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Residential Snow Removal</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-background.webp" }}" alt="All Commercial Services" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">All Commercial Services</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
         <div class="cs-container">
             <div class="cs-content">
-                <h2>Helpful Resources</h2>
-                <p>
-                    <strong><a href="/blog/prepare-snow-removal-edmonton/">Prepare for Snow Removal in Edmonton</a></strong><br>
-                    Before winter hits, a little prep goes a long way. Our Edmonton snow removal preparation guide outlines simple steps property owners can take to avoid damage, delays, and access issues.
-                </p>
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Snow Removal Process</h2>
             </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Site Assessment</h3>
+                    <p class="cs-item-text">
+                        We evaluate your property, identify priority areas, and determine equipment needs for efficient clearing.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Contract Setup</h3>
+                    <p class="cs-item-text">
+                        Clear contract with trigger depths, response times, and pricing. You know exactly what to expect.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Storm Response</h3>
+                    <p class="cs-item-text">
+                        We monitor weather, dispatch crews when triggers are met, and clear priority areas first.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Ice Control</h3>
+                    <p class="cs-item-text">
+                        Salt and sand application on walkways, entrances, and high-traffic areas for safe access.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -156,7 +194,7 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Commercial Snow Removal</span>?</h2>
                 <p class="cs-text">
-                    Here are common questions about our commercial snow removal services, contracts, and response times.
+                    Common questions about our commercial snow removal services, contracts, and response times.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -164,41 +202,41 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you provide 24/7 commercial snow removal in Edmonton?
+                            Do you provide 24/7 commercial snow removal?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we provide 24/7 commercial snow removal services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our team responds quickly to ensure parking lots, walkways, and building entrances remain safe and accessible for businesses, employees, and customers.
+                        Yes, we provide 24/7 commercial snow removal services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our team responds quickly to ensure parking lots, walkways, and entrances remain safe and accessible.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How quickly do you respond to commercial snow removal requests?
+                            How quickly do you respond after snowfall?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        For seasonal contract clients, we typically clear commercial properties within 2-4 hours after snowfall begins, depending on accumulation. We prioritize commercial properties to ensure safe access for businesses. Emergency response is available 24/7 for urgent situations throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                        For seasonal contract clients, we typically clear commercial properties within 2-4 hours after snowfall begins, depending on accumulation. We prioritize commercial properties to ensure safe access for businesses.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What areas do you cover for commercial snow removal?
+                            What areas do you cover?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We provide commercial snow removal services across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and surrounding Alberta communities. Whether you need parking lot plowing or sidewalk clearing, we're available throughout the greater Edmonton area for businesses and property managers.
+                        We provide commercial snow removal services across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and surrounding communities. Whether you need parking lot plowing or sidewalk clearing, we're available throughout greater Edmonton.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What services are included in commercial snow removal?
+                            What services are included?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Our commercial snow removal services include parking lot plowing, sidewalk and walkway clearing, building entrance maintenance, ice control and sanding, snow hauling, and 24/7 emergency response. We ensure safe site access for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                        Our commercial snow removal services include parking lot plowing, sidewalk clearing, building entrance maintenance, ice control and sanding, snow hauling, and 24/7 emergency response.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -208,42 +246,10 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Commercial snow removal costs vary based on property size, frequency of service, and whether you choose a seasonal contract or pay-per-push option. We provide free quotes for all commercial snow removal services in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
+                        Costs vary based on property size, frequency of service, and contract type (seasonal vs per-push). Seasonal contracts typically range from $2,000-$10,000+ depending on property size. Contact us for a customized quote.
                     </p>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Service Areas                 -->
-    <!-- ============================================ -->
-
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2>Service Areas</h2>
-                <p>
-                    Serene Landscaping provides commercial snow removal to businesses, property managers, and condo boards throughout Greater Edmonton.
-                </p>
-                <details style="margin-top: 1.5rem; padding: 1rem; border: 1px solid var(--primary); border-radius: 8px; cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--primary); cursor: pointer; list-style: none; padding: 0.5rem 0;">
-                        <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <span>View All Service Areas</span>
-                            <span style="font-size: 0.875rem;">▼</span>
-                        </span>
-                    </summary>
-                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1);">
-                        <h3 style="margin-top: 0; color: var(--primary); font-size: 1rem;">Major Service Areas</h3>
-                        <p style="margin: 0.5rem 0; line-height: 1.8;">Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain</p>
-                        <h3 style="margin-top: 1rem; color: var(--primary); font-size: 1rem;">Also Serving</h3>
-                        <p style="margin: 0.5rem 0; line-height: 1.8;">Fort Saskatchewan, Leduc, Beaumont, Devon, Morinville, Legal, Bon Accord</p>
-                        <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--bodyTextColor); opacity: 0.8;">
-                            Not sure if we serve your area? <a href="/contact/">Contact us</a> and we'll confirm availability.
-                        </p>
-                    </div>
-                </details>
-            </div>
         </div>
     </section>
 
@@ -267,6 +273,38 @@ keywords: "commercial snow removal Edmonton, business snow plowing Edmonton, par
         { "@type": "City", "name": "Stony Plain" }
       ],
       "description": "24/7 commercial snow removal in Edmonton. Parking lot plowing, walkway clearing. Contract pricing for businesses and property managers."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide 24/7 commercial snow removal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide 24/7 commercial snow removal services throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly do you respond after snowfall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For seasonal contract clients, we typically clear commercial properties within 2-4 hours after snowfall begins, depending on accumulation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does commercial snow removal cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs vary based on property size and contract type. Seasonal contracts typically range from $2,000-$10,000+ depending on property size."
+          }
+        }
+      ]
     }
     </script>
 

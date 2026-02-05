@@ -9,7 +9,7 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/services-snow-removal-home.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,154 +17,280 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Winter Services</span>
-            <span class="cs-int-title">Residential & Commercial Snow Removal</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Residential & Commercial Snow Removal
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/services-snow-removal-home.webp" }}" alt="Snow removal in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="snow removal Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/crew-for-snow-removal-commercial.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/crew-for-snow-removal-commercial.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/crew-for-snow-removal-commercial.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/crew-for-snow-removal-commercial.webp" }}" alt="Snow removal crew" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Snow Removal in Edmonton
+                    Snow Removal
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    We provide residential and commercial snow removal for driveways, walkways, and parking lots. Clear access and safe surfaces are the priority all winter.
+                    Keep driveways, walkways, and entrances clear all winter with dependable snow removal in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We provide residential and commercial snow clearing so your property stays safe and accessible after storms.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    Our team focuses on quick response, clean plowing, and effective ice control. We clear routes consistently and communicate clearly so you know what to expect during heavy snowfall periods.
+                </p>
+                <p>
+                    With over 8 years of local experience, we understand Edmonton winters and how to keep surfaces safe in changing conditions.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Snow Removal Services We Offer
                 </h2>
-                <p>
-                    We’ll review access, priority areas, and the level of service you need, then set a simple plan.
-                </p>
-                <h3 class="cs-accent">
-                    Reliable Winter Coverage
-                </h3>
-                <p>
-                    Consistent clearing and ice control keep surfaces safe after storms.
-                </p>
-                <h3 class="cs-accent">
-                    Clear, Safe Surfaces
-                </h3>
-                <p>
-                    Snow clearing and ice control keep entrances and walkways safe after storms.
-                </p>
-                <span class="cs-topper">What We Build</span>
+                <ul>
+                    <li>Driveway Plowing and Clearing</li>
+                    <li>Walkway and Entrance Shoveling</li>
+                    <li>Ice Control and De‑Icing</li>
+                    <li>Commercial Parking Lot Clearing</li>
+                    <li>Priority and Seasonal Service Plans</li>
+                </ul>
                 <h2>
-                    Clear Access All Season
+                    Reliable Coverage All Winter
                 </h2>
                 <p>
-                    Driveways, walkways, entrances, and parking lots—cleared quickly and consistently.
+                    We track forecasts and start routes once accumulation hits 2-3". Driveways get plowed to the edge, walkways get shoveled clean, and ice melt goes down on steps and high-traffic areas. We plow with the blade angled so snow banks away from garage doors.
                 </p>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Plowing, shoveling, and ice control are standard. For business sites, see our <a href="/commercial/commercial-snow-removal/">commercial snow removal</a> services.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew-for-snow-removal-commercial.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/crew-for-snow-removal-commercial.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/crew-for-snow-removal-commercial.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Snow removal crew ready for service" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-4" data-lightbox-gallery>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Snow Removal Highlights</h2>
-            </div>
-            <div class="cs-gallery-grid">
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/commercial-snow-removal-parking-lot-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Parking lot snow removal">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-snow-removal-parking-lot-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-snow-removal-parking-lot-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-snow-removal-parking-lot-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Parking lot snow removal" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Sidewalk snow shoveling">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-sidewalk-snow-shoveling-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Sidewalk snow shoveling" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/commercial-snow-hauling-loader-operation-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Snow hauling operation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-snow-hauling-loader-operation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-snow-hauling-loader-operation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-snow-hauling-loader-operation-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Snow hauling operation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/residential-driveway-snow-plowing-edmonton.jpg" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Residential driveway snow plowing">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/residential-driveway-snow-plowing-edmonton.jpg" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/residential-driveway-snow-plowing-edmonton.jpg" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/residential-driveway-snow-plowing-edmonton.jpg" | resize({ width: 800, height: 600 }) | webp %}" alt="Residential driveway snow plowing" width="800" height="600">
-                    </picture>
-                </button>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Snow Removal?
                 </h2>
                 <p>
-                    We keep access clear, schedules reliable, and communication simple.
+                    We keep winter service dependable, predictable, and easy to manage.
                 </p>
-                <h3 class="cs-accent">Reliable Dispatch</h3>
+                <ul>
+                    <li><strong>Reliable Dispatch:</strong> Consistent service after snow events.</li>
+                    <li><strong>Safe Access:</strong> Plowing, shoveling, and ice melt on steps and walks.</li>
+                    <li><strong>Clear Communication:</strong> Straightforward service expectations.</li>
+                    <li><strong>Residential and Commercial:</strong> Coverage for homes and business sites.</li>
+                </ul>
+                <h2>
+                    Where We Work
+                </h2>
                 <p>
-                    We monitor storms and send crews as soon as routes open.
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, and nearby communities.
                 </p>
-                <h3 class="cs-accent">Safe Access</h3>
-                <p>
-                    Plowing and ice control keep entrances and walkways safe.
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                Keep your property maintained all year. These services ensure your outdoor space looks great in every season.
+            </p>
+                        <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/lawn-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-lawn-maintenance-home.webp" }}" alt="Lawn maintenance in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Lawn Maintenance</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Landscape design in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/fences/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/cedar-fence.webp" }}" alt="Fence installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Fences</span>
+                    </a>
+                </li>                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/artificial-grass/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}" alt="Artificial grass in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Artificial Grass</span>
+                    </a>
+                </li>            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Snow Removal Pricing              -->
+    <!-- ============================================ -->
+
+    <section id="pricing-1769">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Pricing</span>
+                <h2 class="cs-title">Residential Snow Removal Pricing</h2>
+                <p class="cs-text">
+                    Residential snow removal pricing for Edmonton, St. Albert, Spruce Grove, and Sherwood Park. Prices vary based on driveway length, property size, and snow accumulation. All prices are starting rates for the winter season (November-March).
                 </p>
-                <h3 class="cs-accent">Clear Communication</h3>
-                <p>
-                    You know what’s included and when service is scheduled.
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-package">Monthly - Standard Lot</span>
+                    <div class="cs-wrapper">
+                        <span class="cs-price">$200</span>
+                        <span class="cs-item-p">Starting Price</span>
+                    </div>
+                    <p class="cs-item-text">
+                        Reliable monthly snow removal service for standard residential driveways and walkways (up to 6,000 sq ft). Perfect for homeowners who want consistent winter maintenance.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Priority service during all snow events
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Driveway clearing and snow removal
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Front walkway and entrance clearing
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Basic ice control application
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Consistent monthly service throughout winter
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            November through March coverage
+                        </li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid cs-price-button">Get Started</a>
+                </li>
+                <li class="cs-item cs-popular">
+                    <span class="cs-package">Monthly - Oversized Lot</span>
+                    <div class="cs-wrapper">
+                        <span class="cs-price">$250</span>
+                        <span class="cs-item-p">Starting Price - Best Value</span>
+                    </div>
+                    <p class="cs-item-text">
+                        Complete monthly snow removal for larger properties (6,000+ sq ft). Ideal for homeowners with long driveways or multiple parking areas requiring extra attention.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Priority service during all snow events
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Extended driveway and parking area clearing
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            All walkways and entrance areas cleared
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Ice control program
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Consistent monthly service throughout winter
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            November through March coverage
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Extra time for larger properties
+                        </li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid cs-price-button">Get Started</a>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-package">Per Visit - One Time</span>
+                    <div class="cs-wrapper">
+                        <span class="cs-price">$70</span>
+                        <span class="cs-item-p">Starting Price</span>
+                    </div>
+                    <p class="cs-item-text">
+                        Perfect for occasional snow removal when you need help clearing your driveway and walkways after a heavy snowfall. No contract required.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Driveway clearing and snow removal
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Front walkway and entrance clearing
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Basic ice control application
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            No contract or commitment required
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Book only when you need service
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Pricing/red-check.svg" alt="checkmark" width="18" height="18">
+                            Same-day or next-day service available
+                        </li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid cs-price-button">Request Service</a>
+                </li>
+            </ul>
+            <div class="cs-content" style="margin-top: 2rem;">
+                <p class="cs-text" style="font-size: calc(14/16 * 1rem); opacity: 0.8; margin-bottom: 1rem;">
+                    Not sure which option fits your property? <a href="/contact/" style="color: var(--primary);">Contact us</a> for a free quote and property assessment. We serve residential properties throughout Greater Edmonton.
                 </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <p class="cs-text" style="font-size: calc(12/16 * 1rem); opacity: 0.7; margin-bottom: 1rem;">
+                    * Starting prices shown. Final pricing based on driveway length, property size, snow accumulation, and accessibility. Standard lot = up to 6,000 sq ft total area. Oversized lot = 6,000+ sq ft or long driveways (100+ feet). Monthly contracts run November-March. Free quotes available for all property sizes.
+                </p>
+                <p class="cs-text" style="font-size: calc(14/16 * 1rem); opacity: 0.8; margin: 0;">
+                    For commercial snow removal, parking lot clearing, or 24/7 service, visit our <a href="/commercial/commercial-snow-removal/" style="color: var(--primary);">Commercial Snow Removal</a> page.
+                </p>
             </div>
         </div>
     </section>
@@ -177,9 +303,9 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
-                <h2 class="cs-title">Questions About <span class="cs-color">Residential Snow Removal</span>?</h2>
+                <h2 class="cs-title">Questions About <span class="cs-color">Snow Removal</span>?</h2>
                 <p class="cs-text">
-                    Quick answers about pricing, response, and service options.
+                    Quick answers about service, response, and winter coverage.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -187,31 +313,31 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How much does residential snow removal cost?
+                            How quickly do you clear after snowfall?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Pricing depends on driveway size and service level. We provide clear quotes after a site visit.
+                        We start routes once snow hits 2-3" and clear priority access first. Most residential drives are done within a few hours of snowfall stopping.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How quickly do you respond after snowfall?
+                            Do you offer seasonal contracts?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We service routes as soon as conditions allow and keep priority clients cleared first.
+                        Yes. Monthly contracts for standard lots start around $200, and per‑visit service starts around $70 depending on driveway size and layout.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you offer seasonal contracts or per‑visit service?
+                            Is ice control included?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We offer seasonal agreements and per‑visit options depending on your preference.
+                        Ice control is included on most plans. We use salt or calcium chloride on walkways and steps—calcium works better in extreme cold.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -222,6 +348,16 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
                     </button>
                     <p class="cs-item-p">
                         Yes. For business sites, visit our <a href="/commercial/commercial-snow-removal/">commercial snow removal</a> page.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I get a quote?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Contact us for a quick site review and clear pricing based on your property.
                     </p>
                 </li>
             </ul>
@@ -247,7 +383,7 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
         { "@type": "City", "name": "Sherwood Park" },
         { "@type": "City", "name": "Stony Plain" }
       ],
-      "description": "Residential snow removal in Edmonton. Driveway plowing, walkway clearing, ice control. Seasonal contracts and on-demand service for homeowners."
+      "description": "24/7 residential snow removal in Edmonton. Driveway plowing, walkway clearing, ice control. Reliable service for homeowners in Edmonton, St. Albert, Spruce Grove, and Sherwood Park."
     }
     </script>
     <script type="application/ld+json">
@@ -257,26 +393,26 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does residential snow removal cost?",
+          "name": "How quickly do you clear after snowfall?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pricing depends on driveway size and service level. We provide clear quotes after a site visit."
+            "text": "We start routes once snow hits 2-3 inches and clear priority access first. Most residential drives are done within a few hours of snowfall stopping."
           }
         },
         {
           "@type": "Question",
-          "name": "How quickly do you respond after snowfall?",
+          "name": "Do you offer seasonal contracts?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We service routes as soon as conditions allow and keep priority clients cleared first."
+            "text": "Yes. Monthly contracts for standard lots start around $200, and per-visit service starts around $70 depending on driveway size and layout."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer seasonal contracts or per-visit service?",
+          "name": "Is ice control included?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer seasonal agreements and per-visit options depending on your preference."
+            "text": "Ice control is included on most plans. We use salt or calcium chloride on walkways and steps—calcium works better in extreme cold."
           }
         },
         {
@@ -286,9 +422,19 @@ keywords: "snow removal Edmonton, residential snow removal Edmonton, snow plowin
             "@type": "Answer",
             "text": "Yes. For business sites, visit our commercial snow removal page."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact us for a quick site review and clear pricing based on your property."
+          }
         }
       ]
     }
     </script>
 
 {% endblock %}
+
+

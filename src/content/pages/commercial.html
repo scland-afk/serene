@@ -9,7 +9,7 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/commercial-landscape-background.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,188 +17,217 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Commercial Services</span>
-            <span class="cs-int-title">Commercial Property Services</span>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Commercial Landscaping Services
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-background.webp" }}" alt="Commercial landscaping in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscape-background.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial property landscaping and maintenance Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" }}" alt="Commercial grounds maintenance Edmonton" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Commercial Landscaping Services in Edmonton
+                    Commercial Landscaping
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
-                <h2>
-                    What Commercial Landscaping Services Do We Provide?
-                </h2>
                 <p>
-                    Serene Landscaping provides comprehensive commercial landscaping and grounds maintenance services for businesses, <a href="/commercial/">property managers</a>, and condo boards throughout Edmonton and surrounding areas. We specialize in reliable, professional service that keeps your commercial property looking its best without disrupting business operations.
+                    Serene Landscaping provides comprehensive commercial landscaping and grounds maintenance services for businesses, property managers, and condo boards throughout Edmonton and surrounding areas. We specialize in reliable, professional service that keeps your commercial property looking its best without disrupting business operations.
                 </p>
                 <p>
                     Commercial clients hire us for consistent maintenance, seasonal cleanups, landscape installations, and winter snow removal. We understand that your property's appearance directly impacts your business - whether you're attracting customers, retaining tenants, or maintaining property values for condo owners.
                 </p>
-                <h3>
-                    Our Commercial Landscaping Services:
-                </h3>
+                <h2>
+                    Our Commercial Landscaping Services
+                </h2>
                 <ul>
-                    <li>
-                        <a href="/commercial/commercial-landscaping/">Commercial Landscape Design & Installation</a> – New construction, renovations, parking lot landscaping
-                    </li>
-                    <li>
-                        <a href="/commercial/commercial-maintenance/">Regular Property Maintenance Programs</a> – Weekly/bi-weekly grounds keeping, seasonal service
-                    </li>
-                    <li>
-                        Commercial Lawn Care – Mowing, edging, trimming, fertilization, weed control
-                    </li>
-                    <li>
-                        <a href="/commercial/commercial-snow-removal/">Commercial Snow Removal</a> – 24/7 winter service, parking lots, walkways, entrances
-                    </li>
-                    <li>
-                        Seasonal Property Cleanups – Spring debris removal, fall leaf cleanup, bed maintenance
-                    </li>
-                    <li>
-                        Parking Lot & Entrance Landscaping – Curb appeal for retail and office properties
-                    </li>
-                    <li>
-                        Multi-Family Property Services – Condo complexes, apartment buildings, townhome communities
-                    </li>
-                    <li>
-                        Property Management Portfolio Services – Consistent service across multiple locations
-                    </li>
-                    <li>
-                        Emergency Response – Storm cleanup, snow removal, urgent property issues
-                    </li>
+                    <li><a href="/commercial/commercial-landscaping/">Commercial Landscape Design & Installation</a> – New construction, renovations, parking lot landscaping</li>
+                    <li><a href="/commercial/commercial-maintenance/">Regular Property Maintenance Programs</a> – Weekly/bi-weekly grounds keeping, seasonal service</li>
+                    <li>Commercial Lawn Care – Mowing, edging, trimming, fertilization, weed control</li>
+                    <li><a href="/commercial/commercial-snow-removal/">Commercial Snow Removal</a> – 24/7 winter service, parking lots, walkways, entrances</li>
+                    <li>Seasonal Property Cleanups – Spring debris removal, fall leaf cleanup, bed maintenance</li>
+                    <li>Multi-Family Property Services – Condo complexes, apartment buildings, townhome communities</li>
                 </ul>
+                <h2>
+                    Why Do Property Managers Choose Serene?
+                </h2>
+                <ul>
+                    <li><strong>Reliable Scheduling:</strong> We show up on schedule - weekly lawn maintenance means weekly, not "whenever we get to it."</li>
+                    <li><strong>Consistent Quality:</strong> Property managers with multiple sites trust us to deliver the same quality service at every location.</li>
+                    <li><strong>Flexible Scheduling:</strong> We schedule service during off-hours to minimize disruption to business operations.</li>
+                    <li><strong>Transparent Billing:</strong> Clear seasonal or annual contracts with detailed pricing. No surprise charges.</li>
+                    <li><strong>Licensed & Insured:</strong> Full liability insurance and WCB coverage protects your property and our team.</li>
+                </ul>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- ============================================ -->
+    <!--           Commercial Services Grid           -->
+    <!-- ============================================ -->
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Our Commercial Services</h2>
+            <p class="cs-text">
+                Explore our commercial services below. Need a custom solution? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-landscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscaping-design.webp" }}" alt="Commercial Landscaping" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Commercial Landscaping</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-maintenance.webp" }}" alt="Commercial Maintenance" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Property Maintenance</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-snow-removal/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}" alt="Commercial Snow Removal" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Snow Removal</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/contact/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/portfolio/commercial-landscaping-service-station-edmonton.jpg" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/portfolio/commercial-landscaping-service-station-edmonton.jpg" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/portfolio/commercial-landscaping-service-station-edmonton.jpg" }}" alt="Request Quote" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Request Quote</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">How Commercial Contracts Work</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Property Assessment</h3>
+                    <p class="cs-item-text">
+                        We visit your property, assess your needs, and discuss service requirements. Within 48 hours, you receive a detailed proposal.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Contract & Scheduling</h3>
+                    <p class="cs-item-text">
+                        Once approved, we finalize the contract, set up your service schedule, and coordinate timing to minimize business disruption.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Consistent Service</h3>
+                    <p class="cs-item-text">
+                        Our crews arrive on schedule, complete work efficiently, and maintain detailed service records for your property.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Ongoing Communication</h3>
+                    <p class="cs-item-text">
+                        Your account manager provides regular updates, handles any concerns, and adjusts service as your needs change.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Pricing                    -->
+    <!-- ============================================ -->
+
+    <section id="content-page-1398">
+        <div class="cs-container">
+            <div class="cs-content">
                 <h2>
                     What Types of Commercial Properties Do We Service?
                 </h2>
                 <p>
-                    We work with a wide range of commercial property types throughout Edmonton and surrounding areas:
+                    <strong>Office Buildings:</strong> Professional grounds maintenance, parking lot landscaping, entrance beautification, and seasonal upkeep.
                 </p>
                 <p>
-                    <strong>Office Buildings:</strong> Professional grounds maintenance, parking lot landscaping, entrance beautification, and seasonal upkeep to create a welcoming environment for employees and clients.
+                    <strong>Retail Centers & Shopping Plazas:</strong> High-visibility properties require consistent maintenance. We ensure parking areas and walkways look inviting year-round.
                 </p>
                 <p>
-                    <strong>Retail Centers & Shopping Plazas:</strong> High-visibility properties require consistent maintenance. We ensure parking areas, walkways, and landscaped areas look inviting to customers year-round.
+                    <strong>Multi-Family Properties:</strong> Condo complexes, apartment buildings, and townhome communities. We work directly with condo boards and property managers.
                 </p>
                 <p>
-                    <strong>Multi-Family Properties:</strong> Condo complexes, apartment buildings, and townhome communities. We work directly with condo boards, property managers, and HOAs to maintain common areas and improve curb appeal.
+                    <strong>Industrial & Warehouse Facilities:</strong> Professional grounds keeping for industrial properties. Focus on safety, accessibility, and clean appearance.
                 </p>
                 <p>
-                    <strong>Industrial & Warehouse Facilities:</strong> Professional grounds keeping for industrial properties, distribution centers, and warehouse facilities. Focus on safety, accessibility, and clean appearance.
+                    <strong>Property Management Portfolios:</strong> Consistent service across multiple properties for property management companies throughout Edmonton.
                 </p>
-                <p>
-                    <strong>Medical & Professional Buildings:</strong> Healthcare facilities, dental offices, professional buildings require consistent, reliable service to maintain a professional appearance for patients and clients.
-                </p>
-                <p>
-                    <strong>Property Management Portfolios:</strong> We provide consistent service across multiple properties for <a href="/commercial/">property management companies</a> managing portfolios throughout Edmonton and surrounding areas.
-                </p>
-
                 <h2>
-                    Why Do Property Managers Choose Serene for Commercial Landscaping?
+                    How Much Does Commercial Landscaping Cost?
                 </h2>
-                <p>
-                    <strong>Reliable Scheduling:</strong> Commercial properties can't afford missed service. We show up on schedule - weekly lawn maintenance means weekly, not "whenever we get to it." If weather or circumstances require rescheduling, we communicate immediately and adjust.
-                </p>
-                <p>
-                    <strong>Consistent Quality Across Multiple Locations:</strong> Property managers with multiple sites trust us to deliver the same quality service at every location. We maintain detailed service records and use consistent crews to ensure standards don't slip.
-                </p>
-                <p>
-                    <strong>Flexible Scheduling to Minimize Disruption:</strong> We schedule service during off-hours, early mornings, or weekends when it won't interfere with business operations or customer traffic. For office properties, we can work around meetings or events.
-                </p>
-                <p>
-                    <strong>Transparent Billing & Contract Pricing:</strong> No surprise charges. We provide clear seasonal or annual contracts with detailed pricing. You know exactly what you're paying for, and invoicing is straightforward and on schedule.
-                </p>
-                <p>
-                    <strong>Licensed, Insured & WCB Covered:</strong> Full liability insurance and WCB coverage protects your property and our team. We follow proper safety protocols, especially important for high-traffic commercial sites.
-                </p>
-                <p>
-                    <strong>Emergency Response Capability:</strong> Storm damage, unexpected snow, urgent property issues - we respond quickly. For snow removal clients, we provide 24/7 emergency service throughout winter.
-                </p>
-                <p>
-                    <strong>Direct Communication:</strong> You work with the same account manager throughout the contract. No runaround, no phone tag - just direct communication when you need answers or adjustments.
-                </p>
-
-                <h2>
-                    How Do Commercial Landscaping Contracts Work?
-                </h2>
-                <p>
-                    We offer flexible contract options designed for commercial properties:
-                </p>
-                <p>
-                    <strong>Seasonal Contracts (April-October):</strong> Weekly or bi-weekly lawn maintenance, spring cleanup, and fall cleanup bundled into one seasonal agreement. Predictable monthly billing makes budgeting easier.
-                </p>
-                <p>
-                    <strong>Year-Round Contracts:</strong> Combine seasonal grounds maintenance with winter snow removal for complete property care. Single point of contact, consistent service, simplified billing.
-                </p>
-                <p>
-                    <strong>Snow Removal Contracts (November-March):</strong> Guaranteed winter service with priority response. Contract pricing provides budget certainty compared to per-push pricing during heavy snow years.
-                </p>
-                <p>
-                    <strong>Project-Based Work:</strong> Landscape installations, parking lot improvements, seasonal plantings, or property renovations quoted on a per-project basis.
-                </p>
-                <p>
-                    All contracts include detailed scope of work, service frequency, pricing breakdown, and clear terms. We review everything together before you commit, and contracts can be customized to your property's specific needs.
-                </p>
-
-                <h2>
-                    How Much Does Commercial Landscaping Cost in Edmonton?
-                </h2>
-                <p>
-                    Commercial landscaping costs depend on property size, service frequency, and scope. Here are typical ranges for Edmonton-area commercial properties:
-                </p>
                 <ul>
                     <li><strong>Weekly Lawn Maintenance:</strong> $150-400+ per visit (small office) to $500-1,500+ (large retail center)</li>
-                    <li><strong>Seasonal Maintenance Contract:</strong> $3,000-15,000+ for 6-month program (varies widely by property size)</li>
-                    <li><strong>Snow Removal Contract:</strong> $2,000-10,000+ per season (depends on lot size, frequency triggers, salt/sand)</li>
-                    <li><strong>Spring/Fall Cleanup:</strong> $500-3,000+ (based on property size and debris volume)</li>
-                    <li><strong>Landscape Installation:</strong> $10,000-100,000+ (new construction, parking lot landscaping, major renovations)</li>
+                    <li><strong>Seasonal Maintenance Contract:</strong> $3,000-15,000+ for 6-month program</li>
+                    <li><strong>Snow Removal Contract:</strong> $2,000-10,000+ per season</li>
+                    <li><strong>Spring/Fall Cleanup:</strong> $500-3,000+</li>
+                    <li><strong>Landscape Installation:</strong> $10,000-100,000+</li>
                 </ul>
                 <p>
-                    The most accurate way to get pricing is to <a href="/contact/">request a quote</a>. We'll visit your property, assess your needs, and provide a detailed proposal with clear pricing and service details.
+                    The most accurate way to get pricing is to <a href="/contact/">request a quote</a>. We'll visit your property and provide a detailed proposal.
                 </p>
-
                 <h2>
-                    When Should You Book Commercial Landscaping Services?
+                    Where We Work
                 </h2>
                 <p>
-                    <strong>For Seasonal Lawn Maintenance:</strong> Book in February or March to secure your preferred service schedule before spring demand peaks. Most contracts begin in April when grass starts growing.
+                    Serving businesses throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain, Fort Saskatchewan, Leduc, and Beaumont.
                 </p>
-                <p>
-                    <strong>For Snow Removal Contracts:</strong> October or early November, before the first snowfall. This ensures your property is covered when winter weather arrives. Contract slots fill up quickly.
-                </p>
-                <p>
-                    <strong>For Landscape Installation Projects:</strong> Book 4-8 weeks in advance for spring or summer work. Fall installation works well for certain plants and hardscaping, with less competition for scheduling.
-                </p>
-                <p>
-                    <strong>For Emergency or Immediate Service:</strong> We can often accommodate urgent needs within 1-2 weeks depending on current workload and season. Contact us as soon as possible if you need quick service.
-                </p>
-
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="commercial grounds maintenance Edmonton" width="570" height="680" aria-hidden="true">
-                </picture>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <!--Waves Graphic-->
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
     </section>
 
     <!-- ============================================ -->
@@ -208,9 +237,9 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
-                <h2 class="cs-title">Common Questions About <span class="cs-color">Commercial Landscaping</span></h2>
+                <h2 class="cs-title">Questions About <span class="cs-color">Commercial Landscaping</span>?</h2>
                 <p class="cs-text">
-                    Here are common questions about our commercial landscaping services, contracts, and working with property managers and businesses.
+                    Common questions about our commercial landscaping services, contracts, and working with property managers.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -222,27 +251,7 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We service office buildings, retail centers, multi-family properties (apartments, condos, townhomes), industrial facilities, medical campuses, property management portfolios, condo boards, and business parks throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Can you provide references from other commercial clients?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes, we're happy to provide references from property managers, businesses, and condo boards we've served throughout the Edmonton area. We also encourage you to check our Google reviews for verified feedback from commercial clients.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How quickly can you respond to commercial service requests?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        For existing contract clients, we respond to urgent requests within 24 hours. For snow removal, we provide emergency 24/7 service during winter months. New commercial clients can typically be scheduled within 1-2 weeks depending on season and current workload.
+                        We service office buildings, retail centers, multi-family properties (apartments, condos, townhomes), industrial facilities, medical campuses, property management portfolios, and business parks throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -252,7 +261,17 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication to simplify your operations.
+                        Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly can you respond to service requests?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        For existing contract clients, we respond to urgent requests within 24 hours. For snow removal, we provide emergency 24/7 service during winter months. New commercial clients can typically be scheduled within 1-2 weeks.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -262,17 +281,17 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties. This protects both your property and our crew while we're working on site.
+                        Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties. This protects both your property and our crew.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How do I get a quote for commercial landscaping services?
+                            How do I get a quote for commercial services?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Contact us at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a site visit to assess your property, discuss your needs, and provide a detailed written proposal with clear pricing and service details.
+                        Contact us at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a site visit and provide a detailed written proposal.
                     </p>
                 </li>
             </ul>
@@ -284,14 +303,34 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Commercial Landscaping",
+      "provider": {
+        "@type": "LandscapingBusiness",
+        "name": "Serene Landscaping",
+        "telephone": "(587) 566-9879"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Edmonton" },
+        { "@type": "City", "name": "St. Albert" },
+        { "@type": "City", "name": "Spruce Grove" },
+        { "@type": "City", "name": "Sherwood Park" },
+        { "@type": "City", "name": "Stony Plain" }
+      ],
+      "description": "Commercial landscaping for Edmonton businesses. Property maintenance, lawn care, and snow removal. Reliable service for property managers and businesses."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What commercial landscaping services do you offer?",
+          "name": "What commercial properties do you service?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer comprehensive commercial landscaping services including landscape design and installation, regular property maintenance programs, commercial snow removal, seasonal cleanups, parking lot landscaping, and multi-family property services."
+            "text": "We service office buildings, retail centers, multi-family properties, industrial facilities, medical campuses, property management portfolios, and business parks throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park."
           }
         },
         {
@@ -299,7 +338,7 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
           "name": "Do you work with property management companies?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication to simplify your operations."
+            "text": "Yes, we work with property management companies managing multiple properties. We provide consistent service across all locations with single-point billing and centralized communication."
           }
         },
         {
@@ -307,15 +346,7 @@ keywords: "commercial landscaping Edmonton, business landscaping Edmonton, prope
           "name": "Are you licensed and insured for commercial work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties. This protects both your property and our crew while we're working on site."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I get a quote for commercial landscaping services?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Contact us at (587) 566-9879 or through our contact form. We'll schedule a site visit to assess your property, discuss your needs, and provide a detailed written proposal with clear pricing and service details."
+            "text": "Yes, we're fully licensed, insured, and WCB covered with appropriate liability limits for commercial properties."
           }
         }
       ]

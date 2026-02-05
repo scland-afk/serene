@@ -9,7 +9,7 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/commercial-landscape-maintenance.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,100 +17,171 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Commercial Services</span>
-            <span class="cs-int-title">Commercial Property Maintenance</span>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Commercial Property Maintenance
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/commercial-landscape-maintenance.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-maintenance.webp" }}" alt="Commercial property maintenance in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscape-maintenance.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="commercial maintenance Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" }}" alt="Commercial lawn maintenance" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Commercial Property Maintenance in Edmonton
+                    Commercial Property Maintenance
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    Comprehensive commercial property maintenance throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. Regular <a href="/services/lawn-maintenance/">lawn care</a>, seasonal cleanups, and consistent maintenance to keep business properties looking professional year-round. We provide reliable, professional maintenance services for businesses, <a href="/commercial/">property managers</a>, and condo boards.
+                    Comprehensive commercial property maintenance throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park. Regular <a href="/services/lawn-maintenance/">lawn care</a>, seasonal cleanups, and consistent maintenance to keep business properties looking professional year-round.
                 </p>
                 <p>
-                    Our commercial maintenance services are designed to minimize disruption to your business while ensuring your property always presents a professional appearance. We work with businesses, property managers, and condo boards throughout Greater Edmonton.
+                    Our commercial maintenance services minimize disruption to your business while ensuring your property always presents a professional appearance. We work with businesses, <a href="/commercial/">property managers</a>, and condo boards throughout Greater Edmonton.
                 </p>
                 <h2>
-                    What's Included in Commercial Maintenance Services
+                    Commercial Maintenance Services
                 </h2>
-                <h3>
-                    Commercial Maintenance Services:
-                </h3>
                 <ul>
-                    <li>
-                        Regular Lawn Mowing & Maintenance
-                    </li>
-                    <li>
-                        Commercial Fertilization Programs
-                    </li>
-                    <li>
-                        Spring & Fall Cleanups
-                    </li>
-                    <li>
-                        Seasonal Property Upkeep
-                    </li>
-                    <li>
-                        Mulching & Bed Maintenance
-                    </li>
-                    <li>
-                        Trimming & Pruning
-                    </li>
-                    <li>
-                        Irrigation System Maintenance
-                    </li>
-                    <li>
-                        Weed Control & Treatment
-                    </li>
-                    <li>
-                        Property Inspection Services
-                    </li>
-                    <li>
-                        Custom Maintenance Programs
-                    </li>
+                    <li>Regular Lawn Mowing & Maintenance</li>
+                    <li>Commercial Fertilization Programs</li>
+                    <li>Spring & Fall Cleanups</li>
+                    <li>Seasonal Property Upkeep</li>
+                    <li>Mulching & Bed Maintenance</li>
+                    <li>Trimming & Pruning</li>
+                    <li>Irrigation System Maintenance</li>
+                    <li>Weed Control & Treatment</li>
+                    <li>Custom Maintenance Programs</li>
                 </ul>
                 <h2>
-                    Our Maintenance Approach
+                    Why Choose Serene Landscaping?
                 </h2>
-                <h3>
-                    Consistent Professional Maintenance
-                </h3>
-                <p>
-                    We provide consistent, professional maintenance to keep your commercial property looking its best throughout the year. Our maintenance programs are tailored to your property's specific needs and can be scheduled to minimize disruption to your business operations. <a href="/contact/">Request a quote</a> for commercial property maintenance or learn more about our <a href="/commercial/commercial-landscaping/">commercial landscaping services</a>.
-                </p>
-                <h2>
-                    Why Choose Serene Landscaping for Commercial Maintenance?
-                </h2>
-                <p>
-                    Serene Landscaping stands as the trusted choice for commercial property maintenance in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. We offer comprehensive maintenance programs designed to keep your business property looking professional and well-maintained. Our commitment to reliability and quality service makes us the ideal choice for businesses, property managers, and condo boards.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-lawn-maintenance-in-sherwood-park.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Commercial property with maintained lawn and landscaping" width="570" height="680" aria-hidden="true">
-                </picture>
+                <ul>
+                    <li><strong>Consistent Service:</strong> Same quality across all locations for property managers with multiple sites.</li>
+                    <li><strong>Flexible Scheduling:</strong> We work around your business hours to minimize disruption.</li>
+                    <li><strong>Detailed Records:</strong> Service logs and communication so you always know what's been done.</li>
+                    <li><strong>Licensed & Insured:</strong> Full liability and WCB coverage for all work on your property.</li>
+                </ul>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <!--Waves Graphic-->
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Commercial Services</h2>
+            <p class="cs-text">
+                Complete property care for your business. Combine maintenance with landscaping and snow removal for year-round coverage.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-landscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscaping-design.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscaping-design.webp" }}" alt="Commercial Landscaping" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Commercial Landscaping</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/commercial-snow-removal/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-snow-removal-bobcat.webp" }}" alt="Commercial Snow Removal" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Snow Removal</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/lawn-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-lawn-maintenance-home.webp" }}" alt="Residential Lawn Maintenance" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Residential Maintenance</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/commercial/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-background.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-background.webp" }}" alt="All Commercial Services" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">All Commercial Services</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Maintenance Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Property Assessment</h3>
+                    <p class="cs-item-text">
+                        We evaluate your property, discuss your needs, and identify the right maintenance schedule.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Custom Program</h3>
+                    <p class="cs-item-text">
+                        We create a maintenance program tailored to your property's specific needs and your budget.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Consistent Service</h3>
+                    <p class="cs-item-text">
+                        Our crews arrive on schedule and complete work efficiently while minimizing business disruption.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Ongoing Communication</h3>
+                    <p class="cs-item-text">
+                        Regular updates, service records, and a dedicated contact for any questions or adjustments.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
@@ -123,7 +194,7 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Commercial Maintenance</span>?</h2>
                 <p class="cs-text">
-                    Here are common questions about our commercial property maintenance services and programs.
+                    Common questions about our commercial property maintenance services and programs.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -135,37 +206,37 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Our commercial maintenance programs include regular lawn mowing, fertilization, weed control, seasonal cleanups, mulching, trimming, pruning, and irrigation maintenance. Programs are customized to your property's needs for businesses throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                        Our programs include regular lawn mowing, fertilization, weed control, seasonal cleanups, mulching, trimming, pruning, and irrigation maintenance. Programs are customized to your property's needs.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How often do you provide commercial maintenance services?
+                            How often do you provide maintenance services?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Maintenance frequency depends on your property's needs and the services included. Most commercial properties require weekly or bi-weekly maintenance during the growing season. We work with businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park to create customized schedules.
+                        Frequency depends on your property's needs. Most commercial properties require weekly or bi-weekly maintenance during the growing season. We create customized schedules for each property.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you provide maintenance for condo boards in St. Albert?
+                            Do you provide maintenance for condo boards?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we provide comprehensive property maintenance services for condo boards in St. Albert, as well as Edmonton, Sherwood Park, and Spruce Grove. Our maintenance programs are designed to keep condo properties looking professional with minimal disruption to residents.
+                        Yes, we provide comprehensive property maintenance services for condo boards throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Our programs keep condo properties looking professional with minimal disruption to residents.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Can maintenance be scheduled to minimize business disruption?
+                            Can maintenance be scheduled around business hours?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we schedule maintenance services to minimize disruption to your business operations. We work around your business hours and can coordinate maintenance during off-peak times. This service is available for commercial properties throughout Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                        Yes, we schedule maintenance services to minimize disruption to your business operations. We can work around your business hours and coordinate maintenance during off-peak times.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -175,52 +246,10 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Commercial maintenance costs vary based on property size, frequency of service, and specific services included. We provide free consultations and detailed quotes for all commercial maintenance programs in Edmonton, St. Albert, Sherwood Park, and Spruce Grove. Contact us for a customized estimate.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you maintain irrigation systems for commercial properties?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes, irrigation system maintenance is included in our commercial property maintenance programs. This includes system inspection, repairs, winterization, and spring startup. Irrigation maintenance is available for commercial properties throughout Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                        Costs vary based on property size, frequency of service, and specific services included. We provide free consultations and detailed quotes for all commercial maintenance programs. Contact us for a customized estimate.
                     </p>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Service Areas                 -->
-    <!-- ============================================ -->
-
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2>Service Areas</h2>
-                <p>
-                    Serene Landscaping offers commercial property maintenance to businesses, property managers, and condo boards throughout Greater Edmonton.
-                </p>
-                <details style="margin-top: 1.5rem; padding: 1rem; border: 1px solid var(--primary); border-radius: 8px; cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--primary); cursor: pointer; list-style: none; padding: 0.5rem 0;">
-                        <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <span>View All Service Areas</span>
-                            <span style="font-size: 0.875rem;">▼</span>
-                        </span>
-                    </summary>
-                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1);">
-                        <h3 style="margin-top: 0; color: var(--primary); font-size: 1rem;">Major Service Areas</h3>
-                        <p style="margin: 0.5rem 0; line-height: 1.8;">Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain</p>
-                        <h3 style="margin-top: 1rem; color: var(--primary); font-size: 1rem;">Also Serving</h3>
-                        <p style="margin: 0.5rem 0; line-height: 1.8;">Fort Saskatchewan, Leduc, Beaumont, Devon, Morinville, Legal, Bon Accord</p>
-                        <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--bodyTextColor); opacity: 0.8;">
-                            Not sure if we serve your area? <a href="/contact/">Contact us</a> and we'll confirm availability.
-                        </p>
-                    </div>
-                </details>
-            </div>
         </div>
     </section>
 
@@ -243,7 +272,39 @@ keywords: "commercial lawn maintenance Edmonton, business property maintenance E
         { "@type": "City", "name": "Sherwood Park" },
         { "@type": "City", "name": "Stony Plain" }
       ],
-      "description": "Commercial landscaping for Edmonton businesses. Property maintenance, lawn care, and snow removal. Reliable service for property managers and businesses."
+      "description": "Commercial property maintenance for Edmonton businesses. Lawn care, seasonal cleanups, and ongoing maintenance for property managers and condo boards."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is included in commercial property maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our programs include regular lawn mowing, fertilization, weed control, seasonal cleanups, mulching, trimming, pruning, and irrigation maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often do you provide maintenance services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most commercial properties require weekly or bi-weekly maintenance during the growing season. We create customized schedules for each property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does commercial property maintenance cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs vary based on property size, frequency of service, and specific services included. Contact us for a customized estimate."
+          }
+        }
+      ]
     }
     </script>
 

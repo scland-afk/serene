@@ -9,7 +9,7 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/services-residential-overview.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,48 +17,76 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Residential Services</span>
-            <span class="cs-int-title">Home Landscaping Services</span>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Residential Landscaping Services
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Residential landscaping in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="front yard landscape design Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" }}" alt="Front yard landscape design Edmonton" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Residential Landscaping Services in Edmonton
+                    Residential Landscaping
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
-                <h2>
-                    What Residential Landscaping Services Do We Offer?
-                </h2>
                 <p>
                     Serene Landscaping provides complete residential landscaping services for homeowners in Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. From custom <a href="/services/landscape-design/">landscape design</a> to ongoing <a href="/services/lawn-maintenance/">lawn maintenance</a>, we handle everything your property needs to look great year-round.
                 </p>
                 <p>
                     We work with homeowners who want quality workmanship, fair pricing, and reliable service. Whether you're planning a complete backyard project, need weekly lawn care, or want to add a patio for outdoor entertaining, we bring over 8 years of experience to every residential project.
                 </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 800 }) | jpeg %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 570, height: 680 }) | jpeg %}" alt="residential landscape design services Edmonton" width="570" height="680" aria-hidden="true">
-                </picture>
+                <h2>
+                    What Residential Landscaping Services Do We Offer?
+                </h2>
+                <ul>
+                    <li>Custom Landscape Design & Installation</li>
+                    <li>Sod Installation & Lawn Replacement</li>
+                    <li>Patios, Walkways & Hardscaping</li>
+                    <li>Final Grading & Drainage</li>
+                    <li>Weekly & Bi-Weekly Lawn Maintenance</li>
+                    <li>Fence Installation & Repairs</li>
+                    <li>Artificial Grass Installation</li>
+                    <li>Residential Snow Removal</li>
+                </ul>
+                <h2>
+                    Why Do Edmonton Homeowners Choose Serene Landscaping?
+                </h2>
+                <p>
+                    We're a family-owned business that treats every property like our own. Here's what sets us apart from other residential landscaping companies in Edmonton:
+                </p>
+                <ul>
+                    <li><strong>Quality Materials & Workmanship:</strong> We use professional-grade materials and proven installation techniques. Your patio, sod, or plantings are built to last - not just look good for the first season.</li>
+                    <li><strong>Transparent Pricing:</strong> No hidden fees or surprise charges. We provide detailed written quotes before starting any work.</li>
+                    <li><strong>Reliable Scheduling:</strong> We show up when we say we will. Weekly lawn service means weekly - not whenever we get around to it.</li>
+                    <li><strong>Local Expertise:</strong> We've worked with Edmonton's climate and clay soil for over 8 years. We know which plants survive here and how to prevent drainage issues.</li>
+                    <li><strong>Licensed & Insured:</strong> Fully licensed, insured, and WCB covered. This protects both your property and our crew.</li>
+                </ul>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
     </section>
 
     <!-- ============================================ -->
@@ -68,71 +96,87 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
         <div class="cs-container">
             <h2 class="cs-catalogue-title">Our Residential Landscaping Services</h2>
             <p class="cs-text">
-                Explore our services below. Not sure which service your property needs? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation or view our <a href="/portfolio/" class="cs-accent">portfolio</a>.
+                Explore our services below. Not sure which service your property needs? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation.
             </p>
             <ul class="cs-catalogue-grid">
                 <li class="cs-catalogue-card">
-                    <a href="/services/landscape-design/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Landscape Design" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">LANDSCAPE DESIGN</span>
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-landscape-design.webp" }}" alt="Landscape Design" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/sod-installation/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Sod Installation" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">SOD INSTALLATION</span>
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/edmonton-sod-installation-finished-lawn.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/edmonton-sod-installation-finished-lawn.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/edmonton-sod-installation-finished-lawn.webp" }}" alt="Sod Installation" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/hardscaping/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Hardscaping" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">HARDSCAPING</span>
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/final-grading/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Final Grading" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">FINAL GRADING</span>
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final Grading" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/snow-removal/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Snow Removal" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">SNOW REMOVAL</span>
+                    <a class="cs-catalogue-link" href="/services/lawn-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-lawn-maintenance-home.webp" }}" alt="Lawn Maintenance" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Lawn Maintenance</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/lawn-maintenance/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Lawn Maintenance" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">LAWN MAINTENANCE</span>
+                    <a class="cs-catalogue-link" href="/services/fences/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/cedar-fence.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/cedar-fence.webp" }}" alt="Fences" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Fences</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/fences/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/cedar-fence.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Fences" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">FENCES</span>
+                    <a class="cs-catalogue-link" href="/services/artificial-grass/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/Lush-looking-artificial-turf.webp" }}" alt="Artificial Grass" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Artificial Grass</span>
                     </a>
                 </li>
                 <li class="cs-catalogue-card">
-                    <a href="/services/artificial-grass/" class="cs-catalogue-link">
-                        <span class="cs-catalogue-image">
-                            <img src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 600, height: 400 }) | webp %}" alt="Artificial Grass" width="600" height="400" loading="lazy" decoding="async">
-                        </span>
-                        <span class="cs-catalogue-label">ARTIFICIAL GRASS</span>
+                    <a class="cs-catalogue-link" href="/services/snow-removal/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-snow-removal-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-snow-removal-home.webp" }}" alt="Snow Removal" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Snow Removal</span>
                     </a>
                 </li>
             </ul>
@@ -140,59 +184,55 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
     </section>
 
     <!-- ============================================ -->
-    <!--                 Content (continued)          -->
+    <!--                    Steps                     -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+
+    <section id="steps-585">
         <div class="cs-container">
             <div class="cs-content">
-                <h2>
-                    Why Do Edmonton Homeowners Choose Serene Landscaping?
-                </h2>
-                <p>
-                    We're a family-owned business that treats every property like our own. Here's what sets us apart from other residential landscaping companies in Edmonton:
-                </p>
-                <p>
-                    <strong>Quality Materials & Workmanship:</strong> We use professional-grade materials and proven installation techniques. Your patio, sod, or plantings are built to last - not just look good for the first season.
-                </p>
-                <p>
-                    <strong>Transparent Pricing:</strong> No hidden fees or surprise charges. We provide detailed written quotes before starting any work, so you know exactly what you're paying for.
-                </p>
-                <p>
-                    <strong>Reliable Scheduling:</strong> We show up when we say we will. If weather affects the schedule, we communicate immediately and work with you to adjust. Weekly lawn service means weekly - not whenever we get around to it.
-                </p>
-                <p>
-                    <strong>Local Expertise:</strong> We've worked with Edmonton's climate, clay soil, and freeze-thaw cycles for over 8 years. We know which plants survive here, how to prevent drainage issues, and what materials hold up to Alberta winters.
-                </p>
-                <p>
-                    <strong>Licensed & Insured:</strong> Fully licensed, insured, and WCB covered. This protects both your property and our crew. We're not a cash-only side job - we're a legitimate business that follows proper protocols.
-                </p>
-                <p>
-                    <strong>Satisfaction Guaranteed:</strong> We complete a final walkthrough together before considering any project done. If something isn't right, we fix it immediately at no additional cost.
-                </p>
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">What Does the Residential Landscaping Process Look Like?</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Free Consultation & Quote</h3>
+                    <p class="cs-item-text">
+                        We visit your property to discuss your goals, look at the site, and answer your questions. Within 24 hours, you'll receive a detailed written quote.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Project Planning & Scheduling</h3>
+                    <p class="cs-item-text">
+                        Once you approve the quote, we schedule your project, order materials, coordinate any required permits, and confirm the timeline.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Professional Installation</h3>
+                    <p class="cs-item-text">
+                        Our experienced crew completes the work efficiently. We maintain a clean worksite, communicate throughout, and ensure quality at every step.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Final Walkthrough</h3>
+                    <p class="cs-item-text">
+                        We walk through the completed project together. You point out any concerns, and we address them immediately. We also provide maintenance instructions.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-                <h2>
-                    What Does the Residential Landscaping Process Look Like?
-                </h2>
-                <p>
-                    Here's what to expect when you hire Serene Landscaping for your residential property:
-                </p>
-                <p>
-                    <strong>Step 1: Free Consultation & Quote</strong><br>
-                    We visit your property to discuss your goals, look at the site, and answer your questions. Within  24 hours, you'll receive a detailed written quote with no obligation to proceed.
-                </p>
-                <p>
-                    <strong>Step 2: Project Planning & Scheduling</strong><br>
-                    Once you approve the quote, we schedule your project at a time that works for you. We order materials, coordinate any required permits (like final grading), and confirm the timeline.
-                </p>
-                <p>
-                    <strong>Step 3: Professional Installation</strong><br>
-                    Our experienced crew completes the work efficiently and professionally. We maintain a clean worksite, communicate throughout the project, and ensure quality at every step.
-                </p>
-                <p>
-                    <strong>Step 4: Final Walkthrough</strong><br>
-                    We walk through the completed project together. You point out any concerns, and we address them immediately. We also provide maintenance instructions so you can keep your landscape looking great.
-                </p>
+    <!-- ============================================ -->
+    <!--                   Pricing                    -->
+    <!-- ============================================ -->
 
+    <section id="content-page-1398">
+        <div class="cs-container">
+            <div class="cs-content">
                 <h2>
                     How Much Does Residential Landscaping Cost in Edmonton?
                 </h2>
@@ -210,9 +250,8 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
                 <p>
                     The best way to get accurate pricing is to <a href="/contact/">request a free quote</a>. We'll visit your property and provide a detailed estimate based on your specific needs.
                 </p>
-
                 <h2>
-                    When Is the Best Time to Start a Residential Landscaping Project in Edmonton?
+                    When Is the Best Time to Start a Residential Landscaping Project?
                 </h2>
                 <p>
                     <strong>Spring (April-May):</strong> Ideal for landscape design, sod installation, garden bed creation, and drainage work. Demand is high, so book early.
@@ -229,14 +268,15 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
                 <p>
                     For the best selection of dates and materials, we recommend booking spring projects in February or March. Summer and fall projects can often be scheduled 2-4 weeks in advance.
                 </p>
-
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                <h2>
+                    Where We Work
+                </h2>
+                <p>
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain, Fort Saskatchewan, Leduc, Beaumont, and surrounding communities.
+                </p>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <!--Waves Graphic-->
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
     </section>
 
     <!-- ============================================ -->
@@ -246,9 +286,9 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
-                <h2 class="cs-title">Common Questions About <span class="cs-color">Residential Landscaping</span></h2>
+                <h2 class="cs-title">Questions About <span class="cs-color">Residential Landscaping</span>?</h2>
                 <p class="cs-text">
-                    Here are common questions about our residential landscaping services, pricing, and what to expect for your home project.
+                    Common questions about our residential landscaping services, pricing, and what to expect.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -286,7 +326,7 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            When is the best time to start a landscaping project in Edmonton?
+                            When is the best time to start a landscaping project?
                         </span>
                     </button>
                     <p class="cs-item-p">
@@ -303,32 +343,32 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
                         We serve homeowners throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain, Fort Saskatchewan, Leduc, Beaumont, and surrounding Alberta communities within approximately 30km of Edmonton.
                     </p>
                 </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Are you licensed and insured for residential work?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes, we're fully licensed, insured, and WCB covered. This protects both your property and our crew while we're working on your project.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How do I get started with a residential landscaping project?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Contact us by phone at <a href="tel:587-566-9879">(587) 566-9879</a> or through our <a href="/contact/">contact form</a>. We'll schedule a free consultation to discuss your goals and provide a detailed quote.
-                    </p>
-                </li>
             </ul>
         </div>
     </section>
 
     {% include 'sections/cta.html' %}
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Residential Landscaping",
+      "provider": {
+        "@type": "LandscapingBusiness",
+        "name": "Serene Landscaping",
+        "telephone": "(587) 566-9879"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Edmonton" },
+        { "@type": "City", "name": "St. Albert" },
+        { "@type": "City", "name": "Spruce Grove" },
+        { "@type": "City", "name": "Sherwood Park" },
+        { "@type": "City", "name": "Stony Plain" }
+      ],
+      "description": "Residential landscaping for Edmonton homeowners. Landscape design, lawn maintenance, patios, and seasonal services. Licensed, insured, trusted."
+    }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -372,22 +412,6 @@ keywords: "residential landscaping Edmonton, home landscaping Edmonton, resident
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We serve homeowners throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, Stony Plain, Fort Saskatchewan, Leduc, Beaumont, and surrounding Alberta communities within approximately 30km of Edmonton."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are you licensed and insured for residential work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we're fully licensed, insured, and WCB covered. This protects both your property and our crew while we're working on your project."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I get started with a residential landscaping project?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Contact us by phone at (587) 566-9879 or through our contact form. We'll schedule a free consultation to discuss your goals and provide a detailed quote."
           }
         }
       ]

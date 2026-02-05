@@ -9,7 +9,7 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+<link rel="preload" as="image" href="{{ "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 640, height: 600 }) | avif }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,162 +17,186 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Low-Maintenance Solutions</span>
-            <span class="cs-int-title">Artificial Grass & Synthetic Turf</span>
-            <div class="cs-button-group" style="margin-top: 1rem;">
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Artificial Grass & Synthetic Turf
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 640, height: 600 }) | webp %}">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1280, height: 720 }) | webp %}">
+                <source media="(min-width: 1025px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1920, height: 900 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1920, height: 900 }) | webp %}" alt="Artificial grass installation in Edmonton" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="artificial grass installation Edmonton" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 600, height: 800 }) | webp %}">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 820, height: 980 }) | webp %}">
+                <source media="(min-width: 1025px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 900, height: 1100 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 900, height: 1100 }) | webp %}" alt="Artificial grass installation" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Artificial Grass Installation in Edmonton
+                    Artificial Grass
+                    <span class="cs-color">in Edmonton</span>
                 </h1>
                 <p>
-                    Artificial turf gives you a green, clean lawn without mowing or watering. It’s a great fit for busy homes, pet areas, and low‑maintenance spaces.
+                    Enjoy a green, clean lawn with professional artificial grass installation in Edmonton, St. Albert, Spruce Grove, and Sherwood Park. Synthetic turf is a low‑maintenance solution for busy households, pet areas, and outdoor spaces that need to look great year‑round.
                 </p>
                 <p>
-                    Serving Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
+                    We handle site prep, base work, and drainage so the turf looks natural and performs well. With over 8 years of local experience, we install artificial grass that stays level, drains properly, and remains comfortable underfoot.
                 </p>
                 <p>
-                    We handle site prep, base work, and drainage so the turf looks natural and lasts.
+                    Artificial grass is ideal for backyards, side yards, play areas, and problem spots where real grass struggles. It reduces watering and mowing while keeping your yard clean and usable in every season.
                 </p>
                 <h2>
-                    Not Sure Where to Start?
+                    Artificial Turf Applications
                 </h2>
-                <p>
-                    We’ll review how you use the space, then recommend the right turf and base depth.
-                </p>
-                <h3 class="cs-accent">
-                    Always Green, Minimal Upkeep
-                </h3>
-                <p>
-                    No mowing, no watering—just a clean, green surface year‑round.
-                </p>
-                <h3 class="cs-accent">
-                    Drainage Done Right
-                </h3>
-                <p>
-                    Proper base prep and drainage keep turf dry and easy to clean.
-                </p>
-                <span class="cs-topper">What We Build</span>
+                <ul>
+                    <li>Residential Backyards and Side Yards</li>
+                    <li>Pet Runs and Dog Areas</li>
+                    <li>Play Areas and High‑Use Zones</li>
+                    <li>Low‑Maintenance Front Yards</li>
+                    <li>Balconies and Small Urban Spaces</li>
+                    <li>Putting Greens and Specialty Areas</li>
+                </ul>
                 <h2>
-                    Synthetic Turf for Busy Properties
+                    Proper Base Prep and Drainage
                 </h2>
                 <p>
-                    Backyards, pet runs, and play areas that stay green with minimal upkeep.
+                    A solid base is the difference between turf that lasts and turf that fails early. We excavate 3-4", lay 2-3" of crusite or limestone screenings, and compact it flat with a plate compactor. Turf gets secured with 6" galvanized nails every 4-6" along edges and seams.
                 </p>
-                <h3 class="cs-accent">
-                    Typical Inclusions
-                </h3>
-                <p>
-                    Site prep, base compaction, drainage, and clean edge work. We can pair turf with <a href="/services/landscape-design/">landscape design</a> or regular <a href="/services/lawn-maintenance/">lawn maintenance</a> if needed.
-                </p>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 600, height: 800 }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 570, height: 680 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 570, height: 680 }) | webp %}" alt="Artificial grass installation" width="570" height="680" aria-hidden="true">
-                </picture>
-            </div>
-        </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-4" data-lightbox-gallery>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Artificial Grass Highlights</h2>
-            </div>
-            <div class="cs-gallery-grid">
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Artificial grass installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/artificial-grass-edmonton.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Artificial grass installation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Artificial turf installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Artificial turf installation" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Lush artificial turf">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Lush artificial turf" width="800" height="600">
-                    </picture>
-                </button>
-                <button class="cs-lightbox-trigger" type="button" data-full="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 1800, height: 1200 }) | webp %}" data-caption="Front yard artificial grass installation">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 800, height: 600 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/front-yard-artificial-grass-installation.webp" | resize({ width: 800, height: 600 }) | webp %}" alt="Front yard artificial grass installation" width="800" height="600">
-                    </picture>
-                </button>
-            </div>
-            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-    <section id="content-page-713">
-        <div class="cs-container">
-            <div class="cs-content">
                 <h2>
                     Why Choose Serene Landscaping for Artificial Grass?
                 </h2>
                 <p>
-                    We focus on clean prep, solid drainage, and realistic finishes.
+                    We install turf with clean seams and realistic finishes so it looks natural and performs well over time.
                 </p>
-                <h3 class="cs-accent">Proper Base Prep</h3>
+                <ul>
+                    <li><strong>Proper Base Work:</strong> 3-4" excavation with compacted limestone screening.</li>
+                    <li><strong>Drainage Focused:</strong> Water moves through the turf and base quickly.</li>
+                    <li><strong>Clean Edges:</strong> Tight seams and crisp borders for a natural look.</li>
+                    <li><strong>Low Maintenance:</strong> No mowing or watering required.</li>
+                </ul>
+                <h2>
+                    Where We Work
+                </h2>
                 <p>
-                    Compacted base and drainage keep turf flat and dry.
+                    Serving Edmonton, St. Albert, Spruce Grove, Sherwood Park, and nearby communities.
                 </p>
-                <h3 class="cs-accent">Clean Seams</h3>
-                <p>
-                    Tight seams and clean edges make turf look natural.
-                </p>
-                <h3 class="cs-accent">Low Maintenance</h3>
-                <p>
-                    We set it up so ongoing upkeep stays minimal.
-                </p>
-                <div class="cs-button-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-outline">Call {{ client.phoneFormatted }}</a>
-                    <a href="/portfolio/" class="cs-button-solid cs-button-outline">View Portfolio</a>
-                </div>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <picture class="cs-background cs-waves">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                Planning a full outdoor upgrade? These services pair well with turf for a complete, low‑maintenance yard.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-residential-overview.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-residential-overview.webp" }}" alt="Landscape design in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/lawn-maintenance/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-lawn-maintenance-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-lawn-maintenance-home.webp" }}" alt="Lawn maintenance in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Lawn Maintenance</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-585">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">Our Artificial Grass Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">Site Assessment</h3>
+                    <p class="cs-item-text">
+                        We review the area, drainage needs, and how the space will be used.
+                    </p>
+                    <span class="cs-number">01</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Base Preparation</h3>
+                    <p class="cs-item-text">
+                        We excavate 3-4", lay crushed limestone, and compact in layers until the surface is dead flat.
+                    </p>
+                    <span class="cs-number">02</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Turf Installation</h3>
+                    <p class="cs-item-text">
+                        We install turf with tight seams, clean edges, and secure attachment.
+                    </p>
+                    <span class="cs-number">03</span>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">Final Check</h3>
+                    <p class="cs-item-text">
+                        We verify drainage, finish details, and leave the site ready to use.
+                    </p>
+                    <span class="cs-number">04</span>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
@@ -185,7 +209,7 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Artificial Grass</span>?</h2>
                 <p class="cs-text">
-                    Quick answers about cost, drainage, and upkeep.
+                    Common questions about turf, drainage, and upkeep.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -193,41 +217,51 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
+                            Is artificial grass pet‑friendly?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. It is durable, easy to clean, and drains well when installed properly.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Does artificial turf drain water?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. Turf backing allows water to pass through, and the base is built for proper drainage.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What maintenance is required?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Occasional brushing and debris removal are typically all that is needed.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How long does synthetic turf last?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Quality turf with UV protection lasts 15-20 years. Pet areas and high-traffic spots may show wear sooner, but the base work is what keeps it draining and laying flat.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
                             How much does artificial turf cost?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Pricing depends on turf type, base prep, and access. We provide clear quotes after a site visit.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What maintenance does artificial grass need?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Occasional brushing and debris removal are usually enough. No mowing or watering required.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Does artificial grass offer drainage?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes. Turf backing allows water to drain through when the base is prepared correctly.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Is artificial grass pet-friendly?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes. It’s durable, easy to clean, and drains well for pet areas.
+                        Artificial turf installation typically costs $16 to $24 per sq ft depending on turf quality and site conditions. We provide detailed quotes for Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
                     </p>
                 </li>
             </ul>
@@ -263,34 +297,42 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does artificial turf cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pricing depends on turf type, base prep, and access. We provide clear quotes after a site visit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What maintenance does artificial grass need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Occasional brushing and debris removal are usually enough. No mowing or watering required."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does artificial grass offer drainage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Turf backing allows water to drain through when the base is prepared correctly."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Is artificial grass pet-friendly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. It’s durable, easy to clean, and drains well for pet areas."
+            "text": "Yes. It is durable, easy to clean, and drains well when installed properly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does artificial turf drain water?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Turf backing allows water to pass through, and the base is built for proper drainage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What maintenance is required?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Occasional brushing and debris removal are typically all that is needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does synthetic turf last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quality turf with UV protection lasts 15-20 years. Pet areas and high-traffic spots may show wear sooner, but the base work is what keeps it draining and laying flat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does artificial turf cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Artificial turf installation typically costs $16 to $24 per sq ft depending on turf quality and site conditions. We provide detailed quotes for Edmonton, St. Albert, Spruce Grove, and Sherwood Park."
           }
         }
       ]
@@ -298,3 +340,4 @@ keywords: "artificial grass Edmonton, synthetic turf Edmonton, artificial lawn E
     </script>
 
 {% endblock %}
+
