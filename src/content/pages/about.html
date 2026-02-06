@@ -1,10 +1,10 @@
 ---
-title: "About Serene Landscaping | Edmonton Landscapers"
-description: "Family-owned Edmonton landscaping company. 8+ years experience, licensed and insured. Professional landscape design, lawn care, and hardscaping across Greater Edmonton."
+title: "About Serene Landscaping | Edmonton Area Landscapers"
+description: "8+ years providing landscaping in Edmonton and area. Licensed and insured for final grading, sod, and hardscaping. Book a quote today. Call 587-566-9879."
 permalink: "/about/"
 keywords: "about Serene Landscaping, Edmonton landscaping company, professional landscapers Edmonton, landscaping experience Edmonton, trusted landscaping contractor Edmonton, family owned landscaping Edmonton"
----
 
+---
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -18,31 +18,28 @@ keywords: "about Serene Landscaping, Edmonton landscaping company, professional 
     <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <div id="banner-310">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
+            <div class="cs-content">
+                <h1 class="cs-title">About Us</h1>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}">
+                <img src="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" alt="professional landscaping services in Edmonton" width="1920" height="482" loading="eager" decoding="async">
+            </picture>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}">
-            <img src="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" alt="professional landscaping services in Edmonton" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->

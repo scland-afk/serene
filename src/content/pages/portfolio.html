@@ -1,10 +1,11 @@
 ---
-title: "Landscaping Portfolio | Serene Landscaping"
-description: "View our completed landscaping projects across Edmonton and area. Residential and commercial landscape design, patios, hardscaping, and lawn installations."
+title: "Landscaping Portfolio Edmonton | Serene Landscaping"
+description: "View landscaping projects across Edmonton, St. Albert, and Sherwood Park. Patios, grading, sod, and hardscaping. See results today and call 587-566-9879."
 permalink: "/portfolio/"
 keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, landscaping examples Edmonton, completed landscaping projects, before and after landscaping Edmonton"
----
 
+
+---
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -14,27 +15,28 @@ keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, l
 
 {% block body %}
 
-    <div id="banner-310">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-title">Portfolio</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/portfolio/" class="cs-link cs-active">Portfolio</a>
+            <div class="cs-content">
+                <h1 class="cs-title">Portfolio</h1>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="portfolio" width="1920" height="482" loading="eager" decoding="async">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="portfolio" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div>
+    </section>
 
     <section id="RPsbs-313">
         <div class="cs-container">
@@ -418,7 +420,7 @@ keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, l
                 ‹
             </button>
             <figure class="cs-lightbox__figure">
-                <img class="cs-lightbox__image" src="" alt="">
+                <img class="cs-lightbox__image" src="" alt="Gallery image">
                 <figcaption class="cs-lightbox__caption"></figcaption>
             </figure>
             <button class="cs-lightbox__nav cs-lightbox__next" type="button" data-action="next" aria-label="Next image">
@@ -434,3 +436,5 @@ keywords: "Edmonton landscaping portfolio, landscape design projects Edmonton, l
 
 
 {% endblock %}
+
+

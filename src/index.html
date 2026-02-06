@@ -4,8 +4,8 @@ description: "Professional landscaping in Edmonton, St. Albert, Spruce Grove & S
 permalink: "/"
 tags: "sitemap"
 keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edmonton, snow removal Edmonton, commercial landscaping, residential landscaping, hardscaping Edmonton"
----
 
+---
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -33,33 +33,29 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    Hero                      -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="hero-1786">
+    <section id="banner">
         <div class="cs-container">
             <div class="cs-content">
-            <span class="cs-topper">Exceeding Expectations Through Extraordinary Landscaping</span>
-            <h1 class="cs-title">Premium <span class="cs-color">Landscaping</span> In Edmonton</h1>
-            <p class="cs-text">
-                Serving Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
-            </p>
-            <div class="cs-button-group">
-                <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+                <span class="cs-topper" style="color: #ffffff;">Exceeding Expectations Through Extraordinary Landscaping</span>
+                <h1 class="cs-title">Premium <span class="cs-color">Landscaping</span> In Edmonton</h1>
+                <p class="cs-text" style="color: #ffffff;">
+                    Serving Edmonton, St. Albert, Sherwood Park, and Spruce Grove.
+                </p>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+                </div>
             </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" type="image/webp">
+                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" alt="Front yard landscaping with shrubs and mulch" width="1920" height="1200" aria-hidden="true">
+            </picture>
         </div>
-        </div>
-
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | webp %}" type="image/webp">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" type="image/webp">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" alt="Front yard landscaping with shrubs and mulch" width="1920" height="1200" aria-hidden="true">
-        </picture>
-
-        <!-- Splash Graphic removed per request -->
     </section>
 
     <!-- ============================================ -->
@@ -113,9 +109,6 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 </h2>
                 <p class="cs-text">
                     Serene Landscaping is a trusted landscaping company serving Edmonton and nearby communities. Homeowners and property managers hire us for clear communication, quality workmanship, and a finished result that holds up.
-                </p>
-                <p class="cs-text">
-                    From thoughtful plans to strong builds, we focus on how each space should feel and function. We start with a walk‑through, map the scope, and then handle the prep, <a href="/services/final-grading/">final grading</a>, and sod installation so the finished yard looks clean and drains right.
                 </p>
                 <a href="/about/" class="cs-button-solid">More About Us</a>
             </div>
@@ -178,9 +171,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Sod Installation</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sod-installation-after-final-grading.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sod-installation-after-final-grading.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sod-installation-after-final-grading.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -709,7 +702,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We take on a wide range of custom projects, from full backyard makeovers to detailed stonework, planting, and outdoor features. Our Edmonton team offers design-build work, <a href="/services/sod-installation/">sod installation</a>, <a href="/services/hardscaping/">patios</a>, and ongoing landscape maintenance to keep your yard looking its best through the seasons.
+                        We take on projects, from backyard makeovers to stonework and planting. We handle design-build, <a href="/services/sod-installation/">sod installation</a>, <a href="/services/hardscaping/">patios</a>, and landscape maintenance.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -719,7 +712,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We serve Edmonton, <a href="/locations/st-albert/">St. Albert</a>, Spruce Grove, and Sherwood Park, plus surrounding Alberta communities. If you are nearby and unsure, contact us and we will confirm availability for your address.
+                        We serve Edmonton, <a href="/locations/st-albert/">St. Albert</a>, Spruce Grove, and Sherwood Park, plus surrounding Alberta communities. If you are nearby and unsure, contact us and we will confirm availability.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -749,7 +742,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        A consultation starts with a site visit so we can see the space and hear your ideas. We’ll talk through your goals, budget, and any must‑haves, then outline a clear plan with pricing and an estimated timeline. It’s also the best time to ask questions and confirm details.
+                        A consultation starts with a site visit so we can see the space and hear your ideas. We'll talk through your goals, budget, and any must-haves, then outline a clear plan with pricing and an estimated timeline.
                     </p>
                 </li>
             </ul>
@@ -814,3 +807,5 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 
     {% include 'components/faq-schema.html' %}
 {% endblock %}
+
+

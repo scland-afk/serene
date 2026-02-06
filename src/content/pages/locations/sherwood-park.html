@@ -1,15 +1,15 @@
 ---
-title: "Sherwood Park Landscaping | Sod, Patios & Lawn Care"
-description: "Professional landscaping services in Sherwood Park. Lawn replacement and sod, patios and walkways, retaining walls, seasonal cleanups, snow removal and commercial service. Call 587-566-9879 for a free quote."
+title: "Sherwood Park Landscaping Services | Serene Landscaping"
+description: "Complete landscaping services in Sherwood Park. Final grading, sod, hardscaping, and design for local homes. Book a free quote today. Call 587-566-9879."
 permalink: "/locations/sherwood-park/"
-keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installation Sherwood Park, patio installation Sherwood Park, walkway installation Sherwood Park, lawn maintenance Sherwood Park, snow removal Sherwood Park"
----
 
+
+---
 {% extends "layouts/base.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{{ "/assets/images/services-hardscaping-home.webp" }}"/>
 {% endblock %}
 
 {% block body %}
@@ -17,221 +17,232 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
-    <div id="banner-559">
+    <section id="banner">
         <div class="cs-container">
-            <span class="cs-int-topper">Service Area</span>
-            <span class="cs-int-title">Sherwood Park Landscaping Services</span>
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Sherwood Park Landscaping Services
+                </h2>
+                <div class="cs-button-group" style="margin-top: 1rem;">
+                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Sherwood Park landscaping services" width="1800" height="900">
+            </picture>
         </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 640, height: 600 }) | webp %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 1920, height: 568 }) | webp %}" alt="Sherwood Park landscaping services" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                 Content Page                 -->
     <!-- ============================================ -->
-    <section id="content-page-713">
+    <section id="content-page-1398">
         <div class="cs-container">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="{{ "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" }}">
+                <source media="(max-width: 1024px)" srcset="{{ "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" }}">
+                <source media="(min-width: 1025px)" srcset="{{ "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" }}">
+                <img loading="lazy" decoding="async" src="{{ "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" }}" alt="Sherwood Park landscaping projects" width="900" height="1100">
+            </picture>
             <div class="cs-content">
                 <h1 class="cs-title">
-                    Landscaping Services in Sherwood Park
+                    Landscaping Services
+                    <span class="cs-color">in Sherwood Park</span>
                 </h1>
-
                 <p>
-                    Refresh what you have, do not rebuild. That is what Sherwood Park homeowners in established neighborhoods like <strong>Brentwood</strong> and <strong>Lakeland Ridge</strong> need most. These areas have larger lots with mature properties that do not need complete overhauls. Instead, they need practical upgrades that improve function and appearance without turning the yard into a long project.
+                    Refresh what you have, do not rebuild. That is what Sherwood Park homeowners in established neighborhoods like <strong>Brentwood</strong>, <strong>Lakeland Ridge</strong>, and <strong>Summerwood</strong> need most. These areas have mature properties that benefit from practical upgrades.
                 </p>
                 <p>
-                    Our typical path starts with lawn replacement or small hardscaping projects like patio upgrades or walkway improvements. From there, many clients expand to larger projects like complete patio renovations or full landscape upgrades. This phased approach lets you see the quality of our work before committing to bigger phases, and keeps the project manageable for your budget and timeline.
+                    Our typical path starts with lawn replacement or small hardscaping projects like patio upgrades or walkway improvements. From there, many clients expand to larger projects like complete patio renovations or full landscape upgrades.
                 </p>
                 <p>
-                    In neighborhoods like Lakeland Ridge and Summerwood, we handle lawn replacement and clean hardscape upgrades for properties that need a refresh. In more established areas like Brentwood, we focus on renovations that respect existing features while modernizing the layout and finish. Our goal is practical improvements that make a clear difference without unnecessary disruption.
+                    In neighborhoods like Lakeland Ridge, Glen Allan, and Brentwood, we handle lawn replacement and clean hardscape upgrades for properties that need a refresh. Our goal is practical improvements that make a clear difference without unnecessary disruption.
                 </p>
-                <p>
-                    Request a free quote or call <strong>(587) 566-9879</strong>.
-                </p>
-
-                <span class="cs-topper">Our Services</span>
-
-                <!-- Updated services copy using Absolute-style structure -->
                 <h2>
-                    Lawn Replacement and Resodding
+                    Landscaping Services We Offer
+                </h2>
+                <ul>
+                    <li>Lawn Replacement and Sod Installation</li>
+                    <li>Patios, Walkways, and Retaining Walls</li>
+                    <li>Landscape Renovations and Upgrades</li>
+                    <li>Final Grading and Drainage Corrections</li>
+                    <li>Lawn Maintenance and Seasonal Cleanups</li>
+                    <li>Snow Removal and Commercial Services</li>
+                </ul>
+                <h2>
+                    Sherwood Park Service Highlights
                 </h2>
                 <p>
-                    Lawn replacement is the most common starting point for Sherwood Park renovations. Many properties in Brentwood, Lakeland Ridge, and Summerwood have older lawns that need a full reset. We remove failed turf when needed, prep the base properly with grading corrections if required, and install fresh sod with tight seams and clean edges. This gives your property an immediate visual upgrade and improves how the yard functions. We provide clear aftercare guidance to protect your investment and ensure the lawn establishes properly. Most lawn replacement projects run $2,500 to $6,000 depending on lot size and site conditions.
-                    <a href="/services/lawn-maintenance/">Learn more about our lawn services</a>.
+                    Sod installation is a common starting point for yard refreshes. We prep the base, correct low spots, and lay clean seams for an even finish. For new builds or regrades, we also offer final grading so the base drains correctly before sod or hardscape.
                 </p>
-
+                <p>
+                    <a href="/services/hardscaping/">Hardscaping</a> upgrades patios, walkways, and steps with proper base prep and edge restraint so surfaces stay level.
+                </p>
+                <p>
+                    <a href="/services/landscape-design/">Landscape design</a> helps plan phased upgrades so each step finishes cleanly and fits the property.
+                </p>
+                <p>
+                    <a href="/services/lawn-maintenance/">Lawn maintenance</a> keeps the property tidy with consistent mowing and seasonal cleanups.
+                </p>
                 <h2>
-                    Patios and Walkways
+                    Recent Sherwood Park Project Examples
                 </h2>
                 <p>
-                    Small hardscaping projects like patio upgrades and walkway improvements are practical starting points for Sherwood Park renovations. We design and build interlocking paver patios and walkways that flow naturally from the home and stay solid over time. Our layouts consider traffic patterns and furniture placement, then we build with proper excavation, base preparation, and compaction so surfaces stay tight and level. Many clients start with a small patio upgrade, see the quality, then expand to larger hardscaping projects later. This approach keeps the project manageable and lets you enjoy the results before committing to bigger phases.
-                    <a href="/services/hardscaping/">Learn more about our hardscaping services</a>.
+                    Recent work includes a full lawn replacement in Westboro after a patio rebuild, a front entry walkway and step upgrade in Broadmoor, and a backyard refresh in Summerwood that combined new sod with fresh edging and river rock beds. We also completed grading corrections in Nottingham where settlement created low areas along fence lines, then installed sod once the base was corrected.
                 </p>
-
                 <h2>
-                    Retaining Walls and Grade Corrections
+                    Neighborhood Coverage Across Sherwood Park
                 </h2>
                 <p>
-                    Many Sherwood Park properties have larger lots with elevation changes that need structure. Retaining walls solve grade issues, create usable space, and give the yard a more finished look. We build retaining solutions with proper engineering and quality materials to ensure long-term performance. Grade corrections improve drainage paths and create cleaner transitions between different yard areas. These structural improvements often combine with patio and walkway projects to create cohesive outdoor living spaces.
-                    <a href="/services/hardscaping/">Explore retaining walls and structural hardscaping</a>.
+                    We serve Sherwood Heights, Brentwood, Westboro, Glen Allan, Broadmoor, Nottingham, Lakeland Ridge, Regency Park, Clover Bar Ranch, and Emerald Hills. These neighborhoods include both mature lots and newer builds, so access and staging vary from property to property. We plan materials and timing so the site stays clean and organized.
                 </p>
-
                 <h2>
-                    Landscape Renovations
+                    Phased Upgrades That Stay Organized
                 </h2>
                 <p>
-                    Full landscape renovations upgrade established properties without starting from scratch. We improve bed definition, edging, rock or mulch zones, and overall layout so the yard looks intentional and stays easier to maintain. Many Sherwood Park renovations combine lawn replacement with hardscaping and planting improvements to create cohesive upgrades. Our approach respects existing features worth keeping while modernizing areas that need improvement. This keeps the project practical and focused on upgrades that make a visible difference.
-                    <a href="/services/landscape-design/">Learn more about landscape design and renovations</a>.
+                    Many Sherwood Park homeowners complete their landscaping in steps. We can start with lawn replacement or grading, then return for patios, walkways, or planting beds when you are ready. Using the same crew and plan keeps each phase aligned so nothing has to be redone.
                 </p>
-
                 <h2>
-                    Lawn Maintenance and Seasonal Cleanups
+                    What We Bring to the Site
                 </h2>
                 <p>
-                    Reliable service for homeowners who want the property kept clean throughout the season. We focus on consistency, tidy finishes, and a schedule that keeps the yard looking sharp without last-minute scrambling.
-                    <a href="/services/lawn-maintenance/">View lawn maintenance options</a>.
+                    Our crews handle excavation, material delivery, and cleanup so the job moves smoothly. We use plate compactors for bases, laser levels for grading, and clean cut tools for pavers and edging. We protect existing features like fences and decks, then leave the site tidy at the end of each day.
                 </p>
-
                 <h2>
-                    Snow Removal
+                    Project Planning for Existing Yards
                 </h2>
                 <p>
-                    Options available depending on property requirements and contract type. The goal is safe access and dependable service through winter conditions.
-                    <a href="/services/snow-removal/">Learn more about our snow removal services</a>.
+                    Many Sherwood Park lots already have patios, trees, or planted beds that need to stay. We map out what stays and what changes so the new work blends cleanly into the existing yard. This keeps upgrades focused on the problem areas without tearing out everything. We also plan staging so materials do not block driveways or sidewalks.
                 </p>
-
                 <h2>
-                    Serving Sherwood Park With Practical Renovation Focus
+                    Local Service Area Notes
                 </h2>
                 <p>
-                    We work throughout Sherwood Park with a focus on practical renovations for established properties. Our primary service areas include <strong>Brentwood</strong>, <strong>Lakeland Ridge</strong>, <strong>Summerwood</strong>, and surrounding neighborhoods. These areas have larger lots with mature properties that need refreshing, not rebuilding. Our goal is clean upgrades that improve function and appearance without turning the yard into a drawn-out project. We plan renovations in phases so each step completes cleanly and sets up the next stage without paying twice for prep work.
+                    We work across Strathcona County with regular service in Sherwood Heights, Clover Bar Ranch, Foxboro, Maple Ridge, and Emerald Hills. If your property is outside these neighborhoods, we can still schedule a site visit and confirm access and scope. We also cover nearby areas like Ardrossan and North Cooking Lake by request. We can schedule evening visits as needed.
                 </p>
-
-                <!-- Updated Why Choose Us using Absolute-style differentiators -->
                 <h2>
-                    Why Sherwood Park Clients Choose Serene Landscaping
-                </h2>
-
-                <h3>
-                    Planning that respects established properties
-                </h3>
-                <p>
-                    Many Sherwood Park homes have larger lots, mature areas, and existing features worth keeping. We plan upgrades around what is already working, then improve the areas that will make the biggest difference.
-                </p>
-
-                <h3>
-                    Practical recommendations and clean scope
-                </h3>
-                <p>
-                    We give straightforward options based on function and long-term performance. You get a clear scope, clear pricing, and a plan that matches your property.
-                </p>
-
-                <h3>
-                    Strong prep work for long-term results
-                </h3>
-                <p>
-                    Base prep is what keeps patios and walkways from settling and what helps lawns establish evenly. We focus on excavation, compaction, edge restraint and drainage awareness so the finished work performs properly.
-                </p>
-
-                <h3>
-                    Communication and a clean finish
-                </h3>
-                <p>
-                    You know what is happening next and the job stays organized. We keep the site tidy and finish with a walk-through so the details are handled properly.
-                </p>
-
-                <h3>
-                    Phased projects when that is the right fit
-                </h3>
-                <p>
-                    Many clients start with one zone, then expand later. We plan the stages so each step looks finished and sets up the next phase without paying twice for prep work.
-                </p>
-
-                <span class="cs-topper">Recent Projects</span>
-                <h2>
-                    Sherwood Park Landscaping Projects
+                    Built for Sherwood Park Properties
                 </h2>
                 <p>
-                    We serve all of Sherwood Park including Brentwood, Lakeland Ridge and surrounding areas. Here are some examples of our recent work in the area.
+                    Sherwood Park lots often have mature landscapes and larger yard areas. We plan upgrades around what is already working and focus on base prep and drainage so improvements last. We keep work zones compact so kids and pets still have safe access.
                 </p>
-
-                <div class="cs-project-slider" style="position: relative; width: 100%; max-width: 800px; margin: 3rem 0 1.5rem 0;">
-                    <div class="cs-slider-container" style="position: relative; overflow: hidden; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
-                        <div class="cs-slide" data-slide="0" style="display: block;">
-                            <picture>
-                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Backyard patio and retaining wall in Sherwood Park" width="800" height="800" style="width: 100%; height: auto; display: block;">
-                            </picture>
-                            <div>
-                                <h3 style="color: var(--primary);">
-                                    Backyard Patio and Retaining Wall in Lakeland Ridge
-                                </h3>
-                                <p>
-                                    This Sherwood Park homeowner wanted to create a functional backyard space with a patio and firepit area. We installed a retaining wall to level the sloped yard, built an interlocking paver patio with integrated firepit, and finished with proper drainage and sod around the perimeter. The project transformed an unusable slope into a beautiful outdoor living space perfect for entertaining.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cs-slide" data-slide="1" style="display: none;">
-                            <picture>
-                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}">
-                                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp" | resize({ width: 800, height: 800 }) | webp %}" alt="Front yard landscaping renovation in Sherwood Park" width="800" height="800" style="width: 100%; height: auto; display: block;">
-                            </picture>
-                            <div>
-                                <h3 style="color: var(--primary);">
-                                    Front Yard Landscaping Upgrade in Brentwood
-                                </h3>
-                                <p>
-                                    This established Sherwood Park property needed a front yard makeover to improve curb appeal. We redesigned the landscape beds, installed clean edging, added fresh mulch and decorative rock, and selected low-maintenance plants suited for Alberta's climate. The renovation modernized the appearance while keeping maintenance simple. The result is a polished look that enhances the home's value.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cs-slider-nav" style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 1.5rem;">
-                        <button class="cs-slider-btn cs-slider-btn-prev" data-direction="prev" aria-label="Previous slide" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <button class="cs-slider-btn cs-slider-btn-next" data-direction="next" aria-label="Next slide" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-            </div>
-
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 600, height: 800 }) | jpeg %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg" | resize({ width: 570, height: 680 }) | jpeg %}" alt="Sherwood Park landscaping projects" width="570" height="680" aria-hidden="true">
-                </picture>
+                <p>
+                    For many properties, a clean reset of the lawn and a simple patio update makes the biggest impact. We keep layouts practical and make sure access paths stay open, especially on lots with narrow side yards.
+                </p>
+                <h2>
+                    Common Landscaping Projects in Sherwood Park
+                </h2>
+                <p>
+                    The most common work is lawn replacement, patio upgrades, and walkway improvements on established lots. Some projects add retaining walls or regrade low spots to improve drainage. Typical residential projects take a few days to a couple of weeks depending on scope.
+                </p>
+                <h2>
+                    Why Choose Serene Landscaping in Sherwood Park?
+                </h2>
+                <p>
+                    We keep the design-build process organized so you know exactly what is included.
+                </p>
+                <ul>
+                    <li><strong>Local Experience:</strong> Renovations and upgrades across Sherwood Park.</li>
+                    <li><strong>Clear Scope:</strong> Straightforward pricing and project phases.</li>
+                    <li><strong>Quality Workmanship:</strong> Clean finishes and reliable crews.</li>
+                    <li><strong>Flexible Service Options:</strong> One-time projects or phased builds.</li>
+                </ul>
+                <h2>
+                    Sherwood Park Neighborhoods We Serve
+                </h2>
+                <p>
+                    We serve <strong>Brentwood</strong>, <strong>Lakeland Ridge</strong>, <strong>Summerwood</strong>, <strong>Glen Allan</strong>, <strong>Nottingham</strong>, <strong>Regency Park</strong>, and <strong>Broadmoor</strong>. These areas include larger lots where phased upgrades make the most sense.
+                </p>
+                <h2>
+                    Where We Work
+                </h2>
+                <p>
+                    We serve <a href="/">landscaping in Sherwood Park</a> and the wider region. We offer the same quality and communication in <a href="/locations/edmonton/">Edmonton</a> and in <a href="/locations/st-albert/">St. Albert</a>.
+                </p>
+                <a class="cs-button-solid" href="/contact/">Get a Quote</a>
             </div>
         </div>
-        <!--Waves Graphic-->
-        <picture class="cs-background">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
-        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Related Services              -->
+    <!-- ============================================ -->
+
+    <section id="residential-services-catalogue" class="cs-services-catalogue">
+        <div class="cs-container">
+            <h2 class="cs-catalogue-title">Related Landscaping Services</h2>
+            <p class="cs-text">
+                Core services for Sherwood Park yards, from grading to finishing work.
+            </p>
+            <ul class="cs-catalogue-grid">
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/sod-installation/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/sod-installation-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/sod-installation-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/sod-installation-edmonton.webp" }}" alt="Sod installation in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Sod Installation</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/final-grading/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/final-grading-in-edmonton.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/final-grading-in-edmonton.webp" }}" alt="Final grading in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Final Grading</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/hardscaping/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-hardscaping-home.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-hardscaping-home.webp" }}" alt="Hardscaping in Sherwood Park" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Hardscaping</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/services/landscape-design/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/services-landscape-design.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/services-landscape-design.webp" }}" alt="Landscape design in Sherwood Park" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Landscape Design</span>
+                    </a>
+                </li>
+                <li class="cs-catalogue-card">
+                    <a class="cs-catalogue-link" href="/locations/edmonton/">
+                        <picture class="cs-catalogue-image">
+                            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}">
+                            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}">
+                            <img loading="lazy" decoding="async" src="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}" alt="Landscaping services in Edmonton" width="800" height="534">
+                        </picture>
+                        <span class="cs-catalogue-label">Edmonton Services</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
     <!--                     FAQ                      -->
     <!-- ============================================ -->
+
     <section id="faq-489">
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Questions About <span class="cs-color">Sherwood Park Landscaping</span>?</h2>
                 <p class="cs-text">
-                    Quick answers to common questions we hear from Sherwood Park homeowners.
+                    Quick answers to common questions we hear from Sherwood Park homeowners and property managers.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
             </div>
@@ -239,66 +250,31 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What is the most common Sherwood Park project you do?
-                        </span>
-                    </button>
-                <p class="cs-item-p">
-                    Lawn replacement and small hardscaping projects like patio upgrades are the most common starters. Many Sherwood Park properties in Lakeland Ridge, Brentwood, and Summerwood have older lawns that need a full reset, or patios that have settled and need a rebuild. Most lawn replacement projects run $2,500 to $6,000 depending on lot size. Small patio upgrades typically range from $3,000 to $8,000 depending on size and materials. Clients often start with one area, see the quality of our work, then expand to larger projects or additional services later.
-                </p>
-                </li>
-
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you work in Lakeland Ridge and Summerwood?
+                            What work do you handle most often in Sherwood Park?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We serve all of Sherwood Park including Lakeland Ridge, Summerwood, and Brentwood. We work on both larger established lots and newer properties throughout the area. If your property is in Sherwood Park, we can quote it. Call (587) 566-9879 or request a free site visit.
+                        Lawn replacement and patio upgrades are the most common starters. Many properties need a refresh rather than a full rebuild.
                     </p>
                 </li>
-
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Can you improve the yard without rebuilding everything?
-                        </span>
-                    </button>
-                <p class="cs-item-p">
-                    Yes. Many Sherwood Park renovations start with lawn replacement or a small patio upgrade, then expand to larger projects later. This phased approach keeps the project manageable, lets you see the quality before committing to bigger phases, and fits your budget and timeline. We plan each phase so it finishes cleanly and sets up the next step without paying twice for prep work. Most Sherwood Park clients prefer this staged approach because it spreads costs over time and ensures each phase completes properly.
-                </p>
-                </li>
-
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you work on larger lots?
+                            Do you work in neighborhoods like Lakeland Ridge and Summerwood?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. Sherwood Park has many larger properties, especially in areas like Brentwood and along range roads. We quote based on the real scope of work, not a quick estimate. Larger lots require more material, more labor, and better planning. We provide accurate quotes after visiting the site and measuring the work area.
+                        Yes. We serve Lakeland Ridge, Summerwood, Brentwood, and Glen Allan with landscaping upgrades and maintenance.
                     </p>
                 </li>
-
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Do you offer free quotes?
+                            What areas of Sherwood Park do you serve most often?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes. We provide free on-site quotes for all Sherwood Park properties. We visit your property, measure the work areas, review what needs to be done, and provide straightforward pricing with a clear scope. No pressure, no sales pitch. Just accurate information so you can make an informed decision. Call (587) 566-9879 to schedule a site visit.
-                    </p>
-                </li>
-
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Can you handle both hardscaping and landscaping in one project?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Yes. Many Sherwood Park projects combine lawn work with patios, walkways, or retaining walls. This approach makes sense when multiple areas need work. We handle all phases of the job so you work with one contractor from start to finish. Projects typically take 1 to 3 weeks depending on scope and weather conditions.
+                        We regularly work in Brentwood, Lakeland Ridge, Summerwood, Glen Allan, and Nottingham. If your property is elsewhere in Sherwood Park, we can still schedule a site visit and confirm the scope.
                     </p>
                 </li>
             </ul>
@@ -306,51 +282,6 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
     </section>
 
     {% include 'sections/cta.html' %}
-
-    <script>
-        // Project slider functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const slider = document.querySelector('.cs-project-slider');
-            if (!slider) return;
-            
-            const slides = slider.querySelectorAll('.cs-slide');
-            const prevBtn = slider.querySelector('.cs-slider-btn-prev');
-            const nextBtn = slider.querySelector('.cs-slider-btn-next');
-            let currentSlide = 0;
-            
-            function showSlide(index) {
-                // Hide all slides
-                slides.forEach(slide => {
-                    slide.style.display = 'none';
-                });
-                
-                // Show selected slide
-                slides[index].style.display = 'block';
-                currentSlide = index;
-            }
-            
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % slides.length;
-                showSlide(currentSlide);
-            }
-            
-            function prevSlide() {
-                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                showSlide(currentSlide);
-            }
-            
-            if (prevBtn) {
-                prevBtn.addEventListener('click', prevSlide);
-            }
-            
-            if (nextBtn) {
-                nextBtn.addEventListener('click', nextSlide);
-            }
-            
-            // Initialize first slide
-            showSlide(0);
-        });
-    </script>
 
     <script type="application/ld+json">
     {
@@ -366,7 +297,7 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
         "@type": "City",
         "name": "Sherwood Park"
       },
-      "description": "Professional landscaping services in Sherwood Park. Lawn replacement and sod, patios and walkways, retaining walls, seasonal cleanups, snow removal and commercial service."
+      "description": "Professional landscaping services in Sherwood Park. Lawn replacement, sod, patios and walkways, retaining walls, seasonal cleanups, snow removal and commercial landscaping."
     }
     </script>
     <script type="application/ld+json">
@@ -376,50 +307,26 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the most common Sherwood Park project you do?",
+          "name": "What work do you handle most often in Sherwood Park?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Lawn replacement and patio upgrades are the most common starters. Many Sherwood Park properties in Lakeland Ridge and Brentwood have older lawns that need a full reset, or patios that have settled and need a rebuild. Most projects run $2,500 to $8,000 depending on scope. Clients often start with one area, see the result, then expand to other services later."
+            "text": "Lawn replacement and patio upgrades are the most common starters. Many properties need a refresh rather than a full rebuild."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you work in Lakeland Ridge and Summerwood?",
+          "name": "Do you work in neighborhoods like Lakeland Ridge and Summerwood?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We serve all of Sherwood Park including Lakeland Ridge, Summerwood, and Brentwood. We work on both larger established lots and newer properties throughout the area. If your property is in Sherwood Park, we can quote it. Call (587) 566-9879 or request a free site visit."
+            "text": "Yes. We serve Lakeland Ridge, Summerwood, Brentwood, and Glen Allan with landscaping upgrades and maintenance."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you improve the yard without rebuilding everything?",
+          "name": "What areas of Sherwood Park do you serve most often?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Many jobs start with one zone such as a new lawn or patio, then expand later. This approach keeps the project manageable and lets you see the quality before committing to a full renovation. We plan each phase so it finishes cleanly and sets up the next step without paying twice for prep work. Most Sherwood Park clients prefer this staged approach."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work on larger lots?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Sherwood Park has many larger properties, especially in areas like Brentwood and along range roads. We quote based on the real scope of work, not a quick estimate. Larger lots require more material, more labor, and better planning. We provide accurate quotes after visiting the site and measuring the work area."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer free quotes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We provide free on-site quotes for all Sherwood Park properties. We visit your property, measure the work areas, review what needs to be done, and provide straightforward pricing with a clear scope. No pressure, no sales pitch. Just accurate information so you can make an informed decision. Call (587) 566-9879 to schedule a site visit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you handle both hardscaping and landscaping in one project?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many Sherwood Park projects combine lawn work with patios, walkways, or retaining walls. This approach makes sense when multiple areas need work. We handle all phases of the job so you work with one contractor from start to finish. Projects typically take 1 to 3 weeks depending on scope and weather conditions."
+            "text": "We regularly work in Brentwood, Lakeland Ridge, Summerwood, Glen Allan, and Nottingham. If your property is elsewhere in Sherwood Park, we can still schedule a site visit and confirm the scope."
           }
         }
       ]
@@ -427,3 +334,6 @@ keywords: "Sherwood Park landscaping, landscaping Sherwood Park, sod installatio
     </script>
 
 {% endblock %}
+
+
+
