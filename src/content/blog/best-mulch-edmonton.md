@@ -374,5 +374,5 @@ A: Properly applied mulch doesn't attract pests. Keep mulch 2-3 inches away from
 
 ---
 
-**Need help with garden bed design and mulching?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle bed preparation, plant selection, and professional mulch application. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Need help with garden bed design and mulching?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle bed preparation, plant selection, and professional mulch application. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 

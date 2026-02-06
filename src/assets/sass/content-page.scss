@@ -380,11 +380,9 @@
 		}
 
 		.cs-color {
-			background: linear-gradient(90deg, var(--primary), var(--tertiary));
-			-webkit-background-clip: text;
-			background-clip: text;
-			color: transparent;
-			-webkit-text-fill-color: transparent;
+			background: none;
+			color: var(--secondaryLight);
+			-webkit-text-fill-color: currentColor;
 		}
 
 		.cs-container {

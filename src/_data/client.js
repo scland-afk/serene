@@ -2,7 +2,7 @@ module.exports = {
     name: "Serene Construction Landscaping",
     email: "info@serenelandscapes.ca",
     phoneForTel: "587-566-9879",
-    phoneFormatted: "(587) 566-9879",
+    phoneFormatted: "587-566-9879",
     address: {
         lineOne: "Edmonton",
         lineTwo: "",

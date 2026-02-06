@@ -277,7 +277,7 @@ A: Most contracts cover parking lots and main walkways during snow events. You m
 
 ---
 
-**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing services for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/services/snow-removal/">Contact us</a> for contract pricing or call **(587) 566-9879**.
+**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing services for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/services/snow-removal/">Contact us</a> for contract pricing or call **587-566-9879**.
 
 
 

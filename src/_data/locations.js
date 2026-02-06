@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         q: "Do you offer free quotes in Edmonton?",
-        a: "Yes. We provide free on-site quotes for all Edmonton properties with a clear scope of work, timeline expectations, and straightforward pricing. We visit your property, measure the work areas, review what needs to be done, and provide accurate numbers. No pressure, no sales pitch. Call (587) 566-9879 to schedule a site visit."
+        a: "Yes. We provide free on-site quotes for all Edmonton properties with a clear scope of work, timeline expectations, and straightforward pricing. We visit your property, measure the work areas, review what needs to be done, and provide accurate numbers. No pressure, no sales pitch. Call 587-566-9879 to schedule a site visit."
       }
     ],
   },
@@ -108,7 +108,7 @@ module.exports = {
       },
       {
         q: "Do you work in Lakeland Ridge and Summerwood?",
-        a: "Yes. We serve all of Sherwood Park including Lakeland Ridge, Summerwood, and Brentwood. We work on both larger established lots and newer properties throughout the area. If your property is in Sherwood Park, we can quote it. Call (587) 566-9879 or request a free site visit."
+        a: "Yes. We serve all of Sherwood Park including Lakeland Ridge, Summerwood, and Brentwood. We work on both larger established lots and newer properties throughout the area. If your property is in Sherwood Park, we can quote it. Call 587-566-9879 or request a free site visit."
       },
       {
         q: "Can you improve the yard without rebuilding everything?",
@@ -120,7 +120,7 @@ module.exports = {
       },
       {
         q: "Do you offer free quotes?",
-        a: "Yes. We provide free on-site quotes for all Sherwood Park properties. We visit your property, measure the work areas, review what needs to be done, and provide straightforward pricing with a clear scope. No pressure, no sales pitch. Just accurate information so you can make an informed decision. Call (587) 566-9879 to schedule a site visit."
+        a: "Yes. We provide free on-site quotes for all Sherwood Park properties. We visit your property, measure the work areas, review what needs to be done, and provide straightforward pricing with a clear scope. No pressure, no sales pitch. Just accurate information so you can make an informed decision. Call 587-566-9879 to schedule a site visit."
       },
       {
         q: "Can you handle both hardscaping and landscaping in one project?",

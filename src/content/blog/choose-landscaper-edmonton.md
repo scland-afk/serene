@@ -370,6 +370,6 @@ A: Reasonable negotiation on price is acceptable, but demanding dramatic discoun
 
 ---
 
-**Looking for a trusted Edmonton landscaper?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design</a>, <a href="/services/hardscaping/">hardscaping</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, and <a href="/services/final-grading/">final grading</a> services throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We're licensed, insured, and backed by dozens of 5-star reviews. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Looking for a trusted Edmonton landscaper?** Serene Landscaping provides professional <a href="/services/landscape-design/">landscape design</a>, <a href="/services/hardscaping/">hardscaping</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, and <a href="/services/final-grading/">final grading</a> services throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We're licensed, insured, and backed by dozens of 5-star reviews. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 
 

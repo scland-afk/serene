@@ -42,6 +42,36 @@
 		url('/assets/fonts/roboto-v29-latin-900.woff') format('woff');
 }
 
+/* Oswald - Regular */
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Oswald Regular'), local('Oswald-Regular'),
+		url('/assets/fonts/oswald-v57-latin-regular.woff2') format('woff2');
+}
+
+/* Oswald - Bold */
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Oswald Bold'), local('Oswald-Bold'),
+		url('/assets/fonts/oswald-v57-latin-700.woff2') format('woff2');
+}
+
+/* Open Sans - Regular */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Open Sans'), local('OpenSans-Regular'),
+		url('/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2');
+}
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -73,8 +103,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-	--headerFont: "Roboto", Arial, sans-serif;
-	--bodyFont: "Roboto", Arial, sans-serif;
+	--headerFont: "Oswald", "Roboto", Arial, sans-serif;
+	--bodyFont: "Open Sans", "Roboto", Arial, sans-serif;
 	}
 
 	body,
@@ -82,7 +112,7 @@
 		margin: 0;
 		padding: 0;
 		font-size: 100%;
-		font-family: 'Roboto', Arial, sans-serif;
+		font-family: var(--bodyFont);
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
 	}
@@ -106,7 +136,7 @@
 	h4,
 	h5,
 	h6 {
-		font-family: 'Roboto', Arial, sans-serif;
+		font-family: var(--headerFont);
 		letter-spacing: .05em;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -115,7 +145,7 @@
 	}
 
 	.cs-topper {
-		font-family: 'Roboto', Arial, sans-serif;
+		font-family: var(--headerFont);
 		font-size: var(--topperFontSize);
 		line-height: 1.2em;
 		text-transform: uppercase;
@@ -162,7 +192,7 @@
 
 	// Buttons - can be replaced using Serene's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
 	.cs-button-solid {
-		font-family: 'Roboto', Arial, sans-serif;
+		font-family: var(--headerFont);
 		font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
 		font-weight: 700;
 		line-height: 1.5;
@@ -313,6 +343,15 @@
 
 /* Base Element Styles */
 @media only screen and (min-width: 0px) {
+	main#main {
+		.cs-container,
+		.cs-content {
+			max-width: none;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
 	h1,
 	h2,
 	h3,
@@ -363,7 +402,7 @@
 	}
 }
 
-/* Fonts loaded locally via @font-face (Roboto) */
+/* Fonts loaded locally via @font-face (Roboto, Oswald, Open Sans) */
 
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
@@ -804,7 +843,7 @@
         }
 
         .cs-li-link {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: var(--headerFont);
             font-weight: 700;
             letter-spacing: .1em;
             /* 20px - 24px */
@@ -815,6 +854,7 @@
             color: var(--headerColor);
             display: inline-block;
             position: relative;
+            text-transform: uppercase;
 
             &:before {
                 /* active state underline */
@@ -1327,13 +1367,14 @@
         }
 
         .cs-header {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: var(--headerFont);
             letter-spacing: .1em;
             font-size: 1rem;
             font-weight: 700;
             margin: 0;
             color: var(--headerColor);
             display: block;
+            text-transform: none;
         }
         
         .cs-link {
@@ -1345,6 +1386,7 @@
             color: var(--bodyTextColor);
             display: block;
             transition: color .3s;
+            text-transform: none;
             &:hover {
                 text-decoration: underline;
             }
@@ -1386,7 +1428,7 @@
         }
 
         .cs-li-link {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: var(--headerFont);
             font-weight: 700;
             letter-spacing: .1em;
             /* 14px - 16px */
@@ -1397,6 +1439,7 @@
             color: var(--headerColor);
             display: block;
             position: relative;
+            text-transform: uppercase;
             &:hover {
                 &:before {
                     width: 100%;
@@ -1961,7 +2004,7 @@
 		}
 
 		.cs-int-topper {
-			font-family: "Roboto", Arial, sans-serif;
+			font-family: var(--headerFont);
 			letter-spacing: 0.1em;
 			text-align: left;
 			font-size: var(--topperFontSize);
@@ -1989,7 +2032,7 @@
 		}
 
 		.cs-int-title {
-			font-family: "Roboto", Arial, sans-serif;
+			font-family: var(--headerFont);
 			letter-spacing: 0.1em;
 			/* 39px - 61px */
 			font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);

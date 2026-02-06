@@ -281,7 +281,7 @@ A: Both work well. Spring aeration is ideal for overseeding thin areas. Fall aer
 
 ---
 
-**Ready to get your lawn in shape this spring?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">spring cleanup and lawn care services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Ready to get your lawn in shape this spring?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">spring cleanup and lawn care services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 
 
 

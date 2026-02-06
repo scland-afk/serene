@@ -350,7 +350,7 @@ A: Maintain healthy grass through proper mowing (3 inches), correct watering (1 
 
 ---
 
-**Struggling with persistent lawn problems?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">lawn maintenance and treatment services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We diagnose problems accurately and provide effective solutions. <a href="/contact/">Contact us</a> for a free consultation or call **(587) 566-9879**.
+**Struggling with persistent lawn problems?** Serene Landscaping provides professional <a href="/services/lawn-maintenance/">lawn maintenance and treatment services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We diagnose problems accurately and provide effective solutions. <a href="/contact/">Contact us</a> for a free consultation or call **587-566-9879**.
 
 
 

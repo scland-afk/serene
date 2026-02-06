@@ -381,7 +381,7 @@ A: Wait minimum 2-3 weeks until sod has rooted (gentle tug test). Light walking 
 
 ---
 
-**Planning a sod installation project?** Serene Landscaping provides professional <a href="/services/landscape-design/">sod installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle soil preparation, proper grading, and quality installation for lasting results. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Planning a sod installation project?** Serene Landscaping provides professional <a href="/services/landscape-design/">sod installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle soil preparation, proper grading, and quality installation for lasting results. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 
 
 
