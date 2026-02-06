@@ -9,32 +9,41 @@
             gtag('js', new Date());
             gtag('config', 'G-VPZBBTMB1R');
         </script>
-        
+        <!-- Microsoft Clarity -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "vcjpxa0bzr");
+        </script>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ description }}">
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
         {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ client.domain }}{{ image or "/assets/favicons/apple-touch-icon.png" }}"/>
-        <meta property="og:image:secure_url" content="{{ client.domain }}{{ image or "/assets/favicons/apple-touch-icon.png" }}"/>
-        
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title" content="{{ title }}"/>
-        <meta name="twitter:description" content="{{ description }}"/>
-        <meta name="twitter:image" content="{{ client.domain }}{{ image or "/assets/favicons/apple-touch-icon.png" }}"/>
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}">
+        <meta property="og:image" content="{{ client.domain }}{{ image or '/assets/favicons/apple-touch-icon.png' }}">
+        <meta property="og:image:secure_url" content="{{ client.domain }}{{ image or '/assets/favicons/apple-touch-icon.png' }}">
 
-        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
-        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
-        <meta name="apple-mobile-web-app-title" content="{{ client.name }}"/>
-        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ title }}">
+        <meta name="twitter:description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
+        <meta name="twitter:image" content="{{ client.domain }}{{ image or '/assets/favicons/apple-touch-icon.png' }}">
+
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="{{ client.name }}">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
         <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
@@ -49,7 +58,6 @@
 
         {% block head %}{% endblock %}
 
-        <title>{{ title }}</title>
         <style>
             .sticky-quote-button {
                 position: fixed;
@@ -163,7 +171,7 @@
                     ‹
                 </button>
                 <figure class="cs-lightbox__figure">
-                    <img class="cs-lightbox__image" src="" alt="">
+                    <img class="cs-lightbox__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Gallery image" data-initialized="false">
                     <figcaption class="cs-lightbox__caption"></figcaption>
                 </figure>
                 <button class="cs-lightbox__nav cs-lightbox__next" type="button" data-action="next" aria-label="Next image">

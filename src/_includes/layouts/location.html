@@ -3,7 +3,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="/assets/css/local.css">
-<link rel="preload" as="image" href="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | avif %}"/>
+<link rel="preload" as="image" href="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | avif %}">
 {% endblock %}
 
 {% block body %}

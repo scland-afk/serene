@@ -257,6 +257,14 @@
 			width: 100%;
 		}
 
+		/* Space out internal links so they don't look crumbled */
+		a[href^="/"] {
+			margin: 0 0.2em;
+		}
+		a[href^="/"]:first-of-type {
+			margin-left: 0;
+		}
+
 		p:last-of-type {
 			margin-bottom: 2rem;
 		}

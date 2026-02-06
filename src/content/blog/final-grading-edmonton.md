@@ -1,7 +1,7 @@
 ---
-title: Final Grading Edmonton | New Construction Requirements
+title: "Final Grading Edmonton | New Build Requirements Guide"
 url: final-grading-edmonton
-description: Final grading requirements for new construction in Edmonton. Building code compliance, permits, and professional grading services.
+description: "Final grading requirements in Edmonton for new builds. Slope targets, topsoil depth, and inspection prep for permits. Read the guide. Call 587-566-9879."
 author: Serene Landscaping
 date: 2025-10-05T00:00:00.000Z
 tags:
@@ -9,8 +9,8 @@ tags:
     - featured
 image: /assets/images/final-grading-in-edmonton.webp
 imageAlt: Final grading in Edmonton
----
 
+---
 ### Final Grading Requirements for New Construction in Edmonton
 
 Bought a new construction home in Edmonton? Final grading is required before you can get an occupancy permit - but many new homeowners don't understand what it involves, when it needs to happen, or what it costs.
@@ -291,4 +291,5 @@ A: Minimum 2% slope away from foundation for at least 10 feet. The City prefers 
 
 ---
 
-**Need final grading for your new Edmonton home?** Serene Landscaping provides professional <a href="/services/final-grading/">final grading services</a> including site preparation, proper drainage, quality topsoil, surveying, and City of Edmonton submission. For detailed information about Edmonton's Drainage Bylaw 18093, inspection timelines, and Lot Grading Certificate requirements, see our <a href="/final-grading/edmonton/">Edmonton Final Grading page</a>. We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+**Need final grading for your new Edmonton home?** Serene Landscaping provides professional <a href="/services/final-grading/">final grading services</a> including site preparation, proper drainage, quality topsoil, surveying, and City of Edmonton submission. For detailed information about Edmonton's Drainage Bylaw 18093, inspection timelines, and Lot Grading Certificate requirements, see our <a href="/services/final-grading/">Edmonton Final Grading page</a>. We serve Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+

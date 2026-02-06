@@ -1,15 +1,16 @@
 ---
-title: When to Install Sod Edmonton | Spring vs Fall Timing
+title: "Best Time to Install Sod Edmonton | Timing Guide 2025"
 url: best-time-install-sod-edmonton
-description: Best time to install sod in Edmonton. Compare spring vs fall sod installation timing, weather conditions, and success rates.
+description: "Best time to install sod in Edmonton. Compare spring vs fall timing, watering steps, install windows, and care tips. Read the guide today and call 587-566-9879."
 author: Serene Landscaping
 date: 2025-12-28T00:00:00.000Z
 tags:
     - post
 image: /assets/images/fresh-sod-installation.webp
 imageAlt: Fresh sod installation in Edmonton in Edmonton
----
 
+
+---
 ### When Is the Best Time to Install Sod in Edmonton?
 
 Planning to install sod at your Edmonton property? Timing matters significantly for successful establishment. Install at the right time and your sod roots quickly with minimal care. Install at the wrong time and you'll struggle to keep it alive, wasting money and effort.
@@ -381,3 +382,7 @@ A: Wait minimum 2-3 weeks until sod has rooted (gentle tug test). Light walking 
 ---
 
 **Planning a sod installation project?** Serene Landscaping provides professional <a href="/services/landscape-design/">sod installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle soil preparation, proper grading, and quality installation for lasting results. <a href="/contact/">Contact us</a> for a free quote or call **(587) 566-9879**.
+
+
+
+
