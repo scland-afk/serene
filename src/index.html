@@ -51,11 +51,31 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 </div>
             </div>
             <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | webp %}" type="image/webp">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | avif %}" type="image/avif">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" type="image/webp">
-                <img decoding="async" fetchpriority="high" loading="eager" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" alt="Front yard landscaping with shrubs and mulch" width="1920" height="1200" aria-hidden="true">
+                <source type="image/avif" sizes="100vw" srcset="
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-480w.avif" %} 480w,
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-768w.avif" %} 768w,
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-1200w.avif" %} 1200w
+                ">
+                <source type="image/webp" sizes="100vw" srcset="
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-480w.webp" %} 480w,
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-768w.webp" %} 768w,
+                    {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-1200w.webp" %} 1200w
+                ">
+                <img
+                    decoding="async"
+                    fetchpriority="high"
+                    loading="eager"
+                    src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-768w.webp" %}"
+                    srcset="
+                        {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-480w.webp" %} 480w,
+                        {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-768w.webp" %} 768w,
+                        {% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton-1200w.webp" %} 1200w
+                    "
+                    sizes="100vw"
+                    alt="Front yard landscaping with shrubs and mulch"
+                    width="768"
+                    height="480"
+                    aria-hidden="true">
             </picture>
         </div>
     </section>
