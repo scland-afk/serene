@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% if client.isProduction %}
-        <!-- GA4 + Clarity delayed to reduce LCP render delay -->
+        <!-- GA4 + Clarity: deferred until after page load to free main thread for LCP -->
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+        <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+        <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
         <script>
             (function () {
-                // --- GA4 (delayed) ---
                 var GA_ID = "G-VPZBBTMB1R";
                 var gaLoaded = false;
+                var clarityLoaded = false;
 
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -19,65 +22,42 @@
                 function loadGa() {
                     if (gaLoaded) return;
                     gaLoaded = true;
-
-                    // Configure immediately (safe with stub)
-                    window.gtag("js", new Date());
-                    window.gtag("config", GA_ID);
-
-                    var s = document.createElement("script");
-                    s.async = true;
-                    s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
-                    document.head.appendChild(s);
+                    try {
+                        window.gtag("js", new Date());
+                        window.gtag("config", GA_ID);
+                        var s = document.createElement("script");
+                        s.async = true;
+                        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+                        document.head.appendChild(s);
+                    } catch (e) { /* analytics failure must not break site */ }
                 }
 
-                // --- Clarity (delayed) ---
-                var clarityLoaded = false;
                 function loadClarity() {
                     if (clarityLoaded) return;
                     clarityLoaded = true;
-
-                    (function (c, l, a, r, i, t, y) {
-                        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-                        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-                    })(window, document, "clarity", "script", "vcjpxa0bzr");
+                    try {
+                        (function (c, l, a, r, i, t, y) {
+                            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+                            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                        })(window, document, "clarity", "script", "vcjpxa0bzr");
+                    } catch (e) { /* analytics failure must not break site */ }
                 }
 
-                function onReady(fn) {
-                    if (document.readyState === "interactive" || document.readyState === "complete") {
-                        fn();
+                function scheduleIdle(fn, timeout) {
+                    if (typeof requestIdleCallback === "function") {
+                        requestIdleCallback(fn, { timeout: timeout });
                     } else {
-                        document.addEventListener("DOMContentLoaded", fn, { once: true });
+                        setTimeout(fn, timeout);
                     }
                 }
 
-                onReady(function () {
-                    // GA: delay slightly after DOM is ready
-                    setTimeout(loadGa, 1500);
-
-                    // Clarity: first interaction (or fallback timer)
-                    var clarityTimer = setTimeout(loadClarity, 3000);
-
-                    function onClarityInteract() {
-                        clearTimeout(clarityTimer);
-                        loadClarity();
-                        window.removeEventListener("scroll", onClarityInteract);
-                        window.removeEventListener("touchstart", onClarityInteract);
-                        window.removeEventListener("pointerdown", onClarityInteract);
-                        window.removeEventListener("keydown", onClarityInteract);
-                    }
-
-                    window.addEventListener("scroll", onClarityInteract, { passive: true });
-                    window.addEventListener("touchstart", onClarityInteract, { passive: true });
-                    window.addEventListener("pointerdown", onClarityInteract);
-                    window.addEventListener("keydown", onClarityInteract);
+                window.addEventListener("load", function () {
+                    scheduleIdle(loadGa, 2000);
+                    scheduleIdle(loadClarity, 4000);
                 });
             })();
         </script>
-        <!-- Preconnect for 3rd parties that load shortly after -->
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-        <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
-        <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
         {% endif %}
 
         <link rel="stylesheet" href="/assets/css/root.css">
