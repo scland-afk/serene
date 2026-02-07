@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPZBBTMB1R"></script>
+        <!-- Google Analytics & Clarity deferred until after load to avoid blocking main thread -->
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VPZBBTMB1R');
-        </script>
-        <!-- Microsoft Clarity -->
-        <script type="text/javascript">
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "vcjpxa0bzr");
+            function loadThirdPartyAnalytics() {
+                var gtagScript = document.createElement('script');
+                gtagScript.async = true;
+                gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-VPZBBTMB1R';
+                document.head.appendChild(gtagScript);
+                gtagScript.onload = function() {
+                    gtag('js', new Date());
+                    gtag('config', 'G-VPZBBTMB1R');
+                };
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "vcjpxa0bzr");
+            }
+            if (document.readyState === 'complete') {
+                setTimeout(loadThirdPartyAnalytics, 0);
+            } else {
+                window.addEventListener('load', function fn() {
+                    window.removeEventListener('load', fn);
+                    setTimeout(loadThirdPartyAnalytics, 0);
+                });
+            }
         </script>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Preconnect to third-party origins used after load (saves ~300ms when they load) -->
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+        <link rel="preconnect" href="https://images.sociablekit.com" crossorigin>
+        <!-- Preload key CSS so they start immediately and reduce render-blocking impact -->
+        <link rel="preload" href="/assets/css/root.css" as="style">
         <title>{{ title }}</title>
         <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
         {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
@@ -189,7 +206,7 @@
                 } else {
                     stickyBtn.style.display = 'none';
                 }
-            });
+            }, { passive: true });
 
             const stickyBtn = document.getElementById('sticky-quote-btn');
             if (stickyBtn) {

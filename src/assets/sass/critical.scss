@@ -6,6 +6,120 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
+<---     #banner (LCP hero)     -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+    #banner {
+        padding: var(--sectionPadding);
+        padding-bottom: 3.75rem;
+        padding-top: clamp(8rem, 12vw, 9.3125rem);
+        position: relative;
+        overflow: hidden;
+
+        .cs-container {
+            margin: auto;
+            max-width: 112.5rem;
+            padding-top: clamp(8rem, 45vw, 12rem);
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .cs-container::before {
+            background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.92));
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .cs-content {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem);
+            row-gap: 1rem;
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+            font-size: clamp(2.4375rem, 6vw, 4.625rem);
+            margin-bottom: 0;
+        }
+
+        .cs-background {
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #000;
+                pointer-events: none;
+                opacity: 0.7;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+        .cs-background,
+        .cs-background img {
+            display: block;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .cs-button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .cs-button-solid {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: center;
+            text-decoration: none;
+            min-width: 12.5rem;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary);
+            color: var(--bodyTextColorWhite);
+            border-radius: 0.25rem;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #banner .cs-container::before {
+        background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.92));
+    }
+}
+
+/*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 

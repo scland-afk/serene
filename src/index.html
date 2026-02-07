@@ -9,7 +9,10 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Critical styles are loaded first -->
+    <!-- Preload LCP image (hero) so it paints sooner; do not lazy-load this image -->
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}">
+    <link rel="preload" href="/assets/css/critical.css" as="style">
+    <!-- Critical styles (blocking) – includes #banner for LCP hero -->
     <link rel="stylesheet" href="/assets/css/critical.css" />
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
@@ -52,7 +55,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 600, height: 900 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" type="image/webp">
-                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" alt="Front yard landscaping with shrubs and mulch" width="1920" height="1200" aria-hidden="true">
+                <img decoding="async" fetchpriority="high" loading="eager" src="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}" alt="Front yard landscaping with shrubs and mulch" width="1920" height="1200" aria-hidden="true">
             </picture>
         </div>
     </section>
@@ -107,8 +110,19 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     Trusted by Homeowners and Businesses Across the Region
                 </h2>
                 <p class="cs-text">
-                    Serene Landscaping is a trusted landscaping company serving Edmonton, St. Albert, Sherwood Park, and nearby communities. Homeowners and property managers hire us for clear communication, quality workmanship, and a finished result that holds up.
+                    Serene Landscaping is a trusted landscaping company serving Edmonton, St. Albert, Sherwood Park, and nearby communities. We bring years of experience in the landscaping industry to transform your property.
+
                 </p>
+                <p class="cs-text">
+                    We provide professional landscaping, lawn care, and snow removal services in Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We bring years of experience in the landscaping industry to transform your property.
+
+                </p>
+
+                <p class="cs-text">
+                    There's hidden beauty on your property that you may not see. But, when you meet with our experts, the opportunity to visualize that hidden beauty is made clear.
+
+                </p>
+
                 <a href="/about/" class="cs-button-solid">More About Us</a>
             </div>
         </div>
@@ -201,30 +215,30 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <h3 class="cs-h3">Consultation & Site Analysis</h3>
+                    <h3 class="cs-h3">Free Consultation & Site Review</h3>
                     <p class="cs-item-text">
-                        We walk the property with you, listen to your goals, and flag grading or drainage concerns before we plan.
+                        We walk the property with you, discuss your goals, and identify grading, drainage, or access considerations before planning begins.
                     </p>
                     <span class="cs-number">01</span>
                 </li>
                 <li class="cs-item">
                     <h3 class="cs-h3">2D Conceptual Design</h3>
                     <p class="cs-item-text">
-                        We map the layout and material choices so you can visualize the scope and approve the direction.
+                        We create a layout and material plan so you can visualize the scope, understand the approach, and approve the direction before work starts.
                     </p>
                     <span class="cs-number">02</span>
                 </li>
                 <li class="cs-item">
                     <h3 class="cs-h3">Professional Installation</h3>
                     <p class="cs-item-text">
-                        Our crew handles prep, build, and cleanup with clear communication and a tidy worksite.
+                        Our crew manages site preparation, construction, and cleanup while maintaining clear communication and a clean, organized work area.
                     </p>
                     <span class="cs-number">03</span>
                 </li>
                 <li class="cs-item">
                     <h3 class="cs-h3">Satisfaction Guaranteed</h3>
                     <p class="cs-item-text">
-                        We finish with a walkthrough and make sure every detail meets expectations.
+                        We complete a final walkthrough with you and confirm all work meets the agreed scope and quality standards.
                     </p>
                     <span class="cs-number">04</span>
                 </li>
@@ -575,7 +589,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 Real feedback from verified Google reviews across Edmonton and surrounding communities.
             </p>
         </div>
-        <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px"></iframe>
+        <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
     </div>
 </section>
 
