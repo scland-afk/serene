@@ -9,13 +9,15 @@ if (csUL && !csUL.hasAttribute('aria-expanded')) {
     csUL.setAttribute('aria-expanded', 'false');
 }
 
-CShamburgerMenu.addEventListener('click', function() {
-    CShamburgerMenu.classList.toggle("cs-active");
-    CSnavbarMenu.classList.toggle("cs-active");
-    CSbody.classList.toggle("cs-open");
-    // run the function to check the aria-expanded value
-    ariaExpanded();
-});
+if (CShamburgerMenu) {
+    CShamburgerMenu.addEventListener('click', function() {
+        CShamburgerMenu.classList.toggle("cs-active");
+        CSnavbarMenu.classList.toggle("cs-active");
+        CSbody.classList.toggle("cs-open");
+        // run the function to check the aria-expanded value
+        ariaExpanded();
+    });
+}
 
 // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
 function ariaExpanded() {
@@ -39,11 +41,11 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
 
 // after scrolling down 100px, add .scroll class to the #cs-navigation
-document.addEventListener('scroll', (e) => { 
+document.addEventListener('scroll', (e) => {
     const scroll = document.documentElement.scrollTop;
     if(scroll >= 100){
 document.querySelector('#cs-navigation').classList.add('scroll')
     } else {
     document.querySelector('#cs-navigation').classList.remove('scroll')
     }
-});
+}, { passive: true });

@@ -74,15 +74,12 @@
                 });
             })();
         </script>
-        {% endif %}
-
         <!-- Preconnect for 3rd parties that load shortly after -->
         <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
         <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
         <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
+        {% endif %}
 
-        <!-- Preload CSS for early fetch, then apply normally (must be render-blocking to prevent FOUC) -->
-        <link rel="preload" href="/assets/css/root.css" as="style">
         <link rel="stylesheet" href="/assets/css/root.css">
 
         <title>{{ title }}</title>

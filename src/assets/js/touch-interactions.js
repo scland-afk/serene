@@ -23,7 +23,7 @@
         });
 
         // Gallery section - improve touch responsiveness
-        const galleryItems = document.querySelectorAll('#gallery-43 .cs-item');
+        const galleryItems = document.querySelectorAll('#gallery-2281 .cs-image');
         galleryItems.forEach(function(item) {
             // Ensure the link is fully clickable
             item.style.cursor = 'pointer';
