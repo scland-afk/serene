@@ -81,9 +81,9 @@
         <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
         <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
 
-        <!-- Critical CSS: preload and apply as stylesheet on load -->
-        <link rel="preload" href="/assets/css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/assets/css/root.css"></noscript>
+        <!-- Preload CSS for early fetch, then apply normally (must be render-blocking to prevent FOUC) -->
+        <link rel="preload" href="/assets/css/root.css" as="style">
+        <link rel="stylesheet" href="/assets/css/root.css">
 
         <title>{{ title }}</title>
         <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
