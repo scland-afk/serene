@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Analytics & Clarity deferred until after load to avoid blocking main thread -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            function loadThirdPartyAnalytics() {
-                var gtagScript = document.createElement('script');
-                gtagScript.async = true;
-                gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-VPZBBTMB1R';
-                document.head.appendChild(gtagScript);
-                gtagScript.onload = function() {
-                    gtag('js', new Date());
-                    gtag('config', 'G-VPZBBTMB1R');
-                };
-                (function(c,l,a,r,i,t,y){
-                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "vcjpxa0bzr");
-            }
-            if (document.readyState === 'complete') {
-                setTimeout(loadThirdPartyAnalytics, 0);
-            } else {
-                window.addEventListener('load', function fn() {
-                    window.removeEventListener('load', fn);
-                    setTimeout(loadThirdPartyAnalytics, 0);
-                });
-            }
-        </script>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Preconnect to third-party origins used after load (saves ~300ms when they load) -->
+
+        {% if client.isProduction %}
+        <!-- GA4 + Clarity delayed to reduce LCP render delay -->
+        <script>
+            (function () {
+                // --- GA4 (delayed) ---
+                var GA_ID = "G-VPZBBTMB1R";
+                var gaLoaded = false;
+
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+                function loadGa() {
+                    if (gaLoaded) return;
+                    gaLoaded = true;
+
+                    // Configure immediately (safe with stub)
+                    window.gtag("js", new Date());
+                    window.gtag("config", GA_ID);
+
+                    var s = document.createElement("script");
+                    s.async = true;
+                    s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+                    document.head.appendChild(s);
+                }
+
+                // --- Clarity (delayed) ---
+                var clarityLoaded = false;
+                function loadClarity() {
+                    if (clarityLoaded) return;
+                    clarityLoaded = true;
+
+                    (function (c, l, a, r, i, t, y) {
+                        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+                        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                    })(window, document, "clarity", "script", "vcjpxa0bzr");
+                }
+
+                function onReady(fn) {
+                    if (document.readyState === "interactive" || document.readyState === "complete") {
+                        fn();
+                    } else {
+                        document.addEventListener("DOMContentLoaded", fn, { once: true });
+                    }
+                }
+
+                onReady(function () {
+                    // GA: delay slightly after DOM is ready
+                    setTimeout(loadGa, 1500);
+
+                    // Clarity: first interaction (or fallback timer)
+                    var clarityTimer = setTimeout(loadClarity, 3000);
+
+                    function onClarityInteract() {
+                        clearTimeout(clarityTimer);
+                        loadClarity();
+                        window.removeEventListener("scroll", onClarityInteract);
+                        window.removeEventListener("touchstart", onClarityInteract);
+                        window.removeEventListener("pointerdown", onClarityInteract);
+                        window.removeEventListener("keydown", onClarityInteract);
+                    }
+
+                    window.addEventListener("scroll", onClarityInteract, { passive: true });
+                    window.addEventListener("touchstart", onClarityInteract, { passive: true });
+                    window.addEventListener("pointerdown", onClarityInteract);
+                    window.addEventListener("keydown", onClarityInteract);
+                });
+            })();
+        </script>
+        {% endif %}
+
+        <!-- Preconnect for 3rd parties that load shortly after -->
         <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-        <link rel="preconnect" href="https://images.sociablekit.com" crossorigin>
-        <!-- Preload key CSS so they start immediately and reduce render-blocking impact -->
-        <link rel="preload" href="/assets/css/root.css" as="style">
+        <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+        <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
+
+        <!-- Critical CSS: preload and apply as stylesheet on load -->
+        <link rel="preload" href="/assets/css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/assets/css/root.css"></noscript>
+
         <title>{{ title }}</title>
         <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
         {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
@@ -67,7 +114,6 @@
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-700.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-v44-latin-regular.woff2" crossorigin>
 
-        <link rel="stylesheet" href="/assets/css/root.css">
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
         <script defer src="/assets/js/faq.js"></script>
@@ -100,6 +146,9 @@
                 transform: translateY(-2px);
                 box-shadow: 0 6px 16px rgba(0,0,0,0.2);
             }
+            .sticky-quote-button.is-visible {
+                display: flex;
+            }
             .exit-intent-popup {
                 position: fixed;
                 top: 0;
@@ -122,9 +171,7 @@
                 max-height: 90vh;
                 overflow-y: auto;
             }
-            .exit-intent-content h3 {
-                text-align: center;
-            }
+            .exit-intent-content h3,
             .exit-intent-content p {
                 text-align: center;
             }
@@ -181,35 +228,24 @@
             <div class="cs-lightbox__panel" role="dialog" aria-modal="true" aria-label="Gallery image" tabindex="-1">
                 <div class="cs-lightbox__header">
                     <span class="cs-lightbox__count">1 / 1</span>
-                    <button class="cs-lightbox__close" type="button" data-action="close" aria-label="Close">
-                        ✕
-                    </button>
+                    <button class="cs-lightbox__close" type="button" data-action="close" aria-label="Close">✕</button>
                 </div>
-                <button class="cs-lightbox__nav cs-lightbox__prev" type="button" data-action="prev" aria-label="Previous image">
-                    ‹
-                </button>
+                <button class="cs-lightbox__nav cs-lightbox__prev" type="button" data-action="prev" aria-label="Previous image">‹</button>
                 <figure class="cs-lightbox__figure">
                     <img class="cs-lightbox__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Gallery image" data-initialized="false">
                     <figcaption class="cs-lightbox__caption"></figcaption>
                 </figure>
-                <button class="cs-lightbox__nav cs-lightbox__next" type="button" data-action="next" aria-label="Next image">
-                    ›
-                </button>
+                <button class="cs-lightbox__nav cs-lightbox__next" type="button" data-action="next" aria-label="Next image">›</button>
             </div>
         </div>
 
         <script>
-            window.addEventListener('scroll', function() {
-                const stickyBtn = document.getElementById('sticky-quote-btn');
-                if (window.scrollY > 300) {
-                    stickyBtn.style.display = 'flex';
-                } else {
-                    stickyBtn.style.display = 'none';
-                }
-            }, { passive: true });
-
             const stickyBtn = document.getElementById('sticky-quote-btn');
             if (stickyBtn) {
+                window.addEventListener('scroll', () => {
+                    stickyBtn.classList.toggle('is-visible', window.scrollY > 300);
+                }, { passive: true });
+
                 stickyBtn.addEventListener('click', function() {
                     document.getElementById('exit-intent-popup').style.display = 'flex';
                 });
@@ -231,6 +267,5 @@
                 });
             }
         </script>
-
     </body>
 </html>
