@@ -44,6 +44,10 @@
 		margin: 0;
 		padding: 0;
 	}
+	/* Disable transitions on load to prevent nav menu slide-down flash */
+	body.preload * {
+		transition: none !important;
+	}
 }
 
 /*-- -------------------------- -->
@@ -718,5 +722,19 @@
                 color: #fff;
             }
         }
+    }
+}
+
+/* Mobile nav: only hide dropdown on first paint to prevent slide-down flash. Do not style .cs-top-bar here. */
+@media only screen and (max-width: 63.9375rem) {
+    #cs-navigation .cs-ul-wrapper {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
     }
 }
