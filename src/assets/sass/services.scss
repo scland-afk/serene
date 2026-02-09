@@ -251,6 +251,14 @@
             align-items: center;
         }
 
+        .cs-commercial-cta {
+            gap: clamp(0.75rem, 1.5vw, 1.25rem);
+        }
+
+        .cs-commercial-cta .cs-title {
+            max-width: 28ch;
+        }
+
         .cs-title {
             max-width: 20ch;
             margin: 0;
