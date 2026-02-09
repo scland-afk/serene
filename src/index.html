@@ -10,7 +10,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 
 {% block head %}
     <!-- Preload LCP image (hero) so it paints sooner; do not lazy-load this image -->
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp %}">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp({ quality: 76 }) %}">
     <link rel="preload" href="/assets/css/critical.css" as="style">
     <!-- Critical styles (blocking) – includes #banner for LCP hero -->
     <link rel="stylesheet" href="/assets/css/critical.css" />
@@ -29,6 +29,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
     {% include "components/home-schema.html" %}
+    <script defer src="/assets/js/gallery-48-lightbox.js"></script>
     <script defer src="/assets/js/gallery-2281.js"></script>
     <script defer src="/assets/js/why-choose-1824.js"></script>
 {% endblock %}
@@ -94,33 +95,33 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-image-group">
                 <picture class="cs-picture cs-picture1">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 482, height: 536 }) | webp({ quality: 76 }) %}">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | webp %}">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 802, height: 892 }) | webp({ quality: 76 }) %}">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp %}">
-                    <img src="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp %}" alt="landscape design and construction Edmonton" width="522" height="581" loading="lazy" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp({ quality: 76 }) %}">
+                    <img src="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 1044, height: 1162 }) | webp({ quality: 76 }) %}" alt="landscape design and construction Edmonton" width="522" height="581" loading="lazy" decoding="async">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 366, height: 354 }) | webp({ quality: 76 }) %}">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | webp %}">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 600, height: 578 }) | webp({ quality: 76 }) %}">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp %}">
-                    <img src="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp %}" alt="landscaping crew working in Edmonton" width="390" height="376" loading="lazy" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | avif({ quality: 70 }) %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp({ quality: 76 }) %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp({ quality: 76 }) %}">
+                    <img src="{% getUrl "/assets/images/crew.webp" | resize({ width: 780, height: 752 }) | webp({ quality: 76 }) %}" alt="landscaping crew working in Edmonton" width="390" height="376" loading="lazy" decoding="async">
                 </picture>
             </div>
             <!-- Right Content Section-->
@@ -164,9 +165,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Residential Landscaping</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Landscape design in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-residential-overview.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Landscape design in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -174,9 +175,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Hardscapes</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Hardscaping in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Hardscaping in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -184,9 +185,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Landscape Maintenance</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Lawn maintenance in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Lawn maintenance in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -194,9 +195,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Snow Removal</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Snow removal in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Snow removal in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -204,9 +205,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Sod Installation</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sod-installation-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -214,9 +215,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         <h3 class="cs-h3">Final Grading</h3>
                     </a>
                     <picture class="cs-background">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp %}" alt="Final grading in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/final-grading-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 76 }) %}" alt="Final grading in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
             </ul>
@@ -299,9 +300,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <div class="cs-gallery" data-category="all">
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -310,9 +311,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Maintenance</span>
@@ -321,9 +322,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -332,9 +333,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="paving stone seating area" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="paving stone seating area" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -343,9 +344,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="spruce and shrub bed installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="spruce and shrub bed installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -354,9 +355,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="landscape lighting installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="landscape lighting installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -365,9 +366,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Maintenance</span>
@@ -376,9 +377,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial landscaping property" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscaping property" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -387,9 +388,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -398,9 +399,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial retaining wall installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial retaining wall installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -409,9 +410,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="vinyl fence installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="vinyl fence installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -420,9 +421,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="lush looking artificial turf" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="lush looking artificial turf" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -431,9 +432,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="artificial grass installation in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="artificial grass installation in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -442,9 +443,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image cs-all-only" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="artificial turf installation in St. Albert" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="artificial turf installation in St. Albert" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -455,9 +456,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <div class="cs-gallery cs-hidden" data-category="hardscaping">
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -466,9 +467,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="paving stone seating area" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="paving stone seating area" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -477,9 +478,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="hardscaping installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="hardscaping installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Hardscaping</span>
@@ -490,9 +491,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <div class="cs-gallery cs-hidden" data-category="design">
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -501,9 +502,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="spruce and shrub bed installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="spruce and shrub bed installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -512,9 +513,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="landscape lighting installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="landscape lighting installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Design</span>
@@ -525,9 +526,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <div class="cs-gallery cs-hidden" data-category="maintenance">
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Maintenance</span>
@@ -536,9 +537,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Maintenance</span>
@@ -547,9 +548,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="lush grass lawn in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="lush grass lawn in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Maintenance</span>
@@ -560,9 +561,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <div class="cs-gallery cs-hidden" data-category="commercial">
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial landscaping property" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscaping property" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -571,9 +572,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -582,9 +583,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </a>
                     <a class="cs-image" href="/portfolio/">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp %}" alt="commercial retaining wall installation" width="420" height="560">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial retaining wall installation" width="420" height="560">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Commercial</span>
@@ -622,10 +623,10 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-image-group">
                 <picture class="cs-picture">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp({ quality: 76 }) %}">
                     <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp %}" alt="lawn maintenance service in Edmonton" width="562" height="568">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp({ quality: 76 }) %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-lawn-maintenance-home.webp" | resize({ width: 562, height: 568 }) | webp({ quality: 76 }) %}" alt="lawn maintenance service in Edmonton" width="562" height="568">
                 </picture>
             </div>
             <div class="cs-content">

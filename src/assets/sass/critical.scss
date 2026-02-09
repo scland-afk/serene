@@ -1,9 +1,120 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // CRITICAL PAGE STYLES
 // Above-the-fold and high-priority styles for the home page's landing section.
-// Put the first section of the home page in here, so it loads immediately.
-// The rest of the home page styles in local.css will be deferred and
+// Includes :root + body so homepage can defer root.css without FOUC.
+// Minimal #banner here so LCP hero image can paint without waiting for deferred local.css.
 // ─────────────────────────────────────────────────────────────────────────────
+
+/*-- -------------------------- -->
+<---  Critical globals          -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0px) {
+	:root {
+		--primary: #1B5E3E;
+		--primaryLight: #2E7D5A;
+		--secondary: #6B8E23;
+		--secondaryLight: #9ABF5A;
+		--secondaryDark: #0F3D26;
+		--headerColor: #1a1a1a;
+		--bodyTextColor: #4E4B66;
+		--bodyTextColorWhite: #FAFBFC;
+		--dark: #1a1a1a;
+		--medium: #3a3a3a;
+		--accent: #4a4a4a;
+		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+		--bodyFontSize: 1rem;
+		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+		--headerFont: "Oswald", Arial, sans-serif;
+		--bodyFont: "Open Sans", Arial, sans-serif;
+	}
+	body,
+	html {
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+		font-family: var(--bodyFont);
+		color: var(--bodyTextColor);
+		overflow-x: hidden;
+	}
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/*-- -------------------------- -->
+<---  #banner (LCP – minimal)   -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+    #banner {
+        padding: var(--sectionPadding);
+        padding-bottom: 3.75rem;
+        padding-top: clamp(8rem, 12vw, 9.3125rem);
+        position: relative;
+        overflow: hidden;
+    }
+    #banner .cs-container {
+        margin: auto;
+        max-width: 112.5rem;
+        padding-top: clamp(8rem, 45vw, 12rem);
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    #banner .cs-container::before {
+        background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.92));
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    #banner .cs-background {
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #banner .cs-background::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        pointer-events: none;
+        opacity: 0.7;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #banner .cs-background,
+    #banner .cs-background img {
+        display: block;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 48rem) {
+    #banner .cs-container::before {
+        background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.92));
+    }
+}
 
 /*-- -------------------------- -->
 <---           Hero             -->

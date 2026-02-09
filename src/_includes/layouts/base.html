@@ -80,7 +80,12 @@
         <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
         {% endif %}
 
+        {% if page.url == "/" %}
+        <link rel="preload" href="/assets/css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/assets/css/root.css"></noscript>
+        {% else %}
         <link rel="stylesheet" href="/assets/css/root.css">
+        {% endif %}
 
         <title>{{ title }}</title>
         <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, hardscaping, and design. Book a free quote. Call 587-566-9879.' }}">
@@ -115,7 +120,6 @@
         <script defer src="/assets/js/nav.js"></script>
         <script defer src="/assets/js/faq.js"></script>
         <script defer src="/assets/js/touch-interactions.js"></script>
-        <script defer src="/assets/js/gallery-48-lightbox.js"></script>
 
         {% block head %}{% endblock %}
 
