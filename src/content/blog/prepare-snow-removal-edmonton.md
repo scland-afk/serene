@@ -52,7 +52,7 @@ Waiting until November to book snow removal services means limited contractor av
 - Lower total cost in mild winters
 - Higher cost in heavy snow years
 
-Most commercial clients choose seasonal contracts for budget predictability and guaranteed service. Our <a href="/services/snow-removal/">commercial snow removal services</a> offer both options.
+Most commercial clients choose seasonal contracts for budget predictability and guaranteed service. Our <a href="/commercial-snow-removal/">commercial snow removal services</a> offer both options.
 
 #### Mark Obstacles and Property Features
 
@@ -277,7 +277,7 @@ A: Most contracts cover parking lots and main walkways during snow events. You m
 
 ---
 
-**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing services for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. <a href="/services/snow-removal/">Contact us</a> for contract pricing or call **587-566-9879**.
+**Need reliable commercial snow removal in Edmonton?** Serene Landscaping provides 24/7 winter snow clearing for businesses, property managers, and condo boards throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. See our <a href="/commercial-snow-removal/">commercial snow removal</a> page or <a href="/contact/">contact us</a> for contract pricing — call **587-566-9879**.
 
 
 
