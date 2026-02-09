@@ -9,8 +9,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Preload LCP image (hero) so it paints sooner; do not lazy-load this image -->
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp({ quality: 76 }) %}">
+    <!-- Hero preload is in base.html as first in head for LCP. Critical CSS next. -->
     <link rel="preload" href="/assets/css/critical.css" as="style">
     <!-- Critical styles (blocking) – includes #hero-1623 for LCP hero -->
     <link rel="stylesheet" href="/assets/css/critical.css" />
@@ -585,7 +584,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 Real feedback from verified Google reviews across Edmonton and surrounding communities.
             </p>
         </div>
-        <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
+        <!-- SociableKit iframe commented out to improve LCP / main-thread; re-enable when needed -->
+        <!-- <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe> -->
     </div>
 </section>
 
