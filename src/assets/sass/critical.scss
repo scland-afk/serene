@@ -743,9 +743,17 @@
 #cs-navigation .cs-drop-ul {
     opacity: 0;
     visibility: hidden;
-    transform: scaleY(0);
-    transform-origin: top;
     position: absolute;
     top: 100%;
     z-index: -100;
+}
+
+/* Desktop dropdowns use scaleY for animation — mirror the hidden state here.
+   Mobile dropdowns use height:0 instead, and are already inside the hidden
+   .cs-ul-wrapper, so scaleY is not needed and would break mobile toggles. */
+@media only screen and (min-width: 64rem) {
+    #cs-navigation .cs-drop-ul {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
 }

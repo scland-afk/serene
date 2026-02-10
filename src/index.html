@@ -88,8 +88,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 sizes="100vw"
             >
 
-            <!-- No fetchpriority/high or eager: let responsive sources pick the best candidate -->
             <img
+                fetchpriority="high"
+                loading="eager"
                 decoding="async"
                 src="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1280, height: 800 }) | webp({ quality: 65 }) %}"
                 alt="Edmonton backyard retreat landscaping"
