@@ -2,8 +2,24 @@
 <html lang="en">
     <head>
         {% if page.url == "/" %}
-        <!-- Preload LCP hero image FIRST so it starts loading before any CSS/JS (~1.5s savings on mobile) -->
-        <link rel="preload" as="image" href="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1920, height: 1200 }) | webp({ quality: 76 }) %}" fetchpriority="high">
+        <!-- Preload LCP hero image without forcing desktop-size on mobile -->
+        <!-- Note: use media-scoped `imagesrcset` so browsers pick the right size early -->
+        <link
+            rel="preload"
+            as="image"
+            media="(max-width: 600px)"
+            href="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 640, height: 800 }) | webp({ quality: 74 }) %}"
+            imagesrcset="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 360, height: 450 }) | webp({ quality: 74 }) %} 360w, {% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 480, height: 600 }) | webp({ quality: 74 }) %} 480w, {% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 640, height: 800 }) | webp({ quality: 74 }) %} 640w"
+            imagesizes="100vw"
+        >
+        <link
+            rel="preload"
+            as="image"
+            media="(min-width: 601px)"
+            href="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1280, height: 800 }) | webp({ quality: 74 }) %}"
+            imagesrcset="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 960, height: 600 }) | webp({ quality: 74 }) %} 960w, {% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1280, height: 800 }) | webp({ quality: 74 }) %} 1280w, {% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1600, height: 1000 }) | webp({ quality: 74 }) %} 1600w"
+            imagesizes="100vw"
+        >
         {% endif %}
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +38,7 @@
                 var gtm = document.createElement("script");
                 gtm.async = true;
                 gtm.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(gaId);
-                document.head.appendChild(gtm);
+                document.body.appendChild(gtm);
             });
 
             window.addEventListener("load", function () {
