@@ -3,7 +3,7 @@
     <head>
         {% if page.url == "/" %}
         <!-- Preload LCP hero image FIRST so it starts loading before any CSS/JS (~1.5s savings on mobile) -->
-        <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp" | resize({ width: 1920, height: 1200 }) | webp({ quality: 76 }) %}" fetchpriority="high">
+        <link rel="preload" as="image" href="{% getUrl "/assets/images/edmonton-backyard-retreat.webp" | resize({ width: 1920, height: 1200 }) | webp({ quality: 76 }) %}" fetchpriority="high">
         {% endif %}
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -96,6 +96,7 @@
                 align-items: center;
                 justify-content: center;
                 transition: transform 0.3s, box-shadow 0.3s;
+                text-decoration: none;
             }
             .sticky-quote-button:hover {
                 transform: translateY(-2px);
@@ -151,9 +152,9 @@
         </main>
         {% include "sections/footer.html" %}
 
-        <button id="sticky-quote-btn" class="sticky-quote-button" aria-label="View spring 2026 offer">
-            View Offer
-        </button>
+        <a id="sticky-quote-btn" class="sticky-quote-button" href="tel:{{ client.phoneForTel }}" aria-label="Call for a free quote">
+            Call Now
+        </a>
 
         <div id="exit-intent-popup" class="exit-intent-popup" style="display: none;">
             <div class="exit-intent-content">
@@ -200,10 +201,6 @@
                 window.addEventListener('scroll', () => {
                     stickyBtn.classList.toggle('is-visible', window.scrollY > 300);
                 }, { passive: true });
-
-                stickyBtn.addEventListener('click', function() {
-                    document.getElementById('exit-intent-popup').style.display = 'flex';
-                });
             }
 
             const closeBtn = document.getElementById('close-exit-popup');
