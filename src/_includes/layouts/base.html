@@ -38,7 +38,7 @@
                 var gtm = document.createElement("script");
                 gtm.async = true;
                 gtm.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(gaId);
-                document.body.appendChild(gtm);
+                document.head.appendChild(gtm);
             });
 
             window.addEventListener("load", function () {
