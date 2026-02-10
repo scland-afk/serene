@@ -1,55 +1,22 @@
 <!-- ============================================ -->
-<!--                    Form                      -->
+<!--                     CTA                      -->
 <!-- ============================================ -->
 
-<section id="cs-contact-485">
+<section id="cta-52">
     <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">Talk to us about your <span class="cs-color">landscaping plan!</span></h2>
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Good Communication Starts Here</h2>
             <p class="cs-text">
-                We would love to hear about your property and discuss the right scope and timeline. Fill out the form to schedule a consult at a time that works for you.
+                Have a question or want to talk about your yard? Call or text us anytime. We keep things simple, reply fast, and never pressure you into anything.
             </p>
-            <span class="cs-heading">Questions about your landscaping project?</span>
-            <span class="cs-heading">You can contact us at:</span>
-            <a href="tel:{{ client.phoneForTel }}" class="cs-link">{{ client.phoneFormatted }}</a>
-            <a href="mailto:{{ client.email }}" class="cs-link">{{ client.email }}</a>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
-        <!--Form-->
-        <form id="cs-form-485" name="Contact Form" method="post">
-            <h3 class="cs-h3">Schedule a Consult</h3>
-            <label class="cs-label">
-                Name
-                <input class="cs-input" required type="text" id="name-485" name="name" placeholder="Name">
-            </label>
-            <label class="cs-label">
-                Phone
-                <input class="cs-input" required type="text" id="phone-485" name="phone" placeholder="Phone">
-            </label>
-            <label class="cs-label">
-                Email
-                <input class="cs-input" required type="email" id="email-485" name="email" placeholder="Email">
-            </label>
-            <label class="cs-label">
-                How did you hear about us?
-                <input class="cs-input" type="text" id="find-485" name="referral-source" placeholder="Google, company truck, or referral">
-            </label>
-            <label class="cs-label cs-label-message">
-                What service are you looking for?
-                <select name="service" id="cs-select-485">
-                    <option value="landscape design">Landscape Design</option>
-                    <option value="hardscaping">Hardscaping</option>
-                    <option value="lawn maintenance">Lawn Maintenance</option>
-                    <option value="spring fall cleanup">Spring/Fall Cleanup</option>
-                    <option value="snow removal">Snow Removal</option>
-                </select>
-            </label>
-            <button class="cs-button-solid cs-submit" type="submit">Book a Consult</button>
-        </form>
+        <!-- Background Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 600, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1280, height: 853 }) | webp({ quality: 60 }) %}" type="image/webp">
+            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1280, height: 853 }) | webp({ quality: 60 }) %}" alt="Artificial turf and landscape lighting installation in St. Albert" width="1920" height="1280" aria-hidden="true">
+        </picture>
     </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
-        <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg" alt="house" width="1920" height="1200">
-    </picture>
 </section>
