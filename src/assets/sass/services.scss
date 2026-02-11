@@ -377,6 +377,12 @@
                 pointer-events: none;
             }
         }
+
+        .cs-item-final-grading {
+            .cs-background img {
+                object-position: 60% center;
+            }
+        }
     }
 }
 
