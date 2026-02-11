@@ -748,6 +748,25 @@
     z-index: -100;
 }
 
+/* Mobile dropdowns must remain in flow so they don't overlap siblings */
+@media only screen and (max-width: 63.9375rem) {
+    #cs-navigation .cs-drop-ul {
+        position: static;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
+        height: auto;
+        margin: calc(12/16 * 1rem) 0 0 0;
+        padding: calc(12/16 * 1rem) 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 /* Desktop dropdowns use scaleY for animation — mirror the hidden state here.
    Mobile dropdowns use height:0 instead, and are already inside the hidden
    .cs-ul-wrapper, so scaleY is not needed and would break mobile toggles. */
