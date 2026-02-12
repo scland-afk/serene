@@ -6,7 +6,14 @@
       "Bash(git push:*)",
       "Bash(npm run build:*)",
       "Bash(npm run preview:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" status)",
+      "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" diff)",
+      "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" log --oneline -5)",
+      "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" show --stat 557ea61)",
+      "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" show 557ea61)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
