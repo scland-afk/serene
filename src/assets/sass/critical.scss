@@ -725,15 +725,16 @@
     }
 }
 
-/* Mobile nav: only hide dropdown on first paint to prevent slide-down flash. Do not style .cs-top-bar here. */
+/* Mobile nav: only hide dropdown on first paint to prevent slide-down flash. Menu opens from the right. */
 @media only screen and (max-width: 63.9375rem) {
     #cs-navigation .cs-ul-wrapper {
         opacity: 0;
-        transform: scaleY(0);
-        transform-origin: top;
+        transform: scaleX(0);
+        transform-origin: top right;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: auto;
+        right: 0;
         z-index: -1;
         overflow: hidden;
     }

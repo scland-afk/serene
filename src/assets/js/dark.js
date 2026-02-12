@@ -5,18 +5,15 @@
 // Get the button element once to avoid repeated DOM lookups
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-// Get the logo element
+// Get logo elements (desktop and mobile in two-tier nav)
 const headerLogo = document.getElementById("header-logo");
+const headerLogoMobile = document.getElementById("header-logo-mobile");
 
 // Helper function to update logo based on theme
 function updateLogo(theme) {
-	if (headerLogo) {
-		if (theme === "dark") {
-			headerLogo.src = "/assets/svgs/logo-light.svg";
-		} else {
-			headerLogo.src = "/assets/svgs/logo-black.svg";
-		}
-	}
+	const src = theme === "dark" ? "/assets/svgs/logo-black.svg" : "/assets/svgs/logo-light.svg";
+	if (headerLogo) headerLogo.src = src;
+	if (headerLogoMobile) headerLogoMobile.src = src;
 }
 
 // Helper functions to toggle dark mode
