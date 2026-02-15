@@ -53,8 +53,9 @@ permalink: "/blog/"
 
     <div id="blog-listing">
         <div class="cs-container">
+            <h1 class="cs-title">Landscaping Blog | Edmonton Tips & Advice</h1>
             {% if collections.post | length == 0 %}
-                <h1 class="cs-title">Landscaping Blog | Edmonton Tips & Advice</h1>
+                <p class="cs-text">New posts are on the way.</p>
             {% else %}
                 {%- for post in collections.post | reverse -%}
                     <article class="cs-article">
