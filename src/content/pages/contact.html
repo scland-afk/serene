@@ -1,6 +1,6 @@
 ---
 title: "Contact Serene Landscaping | Edmonton Area Free Quotes"
-description: "Contact Serene Landscaping for free quotes in Edmonton, St. Albert, and Sherwood Park. Final grading, sod, hardscaping. Book online or call 587-566-9879."
+description: "Contact Serene Landscaping for free quotes in Edmonton, St. Albert, and Sherwood Park. Final grading, sod, retaining walls. Book online or call 587-566-9879."
 permalink: "/contact/"
 keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consultation Edmonton, landscaping estimate Edmonton, contact landscaper Edmonton"
 
@@ -21,25 +21,25 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
     <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="banner">
+    <div id="banner-1106">
         <div class="cs-container">
-            <div class="cs-content">
-                <h1 class="cs-title">Contact Us</h1>
-                <div class="cs-button-group" style="margin-top: 1rem;">
-                    <a href="/portfolio/" class="cs-button-solid">View Portfolio</a>
-                </div>
+            <span class="cs-int-title">Contact Us</span>
+            <p class="cs-text">Get your free landscaping quote. We serve Edmonton, St. Albert, Sherwood Park, and Spruce Grove.</p>
+            <div class="cs-button-group">
+                <a href="tel:5875669879" class="cs-button-solid cs-phone">Call (587) 566-9879</a>
+                <a href="/contact/" class="cs-button-outline">Get a Free Quote</a>
             </div>
-            <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-                <img src="{% getUrl "/assets/images/lawn-care-edmonton-residential.webp" | resize({ width: 2500, height: 628 }) | webp %}" alt="Residential lawn care in Edmonton" width="1920" height="482" loading="eager" decoding="async">
-            </picture>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/contact/" class="cs-link cs-active">Contact</a>
+            </div>
         </div>
-    </section>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{{ "/assets/images/lawn-care-edmonton-residential.webp" }}">
+            <source media="(min-width: 601px)" srcset="{{ "/assets/images/lawn-care-edmonton-residential.webp" }}">
+            <img decoding="async" src="{{ "/assets/images/lawn-care-edmonton-residential.webp" }}" alt="Contact Serene Landscaping" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
@@ -154,10 +154,11 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
 
                 <div class="cs-service-list">
                     <p><strong><a href="/services/landscape-design/">Landscape Design & Installation</a></strong> — planning, planting, sod installation, and full yard builds.</p>
-                    <p><strong><a href="/services/hardscaping/">Hardscaping & Patios</a></strong> — pavers, walkways, retaining walls, and outdoor features built to last.</p>
+                    <p><strong><a href="/services/retaining-walls/">Retaining Walls</a></strong> — engineered walls for grade changes and slope stabilization. <strong><a href="/services/paving-stones/">Paving Stones & Patios</a></strong> — pavers, walkways, and outdoor features built to last.</p>
                     <p><strong><a href="/services/lawn-maintenance/">Lawn Maintenance</a></strong> — mowing, edging, and seasonal cleanups for homes and businesses.</p>
                     <p><strong><a href="/services/final-grading/">Final Grading</a></strong> — drainage correction, topsoil prep, and new‑build finish work.</p>
-                    <p><strong><a href="/commercial-snow-removal/">Commercial Snow Removal</a></strong> — parking lots, walkways, and site access with contract service.</p>
+                    <p><strong><a href="/services/artificial-grass/">Artificial Grass</a></strong> — synthetic turf with solid base prep and drainage. <strong><a href="/services/fences/">Fence Installation</a></strong> — cedar, vinyl, and pressure-treated fences built to last.</p>
+                    <p><strong><a href="/services/snow-removal/">Snow Removal</a></strong> — residential and commercial. <strong><a href="/commercial-snow-removal/">Commercial Snow Removal</a></strong> — parking lots, walkways, and site access with contract service.</p>
                     <p><strong><a href="/commercial-maintenance/">Commercial Property Maintenance</a></strong> — year‑round grounds care for managers and condo boards.</p>
                 </div>
 

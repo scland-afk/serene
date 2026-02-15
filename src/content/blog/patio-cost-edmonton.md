@@ -138,7 +138,7 @@ DIY saves money but requires significant physical labor, proper equipment, and k
 
 For small, simple patios (under 150 sq ft), DIY might make sense if you're physically capable and willing to research proper techniques. For larger or complex patios, professional installation ensures quality results and typically includes warranties.
 
-Our <a href="/services/hardscaping/">patio installation services</a> include proper base preparation, drainage planning, and quality materials built to withstand Alberta winters.
+Our <a href="/services/paving-stones/">patio installation services</a> include proper base preparation, drainage planning, and quality materials built to withstand Alberta winters.
 
 #### How to Get Accurate Patio Cost Estimates
 
@@ -227,7 +227,7 @@ A patio built correctly costs more upfront but lasts decades. A poorly built pat
 - Provides space for entertaining and relaxation
 - Lasts decades with minimal maintenance
 
-Most Edmonton homeowners who invest in quality <a href="/services/hardscaping/">patio installation</a> use their outdoor space significantly more and consider it one of their best home improvement investments.
+Most Edmonton homeowners who invest in quality <a href="/services/paving-stones/">patio installation</a> use their outdoor space significantly more and consider it one of their best home improvement investments.
 
 #### FAQ: Patio Installation Costs in Edmonton
 
@@ -257,7 +257,7 @@ A: Interlocking concrete pavers perform well in Edmonton's freeze-thaw cycles. T
 
 ---
 
-**Planning a patio for your Edmonton home?** Serene Landscaping provides professional <a href="/services/hardscaping/">patio installation services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle site preparation, quality materials, and proper installation for patios built to last decades. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
+**Planning a patio for your Edmonton home?** Serene Landscaping provides professional <a href="/services/paving-stones/">patio installation services</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle site preparation, quality materials, and proper installation for patios built to last decades. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 
 
 

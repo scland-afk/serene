@@ -416,120 +416,168 @@
 	}
 }
 
-/* Residential: Related Services catalogue (card grid with image + label) */
+/* Mobile: content section closer to edge (override padding so it wins) */
+@media only screen and (max-width: 48rem) {
+	#content-page-1398 {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+	#content-page-1398 .cs-container {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+}
+
+/* Related Services: same look as homepage Services section, no intro text */
 #residential-services-catalogue.cs-services-catalogue {
-	padding: clamp(3rem, 6vw, 4rem) 1.5rem;
-	background-color: #f0f0f0;
+	padding: var(--sectionPadding);
+	position: relative;
 
 	.cs-container {
+		width: 100%;
 		max-width: calc(1280 / 16 * 1rem);
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: clamp(3rem, 6vw, 4rem);
 	}
 
 	.cs-catalogue-title {
 		text-align: center;
 		font-size: clamp(1.5rem, 3vw, 2rem);
 		font-weight: 700;
-		text-transform: uppercase;
-		color: rgba(26, 26, 26, 0.72);
-		margin: 0 0 clamp(2rem, 4vw, 3rem);
-		letter-spacing: 0.02em;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		color: var(--headerColor);
+		margin: 0;
 	}
 
-	/* Intro paragraph: centered, smooth transparent look */
+	/* No text description - match homepage services (topper + title only) */
 	.cs-text {
-		text-align: center;
-		max-width: 50ch;
-		margin: 0 auto clamp(2rem, 4vw, 3rem);
-		color: rgba(45, 45, 45, 0.7);
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	.cs-text a.cs-accent {
-		color: rgba(26, 26, 26, 0.85);
-		transition: color 0.2s ease, opacity 0.2s ease;
-	}
-
-	.cs-text a.cs-accent:hover {
-		color: rgba(26, 26, 26, 1);
+		display: none;
 	}
 
 	.cs-catalogue-grid {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		width: 100%;
 		display: grid;
-		grid-template-columns: 1fr;
-		gap: clamp(1.25rem, 2.5vw, 1.5rem);
+		grid-template-columns: repeat(12, 1fr);
+		gap: clamp(1rem, 2vw, 1.25rem);
 	}
 
 	.cs-catalogue-card {
+		list-style: none;
+		width: 100%;
+		height: clamp(16.25rem, 33vw, 20rem);
 		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+		box-sizing: border-box;
+		grid-column: span 12;
+		position: relative;
 	}
 
 	.cs-catalogue-link {
-		display: block;
-		position: relative;
 		text-decoration: none;
-		overflow: hidden;
-		transition: transform 0.25s ease;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
 
-		&:hover {
-			transform: scale(1.03);
+		/* Green "SERVICE" tag - flush left like reference */
+		&::before {
+			content: "Service";
+			display: block;
+			position: relative;
+			z-index: 2;
+			font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: calc(6 / 16 * 1rem) calc(14 / 16 * 1rem);
+			color: #fff;
+			background-color: var(--primary);
+			margin: 0 0 calc(8 / 16 * 1rem) 0;
 		}
 	}
 
 	.cs-catalogue-image {
 		display: block;
-		aspect-ratio: 3 / 2;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
 		overflow: hidden;
-		background: #ddd;
+		pointer-events: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 100%;
+			background-color: #000;
+			opacity: 0.4;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			transition: opacity 0.3s;
+		}
 
 		img {
-			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
 			height: 100%;
+			width: 100%;
 			object-fit: cover;
-			display: block;
+			transition: transform 0.5s;
 		}
 	}
 
-	/* Label on top of image, no grey – text visible via shadow */
+	.cs-catalogue-link:hover .cs-catalogue-image::before,
+	.cs-catalogue-link:focus-visible .cs-catalogue-image::before {
+		opacity: 0.7;
+	}
+
+	.cs-catalogue-link:hover .cs-catalogue-image img,
+	.cs-catalogue-link:focus-visible .cs-catalogue-image img {
+		transform: scale(1.08);
+	}
+
+	/* White title bar - flush left, directly below SERVICE tag like reference */
 	.cs-catalogue-label {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: block;
-		background: transparent;
-		color: #fff;
-		padding: clamp(0.75rem, 1.5vw, 1rem) 1rem;
-		font-size: clamp(0.875rem, 1.2vw, 1rem);
+		position: relative;
+		z-index: 2;
+		font-size: clamp(1.0625rem, 1.55vw, 1.5rem);
 		font-weight: 700;
 		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 0.03em;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6);
-		transition: color 0.25s ease, text-shadow 0.25s ease;
+		line-height: 1.15;
+		padding: calc(8 / 16 * 1rem) calc(14 / 16 * 1rem);
+		color: var(--headerColor);
+		background-color: #fff;
+		margin: 0;
+		transition: color 0.2s, background-color 0.2s;
 	}
 
-	.cs-catalogue-link:hover .cs-catalogue-label {
-		text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(0, 0, 0, 0.7);
-	}
-
-	@media (min-width: 37.5rem) {
-		.cs-catalogue-grid {
-			grid-template-columns: repeat(2, 1fr);
+	@media (min-width: 48rem) {
+		.cs-catalogue-card {
+			grid-column: span 6;
 		}
 	}
 
-	@media (min-width: 62rem) {
-		.cs-catalogue-grid {
-			grid-template-columns: repeat(4, 1fr);
+	@media (min-width: 64rem) {
+		.cs-catalogue-card {
+			grid-column: span 3;
 		}
 	}
 }
@@ -538,34 +586,201 @@
 @media only screen and (min-width: 0rem) {
 	body.dark-mode {
 		#residential-services-catalogue.cs-services-catalogue {
-			background-color: var(--medium);
-
 			.cs-catalogue-title {
-				color: rgba(255, 255, 255, 0.85);
-			}
-
-			.cs-text {
-				color: rgba(255, 255, 255, 0.7);
-			}
-
-			.cs-text a.cs-accent {
-				color: rgba(255, 255, 255, 0.9);
-
-				&:hover {
-					color: #fff;
-				}
-			}
-
-			.cs-catalogue-image {
-				background: var(--accent);
+				color: var(--bodyTextColorWhite);
 			}
 
 			.cs-catalogue-label {
-				text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 10px rgba(0, 0, 0, 0.7);
+				color: var(--headerColor);
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+/*-- -------------------------- -->
+/*---          Banner #banner-1106            -->
+/*--- -------------------------- */
+
+@media only screen and (min-width: 0rem) {
+	#banner-1106 {
+		padding: var(--sectionPadding);
+		padding-top: calc(250 / 16 * 1rem);
+		padding-bottom: calc(120 / 16 * 1rem);
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+
+		.cs-container {
+			text-align: left;
+			width: 100%;
+			max-width: calc(1280 / 16 * 1rem);
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: calc(12 / 16 * 1rem);
+		}
+	}
+}
+
+@media only screen and (min-width: 0rem) {
+	#banner-1106 {
+
+		.cs-int-title {
+			font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+			font-weight: 900;
+			line-height: 1.2em;
+			text-align: inherit;
+			margin: 0;
+			color: var(--bodyTextColorWhite);
+			position: relative;
+			text-transform: uppercase;
+			max-width: 16em;
+		}
+
+		.cs-text {
+			font-size: clamp(1rem, 2vw, 1.25rem);
+			line-height: 1.5em;
+			margin: 0 0 calc(16 / 16 * 1rem);
+			color: var(--bodyTextColorWhite);
+			opacity: 0.95;
+			max-width: 42ch;
+		}
+
+		.cs-button-group {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: calc(12 / 16 * 1rem);
+			margin-bottom: calc(12 / 16 * 1rem);
+		}
+
+		.cs-phone {
+			font-weight: 700;
+			text-transform: uppercase;
+			display: inline-flex;
+			align-items: center;
+			gap: calc(8 / 16 * 1rem);
+			&:after {
+				content: "";
+				width: calc(14 / 16 * 1rem);
+				height: calc(14 / 16 * 1rem);
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") center/contain no-repeat;
+				display: block;
+				flex-shrink: 0;
+			}
+		}
+
+		.cs-button-solid {
+			font-size: calc(16 / 16 * 1rem);
+			line-height: 1.2em;
+			padding: 0.75rem calc(24 / 16 * 1rem);
+			background-color: var(--primary);
+			color: #fff;
+			text-decoration: none;
+			font-weight: 700;
+			border-radius: calc(4 / 16 * 1rem);
+			display: inline-flex;
+			align-items: center;
+			transition: background-color 0.2s, color 0.2s;
+			&:hover {
+				background-color: var(--primaryDark);
+				color: #fff;
+			}
+		}
+
+		.cs-button-outline {
+			font-size: calc(16 / 16 * 1rem);
+			line-height: 1.2em;
+			padding: 0.75rem calc(24 / 16 * 1rem);
+			background-color: transparent;
+			color: #fff;
+			text-decoration: none;
+			font-weight: 700;
+			border: 2px solid #fff;
+			border-radius: calc(4 / 16 * 1rem);
+			display: inline-block;
+			transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+				color: #fff;
+				border-color: #fff;
+			}
+		}
+
+		.cs-breadcrumbs {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		.cs-link {
+			font-size: calc(16 / 16 * 1rem);
+			line-height: 1.2em;
+			text-decoration: none;
+			color: var(--bodyTextColorWhite);
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:last-of-type::after {
+				display: none;
 			}
 
-			.cs-catalogue-link:hover .cs-catalogue-label {
-				text-shadow: 0 2px 8px rgba(0, 0, 0, 1), 0 4px 16px rgba(0, 0, 0, 0.85);
+			&:after {
+				content: "";
+				width: calc(7 / 16 * 1rem);
+				height: calc(12 / 16 * 1rem);
+				margin: 0 calc(16 / 16 * 1rem);
+				background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: relative;
+				display: block;
+			}
+
+			&.cs-active {
+				color: var(--primaryLight);
+			}
+		}
+
+		.cs-background {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 100%;
+				width: 100%;
+				background: linear-gradient(
+					to right,
+					rgba(26, 26, 26, 0.94) 0%,
+					rgba(26, 26, 26, 0) 100%
+				);
+				opacity: 1;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
 			}
 		}
 	}

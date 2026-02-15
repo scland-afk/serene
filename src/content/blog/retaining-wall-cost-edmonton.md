@@ -242,7 +242,7 @@ Poor drainage is the #1 cause of retaining wall failure in Edmonton.
 - Add dimension to flat yards
 - Garden beds and raised planters
 
-Professional <a href="/services/hardscaping/">hardscaping services</a> include retaining wall design and installation.
+Professional <a href="/services/retaining-walls/">retaining wall services</a> include retaining wall design and installation.
 
 #### DIY vs. Professional Installation
 
@@ -335,7 +335,7 @@ A: In Edmonton, walls 4 feet or under typically don't require engineering. Walls
 
 ---
 
-**Planning a retaining wall project?** Serene Landscaping provides professional <a href="/services/hardscaping/">retaining wall design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle site assessment, engineering coordination, permits, and quality installation. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
+**Planning a retaining wall project?** Serene Landscaping provides professional <a href="/services/retaining-walls/">retaining wall design and installation</a> throughout Edmonton, St. Albert, Spruce Grove, Sherwood Park, and Stony Plain. We handle site assessment, engineering coordination, permits, and quality installation. <a href="/contact/">Contact us</a> for a free quote or call **587-566-9879**.
 
 
 

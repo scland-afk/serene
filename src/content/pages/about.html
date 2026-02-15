@@ -1,6 +1,6 @@
 ---
 title: "About Serene Landscaping | Edmonton Area Landscapers"
-description: "8+ years providing landscaping in Edmonton and area. Licensed and insured for final grading, sod, and hardscaping. Book a quote today. Call 587-566-9879."
+description: "8+ years providing landscaping in Edmonton and area. Licensed and insured for final grading, sod, and retaining walls. Book a quote today. Call 587-566-9879."
 permalink: "/about/"
 keywords: "about Serene Landscaping, Edmonton landscaping company, professional landscapers Edmonton, landscaping experience Edmonton, trusted landscaping contractor Edmonton, family owned landscaping Edmonton"
 
@@ -18,28 +18,25 @@ keywords: "about Serene Landscaping, Edmonton landscaping company, professional 
     <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="banner">
+    <div id="banner-1106">
         <div class="cs-container">
-            <div class="cs-content">
-                <h1 class="cs-title">About Us</h1>
-                <div class="cs-button-group" style="margin-top: 1rem;">
-                    <a href="/contact/" class="cs-button-solid">Book Free Estimate</a>
-                </div>
+            <span class="cs-int-title">About Us</span>
+            <p class="cs-text">8+ years providing landscaping in Edmonton and area. Licensed and insured for final grading, sod, and retaining walls.</p>
+            <div class="cs-button-group">
+                <a href="tel:5875669879" class="cs-button-solid cs-phone">Call (587) 566-9879</a>
+                <a href="/contact/" class="cs-button-outline">Get a Free Quote</a>
             </div>
-            <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 640, height: 600 }) | webp %}">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2048, height: 942 }) | webp %}">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}">
-                <img src="{% getUrl "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" | resize({ width: 2500, height: 628 }) | webp %}" alt="professional landscaping services in Edmonton" width="1920" height="482" loading="eager" decoding="async">
-            </picture>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/about/" class="cs-link cs-active">About</a>
+            </div>
         </div>
-    </section>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}">
+            <source media="(min-width: 601px)" srcset="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}">
+            <img decoding="async" src="{{ "/assets/images/commercial-landscape-design-installed-trees-mulch-sod.webp" }}" alt="Professional landscaping in Edmonton" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
@@ -89,7 +86,7 @@ keywords: "about Serene Landscaping, Edmonton landscaping company, professional 
                 </p>
 
                 <p class="cs-text">
-                Our services include <a href="/services/landscape-design/">landscape design</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, and <a href="/services/hardscaping/">hardscaping</a>, along with reliable <a href="/services/snow-removal/">snow removal</a> during the winter season. Each service is planned and installed with long-term performance in mind.
+                Our services include <a href="/services/landscape-design/">landscape design</a>, <a href="/services/lawn-maintenance/">lawn maintenance</a>, <a href="/services/retaining-walls/">retaining walls</a>, <a href="/services/artificial-grass/">artificial grass</a>, <a href="/services/fences/">fence installation</a>, and reliable <a href="/services/snow-removal/">snow removal</a> during the winter season. Each service is planned and installed with long-term performance in mind.
                 </p>
 
                 <p class="cs-text">
@@ -158,7 +155,7 @@ keywords: "about Serene Landscaping, Edmonton landscaping company, professional 
                 <h3><a href="/services/landscape-design/">Landscape Design & Installation</a></h3>
                 <p>Layout planning, plant selection, garden beds, sod installation, and full yard builds. We design with drainage and long-term maintenance in mind, then install with clean edging and finished grading.</p>
 
-                <h3><a href="/services/hardscaping/">Hardscaping & Patios</a></h3>
+                <h3><a href="/services/retaining-walls/">Retaining Walls</a></h3>
                 <p>Paver patios, walkways, retaining walls, and outdoor living features. We focus on proper base depth, compaction, edging, and slope so your hardscape stays stable through Edmonton weather.</p>
 
                 <h3><a href="/services/lawn-maintenance/">Lawn Maintenance</a></h3>
@@ -167,8 +164,14 @@ keywords: "about Serene Landscaping, Edmonton landscaping company, professional 
                 <h3><a href="/services/final-grading/">Final Grading</a></h3>
                 <p>Final grade preparation for new builds and drainage corrections. We shape and level for proper water flow away from foundations and prep the site for sod or landscape installation.</p>
 
-                <h3><a href="/services/snow-removal/">Commercial Snow Removal</a></h3>
-                <p>24/7 winter snow clearing for businesses, property managers, and condo boards. Parking lot plowing, walkway clearing, and entrance maintenance to keep your property safe and accessible.</p>
+                <h3><a href="/services/artificial-grass/">Artificial Grass</a></h3>
+                <p>Professional synthetic turf installation with proper base prep and drainage. Low maintenance and durable for backyards, pet areas, and high-use zones.</p>
+
+                <h3><a href="/services/fences/">Fence Installation</a></h3>
+                <p>Cedar, vinyl, and pressure-treated fences built straight and strong. Posts set 3 feet deep in concrete for stability through Edmonton winters.</p>
+
+                <h3><a href="/services/snow-removal/">Snow Removal</a></h3>
+                <p>Residential and commercial snow clearing. Driveways, walkways, and parking lots cleared on schedule. Seasonal plans and 24/7 response for commercial.</p>
 
                 <h3><a href="/commercial-maintenance/">Commercial Property Maintenance</a></h3>
                 <p>Year-round programs for commercial properties including scheduled landscaping, seasonal cleanups, and dependable site presentation. Billing stays clear and service stays consistent.</p>

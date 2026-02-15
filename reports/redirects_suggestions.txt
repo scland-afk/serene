@@ -1,0 +1,4 @@
+301 Redirect Suggestions
+========================
+
+No redirect candidates detected from sitemap pages and internal links.
