@@ -97,7 +97,7 @@ module.exports = {
       "Sherwood Park has many established homes with larger lots. Most owners are not looking to start from scratch. They want their yard to look sharper, work better and match the home. Serene Landscaping helps Sherwood Park homeowners upgrade lawns, patios and outdoor spaces with practical improvements that make a clear difference. In neighborhoods like Lakeland Ridge and Summerwood, we are often brought in for lawn replacement and clean hardscape upgrades. In more established areas like Brentwood, we focus on renovations that respect what is already there while modernizing the layout and finish.",
     coverage:
       "We serve all of Sherwood Park including Brentwood, Lakeland Ridge and Summerwood. We also serve nearby communities within 15 minutes of Sherwood Park including Edmonton and Fort Saskatchewan.",
-    bannerImage: "/assets/images/services-hardscaping-home.webp",
+    bannerImage: "/assets/images/services-hardscaping-home.png",
     bannerAlt: "Sherwood Park landscaping services",
     contentImage: "/assets/images/landscape-edging-river-rock-installation-edmonton.jpg",
     contentImageAlt: "Sherwood Park landscaping projects",
