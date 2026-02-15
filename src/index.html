@@ -9,10 +9,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Hero preload is in base.html as first in head for LCP. Critical CSS next. -->
-    <link rel="preload" href="/assets/css/critical.css" as="style">
-    <!-- Critical styles (blocking) – includes #hero-1623 for LCP hero -->
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <!-- Critical CSS is now loaded render-blocking in base.html for all pages -->
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}

@@ -175,12 +175,12 @@
 			justify-content: space-between;
 		}
 
-		/* Mobile bottom bar logo - much larger, same for light/dark */
+		/* Mobile bottom bar logo */
 		.cs-bottom-bar .cs-logo {
 			display: block;
 			flex-shrink: 0;
-			width: clamp(6rem, 28vw, 10rem);
-			max-width: 55%;
+			width: clamp(7rem, 22vw, 9rem);
+			max-width: 40%;
 			border: none;
 			outline: none;
 			background: transparent;
@@ -829,10 +829,10 @@
 			display: none;
 		}
 
-		/* Desktop logo - much larger, same for light/dark */
+		/* Desktop logo */
 		.cs-logo {
-			width: calc(220/16 * 1rem);
-			max-width: calc(320/16 * 1rem);
+			width: calc(140/16 * 1rem);
+			max-width: calc(180/16 * 1rem);
 			padding: calc(4/16 * 1rem) var(--topBarHeight);
 			display: flex;
 			justify-content: center;

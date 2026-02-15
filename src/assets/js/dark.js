@@ -11,7 +11,7 @@ const headerLogoMobile = document.getElementById("header-logo-mobile");
 
 // Helper function to update logo based on theme (day = light logo, dark = dark-mode logo)
 function updateLogo(theme) {
-	const src = theme === "dark" ? "/assets/images/logo-dark.png" : "/assets/images/logo.png";
+	const src = theme === "dark" ? "/assets/svgs/logo-light.svg" : "/assets/svgs/logo-black.svg";
 	if (headerLogo) headerLogo.src = src;
 	if (headerLogoMobile) headerLogoMobile.src = src;
 }
