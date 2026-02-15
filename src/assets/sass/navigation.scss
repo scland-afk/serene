@@ -490,14 +490,14 @@
 			}
 
 			.cs-ul-wrapper {
-				background-color: #fff;
+				background-color: var(--dark);
 				&:before {
 					display: none;
 				}
 			}
 
 			.cs-li-link {
-				color: var(--headerColor);
+				color: var(--bodyTextColorWhite);
 
 				&.cs-active {
 					color: var(--primary);
@@ -509,7 +509,7 @@
 			}
 
 			.cs-drop-icon {
-				filter: brightness(0);
+				filter: grayscale(1) brightness(1000%);
 			}
 		}
 	}
@@ -610,8 +610,8 @@
 					height: auto;
 					opacity: 1;
 					visibility: visible;
-					margin: calc(16/16 * 1rem) calc(-70/16 * 1rem) 0 -2.5rem;
-					padding: calc(20/16 * 1rem) calc(24/16 * 1rem) calc(20/16 * 1rem) calc(2.5rem + 24/16 * 1rem);
+					margin: calc(16/16 * 1rem) 0 0 0;
+					padding: calc(20/16 * 1rem) calc(16/16 * 1rem);
 					transform: scale(1);
 					overflow: visible;
 				}
@@ -639,11 +639,11 @@
 		}
 
 		.cs-drop-ul {
-			width: calc(100% + 2.5rem + 70/16 * 1rem);
-			min-width: calc(100% + 2.5rem + 70/16 * 1rem);
-			margin: 0 calc(-70/16 * 1rem) 0 -2.5rem;
+			width: 100%;
+			min-width: 100%;
+			margin: 0;
 			height: 0;
-			padding: 0 calc(24/16 * 1rem) 0 calc(2.5rem + 24/16 * 1rem);
+			padding: 0 calc(16/16 * 1rem);
 			box-sizing: border-box;
 			background-color: var(--primary);
 			overflow: hidden;
@@ -667,7 +667,7 @@
 		}
 
 		.cs-li-link {
-			white-space: nowrap;
+			white-space: normal;
 		}
 
 		.cs-drop-ul .cs-drop-li .cs-li-link.cs-drop-link {
