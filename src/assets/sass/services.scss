@@ -271,6 +271,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            gap: clamp(1rem, 2vw, 1.25rem);
         }
 
         .cs-item {
@@ -291,33 +292,12 @@
             /* Improve touch responsiveness */
             touch-action: manipulation;
             -webkit-tap-highlight-color: transparent;
-
-            &:hover,
-            &:active {
-                .cs-background {
-                    &:before {
-                        background-color: var(--primary);
-                        opacity: 0.84;
-                    }
-
-                    img {
-                        transform: scale(1.2);
-                    }
-                }
-            }
         }
 
         .cs-link {
             text-decoration: none;
             width: 100%;
             height: 100%;
-            /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and width of the link */
-            padding: calc(24 / 16 * 1rem);
-            /* prevents padding from affecting height and width */
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             /* Ensure link is clickable on mobile */
             position: absolute;
             top: 0;
@@ -329,14 +309,51 @@
             pointer-events: auto;
         }
 
-        .cs-h3 {
-            /* 25px - 39px */
-            font-size: clamp(1.5625rem, 3vw, 2.4375rem);
-            line-height: 1.2em;
-            font-weight: bold;
-            text-align: inherit;
-            margin: 0;
+        .cs-link::before,
+        .cs-link::after {
+            content: none !important;
+        }
+
+        .cs-info {
+            width: calc(100% - 2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            position: absolute;
+            bottom: clamp(1rem, 2vw, 1.5rem);
+            left: 1rem;
+            z-index: 10;
+        }
+
+        .cs-tag {
+            font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: calc(6 / 16 * 1rem) calc(14 / 16 * 1rem);
             color: var(--bodyTextColorWhite);
+            background-color: var(--primary);
+        }
+
+        .cs-project {
+            font-size: clamp(1.0625rem, 1.55vw, 1.5rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.15;
+            padding: calc(8 / 16 * 1rem) calc(14 / 16 * 1rem);
+            color: var(--headerColor);
+            background-color: #fff;
+        }
+
+        .cs-desc {
+            margin-top: calc(8 / 16 * 1rem);
+            max-width: 30ch;
+            padding: calc(9 / 16 * 1rem) calc(12 / 16 * 1rem);
+            color: #fff;
+            font-size: clamp(0.9375rem, 1.05vw, 1.125rem);
+            font-weight: 500;
+            line-height: 1.4;
+            background: rgba(0, 0, 0, 0.55);
         }
 
         .cs-background {
@@ -357,7 +374,7 @@
                 height: 100%;
                 width: 100%;
                 background-color: #000;
-                opacity: 0.4;
+                opacity: 0.35;
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -373,7 +390,7 @@
                 width: 100%;
                 /* Makes img tag act as a background image */
                 object-fit: cover;
-                transition: transform 0.6s;
+                transition: transform .65s, opacity .3s;
                 pointer-events: none;
             }
         }
@@ -381,6 +398,22 @@
         .cs-item-final-grading {
             .cs-background img {
                 object-position: 60% center;
+            }
+        }
+
+        .cs-item {
+            &:hover,
+            &:active {
+                .cs-background {
+                    &:before {
+                        background-color: #000;
+                        opacity: 0.7;
+                    }
+
+                    img {
+                        transform: scale(1.08);
+                    }
+                }
             }
         }
     }
@@ -395,6 +428,24 @@
 
         .cs-item {
             grid-column: span 4;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-1749 {
+        .cs-item:hover {
+            .cs-background {
+                &:before {
+                    background-color: #000;
+                    opacity: 0.7;
+                }
+
+                img {
+                    transform: scale(1.08);
+                }
+            }
         }
     }
 }

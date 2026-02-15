@@ -9,9 +9,9 @@ const darkModeToggle = document.getElementById("dark-mode-toggle");
 const headerLogo = document.getElementById("header-logo");
 const headerLogoMobile = document.getElementById("header-logo-mobile");
 
-// Helper function to update logo based on theme
+// Helper function to update logo based on theme (day = light logo, dark = dark-mode logo)
 function updateLogo(theme) {
-	const src = theme === "dark" ? "/assets/svgs/logo-black.svg" : "/assets/svgs/logo-light.svg";
+	const src = theme === "dark" ? "/assets/images/logo-dark.png" : "/assets/images/logo.png";
 	if (headerLogo) headerLogo.src = src;
 	if (headerLogoMobile) headerLogoMobile.src = src;
 }

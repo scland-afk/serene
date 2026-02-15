@@ -10,23 +10,25 @@
 <--- -------------------------- -*/
 @media only screen and (min-width: 0px) {
 	:root {
-		--primary: #1B5E3E;
-		--primaryLight: #2E7D5A;
-		--secondary: #6B8E23;
-		--secondaryLight: #9ABF5A;
-		--secondaryDark: #0F3D26;
-		--headerColor: #1a1a1a;
-		--bodyTextColor: #4E4B66;
-		--bodyTextColorWhite: #FAFBFC;
+		/* Brand green – must match root.scss */
+		--primary: #5e7d4a;
+		--primaryLight: #7f9b63;
+		--primaryDark: #3f5a33;
+		--secondary: #5e7d4a;
+		--secondaryLight: #a2b58b;
+		--secondaryDark: #3f5a33;
+		--accent: #a2b58b;
+		--headerColor: #1e2d1c;
+		--bodyTextColor: #313131;
+		--bodyTextColorWhite: #f7f8f2;
 		--dark: #1a1a1a;
-		--medium: #3a3a3a;
-		--accent: #4a4a4a;
+		--medium: #2a3a28;
 		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
 		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
 		--bodyFontSize: 1rem;
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-		--headerFont: "Oswald", Arial, sans-serif;
-		--bodyFont: "Open Sans", Arial, sans-serif;
+		--headerFont: "Roboto", Arial, sans-serif;
+		--bodyFont: "Roboto", Arial, sans-serif;
 	}
 	body,
 	html {

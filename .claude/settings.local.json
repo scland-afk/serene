@@ -13,7 +13,12 @@
       "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" show --stat 557ea61)",
       "Bash(git -C \"C:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\sass-serene\" show 557ea61)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npm start)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git status:*)"
     ]
   }
 }

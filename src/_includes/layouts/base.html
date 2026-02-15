@@ -53,6 +53,9 @@
         <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
         {% endif %}
 
+        <!-- critical.css render-blocking: variables, resets, hero, nav shell -->
+        <link rel="stylesheet" href="/assets/css/critical.css">
+
         <!-- root.css non-blocking on all pages to reduce LCP (~220ms savings) -->
         <link rel="preload" href="/assets/css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/assets/css/root.css"></noscript>
@@ -81,7 +84,7 @@
         <meta name="apple-mobile-web-app-title" content="{{ client.name }}">
         <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
-        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
+        <link rel="preload" as="image" href="/assets/images/logo.png">
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-700.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-v44-latin-regular.woff2" crossorigin>

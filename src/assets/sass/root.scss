@@ -39,6 +39,29 @@
 		url('/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2');
 }
 
+/* Roboto - Regular, Bold, Black (primary brand typeface) */
+@font-face {
+	font-style: normal;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-display: swap;
+	src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+}
+@font-face {
+	font-style: normal;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-display: swap;
+	src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+}
+@font-face {
+	font-style: normal;
+	font-family: "Roboto";
+	font-weight: 900;
+	font-display: swap;
+	src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+}
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -47,20 +70,21 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		/* Serene Landscaping Brand Colors - Fresh Natural Palette */
-		--primary: #1B5E3E; /* Deep Emerald Green - professional, natural */
-		--primaryLight: #2E7D5A; /* Fresh Green - vibrant, growth */
-		--secondary: #6B8E23; /* Olive Green - earthy, organic */
-		--secondaryLight: #9ABF5A; /* Light Green - fresh, lively */
-		--secondaryDark: #0F3D26; /* Dark Emerald */
-		--headerColor: #1a1a1a;
-		--bodyTextColor: #4E4B66;
-		--bodyTextColorWhite: #FAFBFC;
+		/* Brand green */
+		--primary: #5e7d4a;
+		--primaryLight: #7f9b63;
+		--primaryDark: #3f5a33;
+		--secondary: #5e7d4a;
+		--secondaryLight: #a2b58b;
+		--secondaryDark: #3f5a33;
+		--accent: #a2b58b;
+		--headerColor: #1e2d1c;
+		--bodyTextColor: #313131;
+		--bodyTextColorWhite: #f7f8f2;
 
-		/* Dark Mode Styles */
+		/* Dark Mode */
 		--dark: #1a1a1a;
-		--medium: #3a3a3a; /* Medium grey */
-		--accent: #4a4a4a; /* Lighter grey */
+		--medium: #2a3a28;
 
 		/* 13px - 16px */
 		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -70,22 +94,19 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-	--headerFont: "Oswald", Arial, sans-serif;
-	--bodyFont: "Open Sans", Arial, sans-serif;
+		--headerFont: "Roboto", Arial, sans-serif;
+		--bodyFont: "Roboto", Arial, sans-serif;
 	}
 
-	body,
-	html {
+	html,
+	body {
 		margin: 0;
 		padding: 0;
-		font-size: 100%;
-		font-family: var(--bodyFont);
-		color: var(--bodyTextColor);
 		overflow-x: hidden;
-	}
-
-	body {
+		font-family: var(--bodyFont);
+		font-size: 100%;
 		transition: background-color 0.3s;
+		color: var(--bodyTextColor);
 	}
 
 	*,
@@ -112,12 +133,11 @@
 	}
 
 	.cs-topper {
-		font-family: var(--headerFont);
 		font-size: var(--topperFontSize);
 		line-height: 1.2em;
 		text-transform: uppercase;
 		text-align: inherit;
-		letter-spacing: .3em;
+		letter-spacing: 0.1em;
 		font-weight: 700;
 		color: var(--primary);
 		margin-bottom: 0.25rem;
@@ -127,12 +147,17 @@
 	.cs-title {
 		font-size: var(--headerFontSize);
 		font-weight: 900;
-		line-height: 1em;
+		line-height: 1.2em;
 		text-align: inherit;
 		max-width: 43.75rem;
 		margin: 0 0 1rem 0;
 		color: var(--headerColor);
 		position: relative;
+		text-transform: uppercase;
+	}
+
+	.cs-int-title {
+		text-transform: uppercase;
 	}
 
 	.cs-text {
@@ -157,57 +182,74 @@
 		opacity: 0;
 	}
 
-	// Buttons - can be replaced using Serene's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
+	// Buttons - can be replaced using CodeStitch's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
 	.cs-button-solid {
-		font-family: var(--headerFont);
-		font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px mobile / 18px desktop */
-		font-weight: 700;
-		line-height: 1.5;
-		text-decoration: none;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		margin: 0;
-		color: #fff;
-		min-width: 11.25rem;
-		padding: 1rem 2rem; /* 16px 32px */
-		background-color: var(--primary);
-		border: none;
-		border-radius: 0.5rem; /* 8px */
-		display: inline-block;
-		position: relative;
 		z-index: 1;
-		box-sizing: border-box;
-		cursor: pointer;
-		transition: all 0.3s ease;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: calc(12 / 16 * 1rem);
+		background-color: var(--primary);
+		width: auto;
+		padding: 0 calc(28 / 16 * 1rem);
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: calc(16 / 16 * 1rem);
+		line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+		font-weight: bold;
+		overflow: hidden;
 
-		&:before {
-			content: '';
-			position: absolute;
-			height: 100%;
-			width: 0%;
-			background: var(--secondary);
-			opacity: 1;
-			top: 0;
-			left: 0;
-			z-index: -1;
-			border-radius: 0.5rem; /* 8px */
-			transition: width 0.3s ease;
-		}
+		// Transition Properties
+		color: #fff;
+		transition: color 0.3s;
+		transition-delay: 0.1s;
+		text-align: center;
 
 		&:hover {
-			background-color: color-mix(in srgb, var(--primary) 90%, black);
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-			
+			color: #fff;
+
 			&:before {
 				width: 100%;
 			}
 		}
 
-		&:focus {
-			outline: 2px solid var(--primary);
-			outline-offset: 2px;
+		&:before {
+			z-index: -1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			opacity: 1;
+			display: block;
+			background-color: #000;
+			height: 100%;
+
+			//Transition properties
+			width: 0;
+			transition: width 0.3s;
 		}
+
+		&:after {
+			content: "";
+			width: calc(20 / 16 * 1rem);
+			height: calc(20 / 16 * 1rem);
+			margin-left: calc(8 / 16 * 1rem);
+			background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg") center / contain no-repeat;
+			display: inline-block;
+			flex: 0 0 auto;
+			transition: transform 0.3s;
+		}
+
+		&:hover:after {
+			transform: translate(2px, -2px);
+		}
+	}
+
+	.cs-button-arrow {
+		width: calc(20 / 16 * 1rem);
+		height: calc(20 / 16 * 1rem);
+		flex: 0 0 auto;
 	}
 
 	.cs-button-outline {
@@ -245,7 +287,7 @@
 			content: "";
 			opacity: 1;
 			display: block;
-			background-color: var(--secondary);
+			background-color: #000;
 			height: 100%;
 
 			//Transition properties
@@ -255,14 +297,7 @@
 	}
 
 	// Utilities - small classes useful in various common situations
-	.cs-color,
-	.cs-accent {
-		color: var(--primary);
-	}
-
-	.cs-button-outline {
-		background: transparent;
-		border: 2px solid var(--primary);
+	.cs-color {
 		color: var(--primary);
 	}
 
