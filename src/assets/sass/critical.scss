@@ -30,6 +30,9 @@
 		--headerFont: "Roboto", Arial, sans-serif;
 		--bodyFont: "Roboto", Arial, sans-serif;
 	}
+	html {
+		scroll-behavior: smooth;
+	}
 	body,
 	html {
 		margin: 0;
@@ -129,8 +132,9 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #hero-2274 {
-        /* 150px - 350px Top, extra bottom so CTA doesn't feel cut off on mobile */
-        padding: clamp(9rem, 30.95vw, 21.875rem) calc(16/16 * 1rem) clamp(3rem, 8vw, 4rem);
+        background-color: #0c1210;
+        padding: clamp(9.25rem, 14vw, 10.5rem) calc(16/16 * 1rem) clamp(5rem, 10vw, 6rem);
+        min-height: 100svh;
         overflow: hidden;
         position: relative;
         z-index: 10;
@@ -144,7 +148,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: calc(88/16 * 1rem);
+            gap: calc(48/16 * 1rem);
         }
 
         .cs-content {
@@ -156,6 +160,21 @@
             align-items: flex-start;
             position: relative;
             z-index: 10;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(6px);
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .cs-topper {
+            font-size: var(--topperFontSize);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #fff;
+            margin-bottom: calc(16/16 * 1rem);
+            display: inline-block;
         }
 
         .cs-title {
@@ -167,7 +186,7 @@
             width: 100%;
             max-width: 17ch;
             margin: 0 0 calc(16/16 * 1rem);
-            color: var(--bodyTextColorWhite);
+            color: #ffffff;
             position: relative;
 
             .cs-color {
@@ -183,8 +202,13 @@
             max-width: calc(700/16 * 1rem);
             /* 28px - 40px */
             margin: 0 0 clamp(1.75rem, 4vw, 2.5rem);
-            color: var(--bodyTextColorWhite);
-            opacity: .8;
+            color: #ffffff;
+        }
+
+        .cs-button-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .cs-button-solid {
@@ -229,25 +253,113 @@
             }
         }
 
+        .cs-button-outline {
+            font-size: calc(16/16 * 1rem);
+            text-align: center;
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+            padding: 0 calc(28/16 * 1rem);
+            background-color: transparent;
+            border: 2px solid #fff;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s, background-color 0.3s;
+
+            &:hover {
+                color: #1a1a1a;
+                background-color: #fff;
+            }
+        }
+
+        .cs-trust {
+            font-size: calc(14/16 * 1rem);
+            color: #fff;
+            opacity: 0.7;
+            margin-top: 1.5rem;
+        }
+
         .cs-picture {
             width: 100%;
-            /* 427px - 581px */
-            max-width: clamp(26.6875rem, 50vw, 36.3125rem);
-            height: auto;
-            display: flex;
-            align-items: flex-end;
+            border-radius: 0.75rem;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+            margin-top: 2rem;
             position: relative;
             z-index: 7;
 
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @keyframes hero-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+
+        .cs-scroll-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            position: absolute;
+            bottom: clamp(1.25rem, 3vw, 2rem);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            text-decoration: none;
+            cursor: pointer;
+
+            .cs-scroll-text {
+                font-size: calc(12/16 * 1rem);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                color: #fff;
+                opacity: 0.6;
+                transition: opacity 0.3s;
+                white-space: nowrap;
+            }
+
+            .cs-scroll-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                border: 1.5px solid rgba(255, 255, 255, 0.3);
+                color: #fff;
+                backdrop-filter: blur(4px);
+                background: rgba(255, 255, 255, 0.06);
+                transition: border-color 0.3s, background 0.3s, transform 0.3s;
+                animation: hero-bounce 2s ease-in-out infinite;
+            }
+
+            &:hover {
+                .cs-scroll-text {
+                    opacity: 1;
+                }
+                .cs-scroll-arrow {
+                    border-color: var(--primary);
+                    background: rgba(255, 255, 255, 0.12);
+                    animation-play-state: paused;
+                    transform: scale(1.1);
+                }
             }
         }
 
         .cs-image-group {
             width: 100%;
             height: 100%;
+            min-height: 100%;
             position: absolute;
             top: 0;
             left: 0;
@@ -279,7 +391,7 @@
                 width: 100%;
                 height: 100%;
                 background: #000;
-                opacity: .72;
+                opacity: .80;
                 display: block;
                 position: absolute;
                 top: 0;
@@ -293,12 +405,10 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #hero-2274 {
-        padding-bottom: calc(150/16 * 1rem);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: calc(90/16 * 1rem);
 
         .cs-container {
             justify-content: flex-start;
@@ -307,15 +417,8 @@
 
         .cs-content {
             text-align: left;
-            width: 53%;
+            width: 55%;
             align-items: flex-start;
-        }
-
-        .cs-picture {
-            width: 56%;
-            position: absolute;
-            bottom: calc(-65/16 * 1rem);
-            right: calc(-30/16 * 1rem);
         }
     }
 }
@@ -323,16 +426,41 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-2274 {
-        /* Less top padding on desktop */
-        padding-top: clamp(6rem, 15vw, 10rem);
-        /* 100px - 172px */
-        padding-bottom: clamp(6.25rem, 12vw, 10.9375rem);
+        padding-top: clamp(9rem, 12vw, 10.5rem);
+        min-height: auto;
+
+        .cs-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .cs-content {
+            width: 100%;
+        }
 
         .cs-picture {
-            width: 45%;
-            bottom: calc(clamp(6.25rem, 12vw, 10.9375rem)*-1);
-            /* 32px - 80px */
-            right: clamp(2rem, 5vw, 5rem);
+            width: 100%;
+            border-radius: 1rem;
+            aspect-ratio: 4/3;
+            margin-top: 0;
+        }
+
+        .cs-scroll-btn {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            transform: none;
+            grid-column: 1 / -1;
+            justify-self: center;
+            margin-top: 1rem;
+        }
+
+        .cs-background1 {
+            &:before {
+                opacity: .72;
+            }
         }
     }
 }
@@ -717,5 +845,15 @@
     #cs-navigation .cs-drop-ul {
         transform: scaleY(0);
         transform-origin: top;
+    }
+}
+
+/* Homepage: force white section backgrounds (hero stays dark). Loaded in critical so it wins over root/local. */
+@media only screen and (min-width: 0px) {
+    body:not(.dark-mode) #services-1749,
+    body:not(.dark-mode) #sbs-2277,
+    body:not(.dark-mode) #steps-585,
+    body:not(.dark-mode) #sbs-2281 {
+        background-color: #fff !important;
     }
 }

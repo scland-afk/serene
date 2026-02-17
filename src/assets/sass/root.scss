@@ -140,8 +140,10 @@
 		letter-spacing: 0.1em;
 		font-weight: 700;
 		color: var(--primary);
-		margin-bottom: 0.25rem;
-		display: block;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+		border-left: 3px solid var(--primary);
+		padding-left: 0.6rem;
 	}
 
 	.cs-title {
@@ -209,7 +211,7 @@
 		&:hover {
 			color: #fff;
 
-			&:before {
+		&:before {
 				width: 100%;
 			}
 		}

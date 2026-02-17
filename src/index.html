@@ -37,18 +37,46 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <section id="hero-2274">
         <div class="cs-container">
             <div class="cs-content">
-                <h1 class="cs-title"><span class="cs-color">Landscaping Edmonton</span> Services</h1>
+                <span class="cs-topper">Design &bull; Build &bull; Maintain</span>
+                <h1 class="cs-title">
+                    Edmonton's Trusted<br>
+                    <span class="cs-color">Landscaping Experts</span>
+                </h1>
                 <p class="cs-text">
-                    Complete landscape solutions from site grading and sod installation to custom paving stones, retaining walls, and year-round property maintenance. Serving Edmonton, Sherwood Park, St. Albert, and Spruce Grove with quality workmanship and 8 years industry experience.
+                    Quality landscaping starts with a team you can count on. We deliver
+                    everything from grading and sod to custom hardscaping, backed by
+                    8 years of experience serving Edmonton and surrounding communities.
                 </p>
-                <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+                <div class="cs-button-group">
+                    <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+                    <a href="/projects/" class="cs-button-outline">View Our Work</a>
+                </div>
+                <p class="cs-trust">Licensed &amp; Insured &bull; Serving Edmonton &amp; Area</p>
             </div>
+            <!-- Featured image panel — visible on desktop right side, below text on mobile -->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 640, height: 400 }) | webp({ quality: 70 }) %}">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 720, height: 480 }) | webp({ quality: 70 }) %}">
+                <img loading="eager" decoding="async" src="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 720, height: 480 }) | webp({ quality: 70 }) %}" alt="Custom patio project by Serene Landscaping in Edmonton" width="720" height="480">
+            </picture>
         </div>
+
+        <!-- Scroll indicator -->
+        <a href="#services-1749" class="cs-scroll-btn" aria-label="Scroll to services">
+            <span class="cs-scroll-text">Explore Our Services</span>
+            <span class="cs-scroll-arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 3L10 17M10 17L4 11M10 17L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </a>
+
+        <!-- Full-bleed background image + overlay -->
         <div class="cs-image-group">
             <picture class="cs-background cs-background1">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 640, height: 684 }) | webp({ quality: 65 }) %}">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}">
-                <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}" alt="Patio and deck hardscaping in Edmonton" width="1290" height="684">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-hardscaping-home.png' | resize({ width: 640, height: 684 }) | webp({ quality: 65 }) %}">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-hardscaping-home.png' | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}">
+                <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/services-hardscaping-home.png' | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}" alt="" width="1920" height="900">
             </picture>
         </div>
     </section>
@@ -60,8 +88,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <section id="services-1749">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Services</span>
-                <h2 class="cs-title">Our Landscaping Services</h2>
+                <span class="cs-topper">What We Do</span>
+                <h2 class="cs-title">Landscaping Services Built for <span class="cs-color">Edmonton Living</span></h2>
+                <p class="cs-text">From grading and sod to paving stones and snow removal — everything your property needs, handled by one experienced team.</p>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item cs-item-final-grading">
@@ -73,8 +102,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </div>
                     </a>
                     <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Final grading in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source type="image/webp" srcset="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/bobcat-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Final grading in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -86,8 +115,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </div>
                     </a>
                     <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source type="image/webp" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -125,8 +154,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </div>
                     </a>
                     <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Landscape design in Edmonton" width="384" height="480" aria-hidden="true">
+                        <source type="image/webp" srcset="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/overview-of-house-we-did-full-landscape-job.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Landscape design in Edmonton" width="384" height="480" aria-hidden="true">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -219,7 +248,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-content">
                 <div class="cs-flex">
                     <span class="cs-topper">Our Portfolio</span>
-                    <h2 class="cs-title">Featured Projects</h2>
+                    <h2 class="cs-title">Real Work. <span class="cs-color">Real Results.</span></h2>
+                    <p class="cs-text">Browse projects across Edmonton and area — from backyard transformations to commercial grounds maintenance.</p>
                 </div>
                 <div class="cs-button-group">
                     <button class="cs-button" data-filter="all">
@@ -541,56 +571,31 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     </section>
 
     <!-- ============================================ -->
-    <!--                 About Us                     -->
+    <!--                Side By Side                  -->
     <!-- ============================================ -->
 
-    <section id="sbs-418">
+    <section id="sbs-1010">
         <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 420, height: 373 }) | webp({ quality: 60 }) %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}" alt="Final grading and landscaping in Edmonton" width="558" height="496" aria-hidden="true">
+                </picture>
+                <img class="cs-seal" loading="lazy" decoding="async" src="/assets/images/1-year-warranty-transparent.png" alt="1 year warranty badge" width="190" height="140">
+            </div>
             <div class="cs-content">
-                <span class="cs-topper">Final Grading in Edmonton</span>
-                <h2 class="cs-title">Edmonton Final Grading Services for New Builds &amp; Renovations</h2>
+                <span class="cs-topper">Final Grading</span>
+                <h2 class="cs-title">Every Great Yard Starts with Proper Final Grading</h2>
                 <p class="cs-text">
-                    Looking for professional final grading in Edmonton? Serene Landscaping delivers precise rough and finish grading for new construction, renovations, and yard restorations across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and Stony Plain. Proper final grading protects your foundation, prevents water pooling, and meets municipal requirements before sod, landscaping, or hardscaping can begin. Our crew uses laser-guided equipment to establish correct slope and drainage away from your home, ensuring long-term stability and a build-ready surface. Whether you need lot grading after a new build, regrading for drainage correction, or full yard preparation for a landscape project, we handle every step from soil placement to final compaction. Get it done right the first time with Edmonton's trusted grading professionals.
+                    Bad grading leads to water pooling against your foundation, shifting soil, and failed landscaping. Our final grading crew uses laser-guided equipment to set the right slope and drainage before any sod, stone, or planting goes in. Whether it's a new build, a renovation, or a yard that needs correcting, we handle soil placement through final compaction so you're building on a solid surface.
                 </p>
                 <div class="cs-button-group">
                     <a href="/services/final-grading/" class="cs-button-solid">Final Grading in Edmonton</a>
                     <a href="/contact/" class="cs-button-solid">Get In Touch</a>
                 </div>
             </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 420, height: 373 }) | avif({ quality: 55 }) %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 420, height: 373 }) | webp({ quality: 60 }) %}" type="image/webp">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | avif({ quality: 55 }) %}" type="image/avif">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}" type="image/webp">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}" alt="Final grading and landscaping in Edmonton" width="558" height="496">
-                </picture>
-                <div class="cs-info">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/tree.svg" alt="" width="48" height="48">
-                    <div class="cs-flex">
-                        <span class="cs-header">Final Grading in Edmonton</span>
-                        <span class="cs-desc">New builds &amp; renovations, yard restorations</span>
-                    </div>
-                </div>
-                <img class="cs-trapezoid" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/trapezoid.svg" alt="" width="558" height="496">
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Google Reviews</span>
-                <h2 class="cs-title">What Our Clients Are Saying</h2>
-                <p class="cs-text">
-                    Real feedback from verified Google reviews across Edmonton and surrounding communities.
-                </p>
-            </div>
-            <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
         </div>
     </section>
 
@@ -634,6 +639,23 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     <span class="cs-number">04</span>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-67">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Google Reviews</span>
+                <h2 class="cs-title">What Our Clients Are Saying</h2>
+                <p class="cs-text">
+                    Real feedback from verified Google reviews across Edmonton and surrounding communities.
+                </p>
+            </div>
+            <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25589172" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
         </div>
     </section>
 
