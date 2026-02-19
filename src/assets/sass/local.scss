@@ -1542,6 +1542,11 @@
             align-items: center;
         }
 
+        .cs-title {
+            margin: 0;
+            max-width: 20ch;
+        }
+
         .cs-image-group {
             /* used rem so it doesn't scale with the font size of on parent */
             font-size: min(1.1vw, 1em);
@@ -3885,7 +3890,9 @@
 @media only screen and (min-width: 0rem) {
     body:not(.dark-mode) #sbs-2277,
     body:not(.dark-mode) #steps-585,
-    body:not(.dark-mode) #gallery-2281 {
+    body:not(.dark-mode) #gallery-48 {
         background-color: #fff !important;
     }
 }
+
+
