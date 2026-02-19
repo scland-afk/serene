@@ -2684,34 +2684,6 @@
         }
     }
     
-    #services-1749 {
-        .cs-item {
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        .cs-service-actions {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-        }
-
-        .cs-service-actions .cs-button-solid {
-            padding: 0.75rem 1.25rem;
-            font-size: 0.9rem;
-            line-height: 1.2;
-            min-width: 9.5rem;
-            text-align: center;
-        }
-
-        .cs-service-actions .cs-button-outline {
-            background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-    }
 }
 
 /* Dark Mode */
@@ -4101,7 +4073,6 @@
 
 /* Homepage: force white section backgrounds (hero #hero-2274 stays dark) */
 @media only screen and (min-width: 0rem) {
-    body:not(.dark-mode) #services-1749,
     body:not(.dark-mode) #sbs-2277,
     body:not(.dark-mode) #steps-585,
     body:not(.dark-mode) #gallery-2281 {

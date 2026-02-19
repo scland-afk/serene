@@ -850,7 +850,6 @@
 
 /* Homepage: force white section backgrounds (hero stays dark). Loaded in critical so it wins over root/local. */
 @media only screen and (min-width: 0px) {
-    body:not(.dark-mode) #services-1749,
     body:not(.dark-mode) #sbs-2277,
     body:not(.dark-mode) #steps-585,
     body:not(.dark-mode) #sbs-2281 {
