@@ -201,15 +201,18 @@
 		line-height: clamp(2.875rem, 5.5vw, 3.5rem);
 		font-weight: bold;
 		overflow: hidden;
+		border-radius: calc(4 / 16 * 1rem);
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 
 		// Transition Properties
 		color: #fff;
-		transition: color 0.3s;
+		transition: color 0.3s, box-shadow 0.3s;
 		transition-delay: 0.1s;
 		text-align: center;
 
 		&:hover {
 			color: #fff;
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
 
 		&:before {
 				width: 100%;
@@ -1843,5 +1846,131 @@
 				color: var(--bodyTextColorWhite);
 			}
 		}
+	}
+}
+
+/*-- -------------------------- -->
+<---   Global CTA Buttons       -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+	.cs-button-solid,
+	.cs-button-outline,
+	.cs-button-border,
+	.cs-button-transparent {
+		text-align: center !important;
+		font-size: calc(16 / 16 * 1rem) !important;
+		line-height: clamp(2.875rem, 8vw, 3.5rem) !important;
+		text-decoration: none !important;
+		font-weight: 700 !important;
+		min-width: calc(174 / 16 * 1rem) !important;
+		color: var(--primary) !important;
+		padding: 0 calc(24 / 16 * 1rem) !important;
+		box-sizing: border-box !important;
+		background-color: #fff !important;
+		border: 2px solid var(--primary) !important;
+		border-radius: 0 !important;
+		display: inline-flex;
+		align-items: center !important;
+		justify-content: space-between !important;
+		gap: calc(24 / 16 * 1rem) !important;
+		position: relative !important;
+		z-index: 1 !important;
+		overflow: hidden !important;
+		box-shadow: none !important;
+		text-transform: none !important;
+		transition: color 0.3s !important;
+	}
+
+	.cs-button-solid:before,
+	.cs-button-outline:before,
+	.cs-button-border:before,
+	.cs-button-transparent:before {
+		content: "";
+		width: calc(6 / 16 * 1rem) !important;
+		height: 100% !important;
+		background: var(--primary) !important;
+		opacity: 1 !important;
+		position: absolute !important;
+		display: block !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		transition: width 0.3s !important;
+		z-index: -1 !important;
+		border-radius: 0 !important;
+	}
+
+	.cs-button-solid:after,
+	.cs-button-outline:after,
+	.cs-button-border:after,
+	.cs-button-transparent:after {
+		content: "\2192" !important;
+		display: inline-block !important;
+		flex: 0 0 auto;
+		font-size: calc(24 / 16 * 1rem);
+		line-height: 1;
+		font-weight: 700;
+		background: none !important;
+		width: auto !important;
+		height: auto !important;
+		margin-left: 0 !important;
+		transform: translateX(0);
+		transition: transform 0.3s;
+	}
+
+	.cs-button-solid .cs-icon,
+	.cs-button-outline .cs-icon,
+	.cs-button-border .cs-icon,
+	.cs-button-transparent .cs-icon,
+	.cs-button-solid svg,
+	.cs-button-outline svg,
+	.cs-button-border svg,
+	.cs-button-transparent svg {
+		width: calc(24 / 16 * 1rem);
+		height: auto;
+		flex: 0 0 auto;
+	}
+
+	.cs-button-solid .cs-icon path,
+	.cs-button-outline .cs-icon path,
+	.cs-button-border .cs-icon path,
+	.cs-button-transparent .cs-icon path,
+	.cs-button-solid svg path,
+	.cs-button-outline svg path,
+	.cs-button-border svg path,
+	.cs-button-transparent svg path {
+		transition: fill 0.3s, stroke 0.3s;
+	}
+
+	.cs-button-solid:hover,
+	.cs-button-outline:hover,
+	.cs-button-border:hover,
+	.cs-button-transparent:hover {
+		color: #fff !important;
+	}
+
+	.cs-button-solid:hover:before,
+	.cs-button-outline:hover:before,
+	.cs-button-border:hover:before,
+	.cs-button-transparent:hover:before {
+		width: 100% !important;
+	}
+
+	.cs-button-solid:hover:after,
+	.cs-button-outline:hover:after,
+	.cs-button-border:hover:after,
+	.cs-button-transparent:hover:after {
+		transform: translateX(4px);
+	}
+
+	.cs-button-solid:hover .cs-icon path,
+	.cs-button-outline:hover .cs-icon path,
+	.cs-button-border:hover .cs-icon path,
+	.cs-button-transparent:hover .cs-icon path,
+	.cs-button-solid:hover svg path,
+	.cs-button-outline:hover svg path,
+	.cs-button-border:hover svg path,
+	.cs-button-transparent:hover svg path {
+		fill: #fff;
+		stroke: #fff;
 	}
 }

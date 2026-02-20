@@ -1,0 +1,255 @@
+/*-- -------------------------- */
+/*---       Side By Side         */
+/*--- -------------------------- */
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-75 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        position: relative;
+
+        .cs-snowflake {
+            position: absolute;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            opacity: 0.15;
+            color: var(--primary);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .cs-snowflake-1 { top: 8%; left: 5%; }
+        .cs-snowflake-2 { top: 15%; right: 8%; }
+        .cs-snowflake-3 { bottom: 25%; left: 10%; }
+        .cs-snowflake-4 { bottom: 15%; right: 5%; }
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(550 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(542 / 16 * 1rem);
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-features {
+            width: 100%;
+            margin: 0 0 calc(24 / 16 * 1rem);
+            padding: clamp(1.5rem, 4vw, 2rem);
+            background-color: rgba(0, 0, 0, 0.03);
+            border-left: calc(4 / 16 * 1rem) solid var(--primary);
+            border-radius: 0 calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) 0;
+        }
+
+        .cs-h3 {
+            font-size: calc(16 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.5em;
+            margin: 0 0 calc(12 / 16 * 1rem);
+            color: var(--headerColor);
+        }
+
+        .cs-ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: calc(8 / 16 * 1rem);
+            list-style: none;
+        }
+
+        .cs-li {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            list-style: none;
+            padding-left: clamp(1.25rem, 3vw, 1.5rem);
+            color: var(--bodyTextColor);
+            position: relative;
+
+            &::before {
+                content: "";
+                width: calc(8 / 16 * 1rem);
+                height: calc(8 / 16 * 1rem);
+                background: var(--primary);
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0.5em;
+            }
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            border-radius: calc(4 / 16 * 1rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4 / 16 * 1rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-wrapper {
+            width: 95%;
+            max-width: calc(550 / 16 * 1rem);
+            margin: clamp(1.75em, 7.8vw, 5em) 0;
+            position: relative;
+            &:before {
+                content: "";
+                width: calc(800 / 16 * 1em);
+                background: var(--primary);
+                opacity: 0.08;
+                border-radius: calc(16 / 16 * 1rem);
+                position: absolute;
+                display: block;
+                top: calc(clamp(1.75em, 7.8vw, 5em) * -1);
+                bottom: calc(clamp(1.75em, 7.8vw, 5em) * -1);
+                right: calc(65 / 16 * 1em);
+                z-index: -1;
+            }
+        }
+
+        .cs-picture-snowflake {
+            position: absolute;
+            width: clamp(5rem, 12vw, 7rem);
+            height: clamp(5rem, 12vw, 7rem);
+            border-radius: calc(16 / 16 * 1rem);
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--primary);
+            z-index: 2;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .cs-picture-snowflake-tr {
+            top: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+            right: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+        }
+        .cs-picture-snowflake-bl {
+            bottom: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+            left: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+        }
+
+        .cs-picture {
+            width: 100%;
+            margin: 0;
+            position: relative;
+            display: block;
+            aspect-ratio: 312/335;
+            border-radius: calc(16 / 16 * 1rem);
+            z-index: 1;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: calc(16 / 16 * 1rem);
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-75 {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: clamp(3.75rem, 9.5vw, 8rem);
+        }
+
+        .cs-wrapper {
+            width: clamp(20.5rem, 37.5vw, 31.375rem);
+            height: clamp(27.5rem, 40vw, 32.5rem);
+            flex: none;
+        }
+
+        .cs-picture {
+            margin: 0 0 0 clamp(1rem, 5vw, 1.25rem);
+            height: 100%;
+            flex: none;
+        }
+
+        .cs-content {
+            width: 45%;
+        }
+
+        .cs-snowflake-1 { left: 2%; }
+        .cs-snowflake-2 { right: 2%; }
+        .cs-snowflake-3 { left: 3%; bottom: 20%; }
+        .cs-snowflake-4 { right: 3%; bottom: 10%; }
+    }
+}
+
+/* Dark mode: contrast for "What you can expect" */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-75 {
+            .cs-features {
+                background-color: rgba(255, 255, 255, 0.08);
+                border-left-color: var(--primaryLight);
+            }
+            .cs-h3 {
+                color: var(--bodyTextColorWhite);
+            }
+            .cs-li {
+                color: rgba(255, 255, 255, 0.9);
+                &::before {
+                    background: var(--primaryLight);
+                }
+            }
+        }
+    }
+}

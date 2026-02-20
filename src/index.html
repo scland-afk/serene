@@ -22,8 +22,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         <link rel="stylesheet" href="/assets/css/local.css" />
     {% endif %}
 
-    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
-    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires customising  -->
     {% include "components/home-schema.html" %}
     <script defer src="/assets/js/gallery-48-lightbox.js"></script>
  {% endblock %}
@@ -36,33 +35,16 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <section id="hero-1623">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">
-                    <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.7">
-                            <path d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M7.62195 7.49889L13.4026 15L17.343 15L11.5623 7.49889L17.343 -4.2492e-07L13.4026 -2.52681e-07L7.62195 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M14.7789 7.49889L20.5596 15L24.5 15L18.7193 7.49889L24.5 -4.2492e-07L20.5596 -2.52681e-07L14.7789 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M22.7789 7.49889L28.5596 15L32.5 15L26.7193 7.49889L32.5 -4.2492e-07L28.5596 -2.52681e-07L22.7789 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M30.7789 7.49889L36.5596 15L40.5 15L34.7193 7.49889L40.5 -4.2492e-07L36.5596 -2.52681e-07L30.7789 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z" fill="var(--chevronColor)"/>
-                        </g>
-                    </svg>
-                    Serene Landscaping
-                    <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.7">
-                            <path d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z" fill="var(--chevronColor)"/>
-                            <path d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z" fill="var(--chevronColor)"/>
-                        </g>
-                    </svg>
-                </span>
-                <h1 class="cs-title">Professional Landscaping for Edmonton &amp; Area</h1>
-                <p class="cs-text">Clear process. Proper installation. Results that last.</p>
-                <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
-                <div class="cs-corners" aria-hidden="true"></div>
+                <span class="cs-badge">Serene Landscaping</span>
+                <h1 class="cs-title">
+                    <span class="cs-title-line1">Landscaping That Stays Level and Drains Right</span>
+                    <span class="cs-title-line2">Edmonton &amp; Area</span>
+                </h1>
+                <p class="cs-text">We build patios, walls, and yards with proper base prep and slope so water moves away from your foundation and surfaces hold up.</p>
+                <div class="cs-button-group">
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <div class="cs-hex-deco" aria-hidden="true"></div>
             </div>
         </div>
 
@@ -74,67 +56,67 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     </section>
 
     <!-- ============================================ -->
-    <!--                Why Choose Us                 -->
+    <!--                  Trust Bar                   -->
     <!-- ============================================ -->
 
-    <section id="why-choose-1730">
+    <div id="trust-bar" role="region" aria-label="Why choose us">
+        <div class="cs-container">
+            <ul class="cs-trust-list">
+                <li>Edmonton &amp; Area</li>
+                <li>Free Quote</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 Why Choose                   -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-12">
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 900, height: 600, fit: 'cover' }) | webp({ quality: 65 }) %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1920, height: 1080, fit: 'cover' }) | webp({ quality: 65 }) %}">
+            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1920, height: 1080, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="" width="1920" height="1080" aria-hidden="true">
+        </picture>
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Why Choose Us</span>
-                <h2 class="cs-title">Why Homeowners Choose Serene Landscaping</h2>
-                <p class="cs-text">That means clear communication, real accountability, and work we stand behind.</p>
+                <span class="cs-topper">Experienced</span>
+                <h2 class="cs-title">Why Choose Us?</h2>
+                <p class="cs-text">
+                    We are a local Edmonton landscaping company. Our crew focuses on proper base prep, clean edges, and work we back with a warranty—so your project stays on track and holds up.
+                </p>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <svg class="cs-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C7.582 2 4 3.79 4 6v6c0 5 4.6 9.4 8 10 3.4-.6 8-5 8-10V6c0-2.21-3.582-4-8-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="" width="42" height="42" aria-hidden="true">
                     </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Book with Confidence</h3>
-                        <p class="cs-item-text">No deposit required. We start when the schedule and scope are clear.</p>
-                    </div>
+                    <h3 class="cs-h3">No Deposit</h3>
+                    <p class="cs-item-text">
+                        Pay no deposit. We start once schedule and scope are agreed.
+                    </p>
                 </li>
                 <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <svg class="cs-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C7.582 2 4 3.79 4 6v6c0 5 4.6 9.4 8 10 3.4-.6 8-5 8-10V6c0-2.21-3.582-4-8-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="" width="42" height="42" aria-hidden="true">
                     </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Licensed &amp; Insured</h3>
-                        <p class="cs-item-text">Full coverage and accountability on every job.</p>
-                    </div>
+                    <h3 class="cs-h3">1-Year Workmanship Warranty</h3>
+                    <p class="cs-item-text">
+                        Our workmanship is backed for one year so you have peace of mind.
+                    </p>
                 </li>
                 <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <svg class="cs-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 21s-6-3.2-6-9V6l6-3 6 3v6c0 5.8-6 9-6 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M9 13l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="" width="32" height="42" aria-hidden="true">
                     </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Quality Guaranteed</h3>
-                        <p class="cs-item-text">We stand behind our work and finish details.</p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <svg class="cs-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">1-Year Workmanship</h3>
-                        <p class="cs-item-text">Workmanship backed so you have peace of mind.</p>
-                    </div>
+                    <h3 class="cs-h3">Licensed &amp; Insured</h3>
+                    <p class="cs-item-text">
+                        Full coverage and accountability on every job.
+                    </p>
                 </li>
             </ul>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
         </div>
     </section>
 
@@ -148,9 +130,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <span class="cs-topper">Our Services</span>
             <h2 class="cs-title">Edmonton & Area Landscaping Services</h2>
             <p class="cs-text">
-                Not sure which service your property needs? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation.
+                After you know how we work, here is what we do. Not sure which service your property needs? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation.
             </p>
-        </div>                  
+        </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <a href="/services/landscape-design/" class="cs-link">
@@ -196,7 +178,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     <p class="cs-item-text">Weekly, bi-weekly, or one-time cuts to keep your lawn sharp. Consistent mowing, trimming, and tidy cleanup every visit.</p>
                 </a>
             </li>
-            
+
         </ul>
         <div class="cs-service-actions">
             <a href="/residential-landscaping/" class="cs-button-solid">View All Our Services</a>
@@ -205,7 +187,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     </section>
 
     <!-- ============================================ -->
-    <!--           About Serene Landscaping           -->
+    <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
     <section id="sbs-2277">
@@ -213,27 +195,62 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-content">
                 <div class="cs-header">
                     <span class="cs-topper">About Us</span>
-                    <h2 class="cs-title">About Serene Landscaping</h2>
+                    <h2 class="cs-title">Who Are We & What We Do</h2>
                 </div>
                 <div class="cs-wrapper">
                     <div class="cs-flex">
                         <p class="cs-text">
-                            Serene Landscaping is built around that idea: do it right the first time. Our crew focuses on proper base prep, clean edges, and clear timelines so your project stays on track and holds up over time.
+                            We are a local landscaping company that does the job right the first time. Our crew focuses on proper base prep, clean edges, and realistic timelines so your project stays on track and holds up.
                         </p>
-                        <p class="cs-text">
-                            In the Edmonton area, new builds and existing yards often need grading and drainage done right before sod or hardscape goes in. We set the right slope, compact the base, and build so water moves away from foundations and surfaces stay level. That approach reduces callbacks and protects your investment.
-                        </p>
-                        <p class="cs-text">
-                            We follow standards that matter: correct fall for drainage, quality base under pavers and walls, and a clean site when we leave. You get a written scope and a realistic schedule so you know what to expect from start to finish.
-                        </p>
-                        <p class="cs-text cs-service-area">Service area: Edmonton, St. Albert, Sherwood Park, Spruce Grove, Stony Plain.</p>
+                        <ul class="cs-ul">
+                            <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Proper base &amp; drainage:</strong> We set the correct slope away from foundations and compact the base so water moves off and surfaces stay level.
+                                </p>
+                            </li>
+                            <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Licensed &amp; insured:</strong> Full coverage and accountability on every job we do.
+                                </p>
+                            </li>
+                            <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>1-year workmanship warranty:</strong> We stand behind our work so you have peace of mind.
+                                </p>
+                            </li>
+                            <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Clear scope &amp; schedule:</strong> You get a written scope and a realistic timeline from start to finish.
+                                </p>
+                            </li>
+                        </ul>
                         <a href="/about/" class="cs-button-solid">More About Us</a>
                     </div>
                     <div class="cs-image-group">
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/trophy-white.svg" alt="" width="48" height="48" loading="lazy">
+                                <span class="cs-number">
+                                    8+
+                                    <span class="cs-desc">Years of Experience</span>
+                                </span>
+                            </li>
+                            <li class="cs-item">
+                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building-white.svg" alt="" width="48" height="48" loading="lazy">
+                                <span class="cs-number">
+                                    140+
+                                    <span class="cs-desc">Properties Maintained</span>
+                                </span>
+                            </li>
+                        </ul>
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 640, height: 427 }) | webp({ quality: 70 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 755, height: 491 }) | webp({ quality: 70 }) %}">
-                            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 755, height: 491 }) | webp({ quality: 70 }) %}" alt="Patio and pergola landscaping in Edmonton" width="755" height="491" loading="lazy">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 640, height: 427, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 755, height: 491, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 755, height: 491, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Patio and landscaping in Edmonton" width="755" height="491" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -243,47 +260,15 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     </section>
 
     <!-- ============================================ -->
-    <!--                Commercial                     -->
-    <!-- ============================================ -->
-
-    <section id="sbs-2291">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Commercial</span>
-                <h2 class="cs-title">Commercial Landscaping and Snow Removal</h2>
-                <p class="cs-text">
-                    Keep your property clean, safe, and professional year-round. We offer reliable commercial landscaping and proactive snow removal for lots, walks, and entryways across Edmonton and the surrounding area.
-                </p>
-                <div class="cs-features">
-                    <h3 class="cs-h3">What you can expect</h3>
-                    <ul class="cs-ul">
-                        <li class="cs-li">Clear communication and dependable scheduling</li>
-                        <li class="cs-li">Safety focused service for access and traction</li>
-                        <li class="cs-li">Seasonal plans built around your site</li>
-                        <li class="cs-li">Fast response with priority snow routes for commercial sites</li>
-                    </ul>
-                </div>
-                <a class="cs-button-solid" aria-label="view our commercial services" href="/commercial-landscaping/">View commercial services</a>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 640, height: 820 }) | webp({ quality: 70 }) %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 900, height: 900 }) | webp({ quality: 70 }) %}">
-                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 900, height: 900 }) | webp({ quality: 70 }) %}" alt="Bobcat clearing snow on a commercial property" width="900" height="900">
-                </picture>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
     <section id="gallery-48">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
+                <span class="cs-topper">Portfolio</span>
                 <h2 class="cs-title">Real Work. Real Results.</h2>
+                <p class="cs-text">Recent projects show the finish we deliver: level surfaces, tight edges, and drainage that performs.</p>
             </div>
             <div class="cs-image-group">
                 <div class="cs-row cs-row-1">
@@ -346,40 +331,46 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <!--                  Process                     -->
     <!-- ============================================ -->
 
-    <section id="steps-585">
+    <section id="services-2132">
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">Our Process</span>
-                <h2 class="cs-title">Simple Easy Steps To Get Started</h2>
+                <h2 class="cs-title">How We Get From Idea to Finished Yard</h2>
+                <p class="cs-text">From the gallery above to your property: here is how we deliver the same standards from first visit to final walkthrough.</p>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <h3 class="cs-h3">Free Consultation & Site Review</h3>
-                    <p class="cs-item-text">
-                        We walk the property with you, discuss your goals, and identify grading, drainage, or access considerations before planning begins.
-                    </p>
-                    <span class="cs-number">01</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">1</span> Consultation</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Landscaping consultation process" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">We meet you onsite for the initial design consultation, get to know your property, and talk through ideas that match your goals and budget.</p>
                 </li>
                 <li class="cs-item">
-                    <h3 class="cs-h3">2D Conceptual Design</h3>
-                    <p class="cs-item-text">
-                        We create a layout and material plan so you can visualize the scope, understand the approach, and approve the direction before work starts.
-                    </p>
-                    <span class="cs-number">02</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">2</span> Design</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Landscape design plan" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">With architectural insight and a sharp eye for detail, we craft 2D plans that organize your space into destination zones and natural transitions.</p>
                 </li>
                 <li class="cs-item">
-                    <h3 class="cs-h3">Professional Installation</h3>
-                    <p class="cs-item-text">
-                        Our crew manages site preparation, construction, and cleanup while maintaining clear communication and a clean, organized work area.
-                    </p>
-                    <span class="cs-number">03</span>
-                </li>
-                <li class="cs-item">
-                    <h3 class="cs-h3">Satisfaction Guaranteed</h3>
-                    <p class="cs-item-text">
-                        We complete a final walkthrough with you and confirm all work meets the agreed scope and quality standards.
-                    </p>
-                    <span class="cs-number">04</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">3</span> Construction</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/crew.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/crew.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/crew.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Serene Landscaping crew" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">We coordinate timelines, trades, and materials to deliver beautiful, efficient, expertly crafted landscaping work without surprises.</p>
                 </li>
             </ul>
         </div>
@@ -389,16 +380,64 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews-67">
+    <section id="reviews-1672">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Google Reviews</span>
-                <h2 class="cs-title">What Our Clients Are Saying</h2>
-                <p class="cs-text">
-                    Real feedback from verified Google reviews across Edmonton and surrounding communities.
-                </p>
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Our Customer Reviews</h2>
             </div>
-            <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25589172" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Kris Schindel
+                            <span class="cs-job">reviewed Serene Landscaping · Snow Removal · 2 days ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">Serene Landscaping has done an excellent job with our residential snow removal this winter. They are professional, courteous, and arrive when they say they are going to. Would definitely recommend!</p>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Judy S
+                            <span class="cs-job">reviewed Serene Landscaping · Snow Removal · 4 weeks ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <details class="cs-review-details">
+                            <summary class="cs-review cs-review-summary">We've been very happy with this snow removal service. Steve and his crew are dependable, show up quickly after snowfalls. With the snow we had in December they never missed even with being so busy. They also came out after the snow was over and cleaned up all the ice from the thawing and freezing. Communication is always excellent, and pricing is good. I would definitely recommend them to anyone looking for reliable winter service. <span class="cs-read-more"></span></summary>
+                        </details>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            L Zook
+                            <span class="cs-job">reviewed Serene Landscaping · Landscaping · 8 months ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">Steve from Serene Landscaping was great to deal with: professional, reliable and attentive to our requests. Our landscaping project was finished in a timely manner and we are very pleased with the final outcome.</p>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -411,9 +450,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Quick Answers Before You Book <span class="cs-color">Serene Landscaping</span></h2>
-                <p class="cs-text">
-                    Here are a few common questions about our landscaping, lawn care, and snow removal services in Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
-                </p>
+                <p class="cs-text">Short answers to common objections and what to expect when you reach out.</p>
                 <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
             </div>
             <ul class="cs-faq-group">
@@ -424,7 +461,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We take on projects, from backyard makeovers to stonework and planting. We handle design-build, <a href="/services/sod-installation/">Sod Installation in Edmonton</a>, <a href="/services/retaining-walls/">Retaining Walls in Edmonton</a>, <a href="/services/paving-stones/">Paving Stones in Edmonton</a>, <a href="/services/artificial-grass/">Artificial Grass in Edmonton</a>, <a href="/services/fences/">fence installation</a>, and landscape maintenance.
+                        We handle design-build, backyard makeovers, stonework, and planting. Core services include <a href="/services/landscape-design/">landscape design</a>, <a href="/services/retaining-walls/">retaining walls</a>, <a href="/services/paving-stones/">paving stones</a>, and <a href="/services/lawn-maintenance/">lawn maintenance</a>. Not sure what you need? We can narrow it down at a free consultation.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -474,7 +511,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        A consultation starts with a site visit so we can see the space and hear your ideas. We'll talk through your goals, budget, and any must-haves, then outline a clear plan with pricing and an estimated timeline.
+                        A consultation starts with a site visit so we can see the space and hear your ideas. We talk through your goals, budget, and must-haves, then outline a plan with pricing and an estimated timeline.
                     </p>
                 </li>
             </ul>
@@ -491,7 +528,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <span class="cs-topper">Contact Us</span>
                 <h2 class="cs-title">Good Communication Starts Here</h2>
                 <p class="cs-text">
-                    Have a question or want to talk about your yard? Call or text us anytime. We keep things simple, reply fast, and never pressure you into anything.
+                    Have a question or want to talk about your yard? Call or text us. We reply quickly, send a written estimate, and walk you through next steps so you know what to expect.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
             </div>
@@ -504,6 +541,44 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         </div>
     </section>
 
+    <!-- ============================================ -->
+    <!--                Commercial                    -->
+    <!-- ============================================ -->
+
+    <section id="sbs-75" class="cs-commercial">
+        <span class="cs-snowflake cs-snowflake-1" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-2" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-3" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-4" aria-hidden="true">❄</span>
+        <div class="cs-container">
+            <div class="cs-wrapper">
+                <span class="cs-picture-snowflake cs-picture-snowflake-tr" aria-hidden="true">❄</span>
+                <span class="cs-picture-snowflake cs-picture-snowflake-bl" aria-hidden="true">❄</span>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 640, height: 820, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 500, height: 552, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 500, height: 552, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Commercial snow removal in Edmonton" width="500" height="552" aria-hidden="true">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Commercial</span>
+                <h2 class="cs-title">Commercial Landscaping and Snow Removal</h2>
+                <p class="cs-text">
+                    We offer commercial landscaping and snow removal for lots, walks, and entryways across Edmonton and the surrounding area. Dependable scheduling and safety-focused service for access and traction.
+                </p>
+                <div class="cs-features">
+                    <h3 class="cs-h3">What you can expect</h3>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Dependable scheduling and communication</li>
+                        <li class="cs-li">Safety-focused service for access and traction</li>
+                        <li class="cs-li">Seasonal plans built around your site</li>
+                        <li class="cs-li">Priority snow routes for commercial sites</li>
+                    </ul>
+                </div>
+                <a class="cs-button-solid" aria-label="view our commercial services" href="/commercial-landscaping/">View Commercial Services</a>
+            </div>
+        </div>
+    </section>
+
     {% include 'components/faq-schema.html' %}
 {% endblock %}
-

@@ -133,7 +133,6 @@
             height: 126vw;
             max-height: calc(626/16 * 1rem);
             display: block;
-            order: -1;
             position: relative;
             z-index: 1;
         }
@@ -180,7 +179,8 @@
         }
 
         .cs-content {
-            padding-left: calc(52/16 * 1rem);
+            padding-right: calc(52/16 * 1rem);
+            padding-left: 0;
             padding-bottom: calc(108/16 * 1rem);
         }
 

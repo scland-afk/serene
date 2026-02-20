@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #why-choose-1730 {
         padding: var(--sectionPadding);
+        background-color: #f6f7f4;
 
         .cs-container {
             width: 100%;
@@ -108,13 +109,13 @@
     #why-choose-1730 {
         .cs-container {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: flex-start;
         }
 
         .cs-content {
-            text-align: left;
-            align-items: flex-start;
+            text-align: right;
+            align-items: flex-end;
         }
 
         .cs-card-group {
@@ -128,6 +129,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #why-choose-1730 {
+            background-color: var(--dark);
+
             .cs-title,
             .cs-h3 {
                 color: var(--primary);

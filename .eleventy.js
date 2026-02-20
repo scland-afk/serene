@@ -75,6 +75,8 @@ module.exports = function (eleventyConfig) {
     // ═════════════════════════════════════════════════════════════════════════
 
     eleventyConfig.addPassthroughCopy("./src/assets"); // Static assets
+    eleventyConfig.addPassthroughCopy("./src/admin/config.yml"); // Decap CMS config
+    eleventyConfig.addPassthroughCopy("./src/admin/decap-preview-styles.css"); // Decap preview styles
     eleventyConfig.addPassthroughCopy("./src/_redirects"); // Redirect rules
     eleventyConfig.addPassthroughCopy({ "./src/_headers": "_headers" }); // Cloudflare headers
     eleventyConfig.addPassthroughCopy({ "./src/llms.txt": "llms.txt" }); // AI/LLM crawler SEO
