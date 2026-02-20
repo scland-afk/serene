@@ -50,9 +50,9 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         </div>
 
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 900, height: 1400, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %}">
-            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}">
-            <img loading="eager" decoding="async" src="/assets/images/firepit-installed.webp" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 420, height: 653, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %} 420w, {% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 900, height: 1400, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %} 900w" sizes="100vw">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 960, height: 600, fit: 'cover' }) | webp({ quality: 68 }) %} 960w, {% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %} 1920w" sizes="100vw">
+            <img loading="eager" decoding="async" fetchpriority="high" src="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
         </picture>
     </section>
 
@@ -140,7 +140,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/services/landscape-design/" role="listitem" aria-label="Landscape Design – learn more">
                     <span class="cs-service-label">Landscape Design</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Landscape design Edmonton" width="346" height="346">
                     </picture>
@@ -155,7 +155,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/services/retaining-walls/" role="listitem" aria-label="Retaining Walls – learn more">
                     <span class="cs-service-label">Retaining Walls</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Retaining wall installation" width="346" height="346">
                     </picture>
@@ -170,7 +170,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/services/paving-stones/" role="listitem" aria-label="Paving Stones – learn more">
                     <span class="cs-service-label">Paving Stones</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Paving stones patio Edmonton" width="346" height="346">
                     </picture>
@@ -185,7 +185,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/services/lawn-maintenance/" role="listitem" aria-label="Lawn Maintenance – learn more">
                     <span class="cs-service-label">Lawn Maintenance</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Lawn maintenance Edmonton" width="346" height="346">
                     </picture>
@@ -200,7 +200,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/services/fences/" role="listitem" aria-label="Fences – learn more">
                     <span class="cs-service-label">Fences</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Vinyl fence installation Edmonton" width="346" height="346">
                     </picture>
@@ -215,7 +215,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <a class="cs-item" href="/residential-landscaping/" role="listitem" aria-label="View all services">
                     <span class="cs-service-label">View All Services</span>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 400, height: 400, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
                         <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="View all landscaping services" width="346" height="346">
                     </picture>
