@@ -1,0 +1,39 @@
+# Decap CMS config for Serene Landscaping
+# Set up auth at https://decapbridge.com then paste your backend snippet below (replace the backend block).
+
+backend:
+  name: git-gateway
+  branch: main
+  # Replace with your repo (e.g. owner/repo-name) and DecapBridge URLs from decapbridge.com
+  repo: owner/repo-name
+  identity_url: https://auth.decapbridge.com/sites/YOUR-SITE-ID
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} via Decap CMS
+    update: Update {{collection}} "{{slug}}" - {{author-name}} via Decap CMS
+    delete: Delete {{collection}} "{{slug}}" via Decap CMS
+    uploadMedia: Upload "{{path}}" via Decap CMS
+    deleteMedia: Delete "{{path}}" via Decap CMS
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://serenelandscapes.ca
+
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    slug: "{{url}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: URL (slug), name: url, widget: string, hint: "Used in URL, e.g. my-post-title" }
+      - { label: Description, name: description, widget: text }
+      - { label: Author, name: author, widget: string, default: "Serene Landscaping" }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Tags, name: tags, widget: list, default: ["post"] }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Image Alt, name: imageAlt, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }

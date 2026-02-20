@@ -1,48 +1,14 @@
-/*-- -------------------------- -->
-<---       Why Choose Us        -->
-<--- -------------------------- -*/
+/*-- -------------------------- */
+/*---       Why Choose Us        */
+/*--- -------------------------- */
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #why-choose-12 {
         padding: var(--sectionPadding);
         position: relative;
+        z-index: 1;
         overflow: hidden;
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-
-            &::before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: #000;
-                opacity: 0.7;
-                position: absolute;
-                display: block;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                backdrop-filter: blur(2px);
-            }
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                filter: blur(3px);
-                transform: scale(1.1);
-            }
-        }
 
         .cs-container {
             width: 100%;
@@ -51,29 +17,62 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
             position: relative;
-            z-index: 2;
+            z-index: 1;
+        }
+
+        .cs-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            display: block;
+            pointer-events: none;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: 0.6;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
         }
 
         .cs-content {
-            /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
             display: flex;
             flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
             align-items: center;
+        }
 
-            .cs-topper {
-                color: var(--primaryLight);
-            }
+        .cs-topper {
+            color: var(--primary) !important;
+        }
 
-            .cs-title,
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
+        .cs-title {
+            color: #fff !important;
+        }
+
+        .cs-text {
+            color: rgba(255, 255, 255, 0.9) !important;
         }
 
         .cs-card-group {
@@ -94,12 +93,9 @@
             max-width: calc(360 / 16 * 1rem);
             margin: 0;
             padding: 0;
-            position: relative;
-            z-index: 1;
         }
 
         .cs-picture {
-            /* 68px - 88px */
             width: clamp(4.25rem, 7vw, 5.5rem);
             height: clamp(4.25rem, 7vw, 5.5rem);
             margin: auto;
@@ -110,8 +106,7 @@
             justify-content: center;
             align-items: center;
 
-            img,
-            svg {
+            img {
                 width: auto;
                 height: calc(42 / 16 * 1rem);
                 display: block;
@@ -126,7 +121,7 @@
             text-transform: uppercase;
             margin: 0;
             margin-bottom: calc(8 / 16 * 1rem);
-            color: var(--bodyTextColorWhite);
+            color: #fff !important;
         }
 
         .cs-item-text {
@@ -134,13 +129,11 @@
             text-align: inherit;
             line-height: 1.5em;
             margin: 0;
-            color: var(--bodyTextColorWhite);
-            opacity: 0.95;
+            color: rgba(255, 255, 255, 0.9) !important;
         }
 
         .cs-button-solid {
             font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
             text-decoration: none;
             font-weight: 700;
@@ -154,12 +147,26 @@
             display: inline-block;
             position: relative;
             z-index: 1;
-            /* prevents padding from adding to the width */
             box-sizing: border-box;
-            transition: background-color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4 / 16 * 1rem);
+                transition: width 0.3s;
+            }
 
             &:hover {
-                background-color: var(--primaryLight);
+                &:before {
+                    width: 100%;
+                }
             }
         }
     }
@@ -171,46 +178,17 @@
         .cs-card-group {
             flex-direction: row;
             justify-content: space-between;
-            flex-wrap: wrap;
-            gap: clamp(2rem, 3vw, 3rem);
-        }
-
-        .cs-item {
-            width: calc(50% - clamp(1rem, 1.5vw, 1.5rem));
-            max-width: calc(400 / 16 * 1rem);
         }
     }
 }
 
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+/* Large Desktop - parallax background */
+@media only screen and (min-width: 81.25rem) {
     #why-choose-12 {
-        .cs-item {
-            width: calc(25% - clamp(1.5rem, 2.25vw, 2.25rem));
-            max-width: calc(300 / 16 * 1rem);
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #why-choose-12 {
-            .cs-background {
-                &::before {
-                    opacity: 0.85;
-                }
-            }
-
-            .cs-title,
-            .cs-h3,
-            .cs-item-text,
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-picture {
-                background: var(--primary);
+        .cs-background {
+            background: url("/assets/images/Artificial-turf-st-albert.webp") center/cover no-repeat fixed;
+            img {
+                display: none;
             }
         }
     }

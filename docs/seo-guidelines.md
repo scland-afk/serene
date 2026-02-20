@@ -50,45 +50,37 @@ Avoid:
 
 ### Tier 1: Immediate Ranking Focus
 - /services/final-grading/
-  - Primary: final grading
+  - Primary: final grading   - Primary: final grading edmonton
   - Support: drainage correction, topsoil prep
-  - Internal links: to /final-grading/edmonton/ and /final-grading/st-albert/
+  - Internal links: to /final-grading/st-albert/
 
 - /services/sod-installation/
   - Primary: sod installation
   - Support: lawn installation, new sod
   - Internal links: to /sod-installation/edmonton/
 
-- /final-grading/edmonton/
-  - Primary: final grading edmonton
-  - Support: final grading, grading services
-  - Link back to /services/final-grading/
-
 - /final-grading/st-albert/
   - Primary: final grading st albert
   - Support: final grading, grading services
   - Link back to /services/final-grading/
 
-- /sod-installation/edmonton/
-  - Primary: sod installation edmonton
+- /sod-installation/
+  - Primary: sod installation Edmonton & area
   - Support: new sod, lawn installation
   - Link back to /services/sod-installation/
 
 ### Tier 2: Secondary Growth
-- /paving-stones/edmonton/
-  - Primary: paving stones edmonton
+- /paving-stones
+  - Primary: paving stones Edmonton & area
   - Support: pavers edmonton, patio installation
   - Link from /services/hardscaping/
 
 - /services/landscape-design/
-  - Primary: landscape design edmonton
+  - Primary: landscape design Edmonton & area
   - Support: landscaping services, outdoor design
   - Link from Home and Residential pages
 
 ### Tier 3: Later Expansion
-- /services/artificial-grass/
-  - Primary: artificial turf installation
-  - Support: synthetic turf, artificial grass
 
 - Home page (/index)
   - Primary: landscaping edmonton (1–2 mentions max)

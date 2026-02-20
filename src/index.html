@@ -22,131 +22,211 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         <link rel="stylesheet" href="/assets/css/local.css" />
     {% endif %}
 
-    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
-    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires customising  -->
     {% include "components/home-schema.html" %}
     <script defer src="/assets/js/gallery-48-lightbox.js"></script>
-    <script defer src="/assets/js/gallery-2281.js"></script>
-{% endblock %}
+ {% endblock %}
 
 {% block body %}
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero-2274">
+    <section id="hero-1623">
         <div class="cs-container">
             <div class="cs-content">
-                <h1 class="cs-title"><span class="cs-color">Landscaping Edmonton</span> Services</h1>
-                <p class="cs-text">
-                    Complete landscape solutions from site grading and sod installation to custom paving stones, retaining walls, and year-round property maintenance. Serving Edmonton, Sherwood Park, St. Albert, and Spruce Grove with quality workmanship and 8 years industry experience.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+                <span class="cs-badge">Serene Landscaping</span>
+                <h1 class="cs-title">
+                    <span class="cs-title-line1">Transforming Landscapes with Precision
+                    </span>
+                    <span class="cs-title-line2">Edmonton &amp; Area</span>
+                </h1>
+                <p class="cs-text">We build patios, walls, and yards with proper base prep and slope so water moves away from your foundation and surfaces hold up.</p>
+                <div class="cs-button-group">
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <div class="cs-hex-deco" aria-hidden="true"></div>
             </div>
         </div>
-        <div class="cs-image-group">
-            <picture class="cs-background cs-background1">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 640, height: 684 }) | webp({ quality: 65 }) %}">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}">
-                <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/services-hardscaping-home.png" | resize({ width: 1920, height: 900 }) | webp({ quality: 65 }) %}" alt="Patio and deck hardscaping in Edmonton" width="1290" height="684">
-            </picture>
+
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 900, height: 1400, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}">
+            <img loading="eager" decoding="async" src="/assets/images/firepit-installed.webp" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Trust Bar                   -->
+    <!-- ============================================ -->
+
+    <div id="trust-bar" role="region" aria-label="Why choose us">
+        <div class="cs-container">
+            <ul class="cs-trust-list">
+                <li>Serving Edmonton, St. Albert, and Sherwood Park</li>
+                <li>Written Quote Within 24 Hours</li>
+                <li>No Deposit to Get Started</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 Why Choose                   -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-12">
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 900, height: 600, fit: 'cover' }) | webp({ quality: 65 }) %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1920, height: 1080, fit: 'cover' }) | webp({ quality: 65 }) %}">
+            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/Artificial-turf-st-albert.webp' | resize({ width: 1920, height: 1080, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="" width="1920" height="1080" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Experienced</span>
+                <h2 class="cs-title">Why Choose Us?</h2>
+                <p class="cs-text">
+                    We are a local Edmonton landscaping company that runs one project at a time so details are not rushed. You get careful base prep, clean finishing, and clear communication from start to final walkthrough.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/sheild.svg" alt="" width="42" height="42" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">No Deposit</h3>
+                    <p class="cs-item-text">
+                        No upfront payment. We start once scope, schedule, and pricing are clearly approved.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/toolbox.svg" alt="" width="42" height="42" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">1-Year Workmanship Warranty</h3>
+                    <p class="cs-item-text">
+                        Every installation includes a 1-year workmanship warranty for confidence after completion.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/ribbon.svg" alt="" width="32" height="42" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Licensed &amp; Insured</h3>
+                    <p class="cs-item-text">
+                        Licensed and fully insured with clear accountability, safety practices, and site standards.
+                    </p>
+                </li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!--                  Services                    -->
+    <!--                    Services (Gallery)        -->
     <!-- ============================================ -->
 
-    <section id="services-1749">
+    <section id="gallery-43" class="cs-services-pick" aria-label="Landscaping services">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Services</span>
-                <h2 class="cs-title">Our Landscaping Services</h2>
+                <span class="cs-topper">What We Do</span>
+                <h2 class="cs-title">Choose Your Service</h2>
+                <p class="cs-text">
+                    Not sure which service you need? <a href="/contact/" class="cs-accent">Contact us</a> for a free consultation.
+                </p>
+                <p class="cs-instruction">Click or tap a service to learn more</p>
             </div>
-            <ul class="cs-card-group">
-                <li class="cs-item cs-item-final-grading">
-                    <a href="/services/final-grading/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Final Grading in Edmonton</span>
-                            <span class="cs-desc">Final grading prevents soil shifting and water from pooling.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/progress-picture-grading.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Final grading in Edmonton" width="384" height="480" aria-hidden="true">
+            <div class="cs-image-group" role="list" aria-label="Landscaping service options">
+                <a class="cs-item" href="/services/landscape-design/" role="listitem" aria-label="Landscape Design – learn more">
+                    <span class="cs-service-label">Landscape Design</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Landscape design Edmonton" width="346" height="346">
                     </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/services/sod-installation/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Sod Installation in Edmonton</span>
-                            <span class="cs-desc">Fresh sod installed with proper prep, healthy rooting.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/new-sod-tight-seams.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Sod installation in Edmonton" width="384" height="480" aria-hidden="true">
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">Landscape Design</h3>
+                        <p class="cs-hover-box-text">Clear, practical designs that fit your property and budget. Drainage, layout, and materials planned upfront.</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/services/retaining-walls/" role="listitem" aria-label="Retaining Walls – learn more">
+                    <span class="cs-service-label">Retaining Walls</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/Concrete-Retaining-Wall.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Retaining wall installation" width="346" height="346">
                     </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/services/retaining-walls/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Retaining Walls in Edmonton</span>
-                            <span class="cs-desc">Retaining walls for slopes, stabilization, and garden beds.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Retaining walls in Edmonton" width="384" height="480" aria-hidden="true">
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">Retaining Walls</h3>
+                        <p class="cs-hover-box-text">Strong, clean walls for grading, function, and curb appeal. Leveling slopes and creating usable space.</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/services/paving-stones/" role="listitem" aria-label="Paving Stones – learn more">
+                    <span class="cs-service-label">Paving Stones</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/edmonton-paving-stones-patio-finished.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Paving stones patio Edmonton" width="346" height="346">
                     </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/services/paving-stones/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Paving Stones in Edmonton</span>
-                            <span class="cs-desc">Interlocking stone patios and paths, clean durable finishes.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/interlocking-paving-stones-looking-great.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/interlocking-paving-stones-looking-great.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/interlocking-paving-stones-looking-great.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/interlocking-paving-stones-looking-great.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Paving stones in Edmonton" width="384" height="480" aria-hidden="true">
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">Paving Stones</h3>
+                        <p class="cs-hover-box-text">Patios and walkways with proper base prep, clean edges, and tight joints so everything stays level.</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/services/lawn-maintenance/" role="listitem" aria-label="Lawn Maintenance – learn more">
+                    <span class="cs-service-label">Lawn Maintenance</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/services-lawn-maintenance-home.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Lawn maintenance Edmonton" width="346" height="346">
                     </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/services/landscape-design/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Landscape Design</span>
-                            <span class="cs-desc">Design-build planning aligns layout and installation goals.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-landscape-design.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Landscape design in Edmonton" width="384" height="480" aria-hidden="true">
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">Lawn Maintenance</h3>
+                        <p class="cs-hover-box-text">Weekly, bi-weekly, or one-time cuts. Consistent mowing, trimming, and tidy cleanup every visit.</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/services/fences/" role="listitem" aria-label="Fences – learn more">
+                    <span class="cs-service-label">Fences</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/vinyl-fence.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="Vinyl fence installation Edmonton" width="346" height="346">
                     </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/services/snow-removal/" class="cs-link">
-                        <div class="cs-info">
-                            <span class="cs-tag">Service</span>
-                            <span class="cs-project">Snow Removal</span>
-                            <span class="cs-desc">Reliable snow management keeps driveways, walkways, lots safe.</span>
-                        </div>
-                    </a>
-                    <picture class="cs-background">
-                        <source type="image/webp" srcset="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 256, height: 320 }) | webp({ quality: 55 }) %} 256w, {% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %} 384w, {% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 512, height: 640 }) | webp({ quality: 55 }) %} 512w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 384px">
-                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/services-snow-removal-home.webp" | resize({ width: 384, height: 480 }) | webp({ quality: 55 }) %}" alt="Snow removal in Edmonton" width="384" height="480" aria-hidden="true">
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">Fences</h3>
+                        <p class="cs-hover-box-text">Cedar, vinyl, and pressure-treated fences built straight and strong. New installs, gates, and repairs.</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/residential-landscaping/" role="listitem" aria-label="View all services">
+                    <span class="cs-service-label">View All Services</span>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 640, height: 640, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/backyard-walkway.webp' | resize({ width: 346, height: 346, fit: 'cover' }) | webp({ quality: 65 }) %}" alt="View all landscaping services" width="346" height="346">
                     </picture>
-                </li>
-            </ul>
-            <div class="cs-content cs-commercial-cta">
-                <span class="cs-topper">Commercial</span>
-                <h2 class="cs-title">We also offer commercial landscaping and snow removal</h2>
-                <a href="/commercial-landscaping/" class="cs-button-solid">View commercial services</a>
+                    <div class="cs-hover-box">
+                        <span class="cs-icon">
+                            <img loading="lazy" decoding="async" src="/assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                        </span>
+                        <h3 class="cs-h3">View All Our Services</h3>
+                        <p class="cs-hover-box-text">Explore our full list of landscaping services for Edmonton and area.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -159,8 +239,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         <div class="cs-container">
             <div class="cs-content">
                 <div class="cs-header">
-                    <span class="cs-topper">Why Choose Us</span>
-                    <h2 class="cs-title">Why Homeowners Trust Serene Landscaping</h2>
+                    <span class="cs-topper">About Us</span>
+                    <h2 class="cs-title">Who Are We & What We Do</h2>
                 </div>
                 <div class="cs-wrapper">
                     <div class="cs-flex">
@@ -169,20 +249,28 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </p>
                         <ul class="cs-ul">
                             <li class="cs-li">
-                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
-                                <p class="cs-item-text"><strong>Customer Experience:</strong> Our priority is making sure you have a seamless experience from start to finish and you love your home's new look 100%.</p>
+                                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Customer Experience:</strong> Our priority is making sure you have a seamless experience from start to finish and you love your home's new look 100%.
+                                </p>
                             </li>
                             <li class="cs-li">
-                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
-                                <p class="cs-item-text"><strong>Fair Pricing:</strong> We know exactly how much to bid for each job and we refuse to overbid or inflate those costs while still providing the highest quality workmanship.</p>
+                                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Licensed &amp; insured:</strong> Full coverage and accountability on every job we do.
+                                </p>
                             </li>
                             <li class="cs-li">
-                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
-                                <p class="cs-item-text"><strong>Fully Insured:</strong> We are a fully insured and licensed company so you can rest assured that you are always protected.</p>
+                                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>1-year workmanship warranty:</strong> We stand behind our work so you have peace of mind.
+                                </p>
                             </li>
                             <li class="cs-li">
-                                <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
-                                <p class="cs-item-text"><strong>Local Focus:</strong> Serving Edmonton, St. Albert, Sherwood Park, and Spruce Grove.</p>
+                                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/diamond.svg" loading="lazy" decoding="async" alt="" width="11" height="11">
+                                <p class="cs-item-text">
+                                    <strong>Fair Pricing:</strong> We know exactly how much to bid for each job and we refuse to overbid or inflate those costs while still providing the highest quality workmanship.
+                                </p>
                             </li>
                         </ul>
                         <a href="/about/" class="cs-button-solid">More About Us</a>
@@ -190,18 +278,24 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     <div class="cs-image-group">
                         <ul class="cs-card-group">
                             <li class="cs-item">
-                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building-white.svg" alt="" width="48" height="48" loading="lazy">
-                                <span class="cs-number">140+<span class="cs-desc">Properties Maintained</span></span>
+                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="/assets/svgs/trophy-white.svg" alt="" width="48" height="48" loading="lazy">
+                                <span class="cs-number">
+                                    8+
+                                    <span class="cs-desc">Years of Experience</span>
+                                </span>
                             </li>
                             <li class="cs-item">
-                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/trophy-white.svg" alt="" width="48" height="48" loading="lazy">
-                                <span class="cs-number">8+<span class="cs-desc">Years of Excellence</span></span>
+                                <img class="cs-item-icon" aria-hidden="true" decoding="async" src="/assets/svgs/building-white.svg" alt="" width="48" height="48" loading="lazy">
+                                <span class="cs-number">
+                                    140+
+                                    <span class="cs-desc">Properties Maintained</span>
+                                </span>
                             </li>
                         </ul>
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 640, height: 427 }) | webp({ quality: 70 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 755, height: 491 }) | webp({ quality: 70 }) %}">
-                            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/why-choose-patio.png" | resize({ width: 755, height: 491 }) | webp({ quality: 70 }) %}" alt="Patio and pergola landscaping in Edmonton" width="755" height="491" loading="lazy">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 640, height: 427, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 755, height: 491, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/why-choose-patio.png' | resize({ width: 755, height: 491, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Patio and landscaping in Edmonton" width="755" height="491" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -214,383 +308,67 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery-2281">
+    <section id="gallery-48">
         <div class="cs-container">
             <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">Our Portfolio</span>
-                    <h2 class="cs-title">Featured Projects</h2>
-                </div>
-                <div class="cs-button-group">
-                    <button class="cs-button" data-filter="all">
-                        All
-                    </button>
-                    <button class="cs-button" data-filter="retaining-walls">
-                        Retaining Walls
-                    </button>
-                    <button class="cs-button" data-filter="design">
-                        Landscape Design
-                    </button>
-                    <button class="cs-button" data-filter="maintenance">
-                        Maintenance
-                    </button>
-                    <button class="cs-button" data-filter="commercial">
-                        Commercial
-                    </button>
-                </div>
-            </div>
-            <div class="cs-gallery-wrapper">
-                <div class="cs-gallery" data-category="all">
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Riverbend Patio</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Maintenance</span>
-                            <span class="cs-project">Sod Installation</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Garden Wall</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="paving stone seating area" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Paver Seating Area</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="spruce and shrub bed installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Shrub Bed Design</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="landscape lighting installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Landscape Lighting</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Maintenance</span>
-                            <span class="cs-project">Less-Water Sod</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscaping property" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Commercial Grounds</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Maintenance Program</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial retaining wall installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Retaining Wall</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vinyl-fence.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="vinyl fence installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Vinyl Fence</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Lush-looking-artificial-turf.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="lush looking artificial turf" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Artificial Turf</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/artificial-grass-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="artificial grass installation in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Artificial Grass</span>
-                        </div>
-                    </a>
-                    <a class="cs-image cs-all-only" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/Artificial-turf-st-albert.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="artificial turf installation in St. Albert" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">St. Albert Turf</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="cs-gallery cs-hidden" data-category="retaining-walls">
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/drone-picture-of-patio-we-did-in-riverbend.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="drone view of patio installation in Riverbend" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Riverbend Patio</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/paving-stone-nice-seating-area.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="paving stone seating area" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Paver Seating Area</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/retaining-wall-backyard.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="retaining wall installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Hardscaping</span>
-                            <span class="cs-project">Hardscape Build</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="cs-gallery cs-hidden" data-category="design">
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/garden-wall-sherwood-park.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="garden wall installation in Sherwood Park" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Garden Wall</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/spruce-and-shrub-bedwebp.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="spruce and shrub bed installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Shrub Bed Design</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lighting.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="landscape lighting installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Design</span>
-                            <span class="cs-project">Landscape Lighting</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="cs-gallery cs-hidden" data-category="maintenance">
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/edmonton-sod-installation-finished-lawn.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installation finished lawn in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Maintenance</span>
-                            <span class="cs-project">Finished Lawn</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/after-less-water-sod-installed-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="sod installed with reduced water use in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Maintenance</span>
-                            <span class="cs-project">Water‑Smart Sod</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/lush-grass-looking-in-edmonton.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="lush grass lawn in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Maintenance</span>
-                            <span class="cs-project">Lawn Care Finish</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="cs-gallery cs-hidden" data-category="commercial">
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-landscaping.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscaping property" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Commercial Grounds</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/commercial-maintenance-benjamin-franklin.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial landscape maintenance in Edmonton" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Maintenance Program</span>
-                        </div>
-                    </a>
-                    <a class="cs-image" href="/portfolio/">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}">
-                            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/retaining-wall-installation-commercial-landscape.webp" | resize({ width: 420, height: 560 }) | webp({ quality: 76 }) %}" alt="commercial retaining wall installation" width="420" height="560">
-                        </picture>
-                        <div class="cs-info">
-                            <span class="cs-tag">Commercial</span>
-                            <span class="cs-project">Retaining Wall</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 About Us                     -->
-    <!-- ============================================ -->
-
-    <section id="sbs-418">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Final Grading in Edmonton</span>
-                <h2 class="cs-title">Edmonton Final Grading Services for New Builds &amp; Renovations</h2>
-                <p class="cs-text">
-                    Looking for professional final grading in Edmonton? Serene Landscaping delivers precise rough and finish grading for new construction, renovations, and yard restorations across Edmonton, St. Albert, Sherwood Park, Spruce Grove, and Stony Plain. Proper final grading protects your foundation, prevents water pooling, and meets municipal requirements before sod, landscaping, or hardscaping can begin. Our crew uses laser-guided equipment to establish correct slope and drainage away from your home, ensuring long-term stability and a build-ready surface. Whether you need lot grading after a new build, regrading for drainage correction, or full yard preparation for a landscape project, we handle every step from soil placement to final compaction. Get it done right the first time with Edmonton's trusted grading professionals.
-                </p>
-                <div class="cs-button-group">
-                    <a href="/services/final-grading/" class="cs-button-solid">Final Grading in Edmonton</a>
-                    <a href="/contact/" class="cs-button-solid">Get In Touch</a>
-                </div>
+                <span class="cs-topper">Portfolio</span>
+                <h2 class="cs-title">Real Work. Real Results.</h2>
+                <p class="cs-text">Recent projects show the finish we deliver: level surfaces, tight edges, and drainage that performs.</p>
             </div>
             <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 420, height: 373 }) | avif({ quality: 55 }) %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 420, height: 373 }) | webp({ quality: 60 }) %}" type="image/webp">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | avif({ quality: 55 }) %}" type="image/avif">
-                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}" type="image/webp">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl "/assets/images/fire-feature-windermere.webp" | resize({ width: 558, height: 496 }) | webp({ quality: 60 }) %}" alt="Final grading and landscaping in Edmonton" width="558" height="496">
-                </picture>
-                <div class="cs-info">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/tree.svg" alt="" width="48" height="48">
-                    <div class="cs-flex">
-                        <span class="cs-header">Final Grading in Edmonton</span>
-                        <span class="cs-desc">New builds &amp; renovations, yard restorations</span>
-                    </div>
+                <div class="cs-row cs-row-1">
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp' | resize({ width: 420, height: 567 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp' | resize({ width: 840, height: 1134 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/cedar-wood-privacy-fence-installation-edmonton.webp' | resize({ width: 840, height: 1134 }) | webp({ quality: 76 }) %}" alt="Cedar privacy fence installation in Edmonton" width="420" height="567">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg' | resize({ width: 420, height: 629 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/interlocking-paver-patio-installation-edmonton.jpg' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}" alt="Interlocking paver patio installation in Edmonton" width="420" height="629">
+                    </picture>
+                    <picture class="cs-picture cs-picture-3">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/garden-wall-sherwood-park.webp' | resize({ width: 420, height: 512 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/garden-wall-sherwood-park.webp' | resize({ width: 840, height: 1024 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/garden-wall-sherwood-park.webp' | resize({ width: 840, height: 1024 }) | webp({ quality: 76 }) %}" alt="Garden wall project in Sherwood Park" width="420" height="512">
+                    </picture>
                 </div>
-                <img class="cs-trapezoid" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/trapezoid.svg" alt="" width="558" height="496">
+                <div class="cs-row cs-row-2">
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp' | resize({ width: 420, height: 492 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp' | resize({ width: 840, height: 984 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/residential-front-yard-landscaping-edmonton.webp' | resize({ width: 840, height: 984 }) | webp({ quality: 76 }) %}" alt="Residential front yard landscaping in Edmonton" width="420" height="492">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp' | resize({ width: 420, height: 517 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp' | resize({ width: 840, height: 1034 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/backyard-patio-firepit-retaining-wall-edmonton.webp' | resize({ width: 840, height: 1034 }) | webp({ quality: 76 }) %}" alt="Backyard patio with firepit and retaining wall in Edmonton" width="420" height="517">
+                    </picture>
+                    <picture class="cs-picture cs-picture-3">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp' | resize({ width: 420, height: 629 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/front-yard-landscape-design-mulch-shrubs-edmonton.webp' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}" alt="Front yard landscape design with mulch and shrubs" width="420" height="629">
+                    </picture>
+                </div>
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg' | resize({ width: 420, height: 625 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg' | resize({ width: 840, height: 1250 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/multi-family-property-landscaping-sod-installation-edmonton.jpg' | resize({ width: 840, height: 1250 }) | webp({ quality: 76 }) %}" alt="Multi-family landscaping and sod installation in Edmonton" width="420" height="625">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg' | resize({ width: 420, height: 452 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg' | resize({ width: 840, height: 904 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/commercial-building-landscape-installation-edmonton.jpg' | resize({ width: 840, height: 904 }) | webp({ quality: 76 }) %}" alt="Commercial building landscape installation in Edmonton" width="420" height="452">
+                    </picture>
+                    <picture class="cs-picture cs-picture-3">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg' | resize({ width: 420, height: 629 }) | webp({ quality: 76 }) %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/circular-interlocking-paver-patio-design-edmonton.jpg' | resize({ width: 840, height: 1258 }) | webp({ quality: 76 }) %}" alt="Circular interlocking paver patio design in Edmonton" width="420" height="629">
+                    </picture>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Google Reviews</span>
-                <h2 class="cs-title">What Our Clients Are Saying</h2>
-                <p class="cs-text">
-                    Real feedback from verified Google reviews across Edmonton and surrounding communities.
-                </p>
-            </div>
-            <iframe loading="lazy" src="https://widgets.sociablekit.com/google-reviews/iframe/25651789" frameborder="0" width="100%" height="450px" title="Google Reviews"></iframe>
+            <a href="/portfolio/" class="cs-button-solid">View Full Gallery</a>
         </div>
     </section>
 
@@ -598,40 +376,111 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
     <!--                  Process                     -->
     <!-- ============================================ -->
 
-    <section id="steps-585">
+    <section id="services-2132">
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">Our Process</span>
-                <h2 class="cs-title">Simple Easy Steps To Get Started</h2>
+                <h2 class="cs-title">How We Get From Idea to Finished Yard</h2>
+                <p class="cs-text">From the gallery above to your property: here is how we deliver the same standards from first visit to final walkthrough.</p>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <h3 class="cs-h3">Free Consultation & Site Review</h3>
-                    <p class="cs-item-text">
-                        We walk the property with you, discuss your goals, and identify grading, drainage, or access considerations before planning begins.
-                    </p>
-                    <span class="cs-number">01</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">1</span> Consultation</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/landscaping-consultation-process.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Landscaping consultation process" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">We meet you onsite for the initial design consultation, get to know your property, and talk through ideas that match your goals and budget.</p>
                 </li>
                 <li class="cs-item">
-                    <h3 class="cs-h3">2D Conceptual Design</h3>
-                    <p class="cs-item-text">
-                        We create a layout and material plan so you can visualize the scope, understand the approach, and approve the direction before work starts.
-                    </p>
-                    <span class="cs-number">02</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">2</span> Design</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/landscape-sketch-plan.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Landscape design plan" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">With architectural insight and a sharp eye for detail, we craft 2D plans that organize your space into destination zones and natural transitions.</p>
                 </li>
                 <li class="cs-item">
-                    <h3 class="cs-h3">Professional Installation</h3>
-                    <p class="cs-item-text">
-                        Our crew manages site preparation, construction, and cleanup while maintaining clear communication and a clean, organized work area.
-                    </p>
-                    <span class="cs-number">03</span>
+                    <a href="/contact/" class="cs-link">
+                        <h3 class="cs-h3"><span class="cs-step-number">3</span> Construction</h3>
+                        <picture class="cs-background">
+                            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/crew.webp' | resize({ width: 640, height: 480, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/crew.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/crew.webp' | resize({ width: 413, height: 440, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Serene Landscaping crew" width="413" height="440">
+                        </picture>
+                    </a>
+                    <p class="cs-item-text">We coordinate timelines, trades, and materials to deliver beautiful, efficient, expertly crafted landscaping work without surprises.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1672">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Our Customer Reviews</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Kris Schindel
+                            <span class="cs-job">reviewed Serene Landscaping · Snow Removal · 2 days ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">Serene Landscaping has done an excellent job with our residential snow removal this winter. They are professional, courteous, and arrive when they say they are going to. Would definitely recommend!</p>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
                 </li>
                 <li class="cs-item">
-                    <h3 class="cs-h3">Satisfaction Guaranteed</h3>
-                    <p class="cs-item-text">
-                        We complete a final walkthrough with you and confirm all work meets the agreed scope and quality standards.
-                    </p>
-                    <span class="cs-number">04</span>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Judy S
+                            <span class="cs-job">reviewed Serene Landscaping · Snow Removal · 4 weeks ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <details class="cs-review-details">
+                            <summary class="cs-review cs-review-summary">We've been very happy with this snow removal service. Steve and his crew are dependable, show up quickly after snowfalls. With the snow we had in December they never missed even with being so busy. They also came out after the snow was over and cleaned up all the ice from the thawing and freezing. Communication is always excellent, and pricing is good. I would definitely recommend them to anyone looking for reliable winter service. <span class="cs-read-more"></span></summary>
+                        </details>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="/assets/svgs/google-g-color.svg" decoding="async" alt="Google review icon" width="52" height="52" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            L Zook
+                            <span class="cs-job">reviewed Serene Landscaping · Landscaping · 8 months ago</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">Steve from Serene Landscaping was great to deal with: professional, reliable and attentive to our requests. Our landscaping project was finished in a timely manner and we are very pleased with the final outcome.</p>
+                    </div>
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
                 </li>
             </ul>
         </div>
@@ -646,10 +495,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <div class="cs-content">
                 <span class="cs-topper">FAQ</span>
                 <h2 class="cs-title">Quick Answers Before You Book <span class="cs-color">Serene Landscaping</span></h2>
-                <p class="cs-text">
-                    Here are a few common questions about our landscaping, lawn care, and snow removal services in Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get Started Today</a>
+                <p class="cs-text">Short answers to common objections and what to expect when you reach out.</p>
+                <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
             </div>
             <ul class="cs-faq-group">
                 <li class="cs-faq-item">
@@ -659,7 +506,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We take on projects, from backyard makeovers to stonework and planting. We handle design-build, <a href="/services/sod-installation/">Sod Installation in Edmonton</a>, <a href="/services/retaining-walls/">Retaining Walls in Edmonton</a>, <a href="/services/paving-stones/">Paving Stones in Edmonton</a>, <a href="/services/artificial-grass/">Artificial Grass in Edmonton</a>, <a href="/services/fences/">fence installation</a>, and landscape maintenance.
+                        We handle design-build, backyard makeovers, stonework, and planting. Core services include <a href="/services/landscape-design/">landscape design</a>, <a href="/services/retaining-walls/">retaining walls</a>, <a href="/services/paving-stones/">paving stones</a>, and <a href="/services/lawn-maintenance/">lawn maintenance</a>. Not sure what you need? We can narrow it down at a free consultation.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -670,6 +517,26 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                     </button>
                     <p class="cs-item-p">
                         Yes. Homeowners hire us for lawn care, cleanups, landscaping upgrades, and patios. Commercial clients hire us for consistent maintenance, seasonal site cleanups, and <a href="/commercial-snow-removal/">Commercial Snow Removal in Edmonton</a> for businesses, condo boards, and property managers.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Why does final grading matter before sod or landscaping?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Bad grading can lead to water pooling against your foundation, shifting soil, and landscaping that fails early. Proper final grading sets the right slope and drainage so everything installed on top performs the way it should.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do you handle final grading on a property?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We use laser-guided equipment to set grade and drainage, then handle soil placement through final compaction before any sod, stone, or planting goes in.
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -689,10 +556,49 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        A consultation starts with a site visit so we can see the space and hear your ideas. We'll talk through your goals, budget, and any must-haves, then outline a clear plan with pricing and an estimated timeline.
+                        A consultation starts with a site visit so we can see the space and hear your ideas. We talk through your goals, budget, and must-haves, then outline a plan with pricing and an estimated timeline.
                     </p>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Commercial                    -->
+    <!-- ============================================ -->
+
+    <section id="sbs-75" class="cs-commercial">
+        <span class="cs-snowflake cs-snowflake-1" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-2" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-3" aria-hidden="true">❄</span>
+        <span class="cs-snowflake cs-snowflake-4" aria-hidden="true">❄</span>
+        <div class="cs-container">
+            <div class="cs-wrapper">
+                <span class="cs-picture-snowflake cs-picture-snowflake-tr" aria-hidden="true">❄</span>
+                <span class="cs-picture-snowflake cs-picture-snowflake-bl" aria-hidden="true">❄</span>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 640, height: 820, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 500, height: 552, fit: 'cover' }) | webp({ quality: 70 }) %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/services-snow-removal-home.webp' | resize({ width: 500, height: 552, fit: 'cover' }) | webp({ quality: 70 }) %}" alt="Commercial snow removal in Edmonton" width="500" height="552" aria-hidden="true">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Commercial</span>
+                <h2 class="cs-title">Commercial Landscaping and Snow Removal</h2>
+                <p class="cs-text">
+                    We offer commercial landscaping and snow removal for lots, walks, and entryways across Edmonton and the surrounding area. Dependable scheduling and safety-focused service for access and traction.
+                </p>
+                <div class="cs-features">
+                    <h3 class="cs-h3">What you can expect</h3>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Dependable scheduling and communication</li>
+                        <li class="cs-li">Safety-focused service for access and traction</li>
+                        <li class="cs-li">Seasonal plans built around your site</li>
+                        <li class="cs-li">Priority snow routes for commercial sites</li>
+                    </ul>
+                </div>
+                <a class="cs-button-solid" aria-label="view our commercial services" href="/commercial-landscaping/">View Commercial Services</a>
+            </div>
         </div>
     </section>
 
@@ -706,7 +612,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
                 <span class="cs-topper">Contact Us</span>
                 <h2 class="cs-title">Good Communication Starts Here</h2>
                 <p class="cs-text">
-                    Have a question or want to talk about your yard? Call or text us anytime. We keep things simple, reply fast, and never pressure you into anything.
+                    Have a question or want to talk about your yard? Call or text us. We reply quickly, send a written estimate, and walk you through next steps so you know what to expect.
                 </p>
                 <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
             </div>
@@ -721,5 +627,3 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 
     {% include 'components/faq-schema.html' %}
 {% endblock %}
-
-

@@ -1,0 +1,203 @@
+Get mentioned by AI
+
+Well we have found quite a bit of success specifically to get my wifes practice as the go to option on both ChatGPT and AI overview. The process has been weirdly simple! What we noticed were these AIs were running super long tail question searches behind the scenes. So we just published blogs on our website answering those questions as is! In-fact we were able to automate most of these using AI tools like Frizerly as well by ensuring its trained well on our business! It basically comes up with questions using our google data and automatically publishes daily blogs on our wordpress website answering those questions while keeping our business as the authority! Curious how this would work out in the future as everyone figures this out but for now, we have basically outcompeted all our less tech savvy competitors haha!
+
+There is a lot of talk about how to build out your website for local SEO. And so many misconceptions about how to do local SEO properly. So I wanted to go through my process of creating a website structure with service and city pages, and show you how I target Google search and Google maps at the same time.
+
+The neighborhoods misconception:
+
+First, let me start with this. Out of all the testing I have done on Google Maps, I have never once found that creating some specific page targeting one specific area on the map had an impact specifically on that area.
+
+But I see a lot of people saying this on their SEO videos. Like, if to the southwest of your business there is a neighborhood called "Rocky Springs" and you make a page called "Rocky Springs Plumbing" that somehow, in the rocky springs neighborhood, you're going to get a higher ranking.
+
+Now I am always testing these things, and I'm always open to being wrong about anything. Nothing should ever be 100% in this game. Google changes, the world changes, so I say -- always be testing! And never have a certainty you can't question or adjust tomorrow.
+
+--
+
+But herein lies my primary thought process when it comes to local SEO.
+
+You aren't CREATING anything.
+
+You don't create searches, searchers, or people who need services.
+
+They already exist.
+
+You're job my job and a business owners job is to REVERSE ENGINEER.
+
+Go out and find what actions people are already taking, and then find out how to get in front of them.
+
+You're like a baseball player with a glove. You don't choose where the ball is going. You're just there to figure out where it's going to go, put your glove out, and let the customers come to you.
+
+With that perspective, now let's look at building out a website, service pages, city pages, etc.
+
+--
+
+Keyword research.
+
+This is where it all start. The first thing you need to do is go through and figure out every single keyword you want to target. That's important.
+
+You can get inspiration by going through competitors, big industry leaders, and generally just website. I even like to throw it into ChatGPT and see if it has any other ideas. It often does! But I am not relying on any of this, just using it to prime the pump with potential services.
+
+But then I'm taking this to my SEO tools to go through and figure out what has search volume, and what doesn't.
+
+I think this does two things. It shows you:
+
+What service pages you need
+what service pages you dont need
+What service pages you didn't know you needed but do
+
+Now, we need to figure out what our structure is going to be like for our website, based on these keywords.
+
+Now I am not simply talking about "plumbers" as a term. This is LOCAL SEO. I want only local searches. So I am going to start with the primary city, say Dallas, and find all the search terms related to every service in Dallas.
+
+Then I need to go through all the adjacent cities that I want to rank for. Ya, it might get crazy here.
+
+But I only want one term per city. So if there is say plumbers, plumbing, plumber services, all with dallas based services, I'm just going to grab the highest volume and go with it.
+
+One city + One service = One Target Keyword
+
+--
+
+Silos
+
+Next, I want to put these search terms together in little silos, and pick the primary search term I am going to target.
+
+This will help me sort out what the site will look like in the long term.
+
+I used to do that whole thing where I have 5 different terms, one primary, 4 secondary terms that I wanted each page to rank for. But I will tell you, that gets confusing fast.
+
+And in my own experience, I have decided I would rather focus my efforts on doing the best I can to rank each page for one term, then try and split it up and make it confusing, and then do a bad job for 5 terms.
+
+So I only choose one term now. Later I may go in and sprinkle some secondary terms on the page, but I am not tracking or looking at those secondary terms. It's just too much for me to care about.
+
+Plumbers, HVAC, those types of businesses are going to have a ton of services. So that may get silo'd even further. I just did one of each of these businesses over the last few weeks, so an example is like this:
+
+Dallas Plumbing Services
+
+Dallas Plumbing Repair
+Dallas Leak Detection
+Dallas Drain Services
+Dallas Commercial Plumbing
+
+Dallas Water Heaters
+Dallas Tankless Water Heaters
+Dallas Water Heater Maintenance
+
+Dallas Gas Line Services
+Dallas Gas Line Repair
+Dallas Gas Line Installation
+
+Etc.
+
+That's how I would generally break this up. I'm just making this up right now, but you get the idea.
+
+You may only have one silo per city. Or multiple silos per city.
+
+It doesn't matter. I just personally don't want to get more than 4-6 services in a silo, or it starts to get too crazy.
+
+Some website may only have one silo. Maybe an electrician only has 4 services that get search volume in their city. Great! Whatever!
+
+Give searchers what they want. That's the entire point.
+
+--
+
+Executing - Home Page - Primary Service Pages
+
+Ok, now you have all the terms and they are all divided up, we come to this fork in the road.
+
+WHAT DO I DO WITH MY HOME PAGE AND PRIMARY SERVICE PAGES?!
+
+The great debate right?
+
+I've gone back and forth on this. But, in my opinion, unless you have enough locations to justify having a neutral, NO city targeted home page and primary service pages -- then why waste the juice not targeting something specifically?
+
+So, if I'm a plumber in Dallas, and say I even have a few locations around me in that general area. Then I'm using my home page for city Silo 1.
+
+My home page will be targeted for "Dallas Plumbing Services."
+
+And my primary service pages are going to be targeted to "Dallas SERVICE 1" etc.
+
+And that's silo #1 - my primary city and primary services.
+
+--
+
+Execution - The rest of the cities
+
+Now, we may have a lot of other city pages that we are considering building. And maybe you don't want to create another 20 pages per city with another 10 cities on your list.
+
+Ok, cool. I get that. So let's take the middle ground step.
+
+I wouldn't want to create that many city/service pages right away in a week either. It may actually be a negative for your SEO.
+
+So, here's what we can do.
+
+Start by creating the top page for each silo.
+
+So in my Texas example I may create
+
+"South Dallas Plumbers"
+"Cedar Crest Plumbers"
+"Cockrell Hill Plumbers"
+"Highland Park Plumbers"
+
+Granted, as long as these cities or areas have real keyword searches.
+
+This gives you a way to cover your bases, and monitor search results. Maybe for some reason these pages rank for the other keyword pages you were going to create? I don't know! If they do, ok. Then you probably don't need the rest.
+
+But I see too many people with these top level silo pages for a city, and when I dig in, there is all this juicy search volume that they are missing because they aren't targeting the specific terms people are searching for!
+
+That's my only end goal. To rank for search terms people search for, that my customer can make money from.
+
+That's it.
+
+So, if you have these 100 more pages you can create, but you're posting blog content about "how to fix a plumbing gasket for divorced men over 35" then what in the ... are you doing?
+
+Isn't it all content at the end of the day? Which one of those targets your local customers better?
+
+--
+
+That's pretty much it! Now you have your home page, city pages, service pages, all covered.
+
+Remember, you don't want to cannibalize yourself. Very important. You simply never want to target the same city + service with two separate pages.
+
+So you need to make sure the searches are different. Plumbing in Dallas, and Plumbing Services in Dallas, to me thats the same thing.
+
+But if you're ever confused, you can always simply do a google search and see what's showing up!
+
+BUT - just because something isn't showing up (a specific search) doesn't mean it's not something you should target. Sometimes, especially in local SEO, the problem is that NO ONE IS TARGETING THE SEARCH.
+
+I can't tell you how many times I have created a page and boop, right up to #2 spot because the search was simply untargeted.
+
+You can always remove pages later. This isn't set in stone. There are so many times I make a complete structure and start over. I mean, that's how I learned these hard lessons. I have tried all the different ways. Nothing else makes sense to me more than this.
+
+Because you're getting two things done at once!
+
+Does creating content help Google Maps!? YES! So great. I'm doing that.
+
+But I am also targeting places where I can get results.
+
+That's what most people in local SEO miss. They focus their efforts in places where it's not measurable.
+
+If you can't measure it, then it's a waste.
+
+And if people don't want it (search for it) then it's a waste!
+
+A few little additions because I am too much of a perfectionist but this also helps.
+
+Internal link each silo with text links. Helps.
+
+Also, lately I have seen a lot of companies doing well internal linking to their home page with search rich keywords. So if your business is Johns Plumbing, then using links like: "Johns plumbing in dallas tx", or "johns plumbing the top dallas plumbers" is working really well right now - as opposed to only using your business name. I'm talking internal linking here fyi. So if you're trying to rank yoru home page for a term, use that terms variations in your internal links.
+
+And lastly, don't overlink. Every time you put another link in the body of your page, all the links get devalued. So use your best pages to link to your other best pages, and keep the silos relatively separated. IMO that works well too.
+
+--
+
+Together, this all makes up my strategy for local SEO websites and getting that two for one -- meaning, you get the benefit of improving your Maps rankings with city specific content, while helping your business grow and rank for search engine keywords and in AI/LLMs, which right now just pull searches from search engines.
+
+That's how you win! And I like that it's measurable. It's really hard to 1 to 1 on Google Maps and effort. But with searches, you can measure it much easier and grow your client's or your business traffic and leads. And the best part is they are all potential buyers!
+
+--
+
+Hope this helps! I love local SEO. I'm happy to be proven wrong on anything as well. All I care about in the end is doing what works. So please, let me know what you think, if you've seen something different, or if you just have any questions on this.
+
+Keep crushing it!
