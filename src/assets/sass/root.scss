@@ -240,7 +240,7 @@
 			width: calc(20 / 16 * 1rem);
 			height: calc(20 / 16 * 1rem);
 			margin-left: calc(8 / 16 * 1rem);
-			background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg") center / contain no-repeat;
+			background: url("/assets/svgs/white-arrow-up.svg") center / contain no-repeat;
 			display: inline-block;
 			flex: 0 0 auto;
 			transition: transform 0.3s;
@@ -776,6 +776,17 @@
 		.cs-address {
 			font-size: calc(16 / 16 * 1rem);
 			margin-bottom: calc(20 / 16 * 1rem);
+		}
+
+		.cs-copyright {
+			width: 100%;
+			margin: calc(24 / 16 * 1rem) 0 0;
+			padding-top: calc(24 / 16 * 1rem);
+			border-top: 1px solid rgba(255, 255, 255, 0.15);
+			font-size: calc(14 / 16 * 1rem);
+			line-height: 1.5em;
+			color: var(--bodyTextColorWhite);
+			opacity: 0.8;
 		}
 	}
 }
