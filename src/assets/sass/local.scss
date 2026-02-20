@@ -2295,6 +2295,14 @@
             align-items: center;
         }
 
+        .cs-instruction {
+            font-size: calc(14 / 16 * 1rem);
+            font-weight: 600;
+            color: var(--primary);
+            margin: 0 0 calc(8 / 16 * 1rem);
+            display: block;
+        }
+
         .cs-image-group {
             width: 100%;
             display: flex;
@@ -2317,31 +2325,54 @@
             /* Ensure link is clickable */
             z-index: 1;
             cursor: pointer;
+        }
 
-            &:hover,
-            &:active,
-            &:focus,
-            &.touched {
-                .cs-hover-box {
-                    opacity: 1;
-                }
+        .cs-service-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: calc(10 / 16 * 1rem) calc(12 / 16 * 1rem);
+            background-color: var(--primary);
+            color: #fff;
+            font-family: "Oswald", var(--headerFont);
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-align: center;
+            z-index: 2;
+            pointer-events: none;
+            transition: background-color 0.3s;
+        }
 
-                .cs-icon {
-                    /* return to original position */
-                    transform: rotateY(0);
-                }
+        .cs-item:hover,
+        .cs-item:active,
+        .cs-item:focus,
+        .cs-item.touched {
+            .cs-hover-box {
+                opacity: 1;
+            }
 
-                .cs-h3 {
-                    opacity: 1;
-                    /* Return to original position */
-                    transform: translateY(0);
-                }
+            .cs-service-label {
+                background-color: var(--primaryDark);
+            }
 
-                .cs-hover-box-text {
-                    opacity: 1;
-                    /* Return to original position */
-                    transform: translateY(0);
-                }
+            .cs-icon {
+                /* return to original position */
+                transform: rotateY(0);
+            }
+
+            .cs-h3 {
+                opacity: 1;
+                /* Return to original position */
+                transform: translateY(0);
+            }
+
+            .cs-hover-box-text {
+                opacity: 1;
+                /* Return to original position */
+                transform: translateY(0);
             }
         }
 
@@ -2370,7 +2401,7 @@
             width: 100%;
             height: 100%;
             padding: calc(16 / 16 * 1rem);
-            background-color: rgba(27, 94, 62, 0.9);
+            background-color: rgba(26, 26, 26, 0.92);
             opacity: 0;
             position: absolute;
             display: flex;
@@ -2396,8 +2427,8 @@
             /* 16px - 32px */
             margin-bottom: clamp(1rem, 5vw, 2rem);
             border-radius: 50%;
-            background-color: #fff;
-            outline: calc(8 / 16 * 1rem) solid fade(#fff, 70%);
+            background-color: var(--primary);
+            outline: calc(8 / 16 * 1rem) solid rgba(255, 255, 255, 0.28);
             /* Start with the icon box rotated 90deg */
             transform: rotateY(90deg);
             position: relative;
@@ -2407,9 +2438,13 @@
             flex: none;
             transition: transform 0.5s;
 
-            svg {
+            svg,
+            img {
                 width: calc(20 / 16 * 1rem);
                 height: calc(20 / 16 * 1rem);
+            }
+
+            svg {
                 color: var(--primary);
             }
         }
@@ -2513,8 +2548,13 @@
     body.dark-mode {
         #gallery-43 {
             .cs-title,
-            .cs-text {
+            .cs-text,
+            .cs-instruction {
                 color: var(--bodyTextColorWhite);
+            }
+
+            .cs-instruction {
+                color: var(--primaryLight);
             }
 
             .cs-text {

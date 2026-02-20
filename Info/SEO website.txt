@@ -1,0 +1,52 @@
+The Best Approach: "The 70/30 Rule"
+To keep these pages effective without being repetitive "spam," aim for 70% unique content per page and only 30% boilerplate (the standard stuff).
+
+1. Edmonton: The "New Construction" Specialist
+Primary Focus: Final Grading & Landscape Construction for New Builds. Target Audience: Homeowners in developing areas (e.g., Windermere, Riverview, Heritage Valley).
+
+The Angle: Focus on Compliance and Drainage. New Edmonton homeowners are stressed about passing their Rough/Final Grade inspections to get their deposits back.
+
+Key Content Addition: "We specialize in Edmonton’s City Drainage Bylaws. We ensure your final grade certificate is approved the first time, preventing foundation issues in areas like Chappelle and Keswick."
+
+Visuals: Before/After photos of a dirt lot becoming a graded, sodded yard.
+
+2. St. Albert: The "Neighborhood Growth" Expert
+Primary Focus: Final Grading & Modern Hardscaping. Target Audience: New developments (e.g., Riverside, Jensen Lakes, Erin Ridge North).
+
+The Angle: Focus on Quality and Curb Appeal. St. Albert has high standards for architectural styling.
+
+Key Content Addition: "Building in Jensen Lakes or Erin Ridge? We provide the precision final grading required by St. Albert inspectors, paired with modern paving stone designs that match the premium aesthetic of your new neighborhood."
+
+Specific Detail: Mention handling the unique St. Albert soil or specific "lot-to-street" drainage patterns.
+
+3. Sherwood Park: The "Full Service" Local Choice
+Primary Focus: General Landscaping & Maintenance. Target Audience: Established neighborhoods and general residential (e.g., Brentwood, Lakeland Ridge).
+
+The Angle: Focus on Reliability and All-Season Care. Since you want to keep this general, position yourself as the "Neighborhood Partner."
+
+Key Content Addition: "From refreshing older Brentwood flower beds to seasonal lawn care in Lakeland Ridge, we are Sherwood Park’s dependable choice for keeping properties pristine year-round."
+
+Specific Detail: Highlight that you are "locally operated" and just minutes away for quick quotes and service.
+
+Keep boilerplate (30%)
+
+Navigation, footer, CTA, process, licensed and insured, core service list
+
+Make these sections unique (70%)
+
+Hero intro paragraph
+
+One “Start here” section that matches the city’s foot in the door psychology
+
+5 FAQs that are not service-list repeats
+
+---
+title: "Edmonton Landscaping Services | Landscape Design, Lawn Care & Snow Removal | Serene Landscaping"
+description: "Professional landscaping services in Edmonton, Alberta. Landscape design, lawn maintenance, snow removal, hardscaping, and commercial services. Trusted by homeowners and businesses across Edmonton. Call 587-566-9879."
+permalink: "/locations/edmonton/"
+keywords: "Edmonton landscaping, landscaping Edmonton, landscape design Edmonton, lawn maintenance Edmonton, snow removal Edmonton, Edmonton landscaper, commercial landscaping Edmonton"
+locationKey: edmonton
+---
+
+{% extends "layouts/location.html" %}
+{% extends "layouts/location.html" %}

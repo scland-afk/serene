@@ -242,13 +242,12 @@
 
         .cs-button-solid {
             font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
             text-decoration: none;
             font-weight: 700;
             text-align: center;
             margin: 0;
-            color: #1a1a1a;
+            color: #fff;
             min-width: calc(200 / 16 * 1rem);
             padding: 0 calc(28 / 16 * 1rem);
             background-color: var(--primary);
@@ -258,13 +257,14 @@
             box-sizing: border-box;
             border-radius: calc(4 / 16 * 1rem);
             box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            transition: box-shadow 0.3s, transform 0.2s;
 
             &:before {
                 content: "";
                 position: absolute;
                 height: 100%;
                 width: 0%;
-                background: #fff;
+                background: var(--primaryDark);
                 opacity: 1;
                 top: 0;
                 left: 0;
@@ -279,6 +279,10 @@
                     width: 100%;
                 }
             }
+
+            &:active {
+                transform: scale(0.98);
+            }
         }
 
         .cs-button-outline {
@@ -287,16 +291,19 @@
             justify-content: center;
             width: clamp(2.75rem, 5vw, 3.5rem);
             height: clamp(2.75rem, 5vw, 3.5rem);
-            background: rgba(255, 255, 255, 0.95);
-            border: 2px solid rgba(255, 255, 255, 0.9);
+            background: var(--primary);
+            border: 2px solid var(--primary);
             border-radius: calc(4 / 16 * 1rem);
-            color: #1a1a1a;
+            color: #fff;
             transition: background 0.3s, border-color 0.3s, transform 0.2s;
         }
         .cs-button-outline:hover {
-            background: #fff;
-            border-color: #fff;
+            background: var(--primaryDark);
+            border-color: var(--primaryDark);
             transform: translateY(-2px);
+        }
+        .cs-button-outline:active {
+            transform: translateY(-2px) scale(0.98);
         }
         .cs-button-outline svg {
             flex: none;
@@ -423,18 +430,37 @@
         margin: 0;
         padding: 0;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        gap: clamp(1rem, 4vw, 2rem);
+        align-items: center;
+        gap: 0.5rem;
         font-size: clamp(0.8125rem, 1.2vw, 0.9375rem);
         font-weight: 600;
         letter-spacing: 0.04em;
+        text-align: center;
+    }
+    #trust-bar .cs-trust-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     body:not(.dark-mode) #trust-bar .cs-trust-list {
         color: var(--headerColor);
     }
     body.dark-mode #trust-bar .cs-trust-list {
         color: rgba(255, 255, 255, 0.9);
+    }
+    #trust-bar .cs-trust-list li + li::before {
+        content: none;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #trust-bar .cs-trust-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: clamp(1rem, 4vw, 2rem);
     }
     #trust-bar .cs-trust-list li + li::before {
         content: " · ";
@@ -639,10 +665,10 @@
         text-decoration: none !important;
         font-weight: 700 !important;
         min-width: calc(174 / 16 * 1rem) !important;
-        color: var(--primary) !important;
+        color: #fff !important;
         padding: 0 calc(24 / 16 * 1rem) !important;
         box-sizing: border-box !important;
-        background-color: #fff !important;
+        background-color: var(--primary) !important;
         border: 2px solid var(--primary) !important;
         border-radius: 0 !important;
         display: inline-flex;
@@ -654,7 +680,7 @@
         overflow: hidden !important;
         box-shadow: none !important;
         text-transform: none !important;
-        transition: color 0.3s !important;
+        transition: color 0.3s, background-color 0.3s, transform 0.2s !important;
     }
 
     .cs-button-solid:before,
@@ -662,9 +688,9 @@
     .cs-button-border:before,
     .cs-button-transparent:before {
         content: "";
-        width: calc(6 / 16 * 1rem) !important;
+        width: 0 !important;
         height: 100% !important;
-        background: var(--primary) !important;
+        background: var(--primaryDark) !important;
         opacity: 1 !important;
         position: absolute !important;
         display: block !important;
@@ -722,6 +748,8 @@
     .cs-button-border:hover,
     .cs-button-transparent:hover {
         color: #fff !important;
+        background-color: var(--primaryDark) !important;
+        border-color: var(--primaryDark) !important;
     }
 
     .cs-button-solid:hover:before,
@@ -729,6 +757,13 @@
     .cs-button-border:hover:before,
     .cs-button-transparent:hover:before {
         width: 100% !important;
+    }
+
+    .cs-button-solid:active,
+    .cs-button-outline:active,
+    .cs-button-border:active,
+    .cs-button-transparent:active {
+        transform: scale(0.98);
     }
 
     .cs-button-solid:hover:after,

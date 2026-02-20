@@ -1,0 +1,260 @@
+/*-- -------------------------- */
+/*---        Side By Side        */
+/*--- -------------------------- */
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbsr-1190 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        position: relative;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(550 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(522 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-image-group {
+            font-size: min(1.7vw, 0.7em);
+            width: calc(858 / 16 * 1em);
+            height: auto;
+            padding-top: clamp(3.75rem, 6vw, 5rem);
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            row-gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-graphic-wrapper {
+            width: 100vw;
+            height: 85%;
+            background-color: #1a1a1a;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+
+        .cs-graphic {
+            width: 250vw;
+            height: auto;
+            opacity: 0.04;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+        }
+
+        .cs-stat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        .cs-icon-wrapper {
+            width: clamp(4.5rem, 12vw, 6rem);
+            height: clamp(4.5rem, 12vw, 6rem);
+            background-color: #484848;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-icon {
+            width: clamp(2rem, 6vw, 3rem);
+        }
+
+        .cs-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-number {
+            font-size: clamp(1.9375rem, 5.9vw, 3.0625rem);
+            line-height: 1.2em;
+            font-weight: 900;
+            text-align: left;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            display: block;
+        }
+
+        .cs-desc {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.2em;
+            text-align: left;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            display: block;
+        }
+
+        .cs-picture1 {
+            width: auto;
+            height: calc(477 / 16 * 1em);
+            display: block;
+            position: absolute;
+            bottom: calc(20 / 16 * 1em);
+            left: 0;
+            z-index: 10;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .cs-picture2 {
+            width: auto;
+            height: calc(538 / 16 * 1em);
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            margin: 0 auto;
+            z-index: 10;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbsr-1190 {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .cs-content {
+            width: 47%;
+        }
+
+        .cs-image-group {
+            font-size: min(1vw, 1em);
+            width: calc(522 / 16 * 1em);
+            height: 100%;
+            padding: 0;
+            flex: none;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: calc(150 / 16 * 1em);
+        }
+
+        .cs-graphic-wrapper {
+            width: calc(522 / 16 * 1em);
+            height: 87%;
+        }
+
+        .cs-graphic {
+            width: calc(1958 / 16 * 1em);
+            top: 0;
+            transform: translateX(-50%) rotate(-10deg);
+        }
+
+        .cs-picture1 {
+            height: 62%;
+            max-height: calc(477 / 16 * 1em);
+            right: auto;
+            left: 50%;
+            transform: translateX(-54%);
+        }
+
+        .cs-picture2 {
+            height: 67%;
+            max-height: calc(538 / 16 * 1em);
+        }
+    }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #sbsr-1190 {
+        .cs-image-group {
+            margin-left: calc(100 / 16 * 1em);
+            gap: calc(36 / 16 * 1em);
+        }
+
+        .cs-graphic-wrapper {
+            height: 83%;
+        }
+
+        .cs-graphic {
+            width: calc(1496 / 16 * 1em);
+            right: calc(-20 / 16 * 1em);
+            top: calc(110 / 16 * 1em);
+            left: auto;
+            transform: rotate(-10deg);
+        }
+    }
+}
