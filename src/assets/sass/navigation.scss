@@ -75,13 +75,15 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 1024px) {
 	#dark-mode-toggle {
-		margin: 0 0 0 calc(32/16 * 1rem);
+		margin: 0 0 0 calc(40/16 * 1rem);
 		align-self: center;
 		position: relative;
 		transform: none;
+		top: auto;
 		bottom: auto;
 		left: auto;
 		right: auto;
+		flex-shrink: 0;
 
 		&:hover {
 			cursor: pointer;

@@ -52,7 +52,7 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
         <picture class="cs-background" id="hero-picture">
             <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 420, height: 653, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %} 420w, {% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 900, height: 1400, fit: 'cover', position: 'center' }) | webp({ quality: 68 }) %} 900w" sizes="100vw">
             <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 960, height: 600, fit: 'cover' }) | webp({ quality: 68 }) %} 960w, {% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %} 1920w" sizes="100vw">
-            <img id="hero-lcp-image" loading="eager" decoding="async" fetchpriority="high" src="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
+            <img id="hero-lcp-image" fetchpriority="high" loading="eager" decoding="async" src="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
         </picture>
     </section>
     <script>
