@@ -1,9 +1,1 @@
-{
-    "layout": "layouts/post.html",
-    "tags": "post",
-    "eleventyExcludeFromCollections": ["sitemap"],
-    "eleventyComputed": {
-        "preloadImg": "{{ image }}",
-        "permalink": "/blog/{{ url | slugify }}/index.html"
-    }
-}
+{"layout":"layouts/post.html","tags":["post","sitemap"],"eleventyExcludeFromCollections":[],"eleventyComputed":{"preloadImg":"{{ image }}","permalink":"/blog/{{ url | slugify }}/index.html"}}

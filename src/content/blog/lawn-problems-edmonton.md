@@ -11,13 +11,13 @@ imageAlt: Lawn problems in Edmonton
 
 
 ---
-### Common Lawn Problems in Edmonton and How to Fix Them
+## Common Lawn Problems in Edmonton and How to Fix Them
 
 Edmonton lawns face unique challenges from clay soil, freeze-thaw cycles, short growing seasons, and harsh winters. Understanding common lawn problems and their solutions helps homeowners maintain healthy, green grass despite Alberta's tough conditions.
 
 Here's how to diagnose the most common lawn issues in Edmonton and fix them effectively.
 
-#### Brown Spots and Patches
+### Brown Spots and Patches
 
 Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnosis - it's a symptom with multiple possible causes.
 
@@ -120,7 +120,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 - Avoid evening watering
 - Maintain proper mowing height
 
-#### Thin or Patchy Grass
+### Thin or Patchy Grass
 
 **Compacted Soil**
 
@@ -178,7 +178,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 
 **Prevention:** Establish good soil before sodding or seeding.
 
-#### Weeds Taking Over
+### Weeds Taking Over
 
 **Dandelions**
 
@@ -245,7 +245,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 
 **Some homeowners accept clover:** It stays green, requires no fertilizer, tolerates drought, and feeds bees.
 
-#### Moss Growth
+### Moss Growth
 
 **Symptoms:**
 - Moss growing in lawn
@@ -264,7 +264,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 
 **Prevention:** Address underlying conditions (shade, compaction, drainage) rather than just treating moss.
 
-#### When to Call Professionals
+### When to Call Professionals
 
 **DIY lawn care works for:**
 - Minor weed problems
@@ -280,7 +280,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 - Soil quality is poor
 - Disease or pest infestations are severe
 
-#### Preventing Lawn Problems
+### Preventing Lawn Problems
 
 **Best practices for healthy Edmonton lawns:**
 
@@ -314,7 +314,7 @@ Brown spots are the most common lawn complaint. But "brown spot" isn't a diagnos
 - Handles stress better
 - Looks great
 
-#### FAQ: Lawn Problems in Edmonton
+### FAQ: Lawn Problems in Edmonton
 
 **Q: Why is my lawn turning brown in summer?**
 

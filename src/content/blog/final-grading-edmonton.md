@@ -11,13 +11,13 @@ image: /assets/images/final-grading-in-edmonton.webp
 imageAlt: Final grading in Edmonton
 
 ---
-### Final Grading Requirements for New Construction in Edmonton
+## Final Grading Requirements for New Construction in Edmonton
 
 Bought a new construction home in Edmonton? Final grading is required before you can get an occupancy permit - but many new homeowners don't understand what it involves, when it needs to happen, or what it costs.
 
 Here's everything Edmonton homeowners need to know about final grading requirements, the process, typical costs, and how to ensure compliance with City of Edmonton regulations.
 
-#### What Is Final Grading?
+### What Is Final Grading?
 
 Final grading is the process of shaping and grading your property to specific slopes and elevations required by the City of Edmonton. It ensures proper drainage away from your foundation, prevents basement flooding, and creates a safe, functional yard.
 
@@ -31,7 +31,7 @@ Final grading is the process of shaping and grading your property to specific sl
 
 Without final grading, you cannot get your occupancy permit - meaning you can't legally move into your new home.
 
-#### Why Is Final Grading Required in Edmonton?
+### Why Is Final Grading Required in Edmonton?
 
 The City of Edmonton requires final grading for every new construction property to:
 
@@ -45,7 +45,7 @@ The City of Edmonton requires final grading for every new construction property 
 
 The City won't issue an occupancy permit until final grading is complete and inspected. This protects you, your neighbors, and the long-term integrity of your neighborhood.
 
-#### When Does Final Grading Need to Happen?
+### When Does Final Grading Need to Happen?
 
 **Timeline:**
 - Home construction completes: Spring/Summer
@@ -66,7 +66,7 @@ Final grading can only happen when:
 
 Most builders complete final grading in the warmer months when ground conditions allow proper soil work.
 
-#### Final Grading Cost in Edmonton
+### Final Grading Cost in Edmonton
 
 **Typical costs for residential properties:**
 - Small lot (25-30 feet wide): $2,000-$4,000
@@ -89,7 +89,7 @@ Most builders complete final grading in the warmer months when ground conditions
 
 Many new construction homes have final grading included in the purchase price, but verify this with your builder. If not included, you're responsible for arranging and paying for it.
 
-#### Who Handles Final Grading?
+### Who Handles Final Grading?
 
 **Three options:**
 
@@ -111,7 +111,7 @@ Many new construction homes have final grading included in the purchase price, b
 
 Most homeowners hire professional <a href="/services/final-grading/">final grading services</a> to ensure proper slope, drainage, and City approval.
 
-#### Final Grading Process and Timeline
+### Final Grading Process and Timeline
 
 **Step 1: Initial rough grade** (often done during construction)
 - Builder grades lot to approximate final elevations
@@ -138,7 +138,7 @@ Most homeowners hire professional <a href="/services/final-grading/">final gradi
 
 **Typical timeline:** 1-3 days for grading work, 7-14 days for survey and City approval
 
-#### Required Grading Specifications in Edmonton
+### Required Grading Specifications in Edmonton
 
 **Minimum slope requirements:**
 
@@ -157,7 +157,7 @@ Most homeowners hire professional <a href="/services/final-grading/">final gradi
 - 6 inches preferred for healthy grass growth
 - Must be quality topsoil, not clay or fill
 
-#### Common Final Grading Problems
+### Common Final Grading Problems
 
 **1. Insufficient slope**
 - Water pools near foundation
@@ -196,7 +196,7 @@ Most homeowners hire professional <a href="/services/final-grading/">final gradi
 
 Quality contractors prevent these problems by following City specifications and using proper grading techniques.
 
-#### Sod vs. Seed After Final Grading
+### Sod vs. Seed After Final Grading
 
 After final grading, you need to establish grass to hold soil and complete your yard.
 
@@ -216,7 +216,7 @@ After final grading, you need to establish grass to hold soil and complete your 
 
 Most Edmonton homeowners choose sod after final grading. It prevents erosion, looks great immediately, and establishes quickly. We offer <a href="/services/landscape-design/">sod installation services</a> specifically for new construction properties.
 
-#### How to Choose a Final Grading Contractor
+### How to Choose a Final Grading Contractor
 
 **Questions to ask:**
 
@@ -236,7 +236,7 @@ Most Edmonton homeowners choose sod after final grading. It prevents erosion, lo
 - Doesn't include survey/City submission
 - No references or portfolio
 
-#### What Happens If Grading Fails Inspection?
+### What Happens If Grading Fails Inspection?
 
 If City of Edmonton rejects your final grading:
 
@@ -260,7 +260,7 @@ If City of Edmonton rejects your final grading:
 
 **Cost impact:** Corrections typically add $500-$2,000 depending on issues. Quality contractors guarantee their work and fix deficiencies at no cost to homeowners.
 
-#### FAQ: Final Grading in Edmonton
+### FAQ: Final Grading in Edmonton
 
 **Q: What is final grading?**
 A: Final grading is shaping your property to required slopes and elevations to ensure proper drainage, prevent flooding, and meet City of Edmonton requirements for occupancy permits.

@@ -10,13 +10,13 @@ image: /assets/images/nice-shrub-and-flower-bed-with-mulch-for-front-house.webp
 imageAlt: Mulch and shrub bed installation in Edmonton
 
 ---
-### Best Mulch for Edmonton Gardens: Complete Guide
+## Best Mulch for Edmonton Gardens: Complete Guide
 
 Mulch helps garden beds by suppressing weeds, retaining moisture, regulating soil temperature, and adding visual appeal. But with multiple mulch types available, Edmonton gardeners often wonder which works best for Alberta's climate.
 
 Here's everything you need to know about choosing, applying, and maintaining mulch in Edmonton gardens.
 
-#### Why Use Mulch in Edmonton Gardens?
+### Why Use Mulch in Edmonton Gardens?
 
 **Weed suppression:**
 - Blocks sunlight that weed seeds need to germinate
@@ -51,7 +51,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 - Prevents soil washing away on slopes
 - Keeps soil in place
 
-#### Best Mulch Types for Edmonton
+### Best Mulch Types for Edmonton
 
 **Cedar Mulch**
 
@@ -195,7 +195,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 
 **Best for:** Xeriscape gardens, cactus/succulent beds, modern landscapes, drainage areas.
 
-#### How Much Mulch Do You Need?
+### How Much Mulch Do You Need?
 
 **Recommended depth:**
 - **2-3 inches:** Standard for most garden beds
@@ -221,7 +221,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 - **500 sq ft at 3" depth:** 5 cubic yards
 - **1,000 sq ft at 3" depth:** 10 cubic yards
 
-#### When to Apply Mulch in Edmonton
+### When to Apply Mulch in Edmonton
 
 **Spring mulching (May-June):**
 
@@ -248,7 +248,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 
 **Don't mulch too early in fall:** Wait until plants are fully dormant. Early mulching keeps soil warm, delaying dormancy.
 
-#### Proper Mulching Technique
+### Proper Mulching Technique
 
 **1. Prepare the bed:**
 - Remove all weeds thoroughly
@@ -274,7 +274,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 - Settles mulch
 - Activates decomposition
 
-#### Mulch Maintenance
+### Mulch Maintenance
 
 **Annual tasks:**
 - Remove and replace if matted or diseased
@@ -287,7 +287,7 @@ Here's everything you need to know about choosing, applying, and maintaining mul
 - Replace with fresh mulch
 - Consider changing mulch type if needed
 
-#### Common Mulching Mistakes in Edmonton
+### Common Mulching Mistakes in Edmonton
 
 **Mistake #1: Mulch volcanoes around trees**
 
@@ -317,7 +317,7 @@ Piling mulch against tree trunks causes:
 
 **Solution:** Skip fabric under organic mulches. Use only under stone/gravel.
 
-#### Where to Buy Mulch in Edmonton
+### Where to Buy Mulch in Edmonton
 
 **Options:**
 - Landscape supply yards (bulk, best prices)
@@ -338,7 +338,7 @@ Piling mulch against tree trunks causes:
 
 Professional <a href="/services/landscape-design/">landscape design services</a> include mulch application.
 
-#### FAQ: Mulch for Edmonton Gardens
+### FAQ: Mulch for Edmonton Gardens
 
 **Q: What's the best mulch for Edmonton gardens?**
 

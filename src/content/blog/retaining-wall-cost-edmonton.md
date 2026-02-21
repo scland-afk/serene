@@ -11,13 +11,13 @@ imageAlt: Retaining wall and rock installation in Edmonton
 
 
 ---
-### How Much Does a Retaining Wall Cost in Edmonton?
+## How Much Does a Retaining Wall Cost in Edmonton?
 
 Planning a retaining wall for your Edmonton property? Understanding costs helps you budget accurately and make informed decisions about materials, size, and installation. Retaining wall prices vary widely based on materials, height, length, site conditions, and complexity.
 
 Here's what Edmonton homeowners need to know about retaining wall costs, material options, and factors affecting pricing.
 
-#### Average Retaining Wall Costs in Edmonton
+### Average Retaining Wall Costs in Edmonton
 
 **Cost per linear foot by material:**
 
@@ -37,7 +37,7 @@ Here's what Edmonton homeowners need to know about retaining wall costs, materia
 
 Costs include materials, labor, excavation, base preparation, drainage, and backfill.
 
-#### Retaining Wall Material Options
+### Retaining Wall Material Options
 
 **Treated Timber Walls**
 
@@ -134,7 +134,7 @@ Costs include materials, labor, excavation, base preparation, drainage, and back
 
 **Best for:** Natural landscapes, large properties, unique aesthetic.
 
-#### Factors Affecting Retaining Wall Cost
+### Factors Affecting Retaining Wall Cost
 
 **1. Wall Height**
 
@@ -216,7 +216,7 @@ Poor drainage is the #1 cause of retaining wall failure in Edmonton.
 **Lighting:** +$200-$1,000
 **Caps or coping:** +$10-$30 per linear foot
 
-#### When Do You Need a Retaining Wall?
+### When Do You Need a Retaining Wall?
 
 **Functional purposes:**
 
@@ -244,7 +244,7 @@ Poor drainage is the #1 cause of retaining wall failure in Edmonton.
 
 Professional <a href="/services/retaining-walls/">retaining wall services</a> include retaining wall design and installation.
 
-#### DIY vs. Professional Installation
+### DIY vs. Professional Installation
 
 **DIY makes sense for:**
 - Small walls (under 2 feet high)
@@ -266,7 +266,7 @@ Professional <a href="/services/retaining-walls/">retaining wall services</a> in
 - Expensive repairs
 - Permit violations
 
-#### Retaining Wall Lifespan
+### Retaining Wall Lifespan
 
 **Expected lifespans:**
 
@@ -283,7 +283,7 @@ Lifespan depends heavily on:
 - Ongoing maintenance
 - Edmonton's freeze-thaw cycles
 
-#### Retaining Wall Maintenance
+### Retaining Wall Maintenance
 
 **Annual tasks:**
 - Inspect for cracks, bulging, or leaning
@@ -299,7 +299,7 @@ Lifespan depends heavily on:
 
 Well-maintained walls last decades. Ignored problems lead to expensive repairs or replacement.
 
-#### FAQ: Retaining Walls in Edmonton
+### FAQ: Retaining Walls in Edmonton
 
 **Q: How much does a retaining wall cost in Edmonton?**
 

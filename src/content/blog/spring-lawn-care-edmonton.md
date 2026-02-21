@@ -11,13 +11,13 @@ imageAlt: Spring lawn care in Edmonton
 
 
 ---
-### When Should You Start Spring Lawn Care in Edmonton?
+## When Should You Start Spring Lawn Care in Edmonton?
 
 Spring finally arrives in Edmonton, and you're ready to get outside and tackle your lawn after months of snow and ice. But timing matters - start too early and you risk damaging dormant grass, wait too long and you miss the optimal window for key tasks like aeration and fertilization.
 
 Here's exactly when Edmonton homeowners should start spring lawn maintenance and what tasks to prioritize for a healthy, green lawn all season.
 
-#### When Does Grass Start Growing in Edmonton?
+### When Does Grass Start Growing in Edmonton?
 
 Grass begins active growth when soil temperatures consistently reach 10°C (50°F). In Edmonton, this typically happens in **mid-to-late April**, though it varies by 2-3 weeks depending on spring weather patterns.
 
@@ -30,7 +30,7 @@ Grass begins active growth when soil temperatures consistently reach 10°C (50°
 
 **Don't start too early.** Walking on or working a lawn when soil is still saturated from snowmelt causes soil compaction that damages grass roots all season long.
 
-#### Spring Lawn Care Timeline for Edmonton Homeowners
+### Spring Lawn Care Timeline for Edmonton Homeowners
 
 **Early April: Assess and Plan**
 
@@ -125,7 +125,7 @@ Apply spring fertilizer once grass is actively growing and you've mowed at least
 
 Fertilizing too early (before grass is actively growing) wastes fertilizer as nutrients wash away before grass can use them. It can also promote weed growth instead of grass growth.
 
-#### Should You Dethatch Your Edmonton Lawn in Spring?
+### Should You Dethatch Your Edmonton Lawn in Spring?
 
 Most Edmonton lawns don't need annual dethatching. Only dethatch if thatch layer exceeds ½ inch thickness.
 
@@ -137,7 +137,7 @@ Dig a small wedge of lawn and measure the brown spongy layer between grass blade
 
 **Better alternative:** Core aeration handles most thatch issues without the aggressive damage of dethatching. Aeration is recommended over dethatching for 90% of Edmonton lawns.
 
-#### Common Spring Lawn Problems in Edmonton
+### Common Spring Lawn Problems in Edmonton
 
 **Standing Water and Drainage Issues**
 
@@ -201,7 +201,7 @@ Many weeds germinate earlier than grass in spring, giving them a competitive adv
 - Adequate fertilization
 - Aeration to relieve compaction
 
-#### DIY vs. Professional Spring Lawn Care
+### DIY vs. Professional Spring Lawn Care
 
 **DIY Makes Sense If:**
 - You have time and enjoy yard work
@@ -219,7 +219,7 @@ Many weeds germinate earlier than grass in spring, giving them a competitive adv
 
 Our <a href="/services/lawn-maintenance/">spring cleanup and lawn care programs</a> include raking, aeration, overseeding, fertilization, and the first mow - everything your lawn needs to start the season strong.
 
-#### Spring Lawn Care Checklist for Edmonton Homeowners
+### Spring Lawn Care Checklist for Edmonton Homeowners
 
 **Early April:**
 - [ ] Wait for soil to dry out from snowmelt
@@ -245,7 +245,7 @@ Our <a href="/services/lawn-maintenance/">spring cleanup and lawn care programs<
 - [ ] Adjust mower height to 3 inches for summer
 - [ ] Monitor for pests or disease
 
-#### FAQ: Spring Lawn Care in Edmonton
+### FAQ: Spring Lawn Care in Edmonton
 
 **Q: When should I start mowing my lawn in Edmonton?**
 

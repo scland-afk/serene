@@ -93,6 +93,7 @@
 
 	#content-page-1398-commercial {
 		padding: var(--sectionPadding);
+		padding-top: 0;
 		background-color: #fff;
 		overflow: hidden;
 		position: relative;
@@ -102,6 +103,7 @@
 			width: 100%;
 			max-width: 80rem;
 			margin: auto;
+			padding: clamp(1rem, 5vw, 5rem);
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -624,6 +626,36 @@
 			width: 100%;
 		}
 
+		/* Topper/Eyebrow - match homepage/content style: dot, spacing, alignment */
+		.cs-content .cs-topper {
+			font-size: 0.875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: var(--primary);
+			margin-bottom: 0.5rem;
+			margin-top: 2rem;
+			display: block;
+			position: relative;
+			padding-left: 1.5rem;
+		}
+
+		.cs-content .cs-topper::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 8px;
+			height: 8px;
+			background-color: var(--primary);
+			border-radius: 50%;
+		}
+
+		.cs-content .cs-topper:first-child {
+			margin-top: 0;
+		}
+
 		h2,
 		h3,
 		h4,
@@ -637,6 +669,15 @@
 		h2 {
 			font-size: 2rem;
 			margin-top: 2rem;
+			padding-left: 1.5rem;
+			border-left: 4px solid var(--primary);
+		}
+
+		/* When h2 follows cs-topper, align with topper (no extra border) */
+		.cs-content .cs-topper + h2 {
+			margin-top: 0.5rem;
+			padding-left: 0;
+			border-left: none;
 		}
 
 		h3 {
@@ -815,15 +856,17 @@
 	}
 }
 
-/* Mobile: content section closer to edge (override padding so it wins) */
+/* Mobile: uniform horizontal padding for commercial and service content sections */
 @media only screen and (max-width: 48rem) {
-	#content-page-1398 {
-		padding-left: 0.5rem !important;
-		padding-right: 0.5rem !important;
+	#content-page-1398,
+	#content-page-1398-commercial {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-	#content-page-1398 .cs-container {
-		padding-left: 0.5rem !important;
-		padding-right: 0.5rem !important;
+	#content-page-1398 .cs-container,
+	#content-page-1398-commercial .cs-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 

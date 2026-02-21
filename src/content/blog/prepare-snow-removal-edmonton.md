@@ -11,13 +11,13 @@ imageAlt: Snow removal preparation in Edmonton
 
 
 ---
-### How to Prepare Your Property for Snow Removal Season in Edmonton
+## How to Prepare Your Property for Snow Removal Season in Edmonton
 
 Winter arrives fast in Edmonton, and the first significant snowfall catches many property owners unprepared. Whether you manage a commercial property or own a business, preparing your site for snow removal before winter arrives ensures safe access, prevents damage to landscaping, and makes snow clearing more efficient.
 
-Here's how to prepare your property for Edmonton's snow removal season and what to expect from professional winter services.
+Residential snow removal in Edmonton costs from $70 per visit or $200/month for seasonal contracts. Here's how to prepare your property for Edmonton's snow removal season and what to expect from professional winter services.
 
-#### When Should You Start Preparing for Snow Removal?
+### When Should You Start Preparing for Snow Removal?
 
 **Target preparation window:** October to early November
 
@@ -30,7 +30,7 @@ First significant snowfall in Edmonton typically happens in November, though Oct
 
 Waiting until November to book snow removal services means limited contractor availability and potentially higher pricing.
 
-#### Choose a Snow Removal Contractor Before Winter
+### Choose a Snow Removal Contractor Before Winter
 
 **Why book early:**
 - Quality contractors fill their routes by October/November
@@ -54,7 +54,7 @@ Waiting until November to book snow removal services means limited contractor av
 
 Most commercial clients choose seasonal contracts for budget predictability and guaranteed service. Our <a href="/commercial-snow-removal/">commercial snow removal services</a> offer both options.
 
-#### Mark Obstacles and Property Features
+### Mark Obstacles and Property Features
 
 Snow removal equipment operators can't see what's hidden under snow. Marking obstacles prevents damage to your landscaping, irrigation systems, and property features.
 
@@ -89,7 +89,7 @@ Use highly visible markers that stand above expected snow depth:
 
 Replace or repair damaged markers throughout winter. Snow, wind, and plows can knock them down.
 
-#### Protect Landscaping and Property Features
+### Protect Landscaping and Property Features
 
 Winter snow removal can be hard on landscaping if not properly managed. Taking preventive steps in fall protects your investment.
 
@@ -122,7 +122,7 @@ Winter snow removal can be hard on landscaping if not properly managed. Taking p
 - Repair cracks in fall
 - Discuss salt/sand usage with contractor (salt can damage concrete)
 
-#### Drainage and Runoff Planning
+### Drainage and Runoff Planning
 
 Winter brings freeze-thaw cycles, and spring brings heavy runoff. Planning ahead prevents ice buildup and flooding.
 
@@ -140,7 +140,7 @@ Winter brings freeze-thaw cycles, and spring brings heavy runoff. Planning ahead
 
 Communicate these problem areas to your snow removal contractor. They may need extra attention for ice control or more frequent service.
 
-#### Understand Snow Removal Service Triggers
+### Understand Snow Removal Service Triggers
 
 Commercial snow removal contracts typically include "service triggers" - the snow accumulation threshold that activates service.
 
@@ -163,7 +163,7 @@ Commercial snow removal contracts typically include "service triggers" - the sno
 
 Discuss appropriate triggers with your contractor based on your property's traffic and access needs.
 
-#### Prepare for 24/7 Winter Service
+### Prepare for 24/7 Winter Service
 
 If you've contracted for 24/7 snow removal (common for commercial properties), prepare your property accordingly:
 
@@ -187,7 +187,7 @@ If you've contracted for 24/7 snow removal (common for commercial properties), p
 - Communicate where vehicles should/shouldn't be during plowing
 - Post clear signage if needed
 
-#### Salt and Ice Control Considerations
+### Salt and Ice Control Considerations
 
 Salt (sodium chloride) melts ice but can damage concrete, landscaping, and contaminate soil. Discuss ice control options with your contractor:
 
@@ -214,7 +214,7 @@ Salt (sodium chloride) melts ice but can damage concrete, landscaping, and conta
 
 For properties with extensive landscaping or new concrete, discuss using less corrosive ice control products even if they cost slightly more.
 
-#### Create an Emergency Plan
+### Create an Emergency Plan
 
 Winter storms can arrive fast. Have a plan ready:
 
@@ -234,7 +234,7 @@ Winter storms can arrive fast. Have a plan ready:
 - How do you report issues or request additional service?
 - What's the response time for emergency calls?
 
-#### Fall Property Walkthrough with Contractor
+### Fall Property Walkthrough with Contractor
 
 Schedule a pre-winter walkthrough with your snow removal contractor:
 
@@ -249,7 +249,7 @@ Schedule a pre-winter walkthrough with your snow removal contractor:
 
 A 30-minute walkthrough in October prevents misunderstandings and property damage throughout winter.
 
-#### FAQ: Preparing for Snow Removal in Edmonton
+### FAQ: Preparing for Snow Removal in Edmonton
 
 **Q: When should I book snow removal for winter?**
 A: Book in September or early October to secure quality contractors and better pricing. Waiting until November often means limited availability and higher costs.

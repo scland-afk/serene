@@ -10,12 +10,12 @@ module.exports = {
         state: "AB",
         zip: "",
         country: "CA",
-        mapLink: "https://maps.app.goo.gl/Jr11RghBbpAnZkLX9",
+        mapLink: "https://www.google.com/maps/place/Serene+Landscaping/data=!4m2!3m1!1s0x0:0x5f20d9850f2b6776?sa=X&ved=1t:2428&ictx=111",
     },
     socials: {
         facebook: "https://www.facebook.com/profile.php?id=61562052516322",
         instagram: "https://www.instagram.com/serenelandscapingyeg/",
-        google: "https://share.google/lLS8npO0pjtyaF1D2",
+        google: "https://www.google.com/maps/place/Serene+Landscaping/data=!4m2!3m1!1s0x0:0x5f20d9850f2b6776?sa=X&ved=1t:2428&ictx=111",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://serenelandscapes.ca",

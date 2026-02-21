@@ -753,6 +753,12 @@
 					width: 100%;
 				}
 			}
+
+			&.cs-nav-muted {
+				opacity: 0.85;
+				pointer-events: none;
+				&:before { display: none; }
+			}
 		}
 
 		/* Contact Links */

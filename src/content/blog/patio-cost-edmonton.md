@@ -12,13 +12,13 @@ imageAlt: Patio installation in Edmonton
 
 
 ---
-### How Much Does a Patio Cost in Edmonton?
+## How Much Does a Patio Cost in Edmonton?
 
 Planning a patio for your Edmonton backyard? The first question most homeowners ask is "how much will this cost?" Patio costs vary widely based on size, materials, site conditions, and installation complexity, but understanding the typical price ranges helps you budget accurately and avoid surprises.
 
 Here's what Edmonton homeowners should expect to pay for patio installation in 2026, what affects pricing, and how to get the best value for your investment.
 
-#### Average Patio Installation Costs in Edmonton
+### Average Patio Installation Costs in Edmonton
 
 **Interlocking Paver Patios:**
 - Small patio (100-150 sq ft): $3,000-$6,000
@@ -40,7 +40,7 @@ Here's what Edmonton homeowners should expect to pay for patio installation in 2
 
 Most Edmonton homeowners choose interlocking pavers for patios because they handle freeze-thaw cycles well, look great, and last decades with proper installation. Concrete works too but can crack in Edmonton's climate without proper base preparation.
 
-#### What Affects Patio Installation Costs?
+### What Affects Patio Installation Costs?
 
 **1. Patio Size**
 
@@ -90,7 +90,7 @@ If your backyard requires hauling materials through your house or over fences (n
 
 Spring and summer are peak patio season in Edmonton. Some contractors offer 10-20% discounts for fall installations (September-October) when demand drops. Winter installation isn't recommended due to ground freezing.
 
-#### Breakdown: What You're Paying For
+### Breakdown: What You're Paying For
 
 Understanding where your money goes helps you appreciate the value:
 
@@ -118,7 +118,7 @@ Understanding where your money goes helps you appreciate the value:
 - Waste disposal
 - Business overhead (insurance, licensing, overhead)
 
-#### DIY vs. Professional Patio Installation
+### DIY vs. Professional Patio Installation
 
 **DIY Costs:**
 - Materials only: $1,500-$8,000 (depending on size)
@@ -140,7 +140,7 @@ For small, simple patios (under 150 sq ft), DIY might make sense if you're physi
 
 Our <a href="/services/paving-stones/">patio installation services</a> include proper base preparation, drainage planning, and quality materials built to withstand Alberta winters.
 
-#### How to Get Accurate Patio Cost Estimates
+### How to Get Accurate Patio Cost Estimates
 
 **1. Measure Your Space**
 
@@ -174,7 +174,7 @@ Clarify what's included in each quote:
 
 Ask for photos of completed projects and customer references. Quality contractors have portfolios showing their work.
 
-#### When Is the Best Time to Install a Patio in Edmonton?
+### When Is the Best Time to Install a Patio in Edmonton?
 
 **Best installation window:** May through September
 
@@ -185,7 +185,7 @@ Ask for photos of completed projects and customer references. Quality contractor
 
 **Avoid:** Late October through April (ground freezing prevents proper installation)
 
-#### Questions to Ask Patio Contractors
+### Questions to Ask Patio Contractors
 
 Before hiring a contractor, ask:
 
@@ -202,7 +202,7 @@ Before hiring a contractor, ask:
 
 Quality contractors answer these questions confidently and provide detailed information.
 
-#### How Long Do Patios Last in Edmonton?
+### How Long Do Patios Last in Edmonton?
 
 **Interlocking pavers:** 25-50+ years with proper installation and minimal maintenance
 
@@ -218,7 +218,7 @@ Longevity depends heavily on:
 
 A patio built correctly costs more upfront but lasts decades. A poorly built patio might look fine initially but fails within 5-10 years, requiring expensive repairs or complete replacement.
 
-#### Is a Patio Worth the Investment?
+### Is a Patio Worth the Investment?
 
 **Return on investment:**
 - Adds usable outdoor living space
@@ -229,7 +229,7 @@ A patio built correctly costs more upfront but lasts decades. A poorly built pat
 
 Most Edmonton homeowners who invest in quality <a href="/services/paving-stones/">patio installation</a> use their outdoor space significantly more and consider it one of their best home improvement investments.
 
-#### FAQ: Patio Installation Costs in Edmonton
+### FAQ: Patio Installation Costs in Edmonton
 
 **Q: How much does a 200 square foot patio cost in Edmonton?**
 A: A 200 sq ft patio typically costs $6,000-$10,000 installed, depending on materials selected and site conditions. Budget pavers might bring costs to $3,000-$5,000, while premium materials could push costs to $10,000-$15,000.

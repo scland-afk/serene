@@ -11,13 +11,13 @@ imageAlt: Professional landscaping crew in Edmonton
 
 
 ---
-### How to Choose a Landscaper in Edmonton: Complete Hiring Guide
+## How to Choose a Landscaper in Edmonton: Complete Hiring Guide
 
 Hiring the right landscaper makes the difference between a beautiful outdoor space you enjoy for years and a disappointing project that requires expensive repairs. With dozens of landscaping companies operating in Edmonton, how do you separate quality contractors from those who will cause problems?
 
 Here's what Edmonton homeowners should know about choosing a landscaper, what questions to ask, red flags to watch for, and how to ensure you hire someone trustworthy and skilled.
 
-#### Start with Clear Project Goals
+### Start with Clear Project Goals
 
 Before contacting landscapers, define what you want to accomplish:
 
@@ -42,7 +42,7 @@ Different landscapers specialize in different services. Lawn care companies exce
 
 Match your project to a contractor with relevant experience.
 
-#### Get Multiple Quotes (But Not Too Many)
+### Get Multiple Quotes (But Not Too Many)
 
 **Ideal number of quotes: 3-5**
 
@@ -66,7 +66,7 @@ Match your project to a contractor with relevant experience.
 
 Detailed information helps contractors provide accurate quotes instead of rough estimates that change later.
 
-#### Essential Questions to Ask Every Landscaper
+### Essential Questions to Ask Every Landscaper
 
 **1. Are you licensed and insured?**
 
@@ -187,7 +187,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 
 **Red flag:** "We'll handle it" with no specifics
 
-#### Red Flags When Choosing a Landscaper
+### Red Flags When Choosing a Landscaper
 
 **Major red flags (avoid these contractors):**
 
@@ -231,7 +231,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 - Look for patterns in complaints
 - One or two bad reviews okay, but dozens is concerning
 
-#### What to Look for in a Quality Landscaper
+### What to Look for in a Quality Landscaper
 
 **Green flags (signs of quality):**
 
@@ -282,7 +282,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 - Honors past warranties
 - Stands behind work
 
-#### Understanding Pricing and Contracts
+### Understanding Pricing and Contracts
 
 **Typical payment structures:**
 
@@ -311,7 +311,7 @@ Problems happen. How contractors handle them reveals their professionalism.
 
 **Red flag:** Contractor wants 50%+ upfront for large projects or won't provide detailed contract
 
-#### Questions to Ask Yourself Before Hiring
+### Questions to Ask Yourself Before Hiring
 
 **1. Do I trust this person?**
 Trust your instincts. If something feels off, it probably is.
@@ -328,7 +328,7 @@ If you need work done by a specific date, ensure the contractor can commit.
 **5. Is the price fair for the value?**
 Cheapest isn't always best. Focus on value: quality materials, skilled labor, warranties, and peace of mind.
 
-#### When to Walk Away
+### When to Walk Away
 
 Don't hire a landscaper if:
 - They can't or won't provide insurance proof
@@ -342,7 +342,7 @@ Don't hire a landscaper if:
 
 It's better to keep looking than hire the wrong contractor.
 
-#### FAQ: Choosing a Landscaper in Edmonton
+### FAQ: Choosing a Landscaper in Edmonton
 
 **Q: How much should I pay upfront to a landscaper?**
 A: Quality contractors use progressive payments only, with payments tied to project milestones. Be cautious of contractors requesting 50%+ upfront, especially for large projects.

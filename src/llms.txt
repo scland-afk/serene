@@ -1,10 +1,11 @@
 # Serene Landscaping - Edmonton
 # Professional landscaping, lawn care, hardscaping, and snow removal
+# GMB: Primary category Landscaper. Services: lawn care, fence contractor, paving contractor, landscape designer, landscape architect, property maintenance, snow removal service.
 
 > Landscape Design: https://serenelandscapes.ca/services/landscape-design/
 Professional landscape design and installation for residential and commercial properties in Edmonton, St. Albert, Spruce Grove, and Sherwood Park.
 
-> Hardscaping: https://serenelandscapes.ca/services/hardscaping/
+> Paving Stones & Hardscaping: https://serenelandscapes.ca/services/paving-stones/
 Interlocking paver patios, walkways, retaining walls, and outdoor living spaces built for Edmonton winters.
 
 > Lawn Maintenance: https://serenelandscapes.ca/services/lawn-maintenance/

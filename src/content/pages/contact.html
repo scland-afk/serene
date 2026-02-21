@@ -103,8 +103,14 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                 </form>
             </div>
             <div class="cs-right-section">
+                <!-- NAP: Name, Address, Phone (match GMB) -->
+                <span class="cs-header">Serene Landscaping</span>
+                <p class="cs-subtext cs-subtext-full">
+                    Edmonton, AB<br>
+                    <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                </p>
                 <!--Phone-->
-                <span class="cs-header">Call or Text</span>
+                <span class="cs-header cs-header-spaced">Call or Text</span>
                 <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
                 <p class="cs-subtext">Available 7 days a week for quotes and questions</p>
                 <!--Email-->
@@ -118,11 +124,10 @@ keywords: "contact Serene Landscaping, landscaping quote Edmonton, free consulta
                     Fort Saskatchewan • Leduc • Beaumont • Stony Plain<br>
                     Plus surrounding Alberta communities within 30km of Edmonton
                 </p>
-                <!--Address-->
+                <!--Address (duplicate of NAP for Location section)-->
                 <span class="cs-header cs-header-spaced">Location</span>
                 <p class="cs-subtext cs-subtext-full">
-                    Serving Greater Edmonton<br>
-                    Edmonton, AB
+                    Serene Landscaping · Edmonton, AB · <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
                 </p>
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">

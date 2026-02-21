@@ -11,13 +11,13 @@ imageAlt: Fresh sod installation in Edmonton in Edmonton
 
 
 ---
-### When Is the Best Time to Install Sod in Edmonton?
+## When Is the Best Time to Install Sod in Edmonton?
 
 Planning to install sod at your Edmonton property? Timing matters significantly for successful establishment. Install at the right time and your sod roots quickly with minimal care. Install at the wrong time and you'll struggle to keep it alive, wasting money and effort.
 
 Here's what Edmonton homeowners need to know about sod installation timing, what to expect during the process, and how to ensure your new lawn thrives for decades.
 
-#### Best Times to Install Sod in Edmonton
+### Best Times to Install Sod in Edmonton
 
 **The quick answer: Late April through June (spring) or late August through September (fall) are ideal. Both seasons offer cool temperatures and adequate moisture for quick establishment.**
 
@@ -108,7 +108,7 @@ Demand drops after August, which often means better pricing and faster schedulin
 
 Expect to water 2-3 times daily for the first 2-3 weeks, gradually reducing as roots establish. Budget for significantly higher water bills and be prepared to monitor daily. Missing even one day of watering in July heat can kill new sod.
 
-#### How Long Does Sod Take to Establish in Edmonton?
+### How Long Does Sod Take to Establish in Edmonton?
 
 **Initial rooting:** 2-3 weeks
 - Sod begins sending roots into soil below
@@ -132,7 +132,7 @@ Expect to water 2-3 times daily for the first 2-3 weeks, gradually reducing as r
 - Watering consistency
 - Sod variety
 
-#### What to Expect During Sod Installation
+### What to Expect During Sod Installation
 
 Professional <a href="/services/landscape-design/">sod installation</a> typically follows this process:
 
@@ -232,7 +232,7 @@ Professional <a href="/services/landscape-design/">sod installation</a> typicall
 - Light recreation acceptable
 - Full use after 6-8 weeks
 
-#### Sod Installation Cost in Edmonton for 
+### Sod Installation Cost in Edmonton for 
 
 **Professional installation costs** (including sod, soil prep, installation):
 
@@ -271,7 +271,7 @@ For small areas (under 500 sq ft), maybe. For larger areas, professional install
 
 Get a detailed quote: <a href="/contact/">Request free estimate</a>
 
-#### Sod vs. Seed: Which Is Better for Edmonton?
+### Sod vs. Seed: Which Is Better for Edmonton?
 
 **Sod advantages:**
 - Instant lawn (no waiting for germination)
@@ -313,7 +313,7 @@ Get a detailed quote: <a href="/contact/">Request free estimate</a>
 - Overseeding existing thin lawn
 - Already have good quality topsoil
 
-#### Common Sod Installation Mistakes in Edmonton
+### Common Sod Installation Mistakes in Edmonton
 
 **Mistake #1: Poor Soil Preparation**
 
@@ -345,7 +345,7 @@ Installing shade-intolerant sod in shaded areas or fine fescue in high-traffic a
 
 **Results:** Sod struggles or dies despite proper care.
 
-#### FAQ: Sod Installation in Edmonton
+### FAQ: Sod Installation in Edmonton
 
 **Q: What's the best time of year to install sod in Edmonton?**
 
