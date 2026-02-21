@@ -5,62 +5,7 @@
 // footer, and other repeated section styles for the entire site
 // ─────────────────────────────────────────────────────────────────────────────
 
-/*-- -------------------------- -->
-<---         Local Fonts        -->
-<--- -------------------------- -*/
-
-/* Oswald - Regular */
-@font-face {
-	font-family: 'Oswald';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: local('Oswald Regular'), local('Oswald-Regular'),
-		url('/assets/fonts/oswald-v57-latin-regular.woff2') format('woff2');
-}
-
-/* Oswald - Bold */
-@font-face {
-	font-family: 'Oswald';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: local('Oswald Bold'), local('Oswald-Bold'),
-		url('/assets/fonts/oswald-v57-latin-700.woff2') format('woff2');
-}
-
-/* Open Sans - Regular */
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: local('Open Sans'), local('OpenSans-Regular'),
-		url('/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2');
-}
-
-/* Roboto - Regular, Bold, Black (primary brand typeface) */
-@font-face {
-	font-style: normal;
-	font-family: "Roboto";
-	font-weight: 400;
-	font-display: swap;
-	src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
-}
-@font-face {
-	font-style: normal;
-	font-family: "Roboto";
-	font-weight: 700;
-	font-display: swap;
-	src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
-}
-@font-face {
-	font-style: normal;
-	font-family: "Roboto";
-	font-weight: 900;
-	font-display: swap;
-	src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
-}
+/* System font stack in use for faster first paint; webfont declarations removed. */
 
 /*-- -------------------------- -->
 <---        Core Styles         -->
@@ -94,8 +39,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-		--headerFont: "Roboto", Arial, sans-serif;
-		--bodyFont: "Roboto", Arial, sans-serif;
+		--headerFont: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+		--bodyFont: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 	}
 
 	html,
@@ -416,7 +361,7 @@
 	}
 }
 
-/* Fonts loaded locally via @font-face (Oswald, Open Sans) */
+/* Shared navigation styles */
 @import "navigation";
 
 /*-- -------------------------- -->

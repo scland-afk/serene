@@ -577,7 +577,7 @@
 		}
 
 		.cs-li-link {
-			font-family: "Oswald", var(--headerFont);
+			font-family: var(--headerFont);
 			font-size: clamp(0.9375rem, 2.2vw, 1.3125rem);
 			font-weight: 700;
 			line-height: 1.2em;
@@ -677,7 +677,7 @@
 		}
 
 		.cs-drop-ul .cs-drop-li .cs-li-link.cs-drop-link {
-			font-family: "Oswald", var(--headerFont);
+			font-family: var(--headerFont);
 			font-size: clamp(0.875rem, 2vw, 1.125rem);
 			font-weight: 700;
 			color: #fff;
@@ -767,7 +767,7 @@
 			align-items: center;
 
 			&.cs-drop-link {
-				font-family: "Oswald", var(--headerFont);
+				font-family: var(--headerFont);
 				font-size: calc(14/16 * 1rem);
 				font-weight: 700;
 				letter-spacing: 0.03em;
@@ -1021,7 +1021,7 @@
 		}
 
 		.cs-li-link {
-			font-family: "Oswald", var(--headerFont);
+			font-family: var(--headerFont);
 			font-size: clamp(0.8125rem, 1.1vw, 0.9375rem);
 			font-weight: 700;
 			letter-spacing: 0.05em;
@@ -1054,7 +1054,7 @@
 @media only screen and (min-width: 1300px) {
 	#cs-navigation {
 		.cs-button-border {
-			font-family: "Oswald", var(--headerFont);
+			font-family: var(--headerFont);
 			font-size: calc(14/16 * 1rem);
 			line-height: calc(42/16 * 1rem);
 			text-decoration: none;

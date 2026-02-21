@@ -9,18 +9,8 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Critical CSS is now loaded render-blocking in base.html for all pages -->
-
-    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
-    {% if client.isProduction %}
-        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="/assets/css/local.css">
-        </noscript>
-
-    {% else %}
-        <link rel="stylesheet" href="/assets/css/local.css" />
-    {% endif %}
+    <!-- Home styles used above the fold should not be deferred -->
+    <link rel="stylesheet" href="/assets/css/local.css">
 
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires customising  -->
     {% include "components/home-schema.html" %}
@@ -55,9 +45,6 @@ keywords: "Edmonton landscaping, landscape design Edmonton, lawn maintenance Edm
             <img id="hero-lcp-image" fetchpriority="high" loading="eager" decoding="async" src="{% getUrl '/assets/images/firepit-installed.webp' | resize({ width: 1920, height: 1200, fit: 'cover' }) | webp({ quality: 68 }) %}" alt="Landscaping and fire pit installation in Edmonton" width="1920" height="1200" aria-hidden="true">
         </picture>
     </section>
-    <script>
-        (function(){ var img = document.getElementById('hero-lcp-image'); if(img){ img.loading = 'eager'; img.fetchPriority = 'high'; } })();
-    </script>
 
     <!-- ============================================ -->
     <!--                  Trust Bar                   -->

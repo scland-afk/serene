@@ -3,7 +3,8 @@
 
 {% block head %}
 <link rel="stylesheet" href="/assets/css/local.css">
-<link rel="preload" as="image" href="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | avif %}">
+<link rel="preload" as="image" media="(max-width: 600px)" href="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | webp %}">
+<link rel="preload" as="image" media="(min-width: 601px)" href="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}">
 {% endblock %}
 
 {% block body %}
@@ -15,7 +16,7 @@
         <picture class="cs-background">
             <source media="(max-width: 600px)" srcset="{% getUrl loc.bannerImage | resize({ width: 640, height: 600 }) | webp %}">
             <source media="(min-width: 601px)" srcset="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}">
-            <img loading="lazy" decoding="async" src="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}" alt="{{ loc.bannerAlt }}" width="1280" height="568" aria-hidden="true">
+            <img fetchpriority="high" loading="eager" decoding="async" src="{% getUrl loc.bannerImage | resize({ width: 1920, height: 568 }) | webp %}" alt="{{ loc.bannerAlt }}" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 

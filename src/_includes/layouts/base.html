@@ -25,7 +25,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% if client.isProduction %}
-        <!-- GA4 + Clarity deferred until after load to reduce LCP render delay (~270ms savings) -->
+        <!-- GA4 loader -->
         <script>
             window.dataLayer = window.dataLayer || [];
             window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -40,44 +40,24 @@
                 document.head.appendChild(gtm);
             });
 
-            window.addEventListener("load", function () {
-                var clarity = document.createElement("script");
-                clarity.async = true;
-                clarity.src = "https://www.clarity.ms/tag/vcjpxa0bzr";
-                document.head.appendChild(clarity);
-            });
+            // Microsoft Clarity disabled for performance testing.
+            // window.addEventListener("load", function () {
+            //     var clarity = document.createElement("script");
+            //     clarity.async = true;
+            //     clarity.src = "https://www.clarity.ms/tag/vcjpxa0bzr";
+            //     document.head.appendChild(clarity);
+            // });
         </script>
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-        <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
-        <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <!-- <link rel="preconnect" href="https://www.clarity.ms"> -->
+        <!-- <link rel="preconnect" href="https://scripts.clarity.ms"> -->
         {% endif %}
 
-        {% if client.isProduction %}
-        <!-- Production: async critical.css to avoid render-blocking; anti-FOUC hides nav until loaded -->
-        <style>
-            html { visibility: visible; }
-            body { margin: 0; }
-            .cs-ul-wrapper { visibility: hidden; }
-            .cs-ul-wrapper.cs-loaded { visibility: visible; }
-        </style>
-        <link rel="preload" href="/assets/css/critical.css" as="style">
-        <link rel="stylesheet" href="/assets/css/critical.css" media="print" onload="this.media='all'">
-        <noscript><link rel="stylesheet" href="/assets/css/critical.css"></noscript>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                document.documentElement.classList.add("cs-loaded");
-                var el = document.querySelector(".cs-ul-wrapper");
-                if (el) el.classList.add("cs-loaded");
-            });
-        </script>
-        {% else %}
-        <!-- Development: blocking critical.css so localhost loads normally (no async delay) -->
+        <!-- LCP-critical styles should not be deferred -->
         <link rel="stylesheet" href="/assets/css/critical.css">
-        {% endif %}
 
-        <!-- root.css non-blocking on all pages to reduce LCP (~220ms savings) -->
-        <link rel="preload" href="/assets/css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/assets/css/root.css"></noscript>
+        <!-- Keep root styles blocking so above-the-fold text/layout are fully styled at first paint -->
+        <link rel="stylesheet" href="/assets/css/root.css">
 
         <title>{{ title }}</title>
         <meta name="description" content="{{ description or 'Professional landscaping in Edmonton, St. Albert & Sherwood Park. Final grading, sod, retaining walls, and design. Book a free quote. Call 587-566-9879.' }}">
@@ -103,10 +83,11 @@
         <meta name="apple-mobile-web-app-title" content="{{ client.name }}">
         <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
-        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-regular.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-700.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-v44-latin-regular.woff2" crossorigin>
+        <!-- Logo preload removed to avoid competing with hero/LCP resource discovery -->
+        <!-- Using system font stack for faster first paint; keep webfont preloads disabled -->
+        <!-- <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-regular.woff2" crossorigin> -->
+        <!-- <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/oswald-v57-latin-700.woff2" crossorigin> -->
+        <!-- <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-v44-latin-regular.woff2" crossorigin> -->
 
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>

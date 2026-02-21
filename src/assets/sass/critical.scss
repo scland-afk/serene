@@ -27,8 +27,8 @@
 		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
 		--bodyFontSize: 1rem;
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-		--headerFont: "Roboto", Arial, sans-serif;
-		--bodyFont: "Roboto", Arial, sans-serif;
+		--headerFont: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+		--bodyFont: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 	}
 	html {
 		scroll-behavior: smooth;
@@ -208,7 +208,7 @@
             margin: 0 0 calc(20 / 16 * 1rem) 0;
             color: #fff;
             position: relative;
-            font-family: "Oswald", var(--headerFont);
+            font-family: var(--headerFont);
             letter-spacing: 0.02em;
             display: flex;
             flex-direction: column;
